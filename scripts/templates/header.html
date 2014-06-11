@@ -1,0 +1,64 @@
+
+<div scroll ng-class="{'add-bg fade-in': boolChangeClass}" class="header" ng-controller="HeaderCtrl">
+    <ul class="nav nav-pills pull-right" role="navigation">
+        <li class="hidden-xs"><a ng-href="#section-1" du-smooth-scroll du-scrollspy>Home</a></li>
+        <li class="hidden-xs"><a ng-href="#section-2" du-smooth-scroll du-scrollspy>What is Linkfire</a></li>
+        <li class="hidden-xs"><a ng-href="#section-3" du-smooth-scroll du-scrollspy>Contact</a></li>
+        <li class="hidden-xs"><a ng-href="#section-4" du-smooth-scroll du-scrollspy>Pricing</a></li>
+        <li><a ng-click="show = 'login'; open()">Login</a></li>
+    </ul>
+    <div class="logo"></div>
+
+    <!--Signin/Signup modal-->
+    <script type="text/ng-template" id="loginmodal.html">
+        <div class="modal-header">
+            <h3 class="modal-title">Modal pane: {{show}}</h3>
+            <button ng-click="show = 'signup'"></button>
+        </div>
+        <div class="modal-body">
+            <div class="row">
+                <div class="col-md-6">
+                   <a class="btn btn-block btn-social btn-facebook">
+                       <i class="fa fa-facebook"></i> Sign in with Facebook
+                   </a>
+                    <a class="btn btn-block btn-social btn-twitter">
+                        <i class="fa fa-twitter"></i> Sign in with Twitter
+                    </a>
+                    <a class="btn btn-block btn-social btn-google-plus">
+                        <i class="fa fa-google-plus"></i> Sign in with Google +
+                    </a>
+                </div>
+                <p class="text-center visible-xs visible-sm">Or </p>
+                <div class="col-md-6">
+                    <div ng-show="show =='login'">
+                        <form ng-submit="signin()" name="signin" novalidate>
+                            <input type="email" ng-model="$parent.user.email" placeholder="email" required/>
+                            <input type="password" ng-model="$parent.user.password" ng-minlength="4" placeholder="password" required/>
+                            <input ng-disabled="signin.$invalid" class="btn btn-primary btn-no-border btn-standard btn-block" type="submit"/>
+                        </form>
+                    </div>
+                    <div ng-show="show =='signup'">
+                        <form ng-submit="signup()" novalidate name="signup">
+                            <input type="email" ng-model="email" placeholder="email" required/>
+                            <input type="password" placeholder="password" ng-model="pw1" id="pw1" name="pw1" ng-minlength="4" required/>
+                            <input type="password" placeholder="Password again" ng-model="pw2"  id="pw2" name="pw2" pw-check="pw1" ng-minlength="4" required/>
+                            <div class="msg-block" ng-show="signup.$invalid">
+                                <span class="msg-error" ng-show="signup.pw2.$error.pwmatch">
+                                    Passwords don't match.
+                                </span>
+                                <span  class="msg-error" ng-show="signup.email.$invalid && !signup.email.$pristine">>
+                                    Your email is required.
+                                </span>
+                            </div>
+                            <input ng-disabled="signup.$invalid" class="btn btn-primary btn-no-border btn-standard btn-block" type="submit"/>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <span>New here? <a ng-click="show ='signup'">Create an account</a></span>
+        </div>
+    </script>
+    <!--End of Signin/Signup modal-->
+</div>
