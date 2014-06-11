@@ -1,0 +1,1 @@
+"use strict";angular.module("linkfireWebappApp",["ngCookies","ngResource","ngSanitize","ngRoute","ui.bootstrap","duScroll","ngAnimate"]).config(function(e,t){e.when("/",{templateUrl:"app.html",controller:"MainCtrl"}).otherwise({redirectTo:"/"}),t.html5Mode(!0)});

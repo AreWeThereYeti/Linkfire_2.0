@@ -1,0 +1,1 @@
+"use strict";angular.module("linkfireWebappApp").controller("MainCtrl",["$scope","$modal",function(n,o){n.open=function(){var n=o.open({templateUrl:"videomodal.html",controller:"VideoModalInstanceCtrl"});n.result.then(function(){},function(){})}}]);var VideoModalInstanceCtrl=function(n,o){n.cancel=function(){o.dismiss("cancel")}};
