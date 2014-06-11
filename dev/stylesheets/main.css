@@ -119,7 +119,7 @@ a {
   width: 20%;
   display: inline-block;
   vertical-align: middle;
-  background: url('/images/linkfire_logo_w_text.svg?1402479087');
+  background: url('/dev/images/linkfire_logo_w_text.svg?1402508964');
   -webkit-background-size: contain;
   -moz-background-size: contain;
   -o-background-size: contain;
@@ -221,7 +221,7 @@ p, span {
 
 /* line 34, ../sass/main.scss */
 .landing {
-  background: url('/images/bg.jpg?1401882431');
+  background: url('/dev/images/bg.jpg?1402508964');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

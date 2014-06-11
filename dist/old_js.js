@@ -1,0 +1,1 @@
+function signIn(o){$.ajax({type:"post",url:"/auth/login",data:o,dataType:"json",beforeSend:function(){},success:function(o){return o.success?void(o.redirect?window.location=o.redirect:window.location.reload()):(o.errorNo>1,!1)},complete:function(){}})}
