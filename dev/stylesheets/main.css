@@ -9,20 +9,20 @@
 .btn.btn-primary {
   background-color: #f04a40;
 }
-/* line 11, ../sass/_buttons.scss */
+/* line 12, ../sass/_buttons.scss */
 .btn.btn-primary:hover {
   background-color: #cf4036;
 }
-/* line 15, ../sass/_buttons.scss */
+/* line 16, ../sass/_buttons.scss */
 .btn.btn-no-border {
   border-radius: 0px;
 }
-/* line 19, ../sass/_buttons.scss */
+/* line 20, ../sass/_buttons.scss */
 .btn.btn-standard {
   height: 42px;
 }
 
-/* line 31, ../sass/_buttons.scss */
+/* line 30, ../sass/_buttons.scss */
 input[type="email"], input[type="password"] {
   display: block;
   margin: 10px 0px;
@@ -33,18 +33,18 @@ input[type="email"], input[type="password"] {
   background-color: rgba(105, 105, 105, 0.5);
 }
 
-/* line 41, ../sass/_buttons.scss */
+/* line 40, ../sass/_buttons.scss */
 a.btn {
   margin: 10px 0px;
   padding: 12px 44px;
 }
 
-/* line 46, ../sass/_buttons.scss */
+/* line 45, ../sass/_buttons.scss */
 .btn-social {
   border-radius: 0px;
 }
 
-/* line 50, ../sass/_buttons.scss */
+/* line 49, ../sass/_buttons.scss */
 .btn-social :first-child {
   line-height: 46px;
 }
@@ -119,7 +119,7 @@ a {
   width: 20%;
   display: inline-block;
   vertical-align: middle;
-  background: url('/dev/images/linkfire_logo_w_text.svg?1402508964');
+  background: url('../images/linkfire_logo_w_text.svg?1402514458');
   -webkit-background-size: contain;
   -moz-background-size: contain;
   -o-background-size: contain;
@@ -221,7 +221,7 @@ p, span {
 
 /* line 34, ../sass/main.scss */
 .landing {
-  background: url('/dev/images/bg.jpg?1402508964');
+  background: url('../images/bg.jpg?1402514458');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
