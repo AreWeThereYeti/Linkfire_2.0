@@ -24,6 +24,27 @@
 
     <div ng-view=""></div>
 
+    <!--Facebook login-->
+    <div id="fb-root"></div>
+    <script>
+        /**
+         * Global settings
+         */
+        var SITEURL = '/'; //'<?php echo $_SERVER['REQUEST_URI']; ?>';
+
+        /**
+         * Social settings
+         */
+        // Facebook
+        var FB_APPID = '296873817155458'; //'<?php echo isset($facebook) ? $facebook['appId'] : ''; ?>'; //262456270545778
+
+        // Twitter296873817155458
+        // TO-DO
+
+        // Google+
+        // TO-DO
+    </script>
+
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>
        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -49,7 +70,8 @@
     <script src="scripts/libs/angular-scroll.min.js"></script>
 
     <!--Old js-->
-    <script src="scripts/old_js.js"></script>
+    <script src="scripts/legacy/old_js.js"></script>
+    <script src="scripts/legacy/social.js"></script>
 
     <!--<script src="scripts/libs/sha1.js"></script>-->
 

@@ -26,6 +26,27 @@
 
 }
 
+button.close{
+
+  color: white;
+  opacity: 1;
+  padding: 0;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  -webkit-appearance: none;
+  float: right;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 1;
+
+    &:focus{
+      outline: 0;
+  }
+}
+
+
+
 //input fields
 input[type="email"], input[type="password"]{
   display: block;

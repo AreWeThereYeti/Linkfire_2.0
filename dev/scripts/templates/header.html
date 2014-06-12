@@ -11,14 +11,15 @@
 
     <!--Signin/Signup modal-->
     <script type="text/ng-template" id="loginmodal.html">
+        <button type="button" class="close" ng-click="cancel($event)" aria-hidden="true">&times;</button>
+
         <div class="modal-header">
-            <h3 class="modal-title">Modal pane: {{show}}</h3>
-            <button ng-click="show = 'signup'"></button>
+            <h3 class="modal-title">{{show}}!</h3>
         </div>
         <div class="modal-body">
             <div class="row">
                 <div class="col-md-6">
-                   <a class="btn btn-block btn-social btn-facebook">
+                   <a class="btn btn-block btn-social btn-facebook" ng-click="facebookLogin()">
                        <i class="fa fa-facebook"></i> Sign in with Facebook
                    </a>
                     <a class="btn btn-block btn-social btn-twitter">
@@ -31,16 +32,16 @@
                 <p class="text-center visible-xs visible-sm">Or </p>
                 <div class="col-md-6">
                     <div ng-show="show =='login'">
-                        <form ng-submit="signin()" name="signin" novalidate>
+                        <form ng-submit="$parent.signin()" name="signin" novalidate>
                             <input type="email" ng-model="$parent.user.email" placeholder="email" required/>
                             <input type="password" ng-model="$parent.user.password" ng-minlength="4" placeholder="password" required/>
                             <input ng-disabled="signin.$invalid" class="btn btn-primary btn-no-border btn-standard btn-block" type="submit"/>
                         </form>
                     </div>
                     <div ng-show="show =='signup'">
-                        <form ng-submit="signup()" novalidate name="signup">
-                            <input type="email" ng-model="email" placeholder="email" required/>
-                            <input type="password" placeholder="password" ng-model="pw1" id="pw1" name="pw1" ng-minlength="4" required/>
+                        <form ng-submit="$parent.signup()" novalidate name="signup">
+                            <input type="email" ng-model="$parent.user.email" placeholder="email" required/>
+                            <input type="password" placeholder="password" ng-model="$parent.user.password" id="pw1" name="pw1" ng-minlength="4" required/>
                             <input type="password" placeholder="Password again" ng-model="pw2"  id="pw2" name="pw2" pw-check="pw1" ng-minlength="4" required/>
                             <div class="msg-block" ng-show="signup.$invalid">
                                 <span class="msg-error" ng-show="signup.pw2.$error.pwmatch">
@@ -57,7 +58,7 @@
             </div>
         </div>
         <div class="modal-footer">
-            <span>New here? <a ng-click="show ='signup'">Create an account</a></span>
+            <span ng-show="show == 'login'">New here? <a ng-click="show ='signup'">Create an account</a></span>
         </div>
     </script>
     <!--End of Signin/Signup modal-->

@@ -38,13 +38,40 @@ var LoginInstanceCtrl = function ($scope, $modalInstance, loginService, show) {
       password: $scope.user.password
     };
 
+//		Legacy sign function. Located in the legacy folder. remove when we move to new api
     signIn(args);
+
 //    New login function working. Uncomment when new api is ready
 //    loginService.Login(args)
 //      .then(function(){
 //          $modalInstance.close();
 //      });
   };
+
+//	SignUp Function
+	$scope.signup = function(){
+		var args={
+			email:    $scope.user.email,
+			password: $scope.user.password
+		};
+
+//		Legacy signup function. Located in the legacy folder. remove when we move to new api
+		signUp(args);
+
+//    New login function working. Uncomment when new api is ready
+//    loginService.SignUp(args)
+//      .then(function(){
+//          $modalInstance.close();
+//      });
+	};
+
+	$scope.facebookLogin = function(){
+		signinSocialFacebook();
+	};
+
+	$scope.facebookSignUp = function(){
+		signUpSocialFacebook();
+	};
 
   // Pass $scope.show to the modal instance. $scope. $scope.show is used for changing between signin and signup
   $scope.show = show;
