@@ -11,7 +11,7 @@ angular.module('linkfireWebappApp', [
 		'ngFacebook'
   ])
 
-  .config(function ($routeProvider,$locationProvider, $httpProvider) {
+  .config(function ($routeProvider,$locationProvider, $httpProvider, $facebookProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'app.html',
@@ -21,42 +21,39 @@ angular.module('linkfireWebappApp', [
         redirectTo: '/'
       });
 
+//			Facebook app ID changeto facebook login when ready
+			$facebookProvider.setAppId('296873817155458');
+
     /*Removes hashtag from url in supported browsers*/
     $locationProvider.html5Mode(true);
   })
 
 	//		Use constants for "global" variables
 		.constant('constants', {
+//			Api paths
 			testApi: "http://linkfire.test.dev.rocketlabs.dk'",
-			liveApi: "test : System wide api path"
+			liveApi: "http://linkfire.com/api"
 	})
 
 	.run( function( $rootScope ) {
 		// Cut and paste the "Load the SDK" code from the facebook javascript sdk page.
 
-		// Load the facebook SDK asynchronously
-		(function(){
-			var fbLoaded = false;
-			window.fbAsyncInit = function() {
-				FB.init({
-					'appId': FB_APPID,
-					'channelUrl': '//channel.php',
-					'status': true,
-					'cookie': false,
-					'xfbml': true
-				});
-				fbLoaded = true;
-				FB.Canvas.setAutoGrow();
-				FB.Canvas.scrollTo(0, 0);
-			};
+			// Load the facebook SDK asynchronously
+			(function(){
+				// If we've already installed the SDK, we're done
+				if (document.getElementById('facebook-jssdk')) {return;}
 
-			(function(d, s, id){
-				var js, fjs = d.getElementsByTagName(s)[0];
-				if (d.getElementById(id)) {return;}
-				js = d.createElement(s); js.id = id;
-				js.src = "//connect.facebook.net/en_US/all.js";
-				fjs.parentNode.insertBefore(js, fjs);
-			}(document, 'script', 'facebook-jssdk'));
+				// Get the first script element, which we'll use to find the parent node
+				var firstScriptElement = document.getElementsByTagName('script')[0];
 
-		}());
+				// Create a new script element and set its id
+				var facebookJS = document.createElement('script');
+				facebookJS.id = 'facebook-jssdk';
+
+				// Set the new script's source to the source of the Facebook JS SDK
+				facebookJS.src = '//connect.facebook.net/en_US/all.js';
+
+				// Insert the Facebook JS SDK into the DOM
+				firstScriptElement.parentNode.insertBefore(facebookJS, firstScriptElement);
+			}());
 	});

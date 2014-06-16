@@ -2,7 +2,7 @@
 
 //Controller for the header of the page
 angular.module('linkfireWebappApp')
-  .controller('HeaderCtrl', ['$scope', 'loginService','$modal', function ($scope, loginService, $modal) {
+  .controller('HeaderCtrl', ['$scope', 'loginService','$modal', '$facebook', function ($scope, loginService, $modal, $facebook) {
 
 	$scope.show = '';
 
@@ -30,7 +30,7 @@ angular.module('linkfireWebappApp')
 
 // Please note that $modalInstance represents a modal window (instance) dependency.
 // It is not the same as the $modal service used above.
-var LoginInstanceCtrl = function ($scope, $modalInstance, loginService, show) {
+var LoginInstanceCtrl = function ($scope, $modalInstance, loginService, show, $facebook) {
 
   $scope.signin = function(){
     var args={
@@ -66,8 +66,12 @@ var LoginInstanceCtrl = function ($scope, $modalInstance, loginService, show) {
 	};
 
 	$scope.facebookLogin = function(){
-		signinSocialFacebook();
-	};
+		console.log('Faceuplogin')
+		$facebook.login()
+				.then(function() {
+
+			})
+		};
 
 	$scope.facebookSignUp = function(){
 		signUpSocialFacebook();

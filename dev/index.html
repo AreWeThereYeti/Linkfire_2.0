@@ -31,18 +31,6 @@
          * Global settings
          */
         var SITEURL = '/'; //'<?php echo $_SERVER['REQUEST_URI']; ?>';
-
-        /**
-         * Social settings
-         */
-        // Facebook
-        var FB_APPID = '296873817155458'; //'<?php echo isset($facebook) ? $facebook['appId'] : ''; ?>'; //262456270545778
-
-        // Twitter296873817155458
-        // TO-DO
-
-        // Google+
-        // TO-DO
     </script>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
@@ -69,16 +57,18 @@
     <script src="scripts/libs/ui-bootstrap-tpls.min.js"></script>
     <script src="scripts/libs/angular-scroll.min.js"></script>
 
-    <!--Old js-->
-    <script src="scripts/legacy/old_js.js"></script>
+    <!--Legacy js-->
     <script src="scripts/legacy/social.js"></script>
 
     <!--<script src="scripts/libs/sha1.js"></script>-->
 
     <script src="scripts/app.js"></script>
-    <script src="scripts/services/loginservice.js"></script>
     <script src="scripts/controllers/MainCtrl.js"></script>
     <script src="scripts/controllers/HeaderCtrl.js"></script>
+
+    <!--services-->
+    <script src="scripts/services/loginservice.js"></script>
+    <script src="scripts/services/ngFacebook.js"></script>
 
     <!--Directives-->
     <script src="scripts/directive/scroll.js"></script>
