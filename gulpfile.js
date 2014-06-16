@@ -15,7 +15,6 @@ gulp.task('minify', function () {
 
 //Start webserver on localhost /localhost:3000
 gulp.task('webserver', function() {
-	console.log('console : starting webserver');
 	connect.server({
 //		Start project from "dev" folder
 		root : ['dev'],
