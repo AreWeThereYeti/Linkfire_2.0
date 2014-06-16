@@ -1,7 +1,9 @@
 'use strict';
 
 angular.module('linkfireWebappApp')
-  .controller('MainCtrl', ['$scope', '$modal', function ($scope, $modal) {
+  .controller('MainCtrl', ['$scope', '$modal', 'constants', function ($scope, $modal, constants) {
+
+			$scope.test = constants.testApi;
 
         $scope.open = function () {
 

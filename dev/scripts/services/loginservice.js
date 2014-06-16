@@ -1,13 +1,11 @@
 'use strict';
 
 angular.module('linkfireWebappApp')
-  .service('loginService', ['$rootScope', '$http', '$q', '$window', function LoginService($rootScope, $http, $q, $window) {
+  .service('loginService', ['$rootScope', '$http', '$q', '$window', 'constants', function LoginService($rootScope, $http, $q, $window, constants) {
     // AngularJS will instantiate a singleton by calling "new" on this function
 
-    // defines the api url could be moved to config for consistency
-    var API_ENDPOINT =  'http://linkfire.test.dev.rocketlabs.dk';
-    var urlLogin= API_ENDPOINT + '/api/1.0/auth/login';
-    var urlSignup = API_ENDPOINT + '/api/1.0/auth/login';
+    var urlLogin  = constants.testApi + '/api/1.0/auth/login';
+    var urlSignup = constants.testApi + '/api/1.0/auth/signUp';
 
   /*    storageCheckService.getAuth(function(status){
 
