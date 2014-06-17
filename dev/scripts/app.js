@@ -21,8 +21,8 @@ angular.module('linkfireWebappApp', [
         redirectTo: '/'
       });
 
-//			Facebook app ID changeto facebook login when ready
-			$facebookProvider.setAppId('296873817155458');
+//  Facebook app ID changeto facebook login when ready
+		$facebookProvider.setAppId('296873817155458');
 
     /*Removes hashtag from url in supported browsers*/
     $locationProvider.html5Mode(true);
@@ -57,3 +57,4 @@ angular.module('linkfireWebappApp', [
 				firstScriptElement.parentNode.insertBefore(facebookJS, firstScriptElement);
 			}());
 	});
+
