@@ -50,7 +50,7 @@ var LoginInstanceCtrl = function ($scope, $modalInstance, loginService, show, $f
 
 //	SignUp Function
 	$scope.signup = function(){
-		var args={
+		var args = {
 			email:    $scope.user.email,
 			password: $scope.user.password
 		};

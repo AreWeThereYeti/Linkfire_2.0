@@ -156,7 +156,7 @@ a {
 /* line 17, ../sass/_header.scss */
 .header .logo {
   content: " ";
-  height: 40px;
+  height: 42px;
   width: 20%;
   display: inline-block;
   vertical-align: middle;
@@ -168,28 +168,28 @@ a {
   background-repeat: no-repeat;
   background-position: center;
 }
-/* line 29, ../sass/_header.scss */
+/* line 30, ../sass/_header.scss */
 .header h3 {
   margin-top: 0;
   margin-bottom: 0;
   line-height: 40px;
   padding-bottom: 19px;
 }
-/* line 36, ../sass/_header.scss */
+/* line 37, ../sass/_header.scss */
 .header .nav-pills {
   margin: 0;
 }
-/* line 40, ../sass/_header.scss */
+/* line 41, ../sass/_header.scss */
 .header .nav-pills > li > a {
   background-color: transparent;
   color: #939596;
   border-radius: 0px;
 }
-/* line 46, ../sass/_header.scss */
+/* line 47, ../sass/_header.scss */
 .header .nav-pills > li > a:hover {
   color: whitesmoke;
 }
-/* line 51, ../sass/_header.scss */
+/* line 52, ../sass/_header.scss */
 .header .nav-pills > li > a.active {
   color: #fff;
   background-color: transparent;
