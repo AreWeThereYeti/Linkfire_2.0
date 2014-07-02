@@ -547,7 +547,23 @@ div.feat:before {
   color: #acacad;
 }
 
-/* line 307, ../sass/main.scss */
+/* line 293, ../sass/main.scss */
+#pricing h1 {
+  text-transform: uppercase;
+  color: #405a72;
+  font-size: 34px;
+  font-weight: 300;
+}
+
+/* line 300, ../sass/main.scss */
+#pricing p {
+  font-size: 18px;
+  font-weight: 300;
+  color: #acacad;
+  margin-bottom: 50px;
+}
+
+/* line 321, ../sass/main.scss */
 .landingfooter {
   width: 100%;
   color: whitesmoke;
@@ -555,43 +571,43 @@ div.feat:before {
 }
 
 /* Custom page footer */
-/* line 315, ../sass/main.scss */
+/* line 329, ../sass/main.scss */
 .footer {
   padding: 10px;
   color: whitesmoke;
 }
 
-/* line 320, ../sass/main.scss */
+/* line 334, ../sass/main.scss */
 .container-narrow > hr {
   margin: 30px 0;
 }
 
 /* Main marketing message and sign up button */
-/* line 329, ../sass/main.scss */
+/* line 343, ../sass/main.scss */
 .jumbotron .btn {
   padding: 13px 29px 16px 29px;
 }
 
 /* Supporting marketing content */
-/* line 334, ../sass/main.scss */
+/* line 348, ../sass/main.scss */
 .marketing {
   margin: 40px 0;
 }
 
-/* line 338, ../sass/main.scss */
+/* line 352, ../sass/main.scss */
 .marketing p + h4 {
   margin-top: 28px;
 }
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
-  /* line 344, ../sass/main.scss */
+  /* line 358, ../sass/main.scss */
   .container {
     max-width: 730px;
   }
 
   /* Remove the padding we set earlier */
-  /* line 354, ../sass/main.scss */
+  /* line 368, ../sass/main.scss */
   .marketing,
   .footer {
     padding-left: 0;
@@ -600,7 +616,7 @@ div.feat:before {
 
   /* Space out the masthead */
   /* Remove the bottom border on the jumbotron for visual effect */
-  /* line 363, ../sass/main.scss */
+  /* line 377, ../sass/main.scss */
   .jumbotron {
     border-bottom: 0;
   }
