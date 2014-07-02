@@ -7,7 +7,7 @@
 }
 /* line 7, ../sass/_buttons.scss */
 .btn.btn-primary {
-  background-color: #f04a40;
+  background-color: #e8371b;
 }
 /* line 12, ../sass/_buttons.scss */
 .btn.btn-primary:hover {
@@ -138,62 +138,62 @@ a {
 }
 
 /* line 2, ../sass/_header.scss */
-.header {
+#header {
   position: fixed;
   top: 0;
   width: 100%;
-  padding: 10px;
+  padding-top: 10px;
   z-index: 50;
-  padding-left: 15px;
-  padding-right: 15px;
   transition: background-color 0.2s linear;
 }
-/* line 12, ../sass/_header.scss */
-.header.add-bg {
-  background-color: rgba(22, 27, 36, 0.8);
-  transition: background-color 0.2s linear;
-}
-/* line 17, ../sass/_header.scss */
-.header .logo {
+/* line 11, ../sass/_header.scss */
+#header .logo {
   content: " ";
-  height: 40px;
-  width: 20%;
+  height: 34px;
+  width: 100%;
   display: inline-block;
   vertical-align: middle;
-  background: url('../images/linkfire_logo_w_text.svg?1402585395');
+  background: url('../images/linkfire_logo_w_text.svg?1404204053');
   -webkit-background-size: contain;
   -moz-background-size: contain;
   -o-background-size: contain;
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
+  transition: background-color 0.2s linear;
 }
-/* line 29, ../sass/_header.scss */
-.header h3 {
+/* line 24, ../sass/_header.scss */
+#header h3 {
   margin-top: 0;
   margin-bottom: 0;
   line-height: 40px;
   padding-bottom: 19px;
 }
-/* line 36, ../sass/_header.scss */
-.header .nav-pills {
+/* line 31, ../sass/_header.scss */
+#header .nav-pills {
   margin: 0;
 }
-/* line 40, ../sass/_header.scss */
-.header .nav-pills > li > a {
+/* line 35, ../sass/_header.scss */
+#header .nav-pills > li > a {
   background-color: transparent;
   color: #939596;
   border-radius: 0px;
 }
-/* line 46, ../sass/_header.scss */
-.header .nav-pills > li > a:hover {
+/* line 41, ../sass/_header.scss */
+#header .nav-pills > li > a:hover {
   color: whitesmoke;
 }
-/* line 51, ../sass/_header.scss */
-.header .nav-pills > li > a.active {
+/* line 46, ../sass/_header.scss */
+#header .nav-pills > li > a.active {
   color: #fff;
   background-color: transparent;
-  border-bottom: 2px solid #f04a40;
+  border-bottom: 2px solid #e8371b;
+}
+
+/* line 54, ../sass/_header.scss */
+#header.add-bg {
+  padding-top: 10px;
+  background-color: rgba(22, 27, 36, 0.8);
+  transition: background-color 0.2s linear;
 }
 
 /* line 1, ../sass/_pricing.scss */
@@ -235,76 +235,319 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-/* line 7, ../sass/main.scss */
-a, a:hover {
-  color: #f04a40;
-  text-decoration: none;
+/* line 6, ../sass/main.scss */
+.container-fluid {
+  padding: 0 5% 0 5%;
 }
 
-/* line 12, ../sass/main.scss */
-h1 {
-  color: whitesmoke;
-}
-
-/* line 16, ../sass/main.scss */
-p, span {
-  color: whitesmoke;
-}
-
-/* line 21, ../sass/main.scss */
-.browsehappy {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
-}
-
-/* line 28, ../sass/main.scss */
-#section-2 {
-  background-color: #10c499;
-}
-
-/* line 34, ../sass/main.scss */
-.landing {
-  background: url('../images/bg.jpg?1402585395');
+/* line 14, ../sass/main.scss */
+#landing {
+  background: url('../images/bg1.jpg?1404211141');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   width: 100%;
   height: 100%;
+  background-position: center bottom;
+  color: #000;
+  min-height: 1000px;
 }
-/* line 40, ../sass/main.scss */
-.landing .landing-inner {
-  min-height: 440px;
-  padding: 10% 0;
-  position: relative;
+
+/* line 23, ../sass/main.scss */
+#features {
+  background: url('../images/bg-section2.jpg?1404224136');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-top: 230px;
+  width: 100%;
+  height: 100%;
+  background-position: center top;
+  color: #000;
+  min-height: 1000px;
 }
-/* line 47, ../sass/main.scss */
-.landing .testimonials {
-  background-color: rgba(22, 27, 36, 0.8);
+
+/* line 33, ../sass/main.scss */
+#splitter {
+  background: url('../images/bg-section3.jpg?1404304934');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 200px;
+  background-position: center top;
+  color: #000;
+  min-height: 300px;
 }
-/* line 51, ../sass/main.scss */
-.landing span {
+
+/* line 42, ../sass/main.scss */
+#logo-banner {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: #f0f1f3;
+  height: 85px;
+  width: 100%;
+  background-position: center top;
+  color: #000;
+}
+
+/* line 50, ../sass/main.scss */
+#target {
+  background: url('../images/bg-target.jpg?1404305291');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: #f0f1f3;
+  padding-top: 130px;
+  height: 800px;
+  width: 100%;
+  background-position: center;
+  color: #000;
+}
+
+/* line 60, ../sass/main.scss */
+#splitter2 {
+  background: url('../images/bg-splitter2.jpg?1404306047');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+  background-position: center top;
+  color: #000;
+  min-height: 400px;
+}
+
+/* line 69, ../sass/main.scss */
+#insights {
+  background: url('../images/bg-insights.jpg?1404306238');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: #f0f1f3;
+  padding-top: 130px;
+  height: 800px;
+  width: 100%;
+  background-position: center;
+  color: #000;
+}
+
+/* line 80, ../sass/main.scss */
+#pricing {
+  background-color: #dddfe1;
+  padding-top: 130px;
+  height: 1000px;
+  width: 100%;
+  background-position: center;
+  color: #000;
+}
+
+/* line 94, ../sass/main.scss */
+.panel-heading {
+  background-color: #405a72 !important;
+}
+
+/* line 97, ../sass/main.scss */
+.panel-heading h3 {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 34px;
+  font-weight: 100;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 108, ../sass/main.scss */
+a, a:hover {
+  color: #e8371b;
+  text-decoration: none;
+}
+
+/* line 113, ../sass/main.scss */
+h1 {
   color: whitesmoke;
 }
 
-/* line 56, ../sass/main.scss */
-.jumbotron {
-  text-align: center;
-  background-color: transparent;
-}
-/* line 59, ../sass/main.scss */
-.jumbotron h1 {
-  font-size: 48px;
+/* line 117, ../sass/main.scss */
+p, span {
   color: whitesmoke;
 }
-/* line 64, ../sass/main.scss */
+
+/* line 128, ../sass/main.scss */
+.jumbotron {
+  margin: 250px 0 200px 0;
+  padding: 0;
+  background-color: transparent;
+  vertical-align: middle;
+}
+
+/* line 134, ../sass/main.scss */
+.jumbotron h1 {
+  text-transform: Uppercase;
+  color: whitesmoke;
+  line-height: 1.1em;
+  margin: 0;
+  padding: 0;
+  font-weight: 100;
+}
+
+/* line 142, ../sass/main.scss */
+.jumbotron .emph {
+  font-weight: 500;
+}
+
+/* line 146, ../sass/main.scss */
 .jumbotron p {
   color: whitesmoke;
+  font-size: 30px;
 }
 
-/* line 70, ../sass/main.scss */
+/* line 155, ../sass/main.scss */
+.headz {
+  margin-top: 90px;
+  padding: 0;
+}
+
+/* line 159, ../sass/main.scss */
+.headz h1 {
+  text-transform: Uppercase;
+  font-size: 52px;
+  color: whitesmoke;
+  line-height: 1.1em;
+  margin: 0;
+  padding: 0;
+  font-weight: 100;
+}
+
+/* line 173, ../sass/main.scss */
+#logos {
+  padding: 18px 0 18px 0;
+}
+
+/* line 177, ../sass/main.scss */
+#logos div {
+  width: 12.5%;
+  float: left;
+}
+
+/* line 182, ../sass/main.scss */
+#logos div img {
+  width: 100px;
+  display: block;
+  margin: 0 auto 0 auto;
+}
+
+/*
+#logos div:first-child img {
+  width:100px;
+  display:block;
+  margin: 0 auto 0 0;
+}
+#logos div:last-child img {
+  width:100px;
+  display:block;
+  margin: 0 0 0 auto;
+}
+*/
+/* line 208, ../sass/main.scss */
+.info-box h1 {
+  font-size: 40px;
+  text-transform: uppercase;
+  color: #405a72;
+  line-height: 1.1em;
+  margin: 0;
+  padding: 0;
+  font-weight: 100;
+}
+
+/* line 217, ../sass/main.scss */
+.info-box h1 .emph {
+  color: #000;
+  line-height: 1.1em;
+  font-weight: 500;
+}
+
+/* line 222, ../sass/main.scss */
+.info-box p {
+  color: #acacad;
+  font-size: 16px;
+  line-height: 1.7em;
+}
+
+/* line 233, ../sass/main.scss */
+.shufflebox {
+  height: 105px;
+  margin-top: 10px;
+  border-radius: 5px;
+  webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  padding: 20px 25px 20px 25px;
+}
+
+/* line 243, ../sass/main.scss */
+.feat {
+  background-color: #d9d9da;
+}
+
+/* line 247, ../sass/main.scss */
+div.feat:before {
+  top: 50%;
+  margin-top: -10px;
+  content: ' ';
+  height: 0;
+  position: absolute;
+  width: 0;
+  left: -20px;
+  border: 10px solid transparent;
+  border-right-color: #d9d9da;
+}
+
+/* line 259, ../sass/main.scss */
+.shufflebox .circ {
+  position: relative;
+  top: 50%;
+  margin-top: -25px;
+  display: table-cell;
+  width: 50px;
+  height: 50px;
+  background-color: #3cbda3;
+  float: left;
+  border-radius: 25px;
+}
+
+/* line 271, ../sass/main.scss */
+.shufflebox .content {
+  padding: 0 20px 0 20px;
+  margin: 0;
+}
+
+/* line 276, ../sass/main.scss */
+.shufflebox h2 {
+  color: #405a72;
+  text-transform: uppercase;
+  font-weight: 300;
+  line-height: 1.4em;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 285, ../sass/main.scss */
+.shufflebox p {
+  padding: 0;
+  margin: 0;
+  color: #acacad;
+}
+
+/* line 307, ../sass/main.scss */
 .landingfooter {
   width: 100%;
   color: whitesmoke;
@@ -312,44 +555,43 @@ p, span {
 }
 
 /* Custom page footer */
-/* line 78, ../sass/main.scss */
+/* line 315, ../sass/main.scss */
 .footer {
   padding: 10px;
   color: whitesmoke;
 }
 
-/* line 83, ../sass/main.scss */
+/* line 320, ../sass/main.scss */
 .container-narrow > hr {
   margin: 30px 0;
 }
 
 /* Main marketing message and sign up button */
-/* line 90, ../sass/main.scss */
+/* line 329, ../sass/main.scss */
 .jumbotron .btn {
-  font-size: 21px;
-  padding: 14px 24px;
+  padding: 13px 29px 16px 29px;
 }
 
 /* Supporting marketing content */
-/* line 96, ../sass/main.scss */
+/* line 334, ../sass/main.scss */
 .marketing {
   margin: 40px 0;
 }
 
-/* line 100, ../sass/main.scss */
+/* line 338, ../sass/main.scss */
 .marketing p + h4 {
   margin-top: 28px;
 }
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
-  /* line 106, ../sass/main.scss */
+  /* line 344, ../sass/main.scss */
   .container {
     max-width: 730px;
   }
 
   /* Remove the padding we set earlier */
-  /* line 116, ../sass/main.scss */
+  /* line 354, ../sass/main.scss */
   .marketing,
   .footer {
     padding-left: 0;
@@ -357,13 +599,8 @@ p, span {
   }
 
   /* Space out the masthead */
-  /* line 121, ../sass/main.scss */
-  .header {
-    margin-bottom: 30px;
-  }
-
   /* Remove the bottom border on the jumbotron for visual effect */
-  /* line 125, ../sass/main.scss */
+  /* line 363, ../sass/main.scss */
   .jumbotron {
     border-bottom: 0;
   }
