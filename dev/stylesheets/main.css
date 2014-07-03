@@ -1,28 +1,29 @@
 /* line 1, ../sass/_buttons.scss */
 .btn {
+  height: 50px;
   border: 0;
   border-radius: 3px;
   color: whitesmoke;
   padding: 10px 16px;
 }
-/* line 7, ../sass/_buttons.scss */
+/* line 8, ../sass/_buttons.scss */
 .btn.btn-primary {
   background-color: #e8371b;
 }
-/* line 12, ../sass/_buttons.scss */
+/* line 13, ../sass/_buttons.scss */
 .btn.btn-primary:hover {
   background-color: #fc3429;
 }
-/* line 16, ../sass/_buttons.scss */
+/* line 17, ../sass/_buttons.scss */
 .btn.btn-no-border {
   border-radius: 0px;
 }
-/* line 20, ../sass/_buttons.scss */
+/* line 21, ../sass/_buttons.scss */
 .btn.btn-standard {
   height: 42px;
 }
 
-/* line 29, ../sass/_buttons.scss */
+/* line 30, ../sass/_buttons.scss */
 button.close {
   color: white;
   opacity: 1;
@@ -36,54 +37,48 @@ button.close {
   font-weight: bold;
   line-height: 1;
 }
-/* line 43, ../sass/_buttons.scss */
+/* line 44, ../sass/_buttons.scss */
 button.close:focus {
   outline: 0;
 }
 
-/* line 51, ../sass/_buttons.scss */
+/* line 49, ../sass/_buttons.scss */
+.input-group-addon {
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  color: #555;
+  text-align: center;
+  background-color: #e5e5e5;
+  border: 0px solid #ccc;
+  border-radius: 0px;
+}
+
+/* line 62, ../sass/_buttons.scss */
 input[type="email"], input[type="password"] {
   display: block;
-  margin: 10px 0px;
-  padding: 12px 10px;
   width: 100%;
   border: 0px solid black;
   color: whitesmoke;
-  background-color: rgba(105, 105, 105, 0.5);
+  background-color: #e5e5e5;
+  padding: 15px 5px;
 }
 
-/* line 61, ../sass/_buttons.scss */
+/* line 71, ../sass/_buttons.scss */
 a.btn {
   margin: 10px 0px;
   padding: 12px 44px;
 }
 
-/* line 66, ../sass/_buttons.scss */
+/* line 76, ../sass/_buttons.scss */
 .btn-social {
   border-radius: 0px;
 }
 
-/* line 70, ../sass/_buttons.scss */
+/* line 80, ../sass/_buttons.scss */
 .btn-social :first-child {
   line-height: 46px;
-}
-
-/* line 1, ../sass/_resets.scss */
-html, body {
-  width: 100%;
-  height: 100%;
-  padding: 0;
-  margin: 0;
-}
-
-/* line 8, ../sass/_resets.scss */
-input {
-  outline: 0;
-}
-
-/* line 12, ../sass/_resets.scss */
-a {
-  cursor: pointer;
 }
 
 /* line 1, ../sass/_helpers.scss */
@@ -113,31 +108,79 @@ a {
   font-weight: 600;
 }
 
+/* line 24, ../sass/_helpers.scss */
+.line:before,
+.line:after {
+  border-top: 1px solid #bdbdbd;
+  display: block;
+  height: 1px;
+  content: " ";
+  width: 40%;
+  position: absolute;
+  left: 0;
+  top: 95px;
+  vertical-align: middle;
+}
+
+/* line 36, ../sass/_helpers.scss */
+.line:after {
+  right: 0;
+  left: auto;
+}
+
 /* line 2, ../sass/_modal.scss */
-.modal-content {
+.modal-dialog {
+  width: 380px;
+}
+/* line 4, ../sass/_modal.scss */
+.modal-dialog .modal-content {
   background-color: transparent;
   border: 0px solid rgba(0, 0, 0, 0.2);
   box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
 }
-/* line 7, ../sass/_modal.scss */
-.modal-content .modal-header {
-  border-bottom: 0px solid #e5e5e5;
+/* line 9, ../sass/_modal.scss */
+.modal-dialog .modal-content .linecontainer {
+  padding: 10px 0px;
 }
-/* line 10, ../sass/_modal.scss */
-.modal-content .modal-header .modal-title {
-  text-align: center;
-  color: whitesmoke;
+/* line 13, ../sass/_modal.scss */
+.modal-dialog .modal-content .form {
+  background-color: #ffffff;
+  border-radius: 5px;
 }
 /* line 16, ../sass/_modal.scss */
-.modal-content .modal-footer {
+.modal-dialog .modal-content .form input[type="email"] {
+  border-radius: 0px 5px 0 0;
+}
+/* line 20, ../sass/_modal.scss */
+.modal-dialog .modal-content .form .checkboxcontainer {
+  color: #000;
+  padding: 15px;
+}
+/* line 24, ../sass/_modal.scss */
+.modal-dialog .modal-content .form .checkboxcontainer span {
+  color: #999999;
+}
+/* line 29, ../sass/_modal.scss */
+.modal-dialog .modal-content .form .btn {
+  border-radius: 0 0 5px 5px;
+}
+/* line 33, ../sass/_modal.scss */
+.modal-dialog .modal-content .form .input-group-addon {
+  border-radius: 0px;
+}
+/* line 39, ../sass/_modal.scss */
+.modal-dialog .modal-content .form .borderleft .input-group-addon {
+  border-radius: 5px 0px 0px 0px;
+}
+/* line 45, ../sass/_modal.scss */
+.modal-dialog .modal-content .modal-footer {
   margin-top: 0px;
   padding: 19px 20px 20px;
   text-align: center;
   border-top: 0px solid #e5e5e5;
 }
-
-/* line 24, ../sass/_modal.scss */
-.modal-backdrop.in {
+/* line 53, ../sass/_modal.scss */
+.modal-dialog .modal-backdrop.in {
   opacity: .75;
   filter: alpha(opacity=75);
 }
@@ -145,12 +188,21 @@ a {
 /* line 1, ../sass/_footer.scss */
 footer {
   background-color: #292f38;
+  color: #ffffff;
 }
 /* line 4, ../sass/_footer.scss */
-footer img {
+footer .row {
+  padding: 20px 0px;
+}
+/* line 6, ../sass/_footer.scss */
+footer .row h4 {
+  font-size: 18px;
+}
+/* line 10, ../sass/_footer.scss */
+footer .row img {
   margin-top: 20px;
   display: block;
-  margin: 25px auto;
+  margin: 15px auto;
 }
 
 /* line 2, ../sass/_header.scss */
@@ -211,6 +263,42 @@ footer img {
   padding-top: 10px;
   background-color: #292f38;
   transition: background-color 0.2s linear;
+}
+
+/* line 1, ../sass/_resets.scss */
+html, body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 8, ../sass/_resets.scss */
+input {
+  outline: 0;
+}
+
+/* line 12, ../sass/_resets.scss */
+a {
+  cursor: pointer;
+}
+
+/* line 17, ../sass/_resets.scss */
+.glyphicon {
+  color: #999999;
+}
+
+/* line 21, ../sass/_resets.scss */
+.input-group-addon {
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  color: #555;
+  text-align: center;
+  background-color: #e5e5e5;
+  border: 0px solid #ccc;
+  border-radius: 0px;
 }
 
 /* line 2, ../sass/_pricing.scss */

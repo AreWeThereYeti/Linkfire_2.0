@@ -1,0 +1,16 @@
+footer{
+  background-color: $dark-color;
+  color: #ffffff;
+  .row {
+    padding: 20px 0px;
+    h4{
+      font-size: 18px;
+    }
+
+    img{
+      margin-top: 20px;
+      display: block;
+      margin: 15px auto;
+    }
+  }
+}
