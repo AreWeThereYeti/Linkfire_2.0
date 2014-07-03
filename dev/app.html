@@ -1,14 +1,18 @@
 <!-- Header content here-->
+	<div scroll ng-class="{'add-bg fade-in': boolChangeClass}" id="header" class="container-fluid" ng-include="'scripts/templates/header.html'" ></div>
 
-<div ng-include="'scripts/templates/header.html'" ></div>
-
-<!-- Add your site or application content here -->
-<div id="section-1" ng-include="'scripts/templates/landing.html'"></div>
-<div id="section-2" ng-include="'scripts/templates/WhatIsLinkfire.html'"></div>
-<div id="section-3" ng-include="'scripts/templates/HowDoesLinkfireWork.html'"></div>
-<div id="section-4" ng-include="'scripts/templates/pricing.html'"></div>
-<div id="section-5" ng-include="'scripts/templates/press.html'"></div>
-<div id="footer" ng-include="'scripts/templates/footer.html'"></div>
+	<!-- Add your site or application content here -->
+	<div id="landing" class="container-fluid" ng-include="'scripts/templates/landing.html'"></div>
+	<div id="logo-banner" class="container-fluid" ng-include="'scripts/templates/logos.html'"></div>
+	<div id="features" class="container-fluid" ng-include="'scripts/templates/features.html'"></div>
+	<!--<div id="section-3" ng-include="'scripts/templates/HowDoesLinkfireWork.html'"></div>-->
+	<div id="splitter" class="container-fluid" ng-include="'scripts/templates/splitter.html'"></div>
+	<div id="target" class="container-fluid" ng-include="'scripts/templates/target.html'"></div>
+	<div id="splitter2" class="container-fluid" ng-include="'scripts/templates/splitter2.html'"></div>
+	<div id="insights" class="container-fluid" ng-include="'scripts/templates/insights.html'"></div>
+	<div id="pricing" class="container-fluid" ng-include="'scripts/templates/pricing.html'"></div>
+<!--<div id="section-5" ng-include="'scripts/templates/press.html'"></div>
+<div id="footer" ng-include="'scripts/templates/footer.html'"></div>-->
 
 <!-- Footer content here-->
 <!--<div class="" ng-include="'scripts/templates/footer.html'"></div>-->

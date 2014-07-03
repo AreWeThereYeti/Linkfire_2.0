@@ -1,29 +1,24 @@
 //header
-.header{
+#header{
   position: fixed;
   top: 0;
   width: 100%;
-  padding: 10px;
+  padding-top: 10px;
   z-index: 50;
-  padding-left: 15px;
-  padding-right: 15px;
   transition: background-color 0.2s linear;
 
-  &.add-bg{
-    background-color: $dark-color;
-    transition: background-color 0.2s linear;
-  }
 
   .logo{
     content: " ";
-    height: 40px;
-    width: 20%;
+    height: 34px;
+    width: 100%;
     display: inline-block;
     vertical-align: middle;
     @include background(image-url("linkfire_logo_w_text.svg"));
     @include background-size(contain);
     background-repeat: no-repeat;
-    background-position: center;
+    //background-position: center;
+    transition: background-color 0.2s linear;
   }
 
   h3{
@@ -56,5 +51,11 @@
     }
   }
 }
+#header.add-bg{
+    padding-top:10px;
+    background-color: $dark-color;
+    transition: background-color 0.2s linear;
+}
+
 
 

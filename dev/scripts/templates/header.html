@@ -1,13 +1,29 @@
+<!--
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container-fluid header">  
+    <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-2">
+            <div class="logo"></div>
+        </div>
+    </div>
+  </div>
+</nav>-->
 
-<div scroll ng-class="{'add-bg fade-in': boolChangeClass}" class="header" ng-controller="HeaderCtrl">
+<div class="header" ng-controller="HeaderCtrl">
+    <div class="row">
+    <div class="col-xs-12 col-sm-6 col-md-2">
+        <div class="logo"></div>
+    </div>
+
     <ul class="nav nav-pills pull-right" role="navigation">
         <li class="hidden-xs"><a ng-href="#section-1" du-smooth-scroll du-scrollspy>Home</a></li>
-        <li class="hidden-xs"><a ng-href="#section-2" du-smooth-scroll du-scrollspy>What is Linkfire</a></li>
-        <li class="hidden-xs"><a ng-href="#section-3" du-smooth-scroll du-scrollspy>Contact</a></li>
+        <li class="hidden-xs"><a ng-href="#section-2" du-smooth-scroll du-scrollspy>Features</a></li>
         <li class="hidden-xs"><a ng-href="#section-4" du-smooth-scroll du-scrollspy>Pricing</a></li>
+        <li class="hidden-xs"><a ng-href="#section-3" du-smooth-scroll du-scrollspy>Testimonials</a></li>
         <li><a ng-click="show = 'login'; open()">Login</a></li>
     </ul>
-    <div class="logo"></div>
+
+    </div>
 
     <!--Signin/Signup modal-->
     <script type="text/ng-template" id="loginmodal.html">
