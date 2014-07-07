@@ -1,9 +1,7 @@
 'use strict';
 
 angular.module('linkfireWebappApp', [
-    'ngCookies',
     'ngResource',
-    'ngSanitize',
     'ngRoute',
     'ui.bootstrap',
     'duScroll',

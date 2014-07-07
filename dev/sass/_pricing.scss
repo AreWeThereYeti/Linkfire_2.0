@@ -1,41 +1,64 @@
 
 #pricing{
-  //@include background(image-url("bg-insights.jpg"));
-  //@include background-size(cover);
   background-color:#ffffff;
   padding-top:30px;
   width: 100%;
   background-position:center;
   color:#000;
 
-  .price {
-    font-size: 3em;
+  .row{
+
+    .price {
+      font-size: 3em;
+    }
+
+    .price-cents {
+      vertical-align: super;
+      font-size: 50%;
+
+    }
+
+    .price-month {
+      font-size: 35%;
+      font-style: italic;
+
+    }
+    .panel {
+      background-color: $pricing-light-grey;
+      -webkit-transition-property : scale;
+      -webkit-transition-duration : 0.2s;
+      -webkit-transition-timing-function : ease-in-out;
+      -moz-transition : all 0.2s ease-in-out;
+
+      .panel-heading{
+        background-color:$deep-blue;
+        h3{
+        text-transform:uppercase;
+        color:#fff;
+        font-size:34px;
+        font-weight:600;
+        margin:0;
+        padding:0;
+        }
+      }
+
+      .list-group-item{
+        background-color: $pricing-light-grey;
+        color: $testimonial-grey;
+        border-color: #d8d8da;;
+      }
+    }
+
+    .panel:hover {
+      box-shadow: 0 0 10px rgba(0,0,0,.2);
+      -moz-box-shadow: 0 0 10px rgba(0,0,0,.2);
+      -webkit-box-shadow: 0 0 10px rgba(0,0,0,.2);
+      -webkit-transform: scale(1.01);
+      -moz-transform: scale(1.01);
+    }
   }
 
-  .price-cents {
-    vertical-align: super;
-    font-size: 50%;
-
-  }
-
-  .price-month {
-    font-size: 35%;
-    font-style: italic;
-
-  }
-  .panel {
-    -webkit-transition-property : scale;
-    -webkit-transition-duration : 0.2s;
-    -webkit-transition-timing-function : ease-in-out;
-    -moz-transition : all 0.2s ease-in-out;
-  }
-
-  .panel:hover {
-    box-shadow: 0 0 10px rgba(0,0,0,.5);
-    -moz-box-shadow: 0 0 10px rgba(0,0,0,.5);
-    -webkit-box-shadow: 0 0 10px rgba(0,0,0,.5);
-    -webkit-transform: scale(1.05);
-    -moz-transform: scale(1.05);
+  p{
+    text-align: center;
   }
 }
-

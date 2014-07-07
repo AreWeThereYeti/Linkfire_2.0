@@ -3,15 +3,13 @@
 angular.module('linkfireWebappApp')
   .controller('MainCtrl', ['$scope', '$modal', 'constants', function ($scope, $modal, constants) {
 
-			$scope.test = constants.testApi;
+			$scope.images = ["img/image_01.png","img/image_02.png","img/image_03.png"];
 
         $scope.open = function () {
-
             var modalInstance = $modal.open({
                 templateUrl: 'videomodal.html',
                 controller: 'VideoModalInstanceCtrl'
             });
-
             modalInstance.result.then(function () {
             }, function () {
 

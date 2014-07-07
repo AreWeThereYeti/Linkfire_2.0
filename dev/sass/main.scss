@@ -26,7 +26,9 @@ p, span{
 }
 
 
+.circ{
 
+}
 
 // IDs for each "block" on landing page //
 
@@ -48,6 +50,12 @@ p, span{
   background-position:center top;
   color:#000;
   min-height:1000px;
+
+  .row{
+    h4{
+      margin-top: 0px;
+    }
+  }
 }
 
 #logo-banner{
@@ -67,6 +75,13 @@ p, span{
   width: 100%;
   background-position:center;
   color:#000;
+
+  .row{
+    margin-top: 4%;
+    h4{
+      margin-top: 0px;
+    }
+  }
 }
 #splitter{
   @include background(image-url("bg-splitter1.jpg"));
@@ -77,14 +92,17 @@ p, span{
   color:#000;
   min-height:200px;
 
-  h1{
-    text-transform:Uppercase;
-    font-size:52px;
-    color: $font-color;
-    line-height:1.1em;
-    font-weight:100;
-  }
+  .row{
+    margin-top: 4%;
 
+    h1{
+      text-transform:Uppercase;
+      font-size:52px;
+      color: $font-color;
+      line-height:1.1em;
+      font-weight:100;
+    }
+  }
 }
 
 #splitter2{
@@ -94,6 +112,16 @@ p, span{
   height: 300px;
   background-position:center top;
   color:#000;
+
+  .row{
+    margin-top: 6%;
+
+    h2{
+      font-size: 46px;
+      font-weight: 300;
+      color:#fff;
+    }
+  }
 }
 
 #splitter3{
@@ -104,6 +132,18 @@ p, span{
   background-position:center top;
   color:#000;
   min-height:300px;
+
+  .row{
+    margin-top: 4%;
+    h1, h3{
+      color: #ffffff;
+      text-align: center;
+    }
+
+    h3{
+      font-weight: 300;
+    }
+  }
 }
 
 #insights{
@@ -115,40 +155,44 @@ p, span{
   width: 100%;
   background-position:center;
   color:#000;
+
+  .row{
+   h4{
+     margin-top: 0px;
+   }
+  }
 }
 
 #press{
-  background-color:#f0f1f3;
+  @include background(image-url("bg-testimonial.jpg"));
+  @include background-size(cover);
 
   .testimonial{
     padding:30px;
 
     .row{
-      background-color: white;
-      border-radius: 5px;
-      padding: 20px;
-      p{
-        color: $testimonial-grey ;
+
+      .icon-quotes-left{
+        font-size: 40px;
+      }
+
+      div{
+        text-align: center;
+      }
+      h3{
+        color: #ffffff ;
+        font-size: 23px;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-style: italic;
       }
     }
   }
+  .row{
+    margin-bottom: 2%;
+    margin-top: 2%;
+  }
 }
-
-
-// Override for panel headings on pricing //
-
-.panel-heading  {
-  background-color:$deep-blue !important;
-}
-.panel-heading h3 {
-  text-transform:uppercase;
-  color:#fff;
-  font-size:34px;
-  font-weight:100;
-  margin:0;
-  padding:0;
-}
-
 
 .landing-header{
   
@@ -257,10 +301,22 @@ p, span{
   -moz-border-radius: 5px; 
   border-radius: 5px;
   padding: 20px 25px 20px 25px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition:    all 0.5s ease;
+  -o-transition:      all 0.5s ease;
+  transition:         all 0.5s ease;
 
 }
+
+
 .feat{
   background-color:$light-grey;
+  opacity: 1;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition:    all 0.5s ease;
+  -o-transition:      all 0.5s ease;
+  transition:         all 0.5s ease;
+
 }
 
 div.feat:before {
@@ -273,7 +329,25 @@ div.feat:before {
   left:-20px;
   border: 10px solid transparent;
   border-right-color: $light-grey;
+  -webkit-transition: border-right-color 0.5s ease;
+  -moz-transition:    border-right-color 0.5s ease;
+  -o-transition:      border-right-color 0.5s ease;
+  transition:         border-right-color 0.5s ease;
+
 }
+
+div.right:before{
+  border-left-color: $light-grey;
+  border-right-color: transparent;
+  right:-20px;
+  left: initial;
+  -webkit-transition: border 0.5s ease;
+  -moz-transition:    border 0.5s ease;
+  -o-transition:      border 0.5s ease;
+  transition:         border 0.5s ease;
+}
+
+
 
 .shufflebox .circ{
   position:relative;
@@ -285,6 +359,11 @@ div.feat:before {
   background-color:$lf-green;
   float:left;
   border-radius: 25px;
+
+  [class^="icon-"]{
+    line-height: 50px;
+    font-size: 140%;
+  }
 }
 
 .shufflebox .content  {
