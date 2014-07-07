@@ -25,6 +25,27 @@
   &.btn-standard{
     height: $button-height;
   }
+
+  &.btn-facebook{
+    color: #fff;
+    background-color: #3b5998;
+    border-color: rgba(0,0,0,0.2);
+  }
+
+  &.btn-facebook:hover{
+    color: #fff;
+    background-color: #30487b;
+    border-color: rgba(0,0,0,0.2);
+  }
+
+  &.btn-social{
+    position: relative;
+    padding-left: 44px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 }
 
 .btn:active {
@@ -32,19 +53,18 @@
 }
 
 button.close{
-
-  color: white;
+  color: #999999;
+  position: absolute;
   opacity: 1;
   padding: 0;
   cursor: pointer;
   background: transparent;
   border: 0;
   -webkit-appearance: none;
-  float: right;
   font-size: 30px;
-  font-weight: bold;
   line-height: 1;
-
+  right: 10px;
+  top: 5px;
     &:focus{
       outline: 0;
   }

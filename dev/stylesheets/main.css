@@ -27,27 +27,49 @@
 .btn.btn-standard {
   height: 42px;
 }
+/* line 29, ../sass/_buttons.scss */
+.btn.btn-facebook {
+  color: #fff;
+  background-color: #3b5998;
+  border-color: rgba(0, 0, 0, 0.2);
+}
+/* line 35, ../sass/_buttons.scss */
+.btn.btn-facebook:hover {
+  color: #fff;
+  background-color: #30487b;
+  border-color: rgba(0, 0, 0, 0.2);
+}
+/* line 41, ../sass/_buttons.scss */
+.btn.btn-social {
+  position: relative;
+  padding-left: 44px;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
-/* line 34, ../sass/_buttons.scss */
+/* line 55, ../sass/_buttons.scss */
 button.close {
-  color: white;
+  color: #999999;
+  position: absolute;
   opacity: 1;
   padding: 0;
   cursor: pointer;
   background: transparent;
   border: 0;
   -webkit-appearance: none;
-  float: right;
   font-size: 30px;
-  font-weight: bold;
   line-height: 1;
+  right: 10px;
+  top: 5px;
 }
-/* line 48, ../sass/_buttons.scss */
+/* line 68, ../sass/_buttons.scss */
 button.close:focus {
   outline: 0;
 }
 
-/* line 53, ../sass/_buttons.scss */
+/* line 73, ../sass/_buttons.scss */
 .input-group-addon {
   padding: 6px 12px;
   font-size: 14px;
@@ -60,7 +82,7 @@ button.close:focus {
   border-radius: 0px;
 }
 
-/* line 66, ../sass/_buttons.scss */
+/* line 86, ../sass/_buttons.scss */
 input[type="email"], input[type="password"] {
   border-radius: 5px;
   display: block;
@@ -72,12 +94,12 @@ input[type="email"], input[type="password"] {
   margin-bottom: 15px;
 }
 
-/* line 81, ../sass/_buttons.scss */
+/* line 101, ../sass/_buttons.scss */
 .btn-social {
   border-radius: 0px;
 }
 
-/* line 86, ../sass/_buttons.scss */
+/* line 106, ../sass/_buttons.scss */
 .btn-social :first-child {
   line-height: 50px;
 }
@@ -135,37 +157,42 @@ input[type="email"], input[type="password"] {
   background-color: #ffffff;
 }
 /* line 6, ../sass/_modal.scss */
+.modal-dialog h4 {
+  margin: 0px;
+  margin-bottom: 10px;
+}
+/* line 11, ../sass/_modal.scss */
 .modal-dialog span, .modal-dialog p {
   color: #999999;
 }
-/* line 10, ../sass/_modal.scss */
+/* line 15, ../sass/_modal.scss */
 .modal-dialog .modal-content {
   padding: 30px 30px 0 30px;
   background-color: #ffffff;
   border: 0px solid rgba(0, 0, 0, 0.2);
   box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
 }
-/* line 16, ../sass/_modal.scss */
+/* line 21, ../sass/_modal.scss */
 .modal-dialog .modal-content .form {
   background-color: #ffffff;
   border-radius: 5px;
 }
-/* line 20, ../sass/_modal.scss */
+/* line 25, ../sass/_modal.scss */
 .modal-dialog .modal-content .form p {
   text-align: center;
 }
-/* line 24, ../sass/_modal.scss */
+/* line 29, ../sass/_modal.scss */
 .modal-dialog .modal-content .form .input-group-addon {
   border-radius: 0px;
 }
-/* line 30, ../sass/_modal.scss */
+/* line 35, ../sass/_modal.scss */
 .modal-dialog .modal-content .modal-footer {
   margin-top: 0px;
   padding: 19px 20px 20px;
   text-align: center;
   border-top: 0px solid #e5e5e5;
 }
-/* line 38, ../sass/_modal.scss */
+/* line 43, ../sass/_modal.scss */
 .modal-dialog .modal-backdrop.in {
   opacity: .75;
   filter: alpha(opacity=75);
@@ -452,7 +479,7 @@ p, span {
 
 /* line 86, ../sass/main.scss */
 #splitter {
-  background: url('../images/bg-splitter1.jpg?1404387717');
+  background: url('../images/bg-splitter1.jpg?1404744601');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -478,7 +505,7 @@ p, span {
 
 /* line 108, ../sass/main.scss */
 #splitter2 {
-  background: url('../images/bg-splitter2.jpg?1404387186');
+  background: url('../images/bg-splitter2.jpg?1404744601');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -501,7 +528,7 @@ p, span {
 
 /* line 127, ../sass/main.scss */
 #splitter3 {
-  background: url('../images/bg-splitter3.jpg?1404387475');
+  background: url('../images/bg-splitter3.jpg?1404744601');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -547,7 +574,7 @@ p, span {
 
 /* line 166, ../sass/main.scss */
 #press {
-  background: url('../images/bg-testimonial.jpg?1404738167');
+  background: url('../images/bg-testimonial.jpg?1404744601');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

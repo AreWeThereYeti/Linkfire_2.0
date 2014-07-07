@@ -25,30 +25,28 @@
 
     <!--Signin/Signup modal-->
     <script type="text/ng-template" id="loginmodal.html">
+        <button type="button" class="close" ng-click="cancel($event)" aria-hidden="true">&times;</button>
         <div class="modal-body">
             <div class="row">
                 <div class="form" ng-show="show =='login'">
+                    <h4>Sign in</h4>
                     <form ng-submit="$parent.signin()" name="signin" novalidate>
                         <input type="email" ng-model="$parent.user.email" placeholder="Email" required/>
                         <input type="password" ng-model="$parent.user.password" ng-minlength="4" placeholder="Password" required/>
-                        <input ng-disabled="signin.$invalid" class="btn btn-primary btn-no-border btn-standard btn-block" type="submit"/>
+                        <input ng-disabled="signin.$invalid" class="btn btn-primary btn-block" type="submit"/>
                     </form>
                     <a class="btn btn-block btn-social btn-facebook" ng-click="facebookLogin()">
                         <i class="fa fa-facebook">f</i> Sign in with Facebook
                     </a>
-                    <p><a href="www.forgotpassword.dk">forgot password</a></p>
+                    <p><a href=" ">forgot password</a></p>
                     <p >New Here? <a ng-click="show = 'signup'">Create an account</a></p>
 
                 </div>
                 <div class="form" ng-show="show =='signup'">
                     <form ng-submit="$parent.signup()" novalidate name="signup">
-                        <input type="email" class="form-control" ng-model="$parent.user.email" placeholder="email" required/>
+                        <input type="email" ng-model="$parent.user.email" placeholder="email" required/>
                         <input type="password" placeholder="password" ng-model="$parent.user.password" id="pw1" name="pw1" ng-minlength="4" required/>
                         <input type="password" placeholder="Password again" ng-model="pw2"  id="pw2" name="pw2" pw-check="pw1" ng-minlength="4" required/>
-                        <div>
-                            <input type="checkbox"/>
-                            <span>forgot password</span>
-                        </div>
                         <div class="msg-block" ng-show="signup.$invalid">
                             <span class="msg-error" ng-show="signup.pw2.$error.pwmatch">
                                 Passwords don't match.
@@ -59,6 +57,9 @@
                         </div>
                         <input ng-disabled="signup.$invalid" class="btn btn-primary btn-no-border btn-standard btn-block" type="submit"/>
                     </form>
+                    <a class="btn btn-block btn-social btn-facebook" ng-click="facebookSignUp()">
+                        <i class="fa fa-facebook">f</i> Sign up with Facebook
+                    </a>
                 </div>
             </div>
         </div>
