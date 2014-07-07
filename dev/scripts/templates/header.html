@@ -27,33 +27,18 @@
     <script type="text/ng-template" id="loginmodal.html">
         <div class="modal-body">
             <div class="row">
-                   <a class="btn btn-block btn-social btn-facebook" ng-click="facebookLogin()">
-                       <i class="fa fa-facebook"></i> Sign in with Facebook
-                   </a>
-                <div class="text-center linecontainer">
-                    <span class="line">Or</span>
-                </div>
                 <div class="form" ng-show="show =='login'">
                     <form ng-submit="$parent.signin()" name="signin" novalidate>
-                        <div class="input-group input-group-lg borderleft">
-                            <span class="input-group-addon">
-                                <span class="glyphicon glyphicon-lock"></span>
-                            </span>
-                            <input type="email" ng-model="$parent.user.email" placeholder="Email" required/>
-                        </div>
-                        <div class="input-group input-group-lg">
-                            <span class="input-group-addon">
-                                <span class="glyphicon glyphicon-user"></span>
-                            </span>
-                            <input type="password" ng-model="$parent.user.password" ng-minlength="4" placeholder="Password" required/>
-                        </div>
-                        <div class="checkboxcontainer">
-                            <input ng-model="$parent.user.rememberme" type="checkbox"/>
-                            <span>Keep me logged in</span>
-                            <a class="pull-right" href="www.forgotpassword.dk"><span>forgot password</span></a>
-                        </div>
+                        <input type="email" ng-model="$parent.user.email" placeholder="Email" required/>
+                        <input type="password" ng-model="$parent.user.password" ng-minlength="4" placeholder="Password" required/>
                         <input ng-disabled="signin.$invalid" class="btn btn-primary btn-no-border btn-standard btn-block" type="submit"/>
                     </form>
+                    <a class="btn btn-block btn-social btn-facebook" ng-click="facebookLogin()">
+                        <i class="fa fa-facebook">f</i> Sign in with Facebook
+                    </a>
+                    <p><a href="www.forgotpassword.dk">forgot password</a></p>
+                    <p >New Here? <a ng-click="show = 'signup'">Create an account</a></p>
+
                 </div>
                 <div class="form" ng-show="show =='signup'">
                     <form ng-submit="$parent.signup()" novalidate name="signup">
@@ -76,9 +61,6 @@
                     </form>
                 </div>
             </div>
-        </div>
-        <div class="modal-footer">
-            <span ng-show="show == 'login'">New here? <a ng-click="show ='signup'">Create an account</a></span>
         </div>
     </script>
     <!--End of Signin/Signup modal-->

@@ -64,12 +64,14 @@ button.close{
 
 //input fields
 input[type="email"], input[type="password"]{
+  border-radius: 5px;
   display: block;
   width: 100%;
-  border: 0px solid black;
-  color: $font-color;
-  background-color: #e5e5e5;
+  border: 1px solid #dbdbdb;
+  color: $font-color-grey;
+  background-color: #ffffff;
   padding: 15px 5px;
+  margin-bottom: 15px;
 }
 
 a.btn{
@@ -80,6 +82,7 @@ a.btn{
   border-radius: 0px;
 }
 
+//Vertical align f in Facebook
 .btn-social :first-child{
-  line-height: 46px;
+  line-height: 50px;
 }
