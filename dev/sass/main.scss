@@ -54,6 +54,7 @@ p, span{
   .row{
     h4{
       margin-top: 0px;
+      text-transform:uppercase;
     }
   }
 }
@@ -263,15 +264,9 @@ p, span{
     font-size:40px;
     text-transform:uppercase;
     color:$deep-blue;
-    line-height:1.1em;
-    margin:0;
+    line-height:1.2em;
     padding:0;
-    font-weight:100;
-  }
-.info-box h1 .emph{
-    color:#000;
-    line-height:1.1em;
-    font-weight:500;
+    font-weight:700;
   }
 .info-box p{
   color:$dark-grey;
@@ -298,7 +293,6 @@ p, span{
   transition:         all 0.5s ease;
 
 }
-
 
 .feat{
   background-color:$light-grey;
