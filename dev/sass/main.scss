@@ -213,16 +213,13 @@ p, span{
     line-height:1.1em;
     margin:0;
     padding:0;
-    font-weight:100;
-  }
-.jumbotron .emph{
     font-weight:500;
-  }
+}
 
-  .jumbotron p{
-    color: $font-color;
-    font-size:30px;
-  }
+.jumbotron p{
+  color: $font-color;
+  font-size:30px;
+}
 
 
 
