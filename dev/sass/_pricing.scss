@@ -11,6 +11,11 @@
     .price {
       font-size: 3em;
     }
+    
+    .small{
+      font-size: 2em;
+    }
+    
     .price span{
       color:$font-color-grey;
       font-size:14px;
@@ -52,6 +57,20 @@
         color: $font-color-grey;
         border-color: #d8d8da;
       }
+      .list-group-item{
+        background-color: $pricing-light-grey;
+        color: $font-color-grey;
+        border-color: #d8d8da;
+      }
+      .large .list-group-item{
+        padding: 13px 15px;
+      }
+
+      .list-group-item .btn{
+        width:95%;
+      }
+
+      
     }
 
     .panel:hover {
@@ -69,4 +88,11 @@
 }
 .unavailable  {
   opacity:0.3;
+}
+
+.plan-small {
+  margin-top:20px;
+}
+small {
+  font-size:2em;
 }
