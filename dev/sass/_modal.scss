@@ -4,6 +4,12 @@
   background-color: #ffffff;
   border-radius: 8px;
 
+
+  p, a{
+    text-align: center;
+    color: $font-color-grey;
+  }
+
   h4{
     margin: 0px;
     margin-bottom: 10px;
@@ -19,10 +25,6 @@
       background-color: #ffffff;
       border-radius: 5px;
 
-      p, a{
-        text-align: center;
-        color: $font-color-grey;
-      }
 
       a{
         text-decoration: underline;

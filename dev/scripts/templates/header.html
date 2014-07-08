@@ -30,10 +30,10 @@
             <div class="row">
                 <div class="form" ng-show="show =='login'">
                     <h4>Sign in</h4>
-                    <form ng-submit="$parent.signin()" name="signin" novalidate>
+                    <form  name="signin" novalidate>
                         <input type="email" ng-model="$parent.user.email" placeholder="Email" required/>
                         <input type="password" ng-model="$parent.user.password" ng-minlength="4" placeholder="Password" required/>
-                        <button ng-disabled="signin.$invalid" class="btn btn-primary btn-block btn-icon">
+                        <button ng-click="$parent.signin()" ng-disabled="signin.$invalid" class="btn btn-primary btn-block btn-icon">
                             <span>Sign in</span>
                             <i class="icon-play3"></i>
                         </button>
@@ -46,7 +46,7 @@
                     <p >New Here? <a ng-click="show = 'signup'">Create an account</a></p>
                 </div>
                 <div class="form" ng-show="show =='signup'">
-                    <form ng-submit="$parent.signup()" novalidate name="signup">
+                    <form novalidate name="signup">
                         <input type="email" ng-model="$parent.user.email" placeholder="email" required/>
                         <input type="password" placeholder="password" ng-model="$parent.user.password" id="pw1" name="pw1" ng-minlength="4" required/>
                         <input type="password" placeholder="Password again" ng-model="pw2"  id="pw2" name="pw2" pw-check="pw1" ng-minlength="4" required/>
@@ -58,11 +58,18 @@
                                 Your email is required.
                             </span>
                         </div>
-                        <input ng-disabled="signup.$invalid" class="btn btn-primary btn-no-border btn-standard btn-block" type="submit"/>
+
+                        <button ng-click="$parent.signup()" ng-disabled="signup.$invalid" class="btn btn-primary btn-block btn-icon">
+                            <span>Sign up</span>
+                            <i class="icon-play3"></i>
+                        </button>
                     </form>
-                    <a class="btn btn-block btn-social btn-facebook" ng-click="facebookSignUp()">
-                        <i class="fa fa-facebook">f</i> Sign up with Facebook
-                    </a>
+                    <button ng-click="facebookSignUp()" class="btn btn-block btn-social btn-facebook btn-icon">
+                        <span>Sign up with Facebook</span>
+                        <i class="icon-play3"></i>
+                    </button>
+                    <p>By creating an account with linkfire, you agree that you have read, understood, and accepted our <a>Terms of use.</a></p>
+                    <p>Go back to <a ng-click="show = 'login'">Sign in</a></p>
                 </div>
             </div>
         </div>
