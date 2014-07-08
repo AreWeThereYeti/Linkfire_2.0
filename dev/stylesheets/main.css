@@ -249,7 +249,7 @@ footer .row img {
   margin-left: 15px;
   display: block;
   vertical-align: middle;
-  background: url('../images/linkfire_logo_w_text.svg?1402585395');
+  background: url('../images/linkfire_logo_w_text.svg?1404204053');
   -webkit-background-size: contain;
   -moz-background-size: contain;
   -o-background-size: contain;
@@ -341,23 +341,27 @@ a {
 #pricing .row .price {
   font-size: 3em;
 }
-/* line 14, ../sass/_pricing.scss */
+/* line 15, ../sass/_pricing.scss */
+#pricing .row .small {
+  font-size: 2em;
+}
+/* line 19, ../sass/_pricing.scss */
 #pricing .row .price span {
   color: #999999;
   font-size: 14px;
   text-transform: none;
 }
-/* line 20, ../sass/_pricing.scss */
+/* line 25, ../sass/_pricing.scss */
 #pricing .row .price-cents {
   vertical-align: super;
   font-size: 50%;
 }
-/* line 26, ../sass/_pricing.scss */
+/* line 31, ../sass/_pricing.scss */
 #pricing .row .price-month {
   font-size: 35%;
   font-style: italic;
 }
-/* line 31, ../sass/_pricing.scss */
+/* line 36, ../sass/_pricing.scss */
 #pricing .row .panel {
   background-color: #f0f1f3;
   -webkit-transition-property: scale;
@@ -365,11 +369,11 @@ a {
   -webkit-transition-timing-function: ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
 }
-/* line 38, ../sass/_pricing.scss */
+/* line 43, ../sass/_pricing.scss */
 #pricing .row .panel .panel-heading {
   background-color: #22272f;
 }
-/* line 40, ../sass/_pricing.scss */
+/* line 45, ../sass/_pricing.scss */
 #pricing .row .panel .panel-heading h3 {
   text-transform: uppercase;
   color: #fff;
@@ -378,13 +382,27 @@ a {
   margin: 0;
   padding: 0;
 }
-/* line 50, ../sass/_pricing.scss */
+/* line 55, ../sass/_pricing.scss */
 #pricing .row .panel .list-group-item {
   background-color: #f0f1f3;
   color: #999999;
   border-color: #d8d8da;
 }
-/* line 57, ../sass/_pricing.scss */
+/* line 60, ../sass/_pricing.scss */
+#pricing .row .panel .list-group-item {
+  background-color: #f0f1f3;
+  color: #999999;
+  border-color: #d8d8da;
+}
+/* line 65, ../sass/_pricing.scss */
+#pricing .row .panel .large .list-group-item {
+  padding: 13px 15px;
+}
+/* line 69, ../sass/_pricing.scss */
+#pricing .row .panel .list-group-item .btn {
+  width: 95%;
+}
+/* line 76, ../sass/_pricing.scss */
 #pricing .row .panel:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -392,14 +410,24 @@ a {
   -webkit-transform: scale(1.01);
   -moz-transform: scale(1.01);
 }
-/* line 66, ../sass/_pricing.scss */
+/* line 85, ../sass/_pricing.scss */
 #pricing p {
   text-align: center;
 }
 
-/* line 70, ../sass/_pricing.scss */
+/* line 89, ../sass/_pricing.scss */
 .unavailable {
   opacity: 0.3;
+}
+
+/* line 93, ../sass/_pricing.scss */
+.plan-small {
+  margin-top: 20px;
+}
+
+/* line 96, ../sass/_pricing.scss */
+small {
+  font-size: 2em;
 }
 
 /* line 3, ../sass/main.scss */
@@ -436,7 +464,7 @@ p, span {
 
 /* line 35, ../sass/main.scss */
 #landing {
-  background: url('../images/bg1.jpg?1404375649');
+  background: url('../images/bg1.jpg?1404211141');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -451,7 +479,7 @@ p, span {
 
 /* line 45, ../sass/main.scss */
 #features {
-  background: url('../images/bg-section2.jpg?1404375649');
+  background: url('../images/bg-section2.jpg?1404224136');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -475,7 +503,7 @@ p, span {
 
 /* line 66, ../sass/main.scss */
 #target {
-  background: url('../images/bg-target.jpg?1404375649');
+  background: url('../images/bg-target.jpg?1404305291');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -495,7 +523,7 @@ p, span {
 
 /* line 83, ../sass/main.scss */
 #splitter {
-  background: url('../images/bg-splitter1.jpg?1404810516');
+  background: url('../images/bg-splitter1.jpg?1404805281');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -521,7 +549,7 @@ p, span {
 
 /* line 104, ../sass/main.scss */
 #splitter2 {
-  background: url('../images/bg-splitter2.jpg?1404810516');
+  background: url('../images/bg-splitter2.jpg?1404805281');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -547,7 +575,7 @@ p, span {
 
 /* line 126, ../sass/main.scss */
 #splitter3 {
-  background: url('../images/bg-splitter3.jpg?1404810516');
+  background: url('../images/bg-splitter3.jpg?1404805281');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -582,7 +610,7 @@ p, span {
 
 /* line 155, ../sass/main.scss */
 #insights {
-  background: url('../images/bg-insights.jpg?1404375649');
+  background: url('../images/bg-insights.jpg?1404306238');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -602,7 +630,7 @@ p, span {
 
 /* line 172, ../sass/main.scss */
 #press {
-  background: url('../images/bg-testimonial.jpg?1404810516');
+  background: url('../images/bg-testimonial.jpg?1404805281');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -829,6 +857,14 @@ div.right:before {
 }
 
 /* line 403, ../sass/main.scss */
+#pricing h4 {
+  text-transform: uppercase;
+  color: #22272f;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+/* line 410, ../sass/main.scss */
 #pricing p {
   font-size: 18px;
   font-weight: 300;
@@ -836,7 +872,7 @@ div.right:before {
   margin-bottom: 50px;
 }
 
-/* line 420, ../sass/main.scss */
+/* line 427, ../sass/main.scss */
 .landingfooter {
   width: 100%;
   color: whitesmoke;
@@ -844,60 +880,37 @@ div.right:before {
 }
 
 /* Custom page footer */
-/* line 428, ../sass/main.scss */
+/* line 435, ../sass/main.scss */
 .footer {
   padding: 10px;
   color: whitesmoke;
 }
 
-/* line 433, ../sass/main.scss */
+/* line 440, ../sass/main.scss */
 .container-narrow > hr {
   margin: 30px 0;
 }
 
-<<<<<<< HEAD
-/* Supporting marketing content */
-/* line 464, ../sass/main.scss */
-=======
-/* Main marketing message and sign up button */
-/* line 442, ../sass/main.scss */
-.jumbotron .btn {
-  padding: 13px 29px 16px 29px;
-}
-
 /* Supporting marketing content */
 /* line 447, ../sass/main.scss */
->>>>>>> 368e072d34d2bb15447ef4203dd72c2913df9d7b
 .marketing {
   margin: 40px 0;
 }
 
-<<<<<<< HEAD
-/* line 468, ../sass/main.scss */
-=======
 /* line 451, ../sass/main.scss */
->>>>>>> 368e072d34d2bb15447ef4203dd72c2913df9d7b
 .marketing p + h4 {
   margin-top: 28px;
 }
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
-<<<<<<< HEAD
-  /* line 474, ../sass/main.scss */
-=======
   /* line 457, ../sass/main.scss */
->>>>>>> 368e072d34d2bb15447ef4203dd72c2913df9d7b
   .container {
     max-width: 730px;
   }
 
   /* Remove the padding we set earlier */
-<<<<<<< HEAD
-  /* line 484, ../sass/main.scss */
-=======
   /* line 467, ../sass/main.scss */
->>>>>>> 368e072d34d2bb15447ef4203dd72c2913df9d7b
   .marketing,
   .footer {
     padding-left: 0;
@@ -906,11 +919,7 @@ div.right:before {
 
   /* Space out the masthead */
   /* Remove the bottom border on the jumbotron for visual effect */
-<<<<<<< HEAD
-  /* line 493, ../sass/main.scss */
-=======
   /* line 476, ../sass/main.scss */
->>>>>>> 368e072d34d2bb15447ef4203dd72c2913df9d7b
   .jumbotron {
     border-bottom: 0;
   }
