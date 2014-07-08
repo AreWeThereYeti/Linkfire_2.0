@@ -168,6 +168,7 @@ input[type="email"], input[type="password"] {
   width: 380px;
   background-color: #ffffff;
   border-radius: 8px;
+  margin: 10% auto;
 }
 /* line 8, ../sass/_modal.scss */
 .modal-dialog p, .modal-dialog a {
@@ -302,7 +303,7 @@ html, body {
 }
 
 /* line 8, ../sass/_resets.scss */
-input {
+input, button {
   outline: 0;
 }
 
@@ -855,49 +856,26 @@ div.right:before {
   margin: 30px 0;
 }
 
-<<<<<<< HEAD
 /* Supporting marketing content */
-/* line 464, ../sass/main.scss */
-=======
-/* Main marketing message and sign up button */
-/* line 442, ../sass/main.scss */
-.jumbotron .btn {
-  padding: 13px 29px 16px 29px;
-}
-
-/* Supporting marketing content */
-/* line 447, ../sass/main.scss */
->>>>>>> 368e072d34d2bb15447ef4203dd72c2913df9d7b
+/* line 440, ../sass/main.scss */
 .marketing {
   margin: 40px 0;
 }
 
-<<<<<<< HEAD
-/* line 468, ../sass/main.scss */
-=======
-/* line 451, ../sass/main.scss */
->>>>>>> 368e072d34d2bb15447ef4203dd72c2913df9d7b
+/* line 444, ../sass/main.scss */
 .marketing p + h4 {
   margin-top: 28px;
 }
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
-<<<<<<< HEAD
-  /* line 474, ../sass/main.scss */
-=======
-  /* line 457, ../sass/main.scss */
->>>>>>> 368e072d34d2bb15447ef4203dd72c2913df9d7b
+  /* line 450, ../sass/main.scss */
   .container {
     max-width: 730px;
   }
 
   /* Remove the padding we set earlier */
-<<<<<<< HEAD
-  /* line 484, ../sass/main.scss */
-=======
-  /* line 467, ../sass/main.scss */
->>>>>>> 368e072d34d2bb15447ef4203dd72c2913df9d7b
+  /* line 460, ../sass/main.scss */
   .marketing,
   .footer {
     padding-left: 0;
@@ -906,11 +884,7 @@ div.right:before {
 
   /* Space out the masthead */
   /* Remove the bottom border on the jumbotron for visual effect */
-<<<<<<< HEAD
-  /* line 493, ../sass/main.scss */
-=======
-  /* line 476, ../sass/main.scss */
->>>>>>> 368e072d34d2bb15447ef4203dd72c2913df9d7b
+  /* line 469, ../sass/main.scss */
   .jumbotron {
     border-bottom: 0;
   }
