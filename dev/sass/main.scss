@@ -241,7 +241,7 @@ p, span{
 // Jumbotron used to style the greeting message //
 
 .jumbotron{
-  margin:250px 0 200px 0;
+  margin:25% 0 25% 0;
   padding:0;
   background-color:transparent;
   vertical-align:middle;
@@ -323,23 +323,17 @@ div.feat:before {
   left:-20px;
   border: 10px solid transparent;
   border-right-color: $light-grey;
-  -webkit-transition: border-right-color 0.5s ease;
-  -moz-transition:    border-right-color 0.5s ease;
-  -o-transition:      border-right-color 0.5s ease;
-  transition:         border-right-color 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition:    all 0.5s ease;
+  -o-transition:      all 0.5s ease;
+  transition:         all 0.5s ease;
 
 }
 
-div.right:before{
-  border-left-color: $light-grey;
-  border-right-color: transparent;
-  right:-20px;
-  left: initial;
-  -webkit-transition: border 0.5s ease;
-  -moz-transition:    border 0.5s ease;
-  -o-transition:      border 0.5s ease;
-  transition:         border 0.5s ease;
-}
+
+
+
+
 
 
 
@@ -386,34 +380,7 @@ div.right:before{
     }
 
 
-#pricing h1{
-  text-transform:uppercase;
-  color:$deep-blue;
-  font-size:34px;
-  font-weight:700;
 
-}
-#pricing h3{
-  text-transform:uppercase;
-  color:$deep-blue;
-  font-size:22px;
-  font-weight:700;
-
-}
-#pricing h4{
-  text-transform:uppercase;
-  color:$deep-blue;
-  font-size:22px;
-  font-weight:700;
-
-}
-#pricing p{
-  
-  font-size:18px;
-  font-weight:300;
-  color:$dark-grey;
-  margin-bottom:50px;
-}
 
 // left-overs from before. //
 

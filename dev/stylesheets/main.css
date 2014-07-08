@@ -269,7 +269,7 @@ footer .row img {
   background-color: transparent;
   color: #fff;
   border-radius: 0px;
-  padding: 20px 0px;
+  padding: 20px 0px 5px 0px;
   margin: 0 15px;
 }
 /* line 42, ../sass/_header.scss */
@@ -428,6 +428,47 @@ a {
 /* line 96, ../sass/_pricing.scss */
 small {
   font-size: 2em;
+}
+
+/* line 101, ../sass/_pricing.scss */
+#pricing h1 {
+  text-transform: uppercase;
+  color: #22272f;
+  font-size: 34px;
+  font-weight: 700;
+}
+
+/* line 108, ../sass/_pricing.scss */
+#pricing h3 {
+  text-transform: uppercase;
+  color: #22272f;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+/* line 115, ../sass/_pricing.scss */
+#pricing h4 {
+  text-transform: uppercase;
+  color: #22272f;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+/* line 122, ../sass/_pricing.scss */
+#pricing p {
+  font-size: 18px;
+  font-weight: 300;
+  color: #acacad;
+  margin-bottom: 50px;
+}
+
+/* line 129, ../sass/_pricing.scss */
+#pricing p.addition {
+  font-size: 16px;
+  font-weight: 300;
+  color: #acacad;
+  margin-bottom: 50px;
+  margin-top: 30px;
 }
 
 /* line 3, ../sass/main.scss */
@@ -700,7 +741,7 @@ p, span {
 
 /* line 243, ../sass/main.scss */
 .jumbotron {
-  margin: 250px 0 200px 0;
+  margin: 25% 0 25% 0;
   padding: 0;
   background-color: transparent;
   vertical-align: middle;
@@ -775,25 +816,13 @@ div.feat:before {
   left: -20px;
   border: 10px solid transparent;
   border-right-color: #dddfe1;
-  -webkit-transition: border-right-color 0.5s ease;
-  -moz-transition: border-right-color 0.5s ease;
-  -o-transition: border-right-color 0.5s ease;
-  transition: border-right-color 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
-/* line 333, ../sass/main.scss */
-div.right:before {
-  border-left-color: #dddfe1;
-  border-right-color: transparent;
-  right: -20px;
-  left: initial;
-  -webkit-transition: border 0.5s ease;
-  -moz-transition: border 0.5s ease;
-  -o-transition: border 0.5s ease;
-  transition: border 0.5s ease;
-}
-
-/* line 346, ../sass/main.scss */
+/* line 340, ../sass/main.scss */
 .shufflebox .circ {
   position: relative;
   top: 50%;
@@ -805,19 +834,19 @@ div.right:before {
   float: left;
   border-radius: 25px;
 }
-/* line 357, ../sass/main.scss */
+/* line 351, ../sass/main.scss */
 .shufflebox .circ [class^="icon-"] {
   line-height: 50px;
   font-size: 140%;
 }
 
-/* line 363, ../sass/main.scss */
+/* line 357, ../sass/main.scss */
 .shufflebox .content {
   padding: 0 20px 0 20px;
   margin: 0;
 }
 
-/* line 368, ../sass/main.scss */
+/* line 362, ../sass/main.scss */
 .shufflebox h2 {
   color: #22272f;
   text-transform: uppercase;
@@ -827,52 +856,20 @@ div.right:before {
   margin: 0;
 }
 
-/* line 377, ../sass/main.scss */
+/* line 371, ../sass/main.scss */
 .shufflebox p {
   padding: 0;
   margin: 0;
   color: #acacad;
 }
 
-/* line 383, ../sass/main.scss */
+/* line 377, ../sass/main.scss */
 .shufflebox h4 {
   margin-top: 0px;
   text-transform: uppercase;
 }
 
-/* line 389, ../sass/main.scss */
-#pricing h1 {
-  text-transform: uppercase;
-  color: #22272f;
-  font-size: 34px;
-  font-weight: 700;
-}
-
-/* line 396, ../sass/main.scss */
-#pricing h3 {
-  text-transform: uppercase;
-  color: #22272f;
-  font-size: 22px;
-  font-weight: 700;
-}
-
-/* line 403, ../sass/main.scss */
-#pricing h4 {
-  text-transform: uppercase;
-  color: #22272f;
-  font-size: 22px;
-  font-weight: 700;
-}
-
-/* line 410, ../sass/main.scss */
-#pricing p {
-  font-size: 18px;
-  font-weight: 300;
-  color: #acacad;
-  margin-bottom: 50px;
-}
-
-/* line 427, ../sass/main.scss */
+/* line 394, ../sass/main.scss */
 .landingfooter {
   width: 100%;
   color: whitesmoke;
@@ -880,37 +877,37 @@ div.right:before {
 }
 
 /* Custom page footer */
-/* line 435, ../sass/main.scss */
+/* line 402, ../sass/main.scss */
 .footer {
   padding: 10px;
   color: whitesmoke;
 }
 
-/* line 440, ../sass/main.scss */
+/* line 407, ../sass/main.scss */
 .container-narrow > hr {
   margin: 30px 0;
 }
 
 /* Supporting marketing content */
-/* line 447, ../sass/main.scss */
+/* line 414, ../sass/main.scss */
 .marketing {
   margin: 40px 0;
 }
 
-/* line 451, ../sass/main.scss */
+/* line 418, ../sass/main.scss */
 .marketing p + h4 {
   margin-top: 28px;
 }
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
-  /* line 457, ../sass/main.scss */
+  /* line 424, ../sass/main.scss */
   .container {
     max-width: 730px;
   }
 
   /* Remove the padding we set earlier */
-  /* line 467, ../sass/main.scss */
+  /* line 434, ../sass/main.scss */
   .marketing,
   .footer {
     padding-left: 0;
@@ -919,7 +916,7 @@ div.right:before {
 
   /* Space out the masthead */
   /* Remove the bottom border on the jumbotron for visual effect */
-  /* line 476, ../sass/main.scss */
+  /* line 443, ../sass/main.scss */
   .jumbotron {
     border-bottom: 0;
   }
