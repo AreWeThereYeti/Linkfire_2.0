@@ -6,8 +6,16 @@
   color: $font-color;
   padding: 14px 44px;
 
+  span{
+    color: #ffffff;
+  }
+
   &.btn-primary{
     background-color: $primary-color;
+
+    i[class^="icon-"] {
+      background-color: #e82b22;
+    }
   }
 
   &.btn-primary:hover {
@@ -16,6 +24,14 @@
 
   &.btn-green{
     background-color: $green-button;
+  }
+
+  &.btn-block{
+    span{
+      text-align: left;
+      display: inline-block;
+      width: 75%;
+    }
   }
 
   &.btn-no-border{
@@ -28,8 +44,12 @@
 
   &.btn-facebook{
     color: #fff;
-    background-color: #3b5998;
+    background-color: #3d60a0;
     border-color: rgba(0,0,0,0.2);
+
+    i[class^="icon-"] {
+      background-color: #345288;
+    }
   }
 
   &.btn-facebook:hover{
@@ -39,12 +59,19 @@
   }
 
   &.btn-social{
-    position: relative;
-    padding-left: 44px;
-    text-align: left;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+
+  }
+
+  &.btn-icon{
+    padding: 14px 0px 14px 20px;
+
+  }
+
+  i[class^="icon-"]{
+    padding: 20px;
+    padding: 20px;
+    margin: 0px;
+    margin-left: 20px;
   }
 }
 
@@ -92,17 +119,4 @@ input[type="email"], input[type="password"]{
   background-color: #ffffff;
   padding: 15px 5px;
   margin-bottom: 15px;
-}
-
-a.btn{
-
-}
-
-.btn-social{
-  border-radius: 0px;
-}
-
-//Vertical align f in Facebook
-.btn-social :first-child{
-  line-height: 50px;
 }
