@@ -168,6 +168,7 @@ input[type="email"], input[type="password"] {
   width: 380px;
   background-color: #ffffff;
   border-radius: 8px;
+  margin: 10% auto;
 }
 /* line 8, ../sass/_modal.scss */
 .modal-dialog p, .modal-dialog a {
@@ -195,18 +196,19 @@ input[type="email"], input[type="password"] {
 .modal-dialog .modal-content .form a {
   text-decoration: underline;
 }
-/* line 33, ../sass/_modal.scss */
-.modal-dialog .modal-content .form .input-group-addon {
-  border-radius: 0px;
+/* line 34, ../sass/_modal.scss */
+.modal-dialog .modal-content .form input.ng-invalid.ng-dirty {
+  color: #fc3429;
+  border: 1px solid #fc3429;
 }
-/* line 39, ../sass/_modal.scss */
+/* line 41, ../sass/_modal.scss */
 .modal-dialog .modal-content .modal-footer {
   margin-top: 0px;
   padding: 19px 20px 20px;
   text-align: center;
   border-top: 0px solid #e5e5e5;
 }
-/* line 47, ../sass/_modal.scss */
+/* line 49, ../sass/_modal.scss */
 .modal-dialog .modal-backdrop.in {
   opacity: .75;
   filter: alpha(opacity=75);
@@ -249,7 +251,7 @@ footer .row img {
   margin-left: 15px;
   display: block;
   vertical-align: middle;
-  background: url('../images/linkfire_logo_w_text.svg?1404204053');
+  background: url('../images/linkfire_logo_w_text.svg?1402585395');
   -webkit-background-size: contain;
   -moz-background-size: contain;
   -o-background-size: contain;
@@ -302,7 +304,7 @@ html, body {
 }
 
 /* line 8, ../sass/_resets.scss */
-input {
+input, button {
   outline: 0;
 }
 
@@ -505,7 +507,7 @@ p, span {
 
 /* line 35, ../sass/main.scss */
 #landing {
-  background: url('../images/bg1.jpg?1404211141');
+  background: url('../images/bg1.jpg?1404375649');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -520,7 +522,7 @@ p, span {
 
 /* line 45, ../sass/main.scss */
 #features {
-  background: url('../images/bg-section2.jpg?1404224136');
+  background: url('../images/bg-section2.jpg?1404375649');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -544,7 +546,7 @@ p, span {
 
 /* line 66, ../sass/main.scss */
 #target {
-  background: url('../images/bg-target.jpg?1404305291');
+  background: url('../images/bg-target.jpg?1404375649');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -564,7 +566,7 @@ p, span {
 
 /* line 83, ../sass/main.scss */
 #splitter {
-  background: url('../images/bg-splitter1.jpg?1404805281');
+  background: url('../images/bg-splitter1.jpg?1404810516');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -590,7 +592,7 @@ p, span {
 
 /* line 104, ../sass/main.scss */
 #splitter2 {
-  background: url('../images/bg-splitter2.jpg?1404805281');
+  background: url('../images/bg-splitter2.jpg?1404810516');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -616,7 +618,7 @@ p, span {
 
 /* line 126, ../sass/main.scss */
 #splitter3 {
-  background: url('../images/bg-splitter3.jpg?1404805281');
+  background: url('../images/bg-splitter3.jpg?1404810516');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -651,7 +653,7 @@ p, span {
 
 /* line 155, ../sass/main.scss */
 #insights {
-  background: url('../images/bg-insights.jpg?1404306238');
+  background: url('../images/bg-insights.jpg?1404375649');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -671,7 +673,7 @@ p, span {
 
 /* line 172, ../sass/main.scss */
 #press {
-  background: url('../images/bg-testimonial.jpg?1404805281');
+  background: url('../images/bg-testimonial.jpg?1404810516');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
