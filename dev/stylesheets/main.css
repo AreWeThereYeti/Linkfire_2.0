@@ -343,23 +343,27 @@ a {
 #pricing .row .price {
   font-size: 3em;
 }
-/* line 14, ../sass/_pricing.scss */
+/* line 15, ../sass/_pricing.scss */
+#pricing .row .small {
+  font-size: 2em;
+}
+/* line 19, ../sass/_pricing.scss */
 #pricing .row .price span {
   color: #999999;
   font-size: 14px;
   text-transform: none;
 }
-/* line 20, ../sass/_pricing.scss */
+/* line 25, ../sass/_pricing.scss */
 #pricing .row .price-cents {
   vertical-align: super;
   font-size: 50%;
 }
-/* line 26, ../sass/_pricing.scss */
+/* line 31, ../sass/_pricing.scss */
 #pricing .row .price-month {
   font-size: 35%;
   font-style: italic;
 }
-/* line 31, ../sass/_pricing.scss */
+/* line 36, ../sass/_pricing.scss */
 #pricing .row .panel {
   background-color: #f0f1f3;
   -webkit-transition-property: scale;
@@ -367,11 +371,11 @@ a {
   -webkit-transition-timing-function: ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
 }
-/* line 38, ../sass/_pricing.scss */
+/* line 43, ../sass/_pricing.scss */
 #pricing .row .panel .panel-heading {
   background-color: #22272f;
 }
-/* line 40, ../sass/_pricing.scss */
+/* line 45, ../sass/_pricing.scss */
 #pricing .row .panel .panel-heading h3 {
   text-transform: uppercase;
   color: #fff;
@@ -380,13 +384,27 @@ a {
   margin: 0;
   padding: 0;
 }
-/* line 50, ../sass/_pricing.scss */
+/* line 55, ../sass/_pricing.scss */
 #pricing .row .panel .list-group-item {
   background-color: #f0f1f3;
   color: #999999;
   border-color: #d8d8da;
 }
-/* line 57, ../sass/_pricing.scss */
+/* line 60, ../sass/_pricing.scss */
+#pricing .row .panel .list-group-item {
+  background-color: #f0f1f3;
+  color: #999999;
+  border-color: #d8d8da;
+}
+/* line 65, ../sass/_pricing.scss */
+#pricing .row .panel .large .list-group-item {
+  padding: 13px 15px;
+}
+/* line 69, ../sass/_pricing.scss */
+#pricing .row .panel .list-group-item .btn {
+  width: 95%;
+}
+/* line 76, ../sass/_pricing.scss */
 #pricing .row .panel:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -394,14 +412,24 @@ a {
   -webkit-transform: scale(1.01);
   -moz-transform: scale(1.01);
 }
-/* line 66, ../sass/_pricing.scss */
+/* line 85, ../sass/_pricing.scss */
 #pricing p {
   text-align: center;
 }
 
-/* line 70, ../sass/_pricing.scss */
+/* line 89, ../sass/_pricing.scss */
 .unavailable {
   opacity: 0.3;
+}
+
+/* line 93, ../sass/_pricing.scss */
+.plan-small {
+  margin-top: 20px;
+}
+
+/* line 96, ../sass/_pricing.scss */
+small {
+  font-size: 2em;
 }
 
 /* line 3, ../sass/main.scss */
@@ -831,6 +859,14 @@ div.right:before {
 }
 
 /* line 403, ../sass/main.scss */
+#pricing h4 {
+  text-transform: uppercase;
+  color: #22272f;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+/* line 410, ../sass/main.scss */
 #pricing p {
   font-size: 18px;
   font-weight: 300;
@@ -838,7 +874,7 @@ div.right:before {
   margin-bottom: 50px;
 }
 
-/* line 420, ../sass/main.scss */
+/* line 427, ../sass/main.scss */
 .landingfooter {
   width: 100%;
   color: whitesmoke;
@@ -846,37 +882,37 @@ div.right:before {
 }
 
 /* Custom page footer */
-/* line 428, ../sass/main.scss */
+/* line 435, ../sass/main.scss */
 .footer {
   padding: 10px;
   color: whitesmoke;
 }
 
-/* line 433, ../sass/main.scss */
+/* line 440, ../sass/main.scss */
 .container-narrow > hr {
   margin: 30px 0;
 }
 
 /* Supporting marketing content */
-/* line 440, ../sass/main.scss */
+/* line 447, ../sass/main.scss */
 .marketing {
   margin: 40px 0;
 }
 
-/* line 444, ../sass/main.scss */
+/* line 451, ../sass/main.scss */
 .marketing p + h4 {
   margin-top: 28px;
 }
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
-  /* line 450, ../sass/main.scss */
+  /* line 457, ../sass/main.scss */
   .container {
     max-width: 730px;
   }
 
   /* Remove the padding we set earlier */
-  /* line 460, ../sass/main.scss */
+  /* line 467, ../sass/main.scss */
   .marketing,
   .footer {
     padding-left: 0;
@@ -885,7 +921,7 @@ div.right:before {
 
   /* Space out the masthead */
   /* Remove the bottom border on the jumbotron for visual effect */
-  /* line 469, ../sass/main.scss */
+  /* line 476, ../sass/main.scss */
   .jumbotron {
     border-bottom: 0;
   }
