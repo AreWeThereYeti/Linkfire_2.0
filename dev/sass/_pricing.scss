@@ -11,6 +11,11 @@
     .price {
       font-size: 3em;
     }
+    .price span{
+      color:$font-color-grey;
+      font-size:14px;
+      text-transform:none;
+    }
 
     .price-cents {
       vertical-align: super;
@@ -61,4 +66,7 @@
   p{
     text-align: center;
   }
+}
+.unavailable  {
+  opacity:0.3;
 }
