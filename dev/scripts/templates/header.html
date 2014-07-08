@@ -23,17 +23,17 @@
         </ul>
     </div>
 
-    <!--Signin/Signup modal-->
+    <!--signinform/Signup modal-->
     <script type="text/ng-template" id="loginmodal.html">
         <button type="button" class="close" ng-click="cancel($event)" aria-hidden="true">&times;</button>
         <div class="modal-body">
             <div class="row">
                 <div class="form" ng-show="show =='login'">
                     <h4>Sign in</h4>
-                    <form  name="signin" novalidate>
-                        <input type="email" ng-model="$parent.user.email" placeholder="Email" required/>
-                        <input type="password" ng-model="$parent.user.password" ng-minlength="4" placeholder="Password" required/>
-                        <button ng-click="$parent.signin()" ng-disabled="signin.$invalid" class="btn btn-primary btn-block btn-icon">
+                    <form autocomplete="off" name="signinform" novalidate>
+                        <input type="email" name="email" ng-class="{ 'has-error': userForm.email.$invalid && userForm.email.$dirty }" ng-model="$parent.user.email" placeholder="Email" autocomplete="off" required/>
+                        <input type="password" name="password" ng-class="{ 'has-error': userForm.email.$invalid && userForm.email.$dirty }" ng-model="$parent.user.password" ng-minlength="4" placeholder="Password" autocomplete="off" required/>
+                        <button ng-click="$parent.signinform()" ng-disabled="signinform.$invalid" class="btn btn-primary btn-block btn-icon">
                             <span>Sign in</span>
                             <i class="icon-play3"></i>
                         </button>
@@ -50,15 +50,6 @@
                         <input type="email" ng-model="$parent.user.email" placeholder="email" required/>
                         <input type="password" placeholder="password" ng-model="$parent.user.password" id="pw1" name="pw1" ng-minlength="4" required/>
                         <input type="password" placeholder="Password again" ng-model="pw2"  id="pw2" name="pw2" pw-check="pw1" ng-minlength="4" required/>
-                        <div class="msg-block" ng-show="signup.$invalid">
-                            <span class="msg-error" ng-show="signup.pw2.$error.pwmatch">
-                                Passwords don't match.
-                            </span>
-                            <span  class="msg-error" ng-show="signup.email.$invalid && !signup.email.$pristine">>
-                                Your email is required.
-                            </span>
-                        </div>
-
                         <button ng-click="$parent.signup()" ng-disabled="signup.$invalid" class="btn btn-primary btn-block btn-icon">
                             <span>Sign up</span>
                             <i class="icon-play3"></i>
@@ -74,5 +65,5 @@
             </div>
         </div>
     </script>
-    <!--End of Signin/Signup modal-->
+    <!--End of signinform/Signup modal-->
 </div>

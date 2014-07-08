@@ -196,18 +196,19 @@ input[type="email"], input[type="password"] {
 .modal-dialog .modal-content .form a {
   text-decoration: underline;
 }
-/* line 33, ../sass/_modal.scss */
-.modal-dialog .modal-content .form .input-group-addon {
-  border-radius: 0px;
+/* line 34, ../sass/_modal.scss */
+.modal-dialog .modal-content .form input.ng-invalid.ng-dirty {
+  color: #fc3429;
+  border: 1px solid #fc3429;
 }
-/* line 39, ../sass/_modal.scss */
+/* line 41, ../sass/_modal.scss */
 .modal-dialog .modal-content .modal-footer {
   margin-top: 0px;
   padding: 19px 20px 20px;
   text-align: center;
   border-top: 0px solid #e5e5e5;
 }
-/* line 47, ../sass/_modal.scss */
+/* line 49, ../sass/_modal.scss */
 .modal-dialog .modal-backdrop.in {
   opacity: .75;
   filter: alpha(opacity=75);
