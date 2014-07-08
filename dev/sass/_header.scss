@@ -3,22 +3,21 @@
   position: fixed;
   top: 0;
   width: 100%;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  height:42px;
   z-index: 50;
   transition: background-color 0.2s linear;
 
 
   .logo{
     content: " ";
-    height: 34px;
-    width: 100%;
-    display: inline-block;
+    height:34px;
+    margin-top:4px;
+    margin-left:15px;
+    display: block;
     vertical-align: middle;
     @include background(image-url("linkfire_logo_w_text.svg"));
     @include background-size(contain);
     background-repeat: no-repeat;
-    //background-position: center;
     transition: background-color 0.2s linear;
   }
 
@@ -30,30 +29,34 @@
   }
 
   .nav-pills{
-    margin: 0;
 
     > li{
       > a{
         background-color: transparent;
-        color: $font-color-dark;
+        color: #fff;
         border-radius: 0px;
+        padding: 10px 0px;
+        margin: 0 15px;
       }
 
       > a:hover{
         color: $font-color;
+        border-bottom: 2px solid $primary-color;
 
       }
 
       > a.active{
-        color: #fff;
         background-color: transparent;
-        border-bottom: 2px solid $primary-color;
       }
+
     }
   }
 }
+.icon-lock{
+  margin-right: 5px;
+}
 #header.add-bg{
-    padding-top:10px;
+    
     background-color: $dark-color;
     transition: background-color 0.2s linear;
 }
