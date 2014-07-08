@@ -1,18 +1,17 @@
 angular.module('linkfireWebappApp')
 .directive('hoverClass',['$interval', function ($interval) {
 	return {
-		restrict: 'A',
 		scope: {
-			hoverClass: '@'
+			hoverClass: '@',
+			target : '@'
 		},
 		link: function (scope, element, attrs) {
 
-
-			var interval = $interval(function () {
-
-				element.addClass(scope.hoverClass);
-
-			}, 1000);
+//			var interval = $interval(function () {
+//
+//				element.addClass(scope.hoverClass);
+//
+//			}, 1000);
 
 			element.on('mouseenter', function() {
 				element.addClass(scope.hoverClass);

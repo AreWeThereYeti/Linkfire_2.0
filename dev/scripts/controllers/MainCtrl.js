@@ -2,7 +2,6 @@
 
 angular.module('linkfireWebappApp')
   .controller('MainCtrl', ['$scope', '$modal', 'constants', function ($scope, $modal, constants) {
-
 			$scope.images = ["img/image_01.png","img/image_02.png","img/image_03.png"];
 
         $scope.open = function () {
