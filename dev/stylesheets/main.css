@@ -418,43 +418,36 @@ p, span {
   background-size: cover;
   width: 100%;
   height: 100%;
+  padding-top: 5%;
+  padding-bottom: 5%;
   background-position: center;
   color: #000;
 }
 
-/* line 43, ../sass/main.scss */
+/* line 45, ../sass/main.scss */
 #features {
   background: url('../images/bg-section2.jpg?1404224136');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  padding-top: 230px;
+  padding: 15% 0 15% 0;
   width: 100%;
   height: 100%;
-  background-position: center top;
+  background-position: center;
   color: #000;
-  min-height: 1000px;
 }
-/* line 54, ../sass/main.scss */
+/* line 55, ../sass/main.scss */
 #features .row h4 {
   margin-top: 0px;
 }
 
-/* line 60, ../sass/main.scss */
+/* line 61, ../sass/main.scss */
 #logo-banner {
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
   background-color: #f0f1f3;
-  height: 85px;
-  width: 100%;
-  background-position: center top;
-  color: #000;
 }
 
-/* line 68, ../sass/main.scss */
+/* line 65, ../sass/main.scss */
 #target {
   background: url('../images/bg-target.jpg?1404305291');
   -webkit-background-size: cover;
@@ -468,16 +461,16 @@ p, span {
   background-position: center;
   color: #000;
 }
-/* line 78, ../sass/main.scss */
+/* line 75, ../sass/main.scss */
 #target .row {
   margin-top: 4%;
 }
-/* line 80, ../sass/main.scss */
+/* line 77, ../sass/main.scss */
 #target .row h4 {
   margin-top: 0px;
 }
 
-/* line 85, ../sass/main.scss */
+/* line 82, ../sass/main.scss */
 #splitter {
   background: url('../images/bg-splitter1.jpg?1404805281');
   -webkit-background-size: cover;
@@ -490,11 +483,11 @@ p, span {
   color: #000;
   min-height: 200px;
 }
-/* line 94, ../sass/main.scss */
+/* line 91, ../sass/main.scss */
 #splitter .row {
   margin-top: 4%;
 }
-/* line 97, ../sass/main.scss */
+/* line 94, ../sass/main.scss */
 #splitter .row h1 {
   text-transform: Uppercase;
   font-size: 52px;
@@ -503,7 +496,7 @@ p, span {
   font-weight: 100;
 }
 
-/* line 107, ../sass/main.scss */
+/* line 104, ../sass/main.scss */
 #splitter2 {
   background: url('../images/bg-splitter2.jpg?1404805281');
   -webkit-background-size: cover;
@@ -515,18 +508,18 @@ p, span {
   background-position: center top;
   color: #000;
 }
-/* line 115, ../sass/main.scss */
+/* line 112, ../sass/main.scss */
 #splitter2 .row {
   margin-top: 6%;
 }
-/* line 118, ../sass/main.scss */
+/* line 115, ../sass/main.scss */
 #splitter2 .row h2 {
   font-size: 46px;
   font-weight: 300;
   color: #fff;
 }
 
-/* line 126, ../sass/main.scss */
+/* line 123, ../sass/main.scss */
 #splitter3 {
   background: url('../images/bg-splitter3.jpg?1404805281');
   -webkit-background-size: cover;
@@ -539,21 +532,21 @@ p, span {
   color: #000;
   min-height: 300px;
 }
-/* line 135, ../sass/main.scss */
+/* line 132, ../sass/main.scss */
 #splitter3 .row {
   margin-top: 4%;
 }
-/* line 137, ../sass/main.scss */
+/* line 134, ../sass/main.scss */
 #splitter3 .row h1, #splitter3 .row h3 {
   color: #ffffff;
   text-align: center;
 }
-/* line 142, ../sass/main.scss */
+/* line 139, ../sass/main.scss */
 #splitter3 .row h3 {
   font-weight: 300;
 }
 
-/* line 148, ../sass/main.scss */
+/* line 145, ../sass/main.scss */
 #insights {
   background: url('../images/bg-insights.jpg?1404306238');
   -webkit-background-size: cover;
@@ -567,12 +560,12 @@ p, span {
   background-position: center;
   color: #000;
 }
-/* line 159, ../sass/main.scss */
+/* line 156, ../sass/main.scss */
 #insights .row h4 {
   margin-top: 0px;
 }
 
-/* line 165, ../sass/main.scss */
+/* line 162, ../sass/main.scss */
 #press {
   background: url('../images/bg-testimonial.jpg?1404805281');
   -webkit-background-size: cover;
@@ -580,19 +573,19 @@ p, span {
   -o-background-size: cover;
   background-size: cover;
 }
-/* line 169, ../sass/main.scss */
+/* line 166, ../sass/main.scss */
 #press .testimonial {
   padding: 30px;
 }
-/* line 174, ../sass/main.scss */
+/* line 171, ../sass/main.scss */
 #press .testimonial .row .icon-quotes-left {
   font-size: 40px;
 }
-/* line 178, ../sass/main.scss */
+/* line 175, ../sass/main.scss */
 #press .testimonial .row div {
   text-align: center;
 }
-/* line 181, ../sass/main.scss */
+/* line 178, ../sass/main.scss */
 #press .testimonial .row h3 {
   color: white;
   font-size: 23px;
@@ -600,13 +593,13 @@ p, span {
   font-family: 'Roboto', sans-serif;
   font-style: italic;
 }
-/* line 190, ../sass/main.scss */
+/* line 187, ../sass/main.scss */
 #press .row {
   margin-bottom: 2%;
   margin-top: 2%;
 }
 
-/* line 201, ../sass/main.scss */
+/* line 198, ../sass/main.scss */
 .myBtn {
   display: block;
   position: relative;
@@ -617,7 +610,7 @@ p, span {
   border-radius: 3px;
 }
 
-/* line 211, ../sass/main.scss */
+/* line 208, ../sass/main.scss */
 .myBtn span:first-child {
   float: left;
   color: #fff;
@@ -626,7 +619,7 @@ p, span {
   height: 40px;
 }
 
-/* line 219, ../sass/main.scss */
+/* line 216, ../sass/main.scss */
 .myBtn span:last-child {
   display: block;
   float: right;
@@ -642,7 +635,7 @@ p, span {
   border-bottom-right-radius: 3px;
 }
 
-/* line 236, ../sass/main.scss */
+/* line 233, ../sass/main.scss */
 .jumbotron {
   margin: 250px 0 200px 0;
   padding: 0;
@@ -650,7 +643,7 @@ p, span {
   vertical-align: middle;
 }
 
-/* line 242, ../sass/main.scss */
+/* line 239, ../sass/main.scss */
 .jumbotron h1 {
   text-transform: Uppercase;
   color: whitesmoke;
@@ -660,43 +653,13 @@ p, span {
   font-weight: 500;
 }
 
-/* line 251, ../sass/main.scss */
+/* line 248, ../sass/main.scss */
 .jumbotron p {
   color: whitesmoke;
   font-size: 30px;
 }
 
-/* line 265, ../sass/main.scss */
-#logos {
-  padding: 18px 0 18px 0;
-}
-
-/* line 269, ../sass/main.scss */
-#logos div {
-  width: 12.5%;
-  float: left;
-}
-
-/* line 274, ../sass/main.scss */
-#logos div img {
-  width: 100px;
-  display: block;
-  margin: 0 auto 0 auto;
-}
-
-/*
-#logos div:first-child img {
-  width:100px;
-  display:block;
-  margin: 0 auto 0 0;
-}
-#logos div:last-child img {
-  width:100px;
-  display:block;
-  margin: 0 0 0 auto;
-}
-*/
-/* line 300, ../sass/main.scss */
+/* line 262, ../sass/main.scss */
 .info-box h1 {
   font-size: 40px;
   text-transform: uppercase;
@@ -707,21 +670,21 @@ p, span {
   font-weight: 100;
 }
 
-/* line 309, ../sass/main.scss */
+/* line 271, ../sass/main.scss */
 .info-box h1 .emph {
   color: #000;
   line-height: 1.1em;
   font-weight: 500;
 }
 
-/* line 314, ../sass/main.scss */
+/* line 276, ../sass/main.scss */
 .info-box p {
   color: #acacad;
   font-size: 16px;
   line-height: 1.7em;
 }
 
-/* line 325, ../sass/main.scss */
+/* line 287, ../sass/main.scss */
 .shufflebox {
   height: 105px;
   margin-top: 10px;
@@ -736,7 +699,7 @@ p, span {
   transition: all 0.5s ease;
 }
 
-/* line 341, ../sass/main.scss */
+/* line 303, ../sass/main.scss */
 .feat {
   background-color: #dddfe1;
   opacity: 1;
@@ -746,7 +709,7 @@ p, span {
   transition: all 0.5s ease;
 }
 
-/* line 351, ../sass/main.scss */
+/* line 313, ../sass/main.scss */
 div.feat:before {
   top: 50%;
   margin-top: -10px;
@@ -763,7 +726,7 @@ div.feat:before {
   transition: border-right-color 0.5s ease;
 }
 
-/* line 368, ../sass/main.scss */
+/* line 330, ../sass/main.scss */
 div.right:before {
   border-left-color: #dddfe1;
   border-right-color: transparent;
@@ -775,7 +738,7 @@ div.right:before {
   transition: border 0.5s ease;
 }
 
-/* line 381, ../sass/main.scss */
+/* line 343, ../sass/main.scss */
 .shufflebox .circ {
   position: relative;
   top: 50%;
@@ -787,19 +750,19 @@ div.right:before {
   float: left;
   border-radius: 25px;
 }
-/* line 392, ../sass/main.scss */
+/* line 354, ../sass/main.scss */
 .shufflebox .circ [class^="icon-"] {
   line-height: 50px;
   font-size: 140%;
 }
 
-/* line 398, ../sass/main.scss */
+/* line 360, ../sass/main.scss */
 .shufflebox .content {
   padding: 0 20px 0 20px;
   margin: 0;
 }
 
-/* line 403, ../sass/main.scss */
+/* line 365, ../sass/main.scss */
 .shufflebox h2 {
   color: #22272f;
   text-transform: uppercase;
@@ -809,14 +772,14 @@ div.right:before {
   margin: 0;
 }
 
-/* line 412, ../sass/main.scss */
+/* line 374, ../sass/main.scss */
 .shufflebox p {
   padding: 0;
   margin: 0;
   color: #acacad;
 }
 
-/* line 420, ../sass/main.scss */
+/* line 382, ../sass/main.scss */
 #pricing h1 {
   text-transform: uppercase;
   color: #22272f;
@@ -824,7 +787,7 @@ div.right:before {
   font-weight: 300;
 }
 
-/* line 427, ../sass/main.scss */
+/* line 389, ../sass/main.scss */
 #pricing p {
   font-size: 18px;
   font-weight: 300;
@@ -832,7 +795,7 @@ div.right:before {
   margin-bottom: 50px;
 }
 
-/* line 444, ../sass/main.scss */
+/* line 406, ../sass/main.scss */
 .landingfooter {
   width: 100%;
   color: whitesmoke;
@@ -840,43 +803,43 @@ div.right:before {
 }
 
 /* Custom page footer */
-/* line 452, ../sass/main.scss */
+/* line 414, ../sass/main.scss */
 .footer {
   padding: 10px;
   color: whitesmoke;
 }
 
-/* line 457, ../sass/main.scss */
+/* line 419, ../sass/main.scss */
 .container-narrow > hr {
   margin: 30px 0;
 }
 
 /* Main marketing message and sign up button */
-/* line 466, ../sass/main.scss */
+/* line 428, ../sass/main.scss */
 .jumbotron .btn {
   padding: 13px 29px 16px 29px;
 }
 
 /* Supporting marketing content */
-/* line 471, ../sass/main.scss */
+/* line 433, ../sass/main.scss */
 .marketing {
   margin: 40px 0;
 }
 
-/* line 475, ../sass/main.scss */
+/* line 437, ../sass/main.scss */
 .marketing p + h4 {
   margin-top: 28px;
 }
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
-  /* line 481, ../sass/main.scss */
+  /* line 443, ../sass/main.scss */
   .container {
     max-width: 730px;
   }
 
   /* Remove the padding we set earlier */
-  /* line 491, ../sass/main.scss */
+  /* line 453, ../sass/main.scss */
   .marketing,
   .footer {
     padding-left: 0;
@@ -885,7 +848,7 @@ div.right:before {
 
   /* Space out the masthead */
   /* Remove the bottom border on the jumbotron for visual effect */
-  /* line 500, ../sass/main.scss */
+  /* line 462, ../sass/main.scss */
   .jumbotron {
     border-bottom: 0;
   }
