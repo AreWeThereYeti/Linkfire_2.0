@@ -37,9 +37,8 @@ p, span{
   @include background-size(cover);
   width: 100%;
   height: 100%;
-  background-position:center bottom;
+  background-position:center;
   color:#000;
-  min-height:1000px;
 }
 #features{
   @include background(image-url("bg-section2.jpg"));
@@ -198,6 +197,39 @@ p, span{
   
 }
 
+
+.myBtn  {
+  display: block;
+  position: relative;
+  padding-left: 12px;
+  background-color: #00bf9d;
+  height: 40px;
+  margin: 30px 0 0 0;
+  border-radius: 3px;
+}
+
+.myBtn span:first-child {
+  float: left;
+  color: #fff;
+  padding-right: 10px;
+  line-height: 40px;
+  height: 40px;
+}
+
+.myBtn span:last-child {
+  display: block;
+  float: right;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  background-color: #01b796;
+  -webkit-border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  -moz-border-radius-topright: 3px;
+  -moz-border-radius-bottomright: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
 
 // Jumbotron used to style the greeting message //
 
