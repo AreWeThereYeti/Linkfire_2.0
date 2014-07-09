@@ -21,7 +21,7 @@ angular.module('linkfireWebappApp')
       var defered = $q.defer();
 
 //      Encrypt password
-      var pass = CryptoJS.SHA1(params.password);
+      //var pass = CryptoJS.SHA1(params.password);
       $http({
         method	: 'POST',
         //url		  : urlLogin,
