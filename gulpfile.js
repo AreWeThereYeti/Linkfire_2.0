@@ -1,15 +1,32 @@
 var gulp = require('gulp'),
 		uglify = require('gulp-uglify'),
 		connect = require('gulp-connect'),
-	  compass = require('gulp-compass'),
+		cssmin = require('gulp-cssmin'),
 		sass = require('gulp-ruby-sass'),
-		gutil = require('gulp-util');
+		compass = require('gulp-compass'),
+		gutil = require('gulp-util'),
+		concat = require('gulp-concat'),
+		rename    = require('gulp-rename'); // to rename any file
 
 
 gulp.task('minify', function () {
 	gulp.src('dev/scripts/**/*.js')
 			.pipe(uglify())
-			.pipe(gulp.dest('dist'))
+			.pipe(gulp.dest('.tmp/'))
+});
+
+
+gulp.task('concat', function() {
+	gulp.src('.tmp/**/*.js')
+			.pipe(concat('all.js'))
+			.pipe(gulp.dest('./dist/js'))
+});
+
+gulp.task('css', function () {
+	gulp.src('dev/stylesheets/**/*.css')
+			.pipe(cssmin())
+			.pipe(rename({suffix: '.min'}))
+			.pipe(gulp.dest('dist/stylesheets'));
 });
 
 
@@ -28,3 +45,4 @@ gulp.task('webserver', function() {
 });
 
 gulp.task('default', ['webserver']);
+gulp.task('build', ['minify', 'concat', 'css' ]);

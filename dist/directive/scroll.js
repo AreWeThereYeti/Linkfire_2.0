@@ -1,1 +1,0 @@
-"use strict";angular.module("linkfireWebappApp").directive("scroll",function(e){return function(n){angular.element(e).bind("scroll",function(){n.boolChangeClass=this.pageYOffset>=150?!0:!1,n.$apply()})}});
