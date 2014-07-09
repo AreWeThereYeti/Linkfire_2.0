@@ -1,4 +1,25 @@
-@import "base";
+$icon-font-path: "/fonts/";
+@import "compass/css3";
+@import "mixins";
+@import "colors";
+@import "buttons";
+@import "helpers";
+@import "animation";
+@import "modal";
+
+@import "resets";
+
+//header & footer styles
+@import "header";
+@import "footer";
+
+
+//pages
+@import "pricing";
+@import "landing";
+
+
+
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -60,7 +81,7 @@ p, span{
 }
 
 #logo-banner{
-  background-color:#f0f1f3;
+  background-color:$grey-lightest;
 }
 
 #target{
@@ -205,39 +226,6 @@ p, span{
 }
 
 
-.myBtn  {
-  display: block;
-  position: relative;
-  padding-left: 12px;
-  background-color: #00bf9d;
-  height: 40px;
-  margin: 30px 0 0 0;
-  border-radius: 3px;
-}
-
-.myBtn span:first-child {
-  float: left;
-  color: #fff;
-  padding-right: 10px;
-  line-height: 40px;
-  height: 40px;
-}
-
-.myBtn span:last-child {
-  display: block;
-  float: right;
-  width: 40px;
-  height: 40px;
-  padding: 10px;
-  background-color: #01b796;
-  -webkit-border-top-right-radius: 3px;
-  -webkit-border-bottom-right-radius: 3px;
-  -moz-border-radius-topright: 3px;
-  -moz-border-radius-bottomright: 3px;
-  border-top-right-radius: 3px;
-  border-bottom-right-radius: 3px;
-}
-
 // Jumbotron used to style the greeting message //
 
 .jumbotron{
@@ -272,13 +260,13 @@ p, span{
 .info-box h1{
     font-size:40px;
     text-transform:uppercase;
-    color:$deep-blue;
+    color:$header-blue;
     line-height:1.2em;
     padding:0;
     font-weight:700;
   }
 .info-box p{
-  color:$dark-grey;
+  color:$font-color-grey;
   font-size:16px;
   line-height:1.7em;
   }
@@ -291,29 +279,74 @@ p, span{
 .shufflebox{
   height:105px;
   margin-top:10px;
-  border-radius: 5px;
-  webkit-border-radius: 5px; 
-  -moz-border-radius: 5px; 
-  border-radius: 5px;
+  @include border-radius(5px);
   padding: 20px 25px 20px 25px;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition:    all 0.5s ease;
-  -o-transition:      all 0.5s ease;
-  transition:         all 0.5s ease;
+  @include transition(all, 0.5s, ease);
+  .circ{
+    position:relative;
+    top:50%; 
+    margin-top:-25px;
+    display: table-cell;
+    width:50px;
+    height:50px;
+    background-color:$lf-green;
+    float:left;
+    border-radius: 25px;
 
+    [class^="icon-"]{
+      line-height: 50px;
+      font-size: 140%;
+      }
+  }
+  .content  {
+    padding:0 20px 0 20px;
+    margin:0;
+  }
+  h2{
+    color:$deep-blue;
+    text-transform:uppercase;
+    font-weight:300;
+    line-height:1.4em;
+    padding:0;
+    margin:0;
+  }
+  p{
+    padding:0;
+    margin:0;
+    color:$font-color-grey;
+  }    
+  h4{
+    margin-top: 0px;
+    text-transform:uppercase;
+    color:$header-darkest;
+  }
 }
+
 
 .feat{
-  background-color:$light-grey;
+  background-color:$grey-light;
   opacity: 1;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition:    all 0.5s ease;
-  -o-transition:      all 0.5s ease;
-  transition:         all 0.5s ease;
+  @include transition(all, 0.5s, ease);
 
+  }
+
+.feat-hide-remove {
+    -webkit-animation: bounceIn 2.5s;
+    animation: bounceIn 2.5s;
+}
+ 
+.feat-hide-add {
+    -webkit-animation: flipOutX 2.5s;
+    animation: flipOutX 2.5s;
+    display: block !important;
+}
+.feat-hide-add-active {
+    -webkit-animation: flipOutX 2.5s;
+    animation: flipOutX 2.5s;
+    display: block !important;
 }
 
-div.feat:before {
+  div.feat:before {
   top:50%;
   margin-top:-10px;
   content: ' ';
@@ -322,62 +355,12 @@ div.feat:before {
   width: 0;
   left:-20px;
   border: 10px solid transparent;
-  border-right-color: $light-grey;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition:    all 0.5s ease;
-  -o-transition:      all 0.5s ease;
-  transition:         all 0.5s ease;
+  border-right-color: $grey-light;
 
-}
+  @include transition(all, 0.5s, ease);
 
-
-
-
-
-
-
-
-.shufflebox .circ{
-  position:relative;
-  top:50%; 
-  margin-top:-25px;
-  display: table-cell;
-  width:50px;
-  height:50px;
-  background-color:$lf-green;
-  float:left;
-  border-radius: 25px;
-
-  [class^="icon-"]{
-    line-height: 50px;
-    font-size: 140%;
   }
-}
 
-.shufflebox .content  {
-  padding:0 20px 0 20px;
-  margin:0;
-}
-
-.shufflebox h2{
-  color:$deep-blue;
-  text-transform:uppercase;
-  font-weight:300;
-  line-height:1.4em;
-  padding:0;
-  margin:0;
-}
-
-.shufflebox p{
-  padding:0;
-  margin:0;
-  color:$dark-grey;
-}
-
-.shufflebox h4{
-      margin-top: 0px;
-      text-transform:uppercase;
-    }
 
 
 
@@ -424,10 +407,6 @@ div.feat:before {
     .container {
         max-width: 730px;
     }
-
-  .logo{
-
-  }
 
     /* Remove the padding we set earlier */
     .marketing,

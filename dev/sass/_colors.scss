@@ -1,12 +1,52 @@
-$primary-color: #e8371b;
+$primary-color: #fc3429;
+$primary-dark: #e82b22;
+$primary-darker: #e22f25;
+$primary-darkest: #d0271f;
+
+
+$blue-darkest: #292f38;
+$blue-dark: #364253;
+$blue-light: #405a72;
+$blue-lightest: #587995;
+
+$green-darkest: #227e6b;
+$green-medium: #2c947f;
+$green-lightest: #3cbda3;
+
+$grey-darkest: #666666;
+$grey-darker: #999999;
+$grey-dark: #b1b2b4;
+$grey-light: #caccce;
+$grey-lighter: #dddfe1;
+$grey-lightest: #f0f1f3;
+
+$white: #fff;
+$black: #000;
+
+
+
 $dark-color : #292f38;
+
+
+
+//buttons
+$primary-button: $primary-color;
+$primary-button-hover: $primary-dark;
+$primary-button-icon: $primary-darker;
+$primary-button-icon-hover: $primary-darkest;
+
+//headlines
+$header-blue: $blue-darkest;
+$header-darkest: $black;
+
+
 
 //buttons
 $hover-color : #fc3429;
 $green-button : #2c947f;
 
 //font color
-$font-color-grey : #999999;
+$font-color-grey : $grey-darker;
 $font-color : #f5f5f5;
 $font-color-dark : #939596;
 

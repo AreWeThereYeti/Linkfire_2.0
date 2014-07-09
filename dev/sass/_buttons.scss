@@ -11,15 +11,19 @@
   }
 
   &.btn-primary{
-    background-color: $primary-color;
+    background-color: $primary-button;
 
     i[class^="icon-"] {
-      background-color: #e82b22;
+      background-color: $primary-button-icon;
     }
   }
 
   &.btn-primary:hover {
-    background-color: $hover-color;
+    background-color: $primary-button-hover;
+
+    i[class^="icon-"] {
+      background-color: $primary-button-icon-hover;
+    }
   }
 
   &.btn-green{
