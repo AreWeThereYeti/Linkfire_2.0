@@ -5,9 +5,14 @@
   border-radius: 3px;
   color: $font-color;
   padding: 14px 44px;
+  transition: all 0.3s ease;
 
   span{
     color: #ffffff;
+  }
+
+  &[disabled]{
+    transition: all 0.3s ease;
   }
 
   &.btn-primary{
@@ -121,5 +126,7 @@ input[type="email"], input[type="password"]{
   color: $font-color-grey;
   background-color: #ffffff;
   padding: 15px 5px;
+  padding-left: 20px;
   margin-bottom: 15px;
+  transition: all 0.3s ease;
 }
