@@ -9,7 +9,6 @@ angular.module('linkfireWebappApp')
 			$scope.startTimer = function(){
 					$scope.stop;
 					$scope.stop = $interval(function() {
-						console.log('interval' + $scope.hover);
 						$scope.hover = $scope.hover +1;
 						if($scope.hover > 2){
 							$scope.hover = 0;

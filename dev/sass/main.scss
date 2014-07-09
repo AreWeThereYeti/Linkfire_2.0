@@ -50,12 +50,9 @@ p, span{
 #press{
   @include background(image-url("bg-testimonial.jpg"));
   @include background-size(cover);
-
   .testimonial{
     padding:30px;
-
     .row{
-
       .icon-quotes-left{
         font-size: 40px;
       }
@@ -152,27 +149,24 @@ p, span{
   background-color:$grey-lighter;
   opacity: 1;
   @include transition(all, 0.5s, ease);
-  
   .arrow {
     opacity:1 !important;
-    
   }
-
 }
 
 .arrow {
-    top:50%;
-    margin-top:-10px;
-    content: ' ';
-    height: 0;
-    position: absolute;
-    width: 0;
-    opacity:0;
-    left:-20px;
-    border: 10px solid transparent;
-    @include transition(all, 0.5s, ease);
-    border-right-color: $grey-lighter;
-  }
+  top:50%;
+  margin-top:-10px;
+  content: ' ';
+  height: 0;
+  position: absolute;
+  width: 0;
+  opacity:0;
+  left:-20px;
+  border: 10px solid transparent;
+  @include transition(all, 0.5s, ease);
+  border-right-color: $grey-lighter;
+}
 
 
 
