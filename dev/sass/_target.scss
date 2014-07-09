@@ -1,0 +1,17 @@
+#target{
+  @include background(image-url("bg-target.jpg"));
+  @include background-size(cover);
+  background-color:#f0f1f3;
+  height:100%;
+  width: 100%;
+  padding-top:15%;
+  padding-bottom:15%;
+  background-position:center;
+  color:#000;
+
+  .row{
+    h4{
+      margin-top: 0px;
+    }
+  }
+}

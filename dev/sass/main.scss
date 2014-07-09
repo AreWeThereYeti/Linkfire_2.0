@@ -6,19 +6,19 @@ $icon-font-path: "/fonts/";
 @import "helpers";
 @import "animation";
 @import "modal";
-
 @import "resets";
 
 //header & footer styles
 @import "header";
 @import "footer";
 
-
 //pages
 @import "pricing";
 @import "landing";
-
-
+@import "features";
+@import "target";
+@import "splitters";
+@import "insights";
 
 
 body {
@@ -28,167 +28,24 @@ body {
   padding:0 5% 0 5%;
 }
 
-a, a:hover{
-  color: $primary-color;
-  text-decoration: none;
-}
-
-h1{
-  color: $font-color;
-  font-size: 50px;
-}
-
-h2{
-  font-size: 46px;
-}
-
 p, span{
   color: $font-color;
 }
 
-
-.circ{
-
+.bg-prefs  {
+  @include background-size(cover);
+  width: 100%;
+  height: 100%;
+  background-position:center;
+  color:#000;
 }
 
 // IDs for each "block" on landing page //
-
-#landing{
-  @include background(image-url("bg1.jpg"));
-  @include background-size(cover);
-  width: 100%;
-  height: 100%;
-  padding-top:5%;
-  padding-bottom:5%;
-  background-position:center;
-  color:#000;
-}
-#features{
-  @include background(image-url("bg-section2.jpg"));
-  @include background-size(cover);
-  padding:15% 0 15% 0;
-  width: 100%;
-  height: 100%;
-  background-position:center;
-  color:#000;
-
-  .row{
-    h4{
-      margin-top: 0px;
-      text-transform:uppercase;
-    }
-  }
-}
 
 #logo-banner{
   background-color:$grey-lightest;
 }
 
-#target{
-  @include background(image-url("bg-target.jpg"));
-  @include background-size(cover);
-  background-color:#f0f1f3;
-  height:100%;
-  width: 100%;
-  padding-top:15%;
-  padding-bottom:15%;
-  background-position:center;
-  color:#000;
-
-  .row{
-    h4{
-      margin-top: 0px;
-    }
-  }
-}
-#splitter{
-  @include background(image-url("bg-splitter1.jpg"));
-  @include background-size(cover);
-  width: 100%;
-  height: 100%;
-  background-position:center top;
-  color:#000;
-  .row{
-    margin-top: 5%;
-    margin-bottom: 6%;
-
-    h1{
-      text-transform:Uppercase;
-      font-size:52px;
-      color: $font-color;
-      line-height:1.1em;
-      font-weight:100;
-    }
-  }
-}
-
-#splitter2{
-  @include background(image-url("bg-splitter2.jpg"));
-  @include background-size(cover);
-  width: 100%;
-  height: 100%;
-  background-position:center top;
-  color:#000;
-
-  .row{
-    margin-top: 7%;
-    margin-bottom: 7%;
-
-    h1{
-      text-transform:Uppercase;
-      font-size:52px;
-      color: $font-color;
-      line-height:1.1em;
-      font-weight:100;
-    }
-  }
-}
-
-#splitter3{
-  @include background(image-url("bg-splitter3.jpg"));
-  @include background-size(cover);
-  width: 100%;
-  height:100%;
-  background-position:center;
-  color:#000;
-
-  .row{
-    margin-top: 5%;
-    margin-bottom: 5%;
-    h1, h3{
-      color: #ffffff;
-      text-align: center;
-      text-transform:uppercase;
-      padding:0;
-      margin:0;
-    }
-
-    h3{
-      font-weight: 100;
-    }
-    h1{
-      font-size: 72px;
-      margin:0 0 10px 0;
-    }
-  }
-}
-
-#insights{
-  @include background(image-url("bg-insights.jpg"));
-  @include background-size(cover);
-  background-color:#f0f1f3;
-  height:100%;
-  width: 100%;
-  background-position:center;
-  color:#000;
-  padding-top:15%;
-  padding-bottom:15%;
-  .row{
-   h4{
-     margin-top: 0px;
-   }
-  }
-}
 
 #press{
   @include background(image-url("bg-testimonial.jpg"));
@@ -221,34 +78,6 @@ p, span{
   }
 }
 
-.landing-header{
-  
-}
-
-
-// Jumbotron used to style the greeting message //
-
-.jumbotron{
-  margin:25% 0 25% 0;
-  padding:0;
-  background-color:transparent;
-  vertical-align:middle;
-}
-.jumbotron h1{
-    text-transform:Uppercase;
-    color: $font-color;
-    line-height:1.1em;
-    margin:0;
-    padding:0;
-    font-weight:500;
-}
-
-.jumbotron p{
-  color: $font-color;
-  font-size:30px;
-}
-
-
 
 // temporary heading style used on first splitter //
 
@@ -270,9 +99,6 @@ p, span{
   font-size:16px;
   line-height:1.7em;
   }
-
-
-
 
 // Shufflebox are the 3-spot boxes reused on "features", "target" and "insights". The feature class adds grey background and arrow // 
 
@@ -322,7 +148,6 @@ p, span{
   }
 }
 
-
 .feat{
   background-color:$grey-light;
   opacity: 1;
@@ -330,23 +155,7 @@ p, span{
 
   }
 
-.feat-hide-remove {
-    -webkit-animation: bounceIn 2.5s;
-    animation: bounceIn 2.5s;
-}
- 
-.feat-hide-add {
-    -webkit-animation: flipOutX 2.5s;
-    animation: flipOutX 2.5s;
-    display: block !important;
-}
-.feat-hide-add-active {
-    -webkit-animation: flipOutX 2.5s;
-    animation: flipOutX 2.5s;
-    display: block !important;
-}
-
-  div.feat:before {
+div.feat:before {
   top:50%;
   margin-top:-10px;
   content: ' ';
@@ -362,64 +171,3 @@ p, span{
   }
 
 
-
-
-
-// left-overs from before. //
-
-
-
-
-
-
-
-//landingpage
-.landingfooter{
-  width: 100%;
-  color: $font-color;
-  background-color:$dark-color;
-}
-
-
-/* Custom page footer */
-.footer {
-    padding: 10px;
-    color: $font-color;
-}
-
-.container-narrow > hr {
-    margin: 30px 0;
-}
-
-
-
-/* Supporting marketing content */
-.marketing {
-    margin: 40px 0;
-}
-
-.marketing p + h4 {
-    margin-top: 28px;
-}
-
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-    .container {
-        max-width: 730px;
-    }
-
-    /* Remove the padding we set earlier */
-    .marketing,
-    .footer {
-        padding-left: 0;
-        padding-right: 0;
-    }
-    /* Space out the masthead */
-    .header {
-        
-    }
-    /* Remove the bottom border on the jumbotron for visual effect */
-    .jumbotron {
-        border-bottom: 0;
-    }
-}
