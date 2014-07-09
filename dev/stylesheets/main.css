@@ -741,7 +741,7 @@ p, span {
 }
 /* line 131, ../sass/main.scss */
 .shufflebox h2 {
-  color: #22272f;
+  color: #292f38;
   text-transform: uppercase;
   font-weight: 300;
   line-height: 1.4em;
@@ -763,7 +763,7 @@ p, span {
 
 /* line 151, ../sass/main.scss */
 .feat {
-  background-color: #caccce;
+  background-color: #dddfe1;
   opacity: 1;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
@@ -771,21 +771,26 @@ p, span {
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
+/* line 156, ../sass/main.scss */
+.feat .arrow {
+  opacity: 1 !important;
+}
 
-/* line 158, ../sass/main.scss */
-div.feat:before {
+/* line 163, ../sass/main.scss */
+.arrow {
   top: 50%;
   margin-top: -10px;
   content: ' ';
   height: 0;
   position: absolute;
   width: 0;
+  opacity: 0;
   left: -20px;
   border: 10px solid transparent;
-  border-right-color: #caccce;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -ms-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
+  border-right-color: #dddfe1;
 }

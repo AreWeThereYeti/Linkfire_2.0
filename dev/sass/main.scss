@@ -129,7 +129,7 @@ p, span{
     margin:0;
   }
   h2{
-    color:$deep-blue;
+    color:$header-blue;
     text-transform:uppercase;
     font-weight:300;
     line-height:1.4em;
@@ -149,25 +149,30 @@ p, span{
 }
 
 .feat{
-  background-color:$grey-light;
+  background-color:$grey-lighter;
   opacity: 1;
   @include transition(all, 0.5s, ease);
-
+  
+  .arrow {
+    opacity:1 !important;
+    
   }
 
-div.feat:before {
-  top:50%;
-  margin-top:-10px;
-  content: ' ';
-  height: 0;
-  position: absolute;
-  width: 0;
-  left:-20px;
-  border: 10px solid transparent;
-  border-right-color: $grey-light;
+}
 
-  @include transition(all, 0.5s, ease);
-
+.arrow {
+    top:50%;
+    margin-top:-10px;
+    content: ' ';
+    height: 0;
+    position: absolute;
+    width: 0;
+    opacity:0;
+    left:-20px;
+    border: 10px solid transparent;
+    @include transition(all, 0.5s, ease);
+    border-right-color: $grey-lighter;
   }
+
 
 
