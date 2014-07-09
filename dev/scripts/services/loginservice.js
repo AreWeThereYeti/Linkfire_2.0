@@ -32,7 +32,7 @@ angular.module('linkfireWebappApp')
 	      },
         data    : {
           email:    params.email,
-          password: pass.toString(CryptoJS.enc.Hex)}
+          password: params.password}
       })
       .success(function (data, status, headers, config) {
         $window.localStorage.token = data.token;
@@ -61,7 +61,7 @@ angular.module('linkfireWebappApp')
 	      },
         data    : {
             email:    params.email,
-            password: pass.toString(CryptoJS.enc.Hex)
+            password: params.password
         }
       })
         .success(function (data, status, headers, config) {

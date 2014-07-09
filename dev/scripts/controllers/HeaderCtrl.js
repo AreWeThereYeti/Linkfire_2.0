@@ -32,7 +32,7 @@ angular.module('linkfireWebappApp')
 // It is not the same as the $modal service used above.
 var LoginInstanceCtrl = function ($scope, $modalInstance, loginService, show, $facebook) {
 
-  $scope.signin = function(){
+  $scope.signIn = function(){
     var args={
       email:    $scope.user.email,
       password: $scope.user.password

@@ -19,7 +19,7 @@ gulp.task('minify', function () {
 gulp.task('concat', function() {
 	gulp.src('.tmp/**/*.js')
 			.pipe(concat('all.js'))
-			.pipe(gulp.dest('./dist/js'))
+			.pipe(gulp.dest('./dist/scripts'))
 });
 
 gulp.task('css', function () {
