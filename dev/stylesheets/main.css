@@ -521,6 +521,16 @@ small {
   text-transform: uppercase;
 }
 
+/* line 18, ../sass/_features.scss */
+.feat-img {
+  padding: 5% 0 5% 0;
+}
+
+/* line 21, ../sass/_features.scss */
+.feat-content {
+  padding: 10% 0 15% 0;
+}
+
 /* line 1, ../sass/_target.scss */
 #target {
   background: url('../images/bg-target.jpg?1404375649');
