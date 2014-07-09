@@ -11,6 +11,16 @@
     .price {
       font-size: 3em;
     }
+    
+    .small{
+      font-size: 2em;
+    }
+    
+    .price span{
+      color:$font-color-grey;
+      font-size:14px;
+      text-transform:none;
+    }
 
     .price-cents {
       vertical-align: super;
@@ -47,6 +57,20 @@
         color: $font-color-grey;
         border-color: #d8d8da;
       }
+      .list-group-item{
+        background-color: $pricing-light-grey;
+        color: $font-color-grey;
+        border-color: #d8d8da;
+      }
+      .large .list-group-item{
+        padding: 13px 15px;
+      }
+
+      .list-group-item .btn{
+        width:95%;
+      }
+
+      
     }
 
     .panel:hover {
@@ -61,4 +85,52 @@
   p{
     text-align: center;
   }
+}
+.unavailable  {
+  opacity:0.3;
+}
+
+.plan-small {
+  margin-top:20px;
+}
+small {
+  font-size:2em;
+}
+
+
+#pricing h1{
+  text-transform:uppercase;
+  color:$deep-blue;
+  font-size:34px;
+  font-weight:700;
+
+}
+#pricing h3{
+  text-transform:uppercase;
+  color:$deep-blue;
+  font-size:22px;
+  font-weight:700;
+
+}
+#pricing h4{
+  text-transform:uppercase;
+  color:$deep-blue;
+  font-size:22px;
+  font-weight:700;
+
+}
+#pricing p{
+  
+  font-size:18px;
+  font-weight:300;
+  color:$dark-grey;
+  margin-bottom:50px;
+}
+#pricing p.addition{
+  
+  font-size:16px;
+  font-weight:300;
+  color:$dark-grey;
+  margin-bottom:50px;
+  margin-top:30px;
 }

@@ -37,47 +37,44 @@ p, span{
   @include background-size(cover);
   width: 100%;
   height: 100%;
-  background-position:center bottom;
+  padding-top:5%;
+  padding-bottom:5%;
+  background-position:center;
   color:#000;
-  min-height:1000px;
 }
 #features{
   @include background(image-url("bg-section2.jpg"));
   @include background-size(cover);
-  padding-top:230px;
+  padding:15% 0 15% 0;
   width: 100%;
   height: 100%;
-  background-position:center top;
+  background-position:center;
   color:#000;
-  min-height:1000px;
 
   .row{
     h4{
       margin-top: 0px;
+      text-transform:uppercase;
     }
   }
 }
 
 #logo-banner{
-  @include background-size(cover);
   background-color:#f0f1f3;
-  height:85px;
-  width: 100%;
-  background-position:center top;
-  color:#000;
 }
+
 #target{
   @include background(image-url("bg-target.jpg"));
   @include background-size(cover);
   background-color:#f0f1f3;
-  padding-top:130px;
-  height:800px;
+  height:100%;
   width: 100%;
+  padding-top:15%;
+  padding-bottom:15%;
   background-position:center;
   color:#000;
 
   .row{
-    margin-top: 4%;
     h4{
       margin-top: 0px;
     }
@@ -87,13 +84,12 @@ p, span{
   @include background(image-url("bg-splitter1.jpg"));
   @include background-size(cover);
   width: 100%;
-  height: 200px;
+  height: 100%;
   background-position:center top;
   color:#000;
-  min-height:200px;
-
   .row{
-    margin-top: 4%;
+    margin-top: 5%;
+    margin-bottom: 6%;
 
     h1{
       text-transform:Uppercase;
@@ -109,17 +105,20 @@ p, span{
   @include background(image-url("bg-splitter2.jpg"));
   @include background-size(cover);
   width: 100%;
-  height: 300px;
+  height: 100%;
   background-position:center top;
   color:#000;
 
   .row{
-    margin-top: 6%;
+    margin-top: 7%;
+    margin-bottom: 7%;
 
-    h2{
-      font-size: 46px;
-      font-weight: 300;
-      color:#fff;
+    h1{
+      text-transform:Uppercase;
+      font-size:52px;
+      color: $font-color;
+      line-height:1.1em;
+      font-weight:100;
     }
   }
 }
@@ -128,20 +127,27 @@ p, span{
   @include background(image-url("bg-splitter3.jpg"));
   @include background-size(cover);
   width: 100%;
-  height: 300px;
-  background-position:center top;
+  height:100%;
+  background-position:center;
   color:#000;
-  min-height:300px;
 
   .row{
-    margin-top: 4%;
+    margin-top: 5%;
+    margin-bottom: 5%;
     h1, h3{
       color: #ffffff;
       text-align: center;
+      text-transform:uppercase;
+      padding:0;
+      margin:0;
     }
 
     h3{
-      font-weight: 300;
+      font-weight: 100;
+    }
+    h1{
+      font-size: 72px;
+      margin:0 0 10px 0;
     }
   }
 }
@@ -150,12 +156,12 @@ p, span{
   @include background(image-url("bg-insights.jpg"));
   @include background-size(cover);
   background-color:#f0f1f3;
-  padding-top:130px;
-  height:800px;
+  height:100%;
   width: 100%;
   background-position:center;
   color:#000;
-
+  padding-top:15%;
+  padding-bottom:15%;
   .row{
    h4{
      margin-top: 0px;
@@ -199,10 +205,43 @@ p, span{
 }
 
 
+.myBtn  {
+  display: block;
+  position: relative;
+  padding-left: 12px;
+  background-color: #00bf9d;
+  height: 40px;
+  margin: 30px 0 0 0;
+  border-radius: 3px;
+}
+
+.myBtn span:first-child {
+  float: left;
+  color: #fff;
+  padding-right: 10px;
+  line-height: 40px;
+  height: 40px;
+}
+
+.myBtn span:last-child {
+  display: block;
+  float: right;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  background-color: #01b796;
+  -webkit-border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  -moz-border-radius-topright: 3px;
+  -moz-border-radius-bottomright: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
 // Jumbotron used to style the greeting message //
 
 .jumbotron{
-  margin:250px 0 200px 0;
+  margin:25% 0 25% 0;
   padding:0;
   background-color:transparent;
   vertical-align:middle;
@@ -213,55 +252,17 @@ p, span{
     line-height:1.1em;
     margin:0;
     padding:0;
-    font-weight:100;
-  }
-.jumbotron .emph{
     font-weight:500;
-  }
+}
 
-  .jumbotron p{
-    color: $font-color;
-    font-size:30px;
-  }
+.jumbotron p{
+  color: $font-color;
+  font-size:30px;
+}
 
 
 
 // temporary heading style used on first splitter //
-
-
-
-
-// Logo splitter for brand logos. The horisontal distribution needs more work //
-
-#logos {
-  padding: 18px 0 18px 0;
-}
-
-#logos div {
-  width: 12.5%;
-  float: left;
-}
-
-#logos div img {
-  width:100px;
-  display:block;
-  margin: 0 auto 0 auto;
-}
-/*
-#logos div:first-child img {
-  width:100px;
-  display:block;
-  margin: 0 auto 0 0;
-}
-#logos div:last-child img {
-  width:100px;
-  display:block;
-  margin: 0 0 0 auto;
-}
-*/
-
-
-
 
 
 // Infobox is the text elements above the shufflebox used on "features", "target" and "insights".
@@ -272,15 +273,9 @@ p, span{
     font-size:40px;
     text-transform:uppercase;
     color:$deep-blue;
-    line-height:1.1em;
-    margin:0;
+    line-height:1.2em;
     padding:0;
-    font-weight:100;
-  }
-.info-box h1 .emph{
-    color:#000;
-    line-height:1.1em;
-    font-weight:500;
+    font-weight:700;
   }
 .info-box p{
   color:$dark-grey;
@@ -308,7 +303,6 @@ p, span{
 
 }
 
-
 .feat{
   background-color:$light-grey;
   opacity: 1;
@@ -329,23 +323,17 @@ div.feat:before {
   left:-20px;
   border: 10px solid transparent;
   border-right-color: $light-grey;
-  -webkit-transition: border-right-color 0.5s ease;
-  -moz-transition:    border-right-color 0.5s ease;
-  -o-transition:      border-right-color 0.5s ease;
-  transition:         border-right-color 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition:    all 0.5s ease;
+  -o-transition:      all 0.5s ease;
+  transition:         all 0.5s ease;
 
 }
 
-div.right:before{
-  border-left-color: $light-grey;
-  border-right-color: transparent;
-  right:-20px;
-  left: initial;
-  -webkit-transition: border 0.5s ease;
-  -moz-transition:    border 0.5s ease;
-  -o-transition:      border 0.5s ease;
-  transition:         border 0.5s ease;
-}
+
+
+
+
 
 
 
@@ -386,22 +374,13 @@ div.right:before{
   color:$dark-grey;
 }
 
+.shufflebox h4{
+      margin-top: 0px;
+      text-transform:uppercase;
+    }
 
 
-#pricing h1{
-  text-transform:uppercase;
-  color:$deep-blue;
-  font-size:34px;
-  font-weight:300;
 
-}
-#pricing p{
-  
-  font-size:18px;
-  font-weight:300;
-  color:$dark-grey;
-  margin-bottom:50px;
-}
 
 // left-overs from before. //
 
@@ -430,13 +409,6 @@ div.right:before{
 }
 
 
-
-/* Main marketing message and sign up button */
-
-
-.jumbotron .btn {
-    padding: 13px 29px 16px 29px;
-}
 
 /* Supporting marketing content */
 .marketing {

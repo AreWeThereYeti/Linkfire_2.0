@@ -11,58 +11,59 @@
 
 <div class="header" ng-controller="HeaderCtrl">
     <div class="row">
-        <div class="col-xs-12 col-sm-6 col-md-2">
-            <div class="logo"></div>
+        <div class="col-xs-12 col-sm-6 col-md-2 logo">
+            
         </div>
         <ul class="nav nav-pills pull-right" role="navigation">
             <li class="hidden-xs"><a ng-href="#section-1" du-smooth-scroll du-scrollspy>Home</a></li>
             <li class="hidden-xs"><a ng-href="#section-2" du-smooth-scroll du-scrollspy>Features</a></li>
             <li class="hidden-xs"><a ng-href="#section-4" du-smooth-scroll du-scrollspy>Pricing</a></li>
-            <li class="hidden-xs"><a ng-href="#section-3" du-smooth-scroll du-scrollspy>Testimonials</a></li>
-            <li><a ng-click="show = 'login'; open()">Login</a></li>
+            <!--<li class="hidden-xs"><a ng-href="#section-3" du-smooth-scroll du-scrollspy>Testimonials</a></li>-->
+            <li><a ng-click="show = 'login'; open()"><span class="icon-lock"></span>Login</a></li>
         </ul>
     </div>
 
-    <!--Signin/Signup modal-->
+    <!--signinform/Signup modal-->
     <script type="text/ng-template" id="loginmodal.html">
         <button type="button" class="close" ng-click="cancel($event)" aria-hidden="true">&times;</button>
         <div class="modal-body">
             <div class="row">
                 <div class="form" ng-show="show =='login'">
                     <h4>Sign in</h4>
-                    <form ng-submit="$parent.signin()" name="signin" novalidate>
-                        <input type="email" ng-model="$parent.user.email" placeholder="Email" required/>
-                        <input type="password" ng-model="$parent.user.password" ng-minlength="4" placeholder="Password" required/>
-                        <input ng-disabled="signin.$invalid" class="btn btn-primary btn-block" type="submit"/>
+                    <form autocomplete="off" name="signinform" novalidate>
+                        <input type="email" name="email" ng-class="{ 'has-error': userForm.email.$invalid && userForm.email.$dirty }" ng-model="$parent.user.email" placeholder="Email" autocomplete="off" required/>
+                        <input type="password" name="password" ng-class="{ 'has-error': userForm.email.$invalid && userForm.email.$dirty }" ng-model="$parent.user.password" ng-minlength="4" placeholder="Password" autocomplete="off" required/>
+                        <button ng-click="$parent.signinform()" ng-disabled="signinform.$invalid" class="btn btn-primary btn-block btn-icon">
+                            <span>Sign in</span>
+                            <i class="icon-play3"></i>
+                        </button>
                     </form>
-                    <a class="btn btn-block btn-social btn-facebook" ng-click="facebookLogin()">
-                        <i class="fa fa-facebook">f</i> Sign in with Facebook
-                    </a>
+                    <button ng-click="facebookLogin()" class="btn btn-block btn-social btn-facebook btn-icon">
+                        <span>Sign in with Facebook</span>
+                        <i class="icon-play3"></i>
+                    </button>
                     <p><a href=" ">forgot password</a></p>
                     <p >New Here? <a ng-click="show = 'signup'">Create an account</a></p>
-
                 </div>
                 <div class="form" ng-show="show =='signup'">
-                    <form ng-submit="$parent.signup()" novalidate name="signup">
+                    <form novalidate name="signup">
                         <input type="email" ng-model="$parent.user.email" placeholder="email" required/>
                         <input type="password" placeholder="password" ng-model="$parent.user.password" id="pw1" name="pw1" ng-minlength="4" required/>
                         <input type="password" placeholder="Password again" ng-model="pw2"  id="pw2" name="pw2" pw-check="pw1" ng-minlength="4" required/>
-                        <div class="msg-block" ng-show="signup.$invalid">
-                            <span class="msg-error" ng-show="signup.pw2.$error.pwmatch">
-                                Passwords don't match.
-                            </span>
-                            <span  class="msg-error" ng-show="signup.email.$invalid && !signup.email.$pristine">>
-                                Your email is required.
-                            </span>
-                        </div>
-                        <input ng-disabled="signup.$invalid" class="btn btn-primary btn-no-border btn-standard btn-block" type="submit"/>
+                        <button ng-click="$parent.signup()" ng-disabled="signup.$invalid" class="btn btn-primary btn-block btn-icon">
+                            <span>Sign up</span>
+                            <i class="icon-play3"></i>
+                        </button>
                     </form>
-                    <a class="btn btn-block btn-social btn-facebook" ng-click="facebookSignUp()">
-                        <i class="fa fa-facebook">f</i> Sign up with Facebook
-                    </a>
+                    <button ng-click="facebookSignUp()" class="btn btn-block btn-social btn-facebook btn-icon">
+                        <span>Sign up with Facebook</span>
+                        <i class="icon-play3"></i>
+                    </button>
+                    <p>By creating an account with linkfire, you agree that you have read, understood, and accepted our <a>Terms of use.</a></p>
+                    <p>Go back to <a ng-click="show = 'login'">Sign in</a></p>
                 </div>
             </div>
         </div>
     </script>
-    <!--End of Signin/Signup modal-->
+    <!--End of signinform/Signup modal-->
 </div>
