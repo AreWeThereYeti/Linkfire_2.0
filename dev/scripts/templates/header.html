@@ -31,8 +31,8 @@
                 <div class="form" ng-show="show =='login'">
                     <h4>Sign in</h4>
                     <form autocomplete="off" name="signinform" novalidate>
-                        <input type="email" name="email" ng-class="{ 'has-error': userForm.email.$invalid && userForm.email.$dirty }" ng-model="$parent.user.email" placeholder="Email" autocomplete="off" required/>
-                        <input type="password" name="password" ng-class="{ 'has-error': userForm.email.$invalid && userForm.email.$dirty }" ng-model="$parent.user.password" ng-minlength="4" placeholder="Password" autocomplete="off" required/>
+                        <input type="email" name="email" ng-class="{ 'has-error': signinform.email.$invalid && signinform.email.$dirty }" ng-model="$parent.user.email" placeholder="Email" autocomplete="off" required/>
+                        <input type="password" name="password" ng-class="{ 'has-error': signinform.password.$invalid && signinform.password.$dirty }" ng-model="$parent.user.password" ng-minlength="4" placeholder="Password" autocomplete="off" required/>
                         <button ng-click="$parent.signinform()" ng-disabled="signinform.$invalid" class="btn btn-primary btn-block btn-icon">
                             <span>Sign in</span>
                             <i class="icon-play3"></i>
@@ -46,11 +46,11 @@
                     <p >New Here? <a ng-click="show = 'signup'">Create an account</a></p>
                 </div>
                 <div class="form" ng-show="show =='signup'">
-                    <form novalidate name="signup">
-                        <input type="email" ng-model="$parent.user.email" placeholder="email" required/>
-                        <input type="password" placeholder="password" ng-model="$parent.user.password" id="pw1" name="pw1" ng-minlength="4" required/>
-                        <input type="password" placeholder="Password again" ng-model="pw2"  id="pw2" name="pw2" pw-check="pw1" ng-minlength="4" required/>
-                        <button ng-click="$parent.signup()" ng-disabled="signup.$invalid" class="btn btn-primary btn-block btn-icon">
+                    <form novalidate name="signupform">
+                        <input type="email"    ng-class="{ 'has-error': signupform.email.$invalid && signupform.email.$dirty }" ng-model="$parent.user.email" placeholder="email" required/>
+                        <input type="password" ng-class="{ 'has-error': signupform.email.$invalid && signupform.email.$dirty }" placeholder="password" ng-model="$parent.user.password" id="pw1" name="pw1" ng-minlength="4" required/>
+                        <input type="password" ng-class="{ 'has-error': signupform.email.$invalid && signupform.email.$dirty }"  placeholder="Password again" ng-model="pw2"  id="pw2" name="pw2" pw-check="pw1" ng-minlength="4" required/>
+                        <button ng-click="$parent.signup()" ng-disabled="signupform.$invalid" class="btn btn-primary btn-block btn-icon">
                             <span>Sign up</span>
                             <i class="icon-play3"></i>
                         </button>

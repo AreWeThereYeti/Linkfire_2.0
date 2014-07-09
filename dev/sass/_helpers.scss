@@ -20,20 +20,8 @@
   font-weight: 600;
 }
 
-.line:before,
-.line:after {
-  border-top: 1px solid #bdbdbd;
-  display: block;
-  height: 1px;
-  content: " ";
-  width: 40%;
-  position: absolute;
-  left: 0;
-  top: 95px;
-  vertical-align: middle;
-}
-
-.line:after {
-  right: 0;
-  left: auto;
+input.has-error{
+  transition: all 0.5s ease;
+  color: $error;
+  border: 1px solid $error;
 }
