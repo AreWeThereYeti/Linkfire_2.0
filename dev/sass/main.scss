@@ -81,6 +81,7 @@ p, span{
 
 // Infobox is the text elements above the shufflebox used on "features", "target" and "insights".
 .info-box {
+
 }
 
 .info-box h1{
@@ -97,14 +98,44 @@ p, span{
   line-height:1.7em;
   }
 
-// Shufflebox are the 3-spot boxes reused on "features", "target" and "insights". The feature class adds grey background and arrow // 
-
+// Shufflebox are the 3-spot boxes reused on "features", "target" and "insights". The feature class adds grey background and arrow //
 .shufflebox{
   height:105px;
   margin-top:10px;
   @include border-radius(5px);
   padding: 20px 25px 20px 25px;
   @include transition(all, 0.5s, ease);
+
+  .arrow {
+    top:50%;
+    margin-top:-10px;
+    content: ' ';
+    height: 0;
+    position: absolute;
+    width: 0;
+    opacity:0;
+    left:-20px;
+    border: 10px solid transparent;
+    @include transition(all, 0.5s, ease);
+    border-right-color: $grey-lighter;
+  }
+
+  .right{
+    right:-20px;
+    left: inherit;
+    border-right-color: transparent;
+    border-left-color: $grey-lighter;
+  }
+
+  &.feat{
+    background-color:$grey-lighter;
+    opacity: 1;
+    @include transition(all, 0.5s, ease);
+    .arrow {
+      opacity:1;
+    }
+  }
+
   .circ{
     position:relative;
     top:50%; 
@@ -144,29 +175,3 @@ p, span{
     color:$header-darkest;
   }
 }
-
-.feat{
-  background-color:$grey-lighter;
-  opacity: 1;
-  @include transition(all, 0.5s, ease);
-  .arrow {
-    opacity:1 !important;
-  }
-}
-
-.arrow {
-  top:50%;
-  margin-top:-10px;
-  content: ' ';
-  height: 0;
-  position: absolute;
-  width: 0;
-  opacity:0;
-  left:-20px;
-  border: 10px solid transparent;
-  @include transition(all, 0.5s, ease);
-  border-right-color: $grey-lighter;
-}
-
-
-
