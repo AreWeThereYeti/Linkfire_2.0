@@ -3,3 +3,6 @@
 .sass-cache/
 .node_modules/
 .tmp/
+autoprefixer
+has-ansi
+node_modules
