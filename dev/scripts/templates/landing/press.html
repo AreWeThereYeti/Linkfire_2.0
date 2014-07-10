@@ -1,4 +1,4 @@
-<div class="press">
+<div class="press" ng-controller="CarouselCtrl">
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-1">
@@ -9,28 +9,40 @@
                     <div>
                         <span class="icon-quotes-left"></span>
                     </div>
-                    <h3>
+                    <h3 ng-if="hover == 0">
                         "We use Linkfire to customise and keep track of all our marketing campaigns.
                         We especially like the brand transparency in our social media posts."
+                    </h3>
+                    <h3 ng-if="hover == 1">
+                        "Second Company blablbabla. <br>
+                        Second Company blablbabla."
+                    </h3>
+                    <h3 ng-if="hover == 2">
+                        "third Company blablbabla. <br>
+                        third Company blablbabla."
+                    </h3>
+                    <h3 ng-if="hover == 3">
+                        "fourth Company blablbabla.  <br>
+                        fourth Company blablbabla."
                     </h3>
                 </div>
             </div>
             <div class="col-md-1">
             </div>
         </div>
-        <div class="row">
+        <div class="row presslogos">
             <div class="col-md-2 hidden-xs">
             </div>
-            <div class="col-md-2 col-xs-6">
+            <div class="col-md-2 col-xs-6" ng-class="{current: hover == 0}" ng-mouseenter="stopTimer(); hover = 0" ng-mouseleave="startTimer()">
                 <img class="img-responsive" src="images/testimonial/testimonial_logos/copenhagen_records.png" alt=""/>
             </div>
-            <div class="col-md-2 col-xs-6">
+            <div class="col-md-2 col-xs-6" ng-class="{current: hover == 1}" ng-mouseenter="stopTimer(); hover = 1" ng-mouseleave="startTimer()">
                 <img class="img-responsive" src="images/testimonial/testimonial_logos/talent_pool.png" alt=""/>
             </div>
-            <div class="col-md-2 col-xs-6">
+            <div class="col-md-2 col-xs-6" ng-class="{current: hover == 2}" ng-mouseenter="stopTimer(); hover = 2" ng-mouseleave="startTimer()">
                 <img class="img-responsive" src="images/testimonial/testimonial_logos/bloggers_delight.png" alt=""/>
             </div>
-            <div class="col-md-2 col-xs-6">
+            <div class="col-md-2 col-xs-6" ng-class="{current: hover == 3}" ng-mouseenter="stopTimer(); hover = 3" ng-mouseleave="startTimer()">
                 <img class="img-responsive" src="images/testimonial/testimonial_logos/universal.png" alt=""/>
             </div>
             <div class="col-md-2 hidden-xs">

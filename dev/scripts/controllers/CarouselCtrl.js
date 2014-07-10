@@ -10,10 +10,10 @@ angular.module('linkfireWebappApp')
 					$scope.stop;
 					$scope.stop = $interval(function() {
 						$scope.hover = $scope.hover +1;
-						if($scope.hover > 2){
+						if($scope.hover > 3){
 							$scope.hover = 0;
 						}
-					}, 3000);
+					}, 5000);
 				};
 
 			//Stop timer. Used when mouse leaves shufflebox

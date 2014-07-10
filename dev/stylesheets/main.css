@@ -618,61 +618,61 @@ small {
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   /* Styles */
-  /* line 5, ../sass/_mobile.scss */
+  /* line 6, ../sass/_mobile.scss */
   .modal .modal-dialog {
     width: 97%;
     margin: 1.5%;
     margin-top: 20%;
   }
-  /* line 9, ../sass/_mobile.scss */
+  /* line 10, ../sass/_mobile.scss */
   .modal .modal-dialog .modal-content {
     padding: 5%;
   }
 
-  /* line 14, ../sass/_mobile.scss */
+  /* line 15, ../sass/_mobile.scss */
   #landing {
     height: 100vh;
   }
-  /* line 16, ../sass/_mobile.scss */
+  /* line 17, ../sass/_mobile.scss */
   #landing .jumbotron {
     margin: 100% 0 25% 0;
   }
-  /* line 18, ../sass/_mobile.scss */
+  /* line 19, ../sass/_mobile.scss */
   #landing .jumbotron h1 {
     font-size: 150%;
   }
-  /* line 21, ../sass/_mobile.scss */
+  /* line 22, ../sass/_mobile.scss */
   #landing .jumbotron p {
     font-size: 100%;
   }
 
-  /* line 28, ../sass/_mobile.scss */
+  /* line 29, ../sass/_mobile.scss */
   #splitter .splitter-head, #splitter2 .splitter-head {
     font-size: 125%;
   }
 
-  /* line 35, ../sass/_mobile.scss */
+  /* line 36, ../sass/_mobile.scss */
   #splitter3 .row h1, #splitter3 .row h3 {
     font-size: 125%;
   }
 
-  /* line 43, ../sass/_mobile.scss */
+  /* line 44, ../sass/_mobile.scss */
   footer .row .footer-container {
     height: 55px;
   }
-  /* line 47, ../sass/_mobile.scss */
+  /* line 48, ../sass/_mobile.scss */
   footer .row h4 {
     font-size: 90%;
     margin-top: 8%;
     margin-bottom: 5%;
   }
-  /* line 53, ../sass/_mobile.scss */
+  /* line 54, ../sass/_mobile.scss */
   footer .row p {
     font-size: 80%;
     margin: 0 0 2%;
     color: #587995;
   }
-  /* line 59, ../sass/_mobile.scss */
+  /* line 60, ../sass/_mobile.scss */
   footer .row img {
     width: 52%;
     margin: 10px 0;
@@ -743,8 +743,21 @@ p, span {
   margin-bottom: 2%;
   margin-top: 2%;
 }
+/* line 83, ../sass/main.scss */
+#press .presslogos div {
+  opacity: 0.5;
+}
+/* line 86, ../sass/main.scss */
+#press .presslogos div.current {
+  opacity: 1;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
 
-/* line 91, ../sass/main.scss */
+/* line 106, ../sass/main.scss */
 .info-box h1 {
   font-size: 40px;
   text-transform: uppercase;
@@ -754,14 +767,14 @@ p, span {
   font-weight: 700;
 }
 
-/* line 99, ../sass/main.scss */
+/* line 114, ../sass/main.scss */
 .info-box p {
   color: #999999;
   font-size: 16px;
   line-height: 1.7em;
 }
 
-/* line 106, ../sass/main.scss */
+/* line 121, ../sass/main.scss */
 .shufflebox {
   height: 105px;
   margin-top: 10px;
@@ -776,7 +789,7 @@ p, span {
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-/* line 113, ../sass/main.scss */
+/* line 128, ../sass/main.scss */
 .shufflebox .arrow {
   top: 50%;
   margin-top: -10px;
@@ -794,14 +807,14 @@ p, span {
   transition: all 0.5s ease;
   border-right-color: #dddfe1;
 }
-/* line 127, ../sass/main.scss */
+/* line 142, ../sass/main.scss */
 .shufflebox .right {
   right: -20px;
   left: inherit;
   border-right-color: transparent;
   border-left-color: #dddfe1;
 }
-/* line 134, ../sass/main.scss */
+/* line 149, ../sass/main.scss */
 .shufflebox.feat {
   background-color: #dddfe1;
   opacity: 1;
@@ -811,11 +824,11 @@ p, span {
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-/* line 138, ../sass/main.scss */
+/* line 153, ../sass/main.scss */
 .shufflebox.feat .arrow {
   opacity: 1;
 }
-/* line 143, ../sass/main.scss */
+/* line 158, ../sass/main.scss */
 .shufflebox .circ {
   position: relative;
   top: 50%;
@@ -827,17 +840,17 @@ p, span {
   float: left;
   border-radius: 25px;
 }
-/* line 154, ../sass/main.scss */
+/* line 169, ../sass/main.scss */
 .shufflebox .circ [class^="icon-"] {
   line-height: 50px;
   font-size: 140%;
 }
-/* line 159, ../sass/main.scss */
+/* line 174, ../sass/main.scss */
 .shufflebox .content {
   padding: 0 20px 0 20px;
   margin: 0;
 }
-/* line 163, ../sass/main.scss */
+/* line 178, ../sass/main.scss */
 .shufflebox h2 {
   color: #292f38;
   text-transform: uppercase;
@@ -846,13 +859,13 @@ p, span {
   padding: 0;
   margin: 0;
 }
-/* line 171, ../sass/main.scss */
+/* line 186, ../sass/main.scss */
 .shufflebox p {
   padding: 0;
   margin: 0;
   color: #999999;
 }
-/* line 176, ../sass/main.scss */
+/* line 191, ../sass/main.scss */
 .shufflebox h4 {
   margin-top: 0px;
   text-transform: uppercase;
