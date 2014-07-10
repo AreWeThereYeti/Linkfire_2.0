@@ -6,7 +6,9 @@ var gulp = require('gulp'),
 		compass = require('gulp-compass'),
 		gutil = require('gulp-util'),
 		concat = require('gulp-concat'),
-		rename    = require('gulp-rename'); // to rename any file
+		rename    = require('gulp-rename'),
+		watch = require('gulp-watch'),
+		livereload = require('gulp-livereload');
 
 
 gulp.task('minify', function () {
@@ -14,7 +16,6 @@ gulp.task('minify', function () {
 			.pipe(uglify())
 			.pipe(gulp.dest('.tmp/'))
 });
-
 
 gulp.task('concat', function() {
 	gulp.src('.tmp/**/*.js')
@@ -30,19 +31,20 @@ gulp.task('css', function () {
 });
 
 
+//Watch folders and livereload on changes
+gulp.task('watch', function() {
+	livereload.listen();
+	gulp.watch('dev/**').on('change', livereload.changed);
+});
+
 //Start webserver on localhost /localhost:3000
 gulp.task('webserver', function() {
 	connect.server({
 //		Start project from "dev" folder
 		root : ['dev'],
-		port: process.env.PORT || 3000,
-		livereload: true,
-		open: {
-			file: 'dev/index.html',
-			browser: 'Google Chrome'
-		}
+		port: process.env.PORT || 3000
 	});
 });
 
-gulp.task('default', ['webserver']);
+gulp.task('default', ['webserver', 'watch']);
 gulp.task('build', ['minify', 'concat', 'css' ]);

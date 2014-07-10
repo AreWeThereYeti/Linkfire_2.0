@@ -41,6 +41,8 @@ var LoginInstanceCtrl = function ($scope, $modalInstance, loginService, show, $f
 //		Legacy sign function. Located in the legacy folder. remove when we move to new api
 	  loginService.Login(args).then(function(){
 	    $window.location.reload();
+
+
     });
 
 //    New login function working. Uncomment when new api is ready
