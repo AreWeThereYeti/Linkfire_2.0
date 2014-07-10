@@ -20,11 +20,26 @@
         font-size: 150%;
       }
       p{
-        font-size: 100%;
+        font-size: 90%;
+        text-align: center;
       }
     }
   }
 
+  #features{
+    h1, p{
+      text-align: center;
+    }
+
+    h1{
+      font-size: 120%;
+    }
+
+    .feat-img{
+      width: 70%;
+    }
+
+  }
   #splitter, #splitter2{
     .splitter-head{
       font-size:  125%;
@@ -60,6 +75,22 @@
       img{
         width: 52%;
         margin: 10px 0;
+      }
+    }
+  }
+
+
+  .feat{
+    .circ{
+      margin-top: 35px;
+      width: 35px;
+      height: 35px;
+      background-color: #3cbda3;
+      border-radius: 50%;
+      padding-left: 10px;
+      [class^="icon-"]{
+        line-height: 37px;
+        font-size: 110%;
       }
     }
   }
