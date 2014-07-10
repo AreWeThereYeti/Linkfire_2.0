@@ -468,7 +468,7 @@ small {
 
 /* line 1, ../sass/_landing.scss */
 #landing {
-  background: url('../images/bg1.jpg?1404934744');
+  background: url('../images/bg1.jpg?1404978905');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -531,7 +531,7 @@ small {
 
 /* line 1, ../sass/_target.scss */
 #target {
-  background: url('../images/bg-target.jpg?1404934744');
+  background: url('../images/bg-target.jpg?1404978905');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -560,7 +560,7 @@ small {
 
 /* line 10, ../sass/_splitters.scss */
 #splitter {
-  background: url('../images/bg-splitter1.jpg?1404934743');
+  background: url('../images/bg-splitter1.jpg?1404978905');
 }
 /* line 13, ../sass/_splitters.scss */
 #splitter .row {
@@ -570,7 +570,7 @@ small {
 
 /* line 20, ../sass/_splitters.scss */
 #splitter2 {
-  background: url('../images/bg-splitter2.jpg?1404934743');
+  background: url('../images/bg-splitter2.jpg?1404978905');
 }
 /* line 23, ../sass/_splitters.scss */
 #splitter2 .row {
@@ -580,7 +580,7 @@ small {
 
 /* line 29, ../sass/_splitters.scss */
 #splitter3 {
-  background: url('../images/bg-splitter3.jpg?1404934743');
+  background: url('../images/bg-splitter3.jpg?1404978905');
 }
 /* line 33, ../sass/_splitters.scss */
 #splitter3 .row {
@@ -607,7 +607,7 @@ small {
 
 /* line 1, ../sass/_insights.scss */
 #insights {
-  background: url('../images/bg-insights.jpg?1404934743');
+  background: url('../images/bg-insights.jpg?1404978905');
   padding-top: 15%;
   padding-bottom: 15%;
 }
@@ -616,22 +616,52 @@ small {
   margin-top: 0px;
 }
 
-/* line 24, ../sass/main.scss */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* Styles */
+  /* line 5, ../sass/_mobile.scss */
+  .modal .modal-dialog {
+    width: 97%;
+    margin: 1.5%;
+    margin-top: 20%;
+  }
+  /* line 9, ../sass/_mobile.scss */
+  .modal .modal-dialog .modal-content {
+    padding: 5%;
+  }
+
+  /* line 14, ../sass/_mobile.scss */
+  #landing {
+    height: 100vh;
+  }
+  /* line 16, ../sass/_mobile.scss */
+  #landing .jumbotron {
+    margin: 100% 0 25% 0;
+  }
+  /* line 18, ../sass/_mobile.scss */
+  #landing .jumbotron h1 {
+    font-size: 150%;
+  }
+  /* line 21, ../sass/_mobile.scss */
+  #landing .jumbotron p {
+    font-size: 100%;
+  }
+}
+/* line 27, ../sass/main.scss */
 body {
   font-family: 'Roboto', sans-serif;
 }
 
-/* line 27, ../sass/main.scss */
+/* line 30, ../sass/main.scss */
 .container-fluid {
   padding: 0 5% 0 5%;
 }
 
-/* line 32, ../sass/main.scss */
+/* line 35, ../sass/main.scss */
 p, span {
   color: whitesmoke;
 }
 
-/* line 36, ../sass/main.scss */
+/* line 39, ../sass/main.scss */
 .bg-prefs, #splitter, #splitter2, #splitter3, #insights {
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -643,32 +673,32 @@ p, span {
   color: #000;
 }
 
-/* line 46, ../sass/main.scss */
+/* line 49, ../sass/main.scss */
 #logo-banner {
   background-color: #f0f1f3;
 }
 
-/* line 51, ../sass/main.scss */
+/* line 54, ../sass/main.scss */
 #press {
-  background: url('../images/bg-testimonial.jpg?1404934744');
+  background: url('../images/bg-testimonial.jpg?1404978905');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
-/* line 54, ../sass/main.scss */
+/* line 57, ../sass/main.scss */
 #press .testimonial {
   padding: 30px;
 }
-/* line 57, ../sass/main.scss */
+/* line 60, ../sass/main.scss */
 #press .testimonial .row .icon-quotes-left {
   font-size: 40px;
 }
-/* line 61, ../sass/main.scss */
+/* line 64, ../sass/main.scss */
 #press .testimonial .row div {
   text-align: center;
 }
-/* line 64, ../sass/main.scss */
+/* line 67, ../sass/main.scss */
 #press .testimonial .row h3 {
   color: white;
   font-size: 23px;
@@ -676,13 +706,13 @@ p, span {
   font-family: 'Roboto', sans-serif;
   font-style: italic;
 }
-/* line 73, ../sass/main.scss */
+/* line 76, ../sass/main.scss */
 #press .row {
   margin-bottom: 2%;
   margin-top: 2%;
 }
 
-/* line 88, ../sass/main.scss */
+/* line 91, ../sass/main.scss */
 .info-box h1 {
   font-size: 40px;
   text-transform: uppercase;
@@ -692,14 +722,14 @@ p, span {
   font-weight: 700;
 }
 
-/* line 96, ../sass/main.scss */
+/* line 99, ../sass/main.scss */
 .info-box p {
   color: #999999;
   font-size: 16px;
   line-height: 1.7em;
 }
 
-/* line 103, ../sass/main.scss */
+/* line 106, ../sass/main.scss */
 .shufflebox {
   height: 105px;
   margin-top: 10px;
@@ -714,7 +744,7 @@ p, span {
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-/* line 110, ../sass/main.scss */
+/* line 113, ../sass/main.scss */
 .shufflebox .arrow {
   top: 50%;
   margin-top: -10px;
@@ -732,14 +762,14 @@ p, span {
   transition: all 0.5s ease;
   border-right-color: #dddfe1;
 }
-/* line 124, ../sass/main.scss */
+/* line 127, ../sass/main.scss */
 .shufflebox .right {
   right: -20px;
   left: inherit;
   border-right-color: transparent;
   border-left-color: #dddfe1;
 }
-/* line 131, ../sass/main.scss */
+/* line 134, ../sass/main.scss */
 .shufflebox.feat {
   background-color: #dddfe1;
   opacity: 1;
@@ -749,11 +779,11 @@ p, span {
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-/* line 135, ../sass/main.scss */
+/* line 138, ../sass/main.scss */
 .shufflebox.feat .arrow {
   opacity: 1;
 }
-/* line 140, ../sass/main.scss */
+/* line 143, ../sass/main.scss */
 .shufflebox .circ {
   position: relative;
   top: 50%;
@@ -765,17 +795,17 @@ p, span {
   float: left;
   border-radius: 25px;
 }
-/* line 151, ../sass/main.scss */
+/* line 154, ../sass/main.scss */
 .shufflebox .circ [class^="icon-"] {
   line-height: 50px;
   font-size: 140%;
 }
-/* line 156, ../sass/main.scss */
+/* line 159, ../sass/main.scss */
 .shufflebox .content {
   padding: 0 20px 0 20px;
   margin: 0;
 }
-/* line 160, ../sass/main.scss */
+/* line 163, ../sass/main.scss */
 .shufflebox h2 {
   color: #292f38;
   text-transform: uppercase;
@@ -784,13 +814,13 @@ p, span {
   padding: 0;
   margin: 0;
 }
-/* line 168, ../sass/main.scss */
+/* line 171, ../sass/main.scss */
 .shufflebox p {
   padding: 0;
   margin: 0;
   color: #999999;
 }
-/* line 173, ../sass/main.scss */
+/* line 176, ../sass/main.scss */
 .shufflebox h4 {
   margin-top: 0px;
   text-transform: uppercase;
