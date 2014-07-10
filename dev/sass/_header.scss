@@ -56,9 +56,9 @@
   margin-right: 5px;
 }
 #header.add-bg{
-    
-    background-color: $dark-color;
-    transition: background-color 0.2s linear;
+    background-color: $deep-blue;
+    opacity: 0.9;
+    transition: background-color 0.2s easeinout;
 }
 
 

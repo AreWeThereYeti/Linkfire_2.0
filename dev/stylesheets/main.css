@@ -260,7 +260,7 @@ a {
   margin-left: 15px;
   display: block;
   vertical-align: middle;
-  background: url('../images/linkfire_logo_w_text.svg?1402585395');
+  background: url('../images/linkfire_logo_w_text.svg?1404993342');
   -webkit-background-size: contain;
   -moz-background-size: contain;
   -o-background-size: contain;
@@ -300,13 +300,14 @@ a {
 
 /* line 58, ../sass/_header.scss */
 #header.add-bg {
-  background-color: #292f38;
-  transition: background-color 0.2s linear;
+  background-color: #22272f;
+  opacity: 0.9;
+  transition: background-color 0.2s easeinout;
 }
 
 /* line 1, ../sass/_footer.scss */
 footer {
-  background-color: #292f38;
+  background-color: #22272f;
   color: #ffffff;
 }
 /* line 4, ../sass/_footer.scss */

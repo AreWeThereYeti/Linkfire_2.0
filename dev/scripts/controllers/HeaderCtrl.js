@@ -1,8 +1,7 @@
 'use strict';
 
-//Controller for the header of the page
-angular.module('linkfireWebappApp')
-  .controller('HeaderCtrl', ['$scope', 'loginService','$modal', '$facebook', function ($scope, loginService, $modal, $facebook) {
+
+linkfireWebappApp.controller('HeaderCtrl', ['$scope', 'loginService','$modal', '$facebook', function ($scope, loginService, $modal, $facebook) {
 
 	$scope.show = '';
 
