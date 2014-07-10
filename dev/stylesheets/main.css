@@ -508,11 +508,14 @@ small {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  padding: 5% 0 5% 0;
   width: 100%;
   height: 100%;
   background-position: center;
   color: #000;
+}
+/* line 9, ../sass/_features.scss */
+#features .row {
+  padding: 5% 0;
 }
 /* line 11, ../sass/_features.scss */
 #features .row h4 {
@@ -521,23 +524,17 @@ small {
 }
 
 /* line 19, ../sass/_features.scss */
-.feat-content {
-  padding: 10% 0 15% 0;
+.valign {
+  padding: 5% 0;
 }
 
-/* line 23, ../sass/_features.scss */
-.cn {
-  padding: 5% 0 15% 0;
-}
-
-/* line 26, ../sass/_features.scss */
+/* line 22, ../sass/_features.scss */
 .feat-img {
   margin: 0 auto 0 auto;
 }
 
 /* line 1, ../sass/_target.scss */
 #target {
-  background: url('../images/bg-target.jpg?1404992485');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -545,12 +542,14 @@ small {
   background-color: #f0f1f3;
   height: 100%;
   width: 100%;
-  padding-top: 15%;
-  padding-bottom: 15%;
   background-position: center;
   color: #000;
 }
-/* line 13, ../sass/_target.scss */
+/* line 10, ../sass/_target.scss */
+#target .row {
+  padding: 3% 0;
+}
+/* line 12, ../sass/_target.scss */
 #target .row h4 {
   margin-top: 0px;
 }
