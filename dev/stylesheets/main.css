@@ -645,6 +645,38 @@ small {
   #landing .jumbotron p {
     font-size: 100%;
   }
+
+  /* line 28, ../sass/_mobile.scss */
+  #splitter .splitter-head, #splitter2 .splitter-head {
+    font-size: 125%;
+  }
+
+  /* line 35, ../sass/_mobile.scss */
+  #splitter3 .row h1, #splitter3 .row h3 {
+    font-size: 125%;
+  }
+
+  /* line 43, ../sass/_mobile.scss */
+  footer .row .footer-container {
+    height: 55px;
+  }
+  /* line 47, ../sass/_mobile.scss */
+  footer .row h4 {
+    font-size: 90%;
+    margin-top: 8%;
+    margin-bottom: 5%;
+  }
+  /* line 53, ../sass/_mobile.scss */
+  footer .row p {
+    font-size: 80%;
+    margin: 0 0 2%;
+    color: #587995;
+  }
+  /* line 59, ../sass/_mobile.scss */
+  footer .row img {
+    width: 52%;
+    margin: 10px 0;
+  }
 }
 /* line 27, ../sass/main.scss */
 body {
