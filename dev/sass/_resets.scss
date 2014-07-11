@@ -5,12 +5,19 @@ html,body{
   margin: 0;
 }
 
+body{
+}
+
 input, button  {
   outline: 0;
 }
 
 a{
   cursor: pointer;
+}
+
+.row{
+  margin: 0;
 }
 
 //Bootstrap resets

@@ -238,22 +238,27 @@ html, body {
   margin: 0;
 }
 
-/* line 8, ../sass/_resets.scss */
+/* line 11, ../sass/_resets.scss */
 input, button {
   outline: 0;
 }
 
-/* line 12, ../sass/_resets.scss */
+/* line 15, ../sass/_resets.scss */
 a {
   cursor: pointer;
 }
 
-/* line 17, ../sass/_resets.scss */
+/* line 19, ../sass/_resets.scss */
+.row {
+  margin: 0;
+}
+
+/* line 24, ../sass/_resets.scss */
 .glyphicon {
   color: #999999;
 }
 
-/* line 21, ../sass/_resets.scss */
+/* line 28, ../sass/_resets.scss */
 .input-group-addon {
   padding: 6px 12px;
   font-size: 14px;
@@ -342,15 +347,16 @@ footer .row h4 {
   font-size: 18px;
 }
 /* line 10, ../sass/_footer.scss */
-footer .row p, footer .row a {
+footer .row span, footer .row a {
   color: #587995;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -ms-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
+  display: block;
 }
-/* line 15, ../sass/_footer.scss */
+/* line 16, ../sass/_footer.scss */
 footer .row a:hover {
   color: #587995;
   text-decoration: underline;
@@ -360,7 +366,7 @@ footer .row a:hover {
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-/* line 21, ../sass/_footer.scss */
+/* line 22, ../sass/_footer.scss */
 footer .row img {
   margin-top: 20px;
   display: block;
