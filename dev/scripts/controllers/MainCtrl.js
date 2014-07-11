@@ -1,7 +1,4 @@
 'use strict';
-
-var linkfireWebappApp = angular.module('linkfireWebappApp');
-
 linkfireWebappApp.controller('MainCtrl', ['$scope', '$modal', 'constants', function ($scope, $modal, constants) {
   $scope.open = function () {
     var modalInstance = $modal.open({

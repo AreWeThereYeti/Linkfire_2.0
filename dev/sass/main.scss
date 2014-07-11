@@ -125,56 +125,11 @@ p, span{
   padding: 20px 25px 20px 25px;
   @include transition(all, 0.5s, ease);
 
-  .arrow {
-    top:50%;
-    margin-top:-10px;
-    content: ' ';
-    height: 0;
-    position: absolute;
-    width: 0;
-    opacity:0;
-    left:-20px;
-    border: 10px solid transparent;
-    @include transition(all, 0.5s, ease);
-    border-right-color: $grey-lighter;
-  }
-
-  .right{
-    right:-20px;
-    left: inherit;
-    border-right-color: transparent;
-    border-left-color: $grey-lighter;
-  }
-
-  &.feat{
-    background-color:$grey-lighter;
-    opacity: 1;
-    @include transition(all, 0.5s, ease);
-    .arrow {
-      opacity:1;
-    }
-  }
-
-  .circ{
-    position:relative;
-    top:50%; 
-    margin-top:-25px;
-    display: table-cell;
-    width:50px;
-    height:50px;
-    background-color:$lf-green;
-    float:left;
-    border-radius: 25px;
-
-    [class^="icon-"]{
-      line-height: 50px;
-      font-size: 140%;
-      }
-  }
   .content  {
     padding:0 20px 0 20px;
     margin:0;
   }
+
   h2{
     color:$header-blue;
     text-transform:uppercase;
@@ -192,5 +147,53 @@ p, span{
     margin-top: 0px;
     text-transform:uppercase;
     color:$header-darkest;
+  }
+}
+
+.circ{
+  position:relative;
+  top:50%;
+  margin-top:-25px;
+  display: table-cell;
+  width:50px;
+  height:50px;
+  background-color:$lf-green;
+  float:left;
+  border-radius: 25px;
+
+  [class^="icon-"]{
+    line-height: 50px;
+    font-size: 140%;
+  }
+}
+
+.arrow {
+  top:50%;
+  margin-top:-10px;
+  content: ' ';
+  height: 0;
+  position: absolute;
+  width: 0;
+  opacity:0;
+  left:-20px;
+  border: 10px solid transparent;
+  @include transition(all, 0.5s, ease);
+  border-right-color: $grey-lighter;
+}
+
+.right{
+  right:-20px;
+  left: inherit;
+  border-right-color: transparent;
+  border-left-color: $grey-lighter;
+}
+
+.feat{
+  display: inline-block;
+  background-color:$grey-lighter;
+  opacity: 1;
+  @include transition(all, 0.5s, ease);
+  .arrow {
+    opacity:1;
   }
 }
