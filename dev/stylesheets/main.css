@@ -260,7 +260,7 @@ a {
   margin-left: 15px;
   display: block;
   vertical-align: middle;
-  background: url('../images/linkfire_logo_w_text.svg?1405004886');
+  background: url('../images/linkfire_logo_w_text.svg?1404998920');
   -webkit-background-size: contain;
   -moz-background-size: contain;
   -o-background-size: contain;
@@ -469,7 +469,7 @@ small {
 
 /* line 1, ../sass/_landing.scss */
 #landing {
-  background: url('../images/bg1.jpg?1404992485');
+  background: url('../images/bg1.jpg?1404978905');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -509,14 +509,11 @@ small {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  padding: 5% 0 5% 0;
   width: 100%;
   height: 100%;
   background-position: center;
   color: #000;
-}
-/* line 9, ../sass/_features.scss */
-#features .row {
-  padding: 5% 0;
 }
 /* line 11, ../sass/_features.scss */
 #features .row h4 {
@@ -524,8 +521,24 @@ small {
   text-transform: uppercase;
 }
 
+/* line 19, ../sass/_features.scss */
+.feat-content {
+  padding: 10% 0 15% 0;
+}
+
+/* line 23, ../sass/_features.scss */
+.cn {
+  padding: 5% 0 15% 0;
+}
+
+/* line 26, ../sass/_features.scss */
+.feat-img {
+  margin: 0 auto 0 auto;
+}
+
 /* line 1, ../sass/_target.scss */
 #target {
+  background: url('../images/bg-target.jpg?1404978905');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -533,26 +546,12 @@ small {
   background-color: #f0f1f3;
   height: 100%;
   width: 100%;
+  padding-top: 15%;
+  padding-bottom: 15%;
   background-position: center;
   color: #000;
 }
-/* line 10, ../sass/_target.scss */
-#target .bg img {
-  position: relative;
-  top: 50%;
-  left: -200px;
-  -ms-transform: scale(1.5, 1.5);
-  /* IE 9 */
-  -webkit-transform: scale(1.5, 1.5);
-  /* Chrome, Safari, Opera */
-  transform: scale(1.5, 1.5);
-}
-/* line 19, ../sass/_target.scss */
-#target .row {
-  position: relative;
-  padding: 5% 0;
-}
-/* line 22, ../sass/_target.scss */
+/* line 13, ../sass/_target.scss */
 #target .row h4 {
   margin-top: 0px;
 }
@@ -568,7 +567,7 @@ small {
 
 /* line 10, ../sass/_splitters.scss */
 #splitter {
-  background: url('../images/bg-splitter1.jpg?1404992485');
+  background: url('../images/bg-splitter1.jpg?1404978905');
 }
 /* line 13, ../sass/_splitters.scss */
 #splitter .row {
@@ -578,7 +577,7 @@ small {
 
 /* line 20, ../sass/_splitters.scss */
 #splitter2 {
-  background: url('../images/bg-splitter2.jpg?1404992485');
+  background: url('../images/bg-splitter2.jpg?1404978905');
 }
 /* line 23, ../sass/_splitters.scss */
 #splitter2 .row {
@@ -588,7 +587,7 @@ small {
 
 /* line 29, ../sass/_splitters.scss */
 #splitter3 {
-  background: url('../images/bg-splitter3.jpg?1404992485');
+  background: url('../images/bg-splitter3.jpg?1404978905');
 }
 /* line 33, ../sass/_splitters.scss */
 #splitter3 .row {
@@ -615,7 +614,7 @@ small {
 
 /* line 1, ../sass/_insights.scss */
 #insights {
-  background: url('../images/bg-insights.jpg?1404992485');
+  background: url('../images/bg-insights.jpg?1404978905');
   padding-top: 15%;
   padding-bottom: 15%;
 }
@@ -651,39 +650,106 @@ small {
   }
   /* line 22, ../sass/_mobile.scss */
   #landing .jumbotron p {
-    font-size: 100%;
+    font-size: 90%;
+    text-align: center;
   }
 
-  /* line 29, ../sass/_mobile.scss */
+  /* line 31, ../sass/_mobile.scss */
+  #features content h1, #features content p {
+    text-align: center;
+  }
+  /* line 35, ../sass/_mobile.scss */
+  #features content h1 {
+    font-size: 120%;
+  }
+  /* line 40, ../sass/_mobile.scss */
+  #features .feat-img {
+    width: 55%;
+  }
+
+  /* line 46, ../sass/_mobile.scss */
   #splitter .splitter-head, #splitter2 .splitter-head {
     font-size: 125%;
   }
 
-  /* line 36, ../sass/_mobile.scss */
+  /* line 53, ../sass/_mobile.scss */
   #splitter3 .row h1, #splitter3 .row h3 {
     font-size: 125%;
   }
 
-  /* line 44, ../sass/_mobile.scss */
+  /* line 61, ../sass/_mobile.scss */
   footer .row .footer-container {
     height: 55px;
   }
-  /* line 48, ../sass/_mobile.scss */
+  /* line 65, ../sass/_mobile.scss */
   footer .row h4 {
     font-size: 90%;
     margin-top: 8%;
     margin-bottom: 5%;
   }
-  /* line 54, ../sass/_mobile.scss */
+  /* line 71, ../sass/_mobile.scss */
   footer .row p {
     font-size: 80%;
     margin: 0 0 2%;
     color: #587995;
   }
-  /* line 60, ../sass/_mobile.scss */
+  /* line 77, ../sass/_mobile.scss */
   footer .row img {
     width: 52%;
     margin: 10px 0;
+  }
+
+  /* line 85, ../sass/_mobile.scss */
+  .image .arrow {
+    left: 0;
+    opacity: 1;
+    position: relative;
+    width: 0;
+    border: 10px solid transparent;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    border-bottom-color: #dddfe1;
+    margin: 0 auto;
+    margin-bottom: -2%;
+  }
+
+  /* line 103, ../sass/_mobile.scss */
+  .feat {
+    margin: 2% 7%;
+    border-radius: 5px;
+    height: 70px;
+    padding-top: 3%;
+  }
+  /* line 108, ../sass/_mobile.scss */
+  .feat .circ {
+    margin-top: 50%;
+    width: 35px;
+    height: 35px;
+    background-color: #3cbda3;
+    border-radius: 50%;
+    padding-left: 10px;
+  }
+  /* line 116, ../sass/_mobile.scss */
+  .feat .circ [class^="icon-"] {
+    line-height: 37px;
+    font-size: 110%;
+  }
+  /* line 122, ../sass/_mobile.scss */
+  .feat p, .feat h4 {
+    text-align: left;
+  }
+  /* line 126, ../sass/_mobile.scss */
+  .feat h4 {
+    margin-bottom: 0;
+    font-size: 120%;
+  }
+  /* line 131, ../sass/_mobile.scss */
+  .feat p {
+    color: #666666;
+    font-size: 85%;
   }
 }
 /* line 27, ../sass/main.scss */
@@ -713,32 +779,32 @@ p, span {
   color: #000;
 }
 
-/* line 47, ../sass/main.scss */
+/* line 49, ../sass/main.scss */
 #logo-banner {
   background-color: #f0f1f3;
 }
 
-/* line 52, ../sass/main.scss */
+/* line 54, ../sass/main.scss */
 #press {
-  background: url('../images/bg-testimonial.jpg?1404992485');
+  background: url('../images/bg-testimonial.jpg?1404978905');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
-/* line 55, ../sass/main.scss */
+/* line 57, ../sass/main.scss */
 #press .testimonial {
   padding: 30px;
 }
-/* line 58, ../sass/main.scss */
+/* line 60, ../sass/main.scss */
 #press .testimonial .row .icon-quotes-left {
   font-size: 40px;
 }
-/* line 62, ../sass/main.scss */
+/* line 64, ../sass/main.scss */
 #press .testimonial .row div {
   text-align: center;
 }
-/* line 65, ../sass/main.scss */
+/* line 67, ../sass/main.scss */
 #press .testimonial .row h3 {
   color: white;
   font-size: 23px;
@@ -746,16 +812,16 @@ p, span {
   font-family: 'Roboto', sans-serif;
   font-style: italic;
 }
-/* line 74, ../sass/main.scss */
+/* line 76, ../sass/main.scss */
 #press .row {
   margin-bottom: 2%;
   margin-top: 2%;
 }
-/* line 81, ../sass/main.scss */
+/* line 83, ../sass/main.scss */
 #press .presslogos div {
   opacity: 0.5;
 }
-/* line 84, ../sass/main.scss */
+/* line 86, ../sass/main.scss */
 #press .presslogos div.current {
   opacity: 1;
   -webkit-transition: all 0.5s ease;
@@ -765,17 +831,7 @@ p, span {
   transition: all 0.5s ease;
 }
 
-/* line 92, ../sass/main.scss */
-.valign {
-  padding: 10% 0;
-}
-
-/* line 95, ../sass/main.scss */
-.feat-img {
-  margin: 0 auto 0 auto;
-}
-
-/* line 102, ../sass/main.scss */
+/* line 106, ../sass/main.scss */
 .info-box h1 {
   font-size: 40px;
   text-transform: uppercase;
@@ -784,14 +840,15 @@ p, span {
   padding: 0;
   font-weight: 700;
 }
-/* line 110, ../sass/main.scss */
+
+/* line 114, ../sass/main.scss */
 .info-box p {
   color: #999999;
   font-size: 16px;
   line-height: 1.7em;
 }
 
-/* line 119, ../sass/main.scss */
+/* line 121, ../sass/main.scss */
 .shufflebox {
   height: 105px;
   margin-top: 10px;
@@ -806,8 +863,53 @@ p, span {
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-/* line 126, ../sass/main.scss */
-.shufflebox .arrow {
+/* line 128, ../sass/main.scss */
+.shufflebox .content {
+  padding: 0 20px 0 20px;
+  margin: 0;
+}
+/* line 133, ../sass/main.scss */
+.shufflebox h2 {
+  color: #292f38;
+  text-transform: uppercase;
+  font-weight: 300;
+  line-height: 1.4em;
+  padding: 0;
+  margin: 0;
+}
+/* line 141, ../sass/main.scss */
+.shufflebox p {
+  padding: 0;
+  margin: 0;
+  color: #999999;
+}
+/* line 146, ../sass/main.scss */
+.shufflebox h4 {
+  margin-top: 0px;
+  text-transform: uppercase;
+  color: black;
+}
+
+/* line 153, ../sass/main.scss */
+.circ {
+  position: relative;
+  top: 50%;
+  margin-top: -25px;
+  display: table-cell;
+  width: 50px;
+  height: 50px;
+  background-color: #3cbda3;
+  float: left;
+  border-radius: 25px;
+}
+/* line 164, ../sass/main.scss */
+.circ [class^="icon-"] {
+  line-height: 50px;
+  font-size: 140%;
+}
+
+/* line 170, ../sass/main.scss */
+.arrow {
   top: 50%;
   margin-top: -10px;
   content: ' ';
@@ -824,15 +926,18 @@ p, span {
   transition: all 0.5s ease;
   border-right-color: #dddfe1;
 }
-/* line 140, ../sass/main.scss */
-.shufflebox .right {
+
+/* line 184, ../sass/main.scss */
+.right {
   right: -20px;
   left: inherit;
   border-right-color: transparent;
   border-left-color: #dddfe1;
 }
-/* line 147, ../sass/main.scss */
-.shufflebox.feat {
+
+/* line 191, ../sass/main.scss */
+.feat {
+  display: inline-block;
   background-color: #dddfe1;
   opacity: 1;
   -webkit-transition: all 0.5s ease;
@@ -841,50 +946,7 @@ p, span {
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-/* line 151, ../sass/main.scss */
-.shufflebox.feat .arrow {
+/* line 196, ../sass/main.scss */
+.feat .arrow {
   opacity: 1;
-}
-/* line 156, ../sass/main.scss */
-.shufflebox .circ {
-  position: relative;
-  top: 50%;
-  margin-top: -25px;
-  display: table-cell;
-  width: 50px;
-  height: 50px;
-  background-color: #3cbda3;
-  float: left;
-  border-radius: 25px;
-}
-/* line 167, ../sass/main.scss */
-.shufflebox .circ [class^="icon-"] {
-  line-height: 50px;
-  font-size: 140%;
-}
-/* line 172, ../sass/main.scss */
-.shufflebox .content {
-  padding: 0 20px 0 20px;
-  margin: 0;
-}
-/* line 176, ../sass/main.scss */
-.shufflebox h2 {
-  color: #292f38;
-  text-transform: uppercase;
-  font-weight: 300;
-  line-height: 1.4em;
-  padding: 0;
-  margin: 0;
-}
-/* line 184, ../sass/main.scss */
-.shufflebox p {
-  padding: 0;
-  margin: 0;
-  color: #999999;
-}
-/* line 189, ../sass/main.scss */
-.shufflebox h4 {
-  margin-top: 0px;
-  text-transform: uppercase;
-  color: black;
 }
