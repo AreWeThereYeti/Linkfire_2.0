@@ -1,14 +1,15 @@
 #insights{
   //@include background(image-url("bg-insights.jpg"));
   @extend .bg-prefs;
-  
   padding-top:5%;
   padding-bottom:5%;
+  overflow: hidden;
 
 
   .bg img{
     position:relative;
     top:60%;
+    widows: 85%;
     right:-300px;
     -ms-transform: scale(2,2); /* IE 9 */
     -webkit-transform: scale(2,2); /* Chrome, Safari, Opera */

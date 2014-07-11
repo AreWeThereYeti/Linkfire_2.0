@@ -20,6 +20,11 @@
   font-weight: 600;
 }
 
+.no-bg{
+  background-color: transparent !important;
+}
+
+//input fields
 input.has-error{
   transition: all 0.5s ease;
   color: $error;

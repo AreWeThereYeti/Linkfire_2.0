@@ -93,6 +93,11 @@
 }
 
 /* line 101, ../sass/_buttons.scss */
+.btn:hover, .btn:focus {
+  color: #ffffff;
+}
+
+/* line 105, ../sass/_buttons.scss */
 button.close {
   color: #999999;
   position: absolute;
@@ -106,13 +111,14 @@ button.close {
   line-height: 1;
   right: 10px;
   top: 5px;
+  z-index: 1;
 }
-/* line 114, ../sass/_buttons.scss */
+/* line 119, ../sass/_buttons.scss */
 button.close:focus {
   outline: 0;
 }
 
-/* line 119, ../sass/_buttons.scss */
+/* line 124, ../sass/_buttons.scss */
 .input-group-addon {
   padding: 6px 12px;
   font-size: 14px;
@@ -125,7 +131,7 @@ button.close:focus {
   border-radius: 0px;
 }
 
-/* line 132, ../sass/_buttons.scss */
+/* line 137, ../sass/_buttons.scss */
 input[type="email"], input[type="password"] {
   border-radius: 5px;
   display: block;
@@ -171,17 +177,42 @@ input[type="email"], input[type="password"] {
 }
 
 /* line 23, ../sass/_helpers.scss */
+.no-bg {
+  background-color: transparent !important;
+}
+
+/* line 28, ../sass/_helpers.scss */
 input.has-error {
   transition: all 0.5s ease;
   color: #fc3429;
   border: 1px solid #fc3429;
 }
 
-/* line 29, ../sass/_helpers.scss */
+/* line 34, ../sass/_helpers.scss */
 input.valid {
   transition: all 0.5s ease;
   color: #2c947f;
   border: 1px solid #2c947f;
+}
+
+/* line 1, ../sass/_animation.scss */
+.ng-enter {
+  opacity: 0;
+}
+
+/* line 5, ../sass/_animation.scss */
+.ng-enter-active {
+  opacity: 1;
+}
+
+/* line 10, ../sass/_animation.scss */
+.ng-leave {
+  opacity: 1;
+}
+
+/* line 14, ../sass/_animation.scss */
+.ng-leave-active {
+  opacity: 0;
 }
 
 /* line 2, ../sass/_modal.scss */
@@ -572,18 +603,26 @@ small {
   margin-top: 0px;
   text-transform: uppercase;
 }
-
+/* line 16, ../sass/_features.scss */
+#features .row .image {
+  height: 500px;
+}
 /* line 19, ../sass/_features.scss */
+#features .row .image img {
+  height: 500px;
+}
+
+/* line 27, ../sass/_features.scss */
 .feat-content {
   padding: 10% 0 15% 0;
 }
 
-/* line 23, ../sass/_features.scss */
+/* line 31, ../sass/_features.scss */
 .cn {
   padding: 5% 0 15% 0;
 }
 
-/* line 26, ../sass/_features.scss */
+/* line 34, ../sass/_features.scss */
 .feat-img {
   margin: 0 auto 0 auto;
 }
@@ -602,21 +641,22 @@ small {
 }
 /* line 10, ../sass/_target.scss */
 #target .bg img {
+  width: 60%;
   position: relative;
   top: 50%;
-  left: -200px;
+  left: -20px;
   -ms-transform: scale(1.5, 1.5);
   /* IE 9 */
   -webkit-transform: scale(1.5, 1.5);
   /* Chrome, Safari, Opera */
   transform: scale(1.5, 1.5);
 }
-/* line 19, ../sass/_target.scss */
+/* line 20, ../sass/_target.scss */
 #target .row {
   position: relative;
   padding: 5% 0;
 }
-/* line 22, ../sass/_target.scss */
+/* line 23, ../sass/_target.scss */
 #target .row h4 {
   margin-top: 0px;
 }
@@ -681,11 +721,13 @@ small {
 #insights {
   padding-top: 5%;
   padding-bottom: 5%;
+  overflow: hidden;
 }
 /* line 9, ../sass/_insights.scss */
 #insights .bg img {
   position: relative;
   top: 60%;
+  widows: 85%;
   right: -300px;
   -ms-transform: scale(2, 2);
   /* IE 9 */
@@ -693,92 +735,109 @@ small {
   /* Chrome, Safari, Opera */
   transform: scale(2, 2);
 }
-/* line 19, ../sass/_insights.scss */
+/* line 20, ../sass/_insights.scss */
 #insights .row {
   position: relative;
 }
-/* line 21, ../sass/_insights.scss */
+/* line 22, ../sass/_insights.scss */
 #insights .row h4 {
   margin-top: 0px;
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   /* Styles */
-  /* line 6, ../sass/_mobile.scss */
+  /* line 5, ../sass/_mobile.scss */
+  .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  /* line 14, ../sass/_mobile.scss */
+  #header .header .logo {
+    height: 25px;
+    margin-left: 0px;
+    margin-top: 18px;
+  }
+
+  /* line 23, ../sass/_mobile.scss */
   .modal .modal-dialog {
     width: 97%;
     margin: 1.5%;
     margin-top: 20%;
   }
-  /* line 10, ../sass/_mobile.scss */
+  /* line 27, ../sass/_mobile.scss */
   .modal .modal-dialog .modal-content {
     padding: 5%;
   }
+  /* line 29, ../sass/_mobile.scss */
+  .modal .modal-dialog .modal-content .modal-body {
+    padding-top: 5%;
+  }
 
-  /* line 15, ../sass/_mobile.scss */
+  /* line 35, ../sass/_mobile.scss */
   #landing {
-    height: 100vh;
+    height: 100%;
   }
-  /* line 17, ../sass/_mobile.scss */
+  /* line 37, ../sass/_mobile.scss */
   #landing .jumbotron {
-    margin: 100% 0 25% 0;
+    margin: 55% 0 50% 0;
   }
-  /* line 19, ../sass/_mobile.scss */
+  /* line 39, ../sass/_mobile.scss */
   #landing .jumbotron h1 {
     font-size: 150%;
   }
-  /* line 22, ../sass/_mobile.scss */
+  /* line 42, ../sass/_mobile.scss */
   #landing .jumbotron p {
     font-size: 90%;
-    text-align: center;
+    text-align: left;
   }
 
-  /* line 31, ../sass/_mobile.scss */
+  /* line 51, ../sass/_mobile.scss */
   #features .content h1, #features .content p {
     text-align: center;
   }
-  /* line 35, ../sass/_mobile.scss */
+  /* line 55, ../sass/_mobile.scss */
   #features .content h1 {
     font-size: 120%;
   }
-  /* line 40, ../sass/_mobile.scss */
+  /* line 60, ../sass/_mobile.scss */
   #features .feat-img {
     width: 55%;
   }
 
-  /* line 46, ../sass/_mobile.scss */
+  /* line 66, ../sass/_mobile.scss */
   #splitter .splitter-head, #splitter2 .splitter-head {
     font-size: 125%;
   }
 
-  /* line 53, ../sass/_mobile.scss */
+  /* line 73, ../sass/_mobile.scss */
   #splitter3 .row h1, #splitter3 .row h3 {
     font-size: 125%;
   }
 
-  /* line 61, ../sass/_mobile.scss */
+  /* line 81, ../sass/_mobile.scss */
   footer .row .footer-container {
     height: 55px;
   }
-  /* line 65, ../sass/_mobile.scss */
+  /* line 85, ../sass/_mobile.scss */
   footer .row h4 {
     font-size: 90%;
     margin-top: 8%;
     margin-bottom: 5%;
   }
-  /* line 71, ../sass/_mobile.scss */
+  /* line 91, ../sass/_mobile.scss */
   footer .row p {
     font-size: 80%;
     margin: 0 0 2%;
     color: #587995;
   }
-  /* line 77, ../sass/_mobile.scss */
+  /* line 97, ../sass/_mobile.scss */
   footer .row img {
     width: 52%;
     margin: 10px 0;
   }
 
-  /* line 85, ../sass/_mobile.scss */
+  /* line 105, ../sass/_mobile.scss */
   .image .arrow {
     left: 0;
     opacity: 1;
@@ -795,58 +854,58 @@ small {
     margin-bottom: -2%;
   }
 
-  /* line 100, ../sass/_mobile.scss */
+  /* line 120, ../sass/_mobile.scss */
   .feat {
     margin: 2% 7%;
     border-radius: 5px;
-    height: 70px;
+    min-height: 70px;
     padding-top: 3%;
   }
-  /* line 105, ../sass/_mobile.scss */
+  /* line 125, ../sass/_mobile.scss */
   .feat .circ {
-    margin-top: 50%;
+    margin-top: 25%;
     width: 35px;
     height: 35px;
     background-color: #3cbda3;
     border-radius: 50%;
     padding-left: 10px;
   }
-  /* line 113, ../sass/_mobile.scss */
+  /* line 133, ../sass/_mobile.scss */
   .feat .circ [class^="icon-"] {
     line-height: 37px;
     font-size: 110%;
   }
-  /* line 119, ../sass/_mobile.scss */
+  /* line 139, ../sass/_mobile.scss */
   .feat p, .feat h4 {
     text-align: left;
   }
-  /* line 123, ../sass/_mobile.scss */
+  /* line 143, ../sass/_mobile.scss */
   .feat h4 {
     margin-bottom: 0;
-    font-size: 120%;
+    font-size: 100%;
   }
-  /* line 129, ../sass/_mobile.scss */
+  /* line 149, ../sass/_mobile.scss */
   .feat p {
     color: #666666;
     font-size: 85%;
   }
 }
-/* line 27, ../sass/main.scss */
+/* line 28, ../sass/main.scss */
 body {
   font-family: 'Roboto', sans-serif;
 }
 
-/* line 31, ../sass/main.scss */
+/* line 32, ../sass/main.scss */
 .container-fluid {
   padding: 0 5% 0 5%;
 }
 
-/* line 35, ../sass/main.scss */
+/* line 36, ../sass/main.scss */
 p, span {
   color: whitesmoke;
 }
 
-/* line 39, ../sass/main.scss */
+/* line 40, ../sass/main.scss */
 .bg-prefs, #splitter, #splitter2, #splitter3, #insights {
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -858,12 +917,12 @@ p, span {
   color: #000;
 }
 
-/* line 47, ../sass/main.scss */
+/* line 48, ../sass/main.scss */
 #logo-banner {
   background-color: #f0f1f3;
 }
 
-/* line 52, ../sass/main.scss */
+/* line 53, ../sass/main.scss */
 #press {
   background: url('../images/bg-testimonial.jpg?1405070271');
   -webkit-background-size: cover;
@@ -871,19 +930,19 @@ p, span {
   -o-background-size: cover;
   background-size: cover;
 }
-/* line 55, ../sass/main.scss */
+/* line 56, ../sass/main.scss */
 #press .testimonial {
   padding: 30px;
 }
-/* line 58, ../sass/main.scss */
+/* line 59, ../sass/main.scss */
 #press .testimonial .row .icon-quotes-left {
   font-size: 40px;
 }
-/* line 62, ../sass/main.scss */
+/* line 63, ../sass/main.scss */
 #press .testimonial .row div {
   text-align: center;
 }
-/* line 65, ../sass/main.scss */
+/* line 66, ../sass/main.scss */
 #press .testimonial .row h3 {
   color: white;
   font-size: 23px;
@@ -891,16 +950,16 @@ p, span {
   font-family: 'Roboto', sans-serif;
   font-style: italic;
 }
-/* line 74, ../sass/main.scss */
+/* line 75, ../sass/main.scss */
 #press .row {
   margin-bottom: 2%;
   margin-top: 2%;
 }
-/* line 81, ../sass/main.scss */
+/* line 82, ../sass/main.scss */
 #press .presslogos div {
   opacity: 0.5;
 }
-/* line 84, ../sass/main.scss */
+/* line 85, ../sass/main.scss */
 #press .presslogos div.current {
   opacity: 1;
   -webkit-transition: all 0.5s ease;
@@ -910,17 +969,17 @@ p, span {
   transition: all 0.5s ease;
 }
 
-/* line 92, ../sass/main.scss */
+/* line 93, ../sass/main.scss */
 .valign {
   padding: 10% 0;
 }
 
-/* line 95, ../sass/main.scss */
+/* line 96, ../sass/main.scss */
 .feat-img {
   margin: 0 auto 0 auto;
 }
 
-/* line 102, ../sass/main.scss */
+/* line 103, ../sass/main.scss */
 .info-box h1 {
   font-size: 40px;
   text-transform: uppercase;
@@ -929,14 +988,14 @@ p, span {
   padding: 0;
   font-weight: 700;
 }
-/* line 110, ../sass/main.scss */
+/* line 111, ../sass/main.scss */
 .info-box p {
   color: #999999;
   font-size: 16px;
   line-height: 1.7em;
 }
 
-/* line 119, ../sass/main.scss */
+/* line 120, ../sass/main.scss */
 .shufflebox {
   height: 105px;
   margin-top: 10px;
@@ -951,12 +1010,12 @@ p, span {
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-/* line 126, ../sass/main.scss */
+/* line 127, ../sass/main.scss */
 .shufflebox .content {
   padding: 0 20px 0 20px;
   margin: 0;
 }
-/* line 131, ../sass/main.scss */
+/* line 132, ../sass/main.scss */
 .shufflebox h2 {
   color: #292f38;
   text-transform: uppercase;
@@ -965,20 +1024,20 @@ p, span {
   padding: 0;
   margin: 0;
 }
-/* line 139, ../sass/main.scss */
+/* line 140, ../sass/main.scss */
 .shufflebox p {
   padding: 0;
   margin: 0;
   color: #999999;
 }
-/* line 144, ../sass/main.scss */
+/* line 145, ../sass/main.scss */
 .shufflebox h4 {
   margin-top: 0px;
   text-transform: uppercase;
   color: black;
 }
 
-/* line 151, ../sass/main.scss */
+/* line 152, ../sass/main.scss */
 .circ {
   position: relative;
   top: 50%;
@@ -990,13 +1049,13 @@ p, span {
   float: left;
   border-radius: 25px;
 }
-/* line 162, ../sass/main.scss */
+/* line 163, ../sass/main.scss */
 .circ [class^="icon-"] {
   line-height: 50px;
   font-size: 140%;
 }
 
-/* line 168, ../sass/main.scss */
+/* line 169, ../sass/main.scss */
 .arrow {
   top: 50%;
   margin-top: -10px;
@@ -1015,7 +1074,7 @@ p, span {
   border-right-color: #dddfe1;
 }
 
-/* line 182, ../sass/main.scss */
+/* line 183, ../sass/main.scss */
 .right {
   right: -20px;
   left: inherit;
@@ -1023,7 +1082,7 @@ p, span {
   border-left-color: #dddfe1;
 }
 
-/* line 189, ../sass/main.scss */
+/* line 190, ../sass/main.scss */
 .feat {
   display: inline-block;
   background-color: #dddfe1;
@@ -1034,7 +1093,7 @@ p, span {
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-/* line 194, ../sass/main.scss */
+/* line 195, ../sass/main.scss */
 .feat .arrow {
   opacity: 1;
 }

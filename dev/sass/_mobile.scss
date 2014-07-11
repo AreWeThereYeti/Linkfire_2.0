@@ -2,6 +2,23 @@
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
   /* Styles */
 
+  .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+
+
+  #header{
+    .header{
+      .logo{
+        height: 25px;
+        margin-left: 0px;
+        margin-top: 18px;
+      }
+    }
+  }
+
   .modal{
     .modal-dialog{
       width: 97%;
@@ -9,19 +26,22 @@
       margin-top: 20%;
       .modal-content{
         padding: 5%;
+        .modal-body{
+          padding-top: 5%;
+        }
       }
     }
   }
   #landing{
-    height: 100vh;
+    height: 100%;
     .jumbotron{
-      margin: 100% 0 25% 0;
+      margin: 55% 0 50% 0;
       h1{
         font-size: 150%;
       }
       p{
         font-size: 90%;
-        text-align: center;
+        text-align: left;
       }
     }
   }
@@ -100,10 +120,10 @@
   .feat{
     margin: 2% 7%;
     border-radius: 5px;
-    height: 70px;
+    min-height: 70px;
     padding-top: 3%;
     .circ{
-      margin-top: 50%;
+      margin-top: 25%;
       width: 35px;
       height: 35px;
       background-color: #3cbda3;
@@ -122,7 +142,7 @@
 
     h4{
       margin-bottom: 0;
-      font-size: 120%;
+      font-size: 100%;
 
     }
 
