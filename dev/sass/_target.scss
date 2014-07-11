@@ -7,8 +7,18 @@
   background-position:center;
   color:#000;
 
+  .bg img{
+    position:relative;
+    top:50%;
+    left:-200px;
+    -ms-transform: scale(1.5,1.5); /* IE 9 */
+    -webkit-transform: scale(1.5,1.5); /* Chrome, Safari, Opera */
+    transform: scale(1.5,1.5);
+
+  }
   .row{
-    padding:3% 0;
+    position: relative;
+    padding:5% 0;
     h4{
       margin-top: 0px;
     }

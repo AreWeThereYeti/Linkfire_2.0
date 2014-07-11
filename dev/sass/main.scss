@@ -44,8 +44,6 @@ p, span{
   color:#000;
 }
 
-// IDs for each "block" on landing page //
-
 #logo-banner{
   background-color:$grey-lightest;
 }
@@ -88,34 +86,34 @@ p, span{
         @include transition(all, 0.5s, ease);
       }
     }
-
-
   }
-
 }
 
-
-// temporary heading style used on first splitter //
-
+.valign {
+  padding:10% 0;
+}
+.feat-img{
+  margin:0 auto 0 auto;
+}
 
 // Infobox is the text elements above the shufflebox used on "features", "target" and "insights".
+
 .info-box {
-
-}
-
-.info-box h1{
-    font-size:40px;
-    text-transform:uppercase;
-    color:$header-blue;
-    line-height:1.2em;
-    padding:0;
-    font-weight:700;
+    h1{
+      font-size:40px;
+      text-transform:uppercase;
+      color:$header-blue;
+      line-height:1.2em;
+      padding:0;
+      font-weight:700;
+    }
+    p{
+      color:$font-color-grey;
+      font-size:16px;
+      line-height:1.7em;
+    }
   }
-.info-box p{
-  color:$font-color-grey;
-  font-size:16px;
-  line-height:1.7em;
-  }
+
 
 // Shufflebox are the 3-spot boxes reused on "features", "target" and "insights". The feature class adds grey background and arrow //
 .shufflebox{
