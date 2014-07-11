@@ -654,64 +654,102 @@ small {
     text-align: center;
   }
 
-  /* line 30, ../sass/_mobile.scss */
-  #features h1, #features p {
+  /* line 31, ../sass/_mobile.scss */
+  #features content h1, #features content p {
     text-align: center;
   }
-  /* line 34, ../sass/_mobile.scss */
-  #features h1 {
+  /* line 35, ../sass/_mobile.scss */
+  #features content h1 {
     font-size: 120%;
   }
-  /* line 38, ../sass/_mobile.scss */
+  /* line 40, ../sass/_mobile.scss */
   #features .feat-img {
-    width: 70%;
+    width: 55%;
   }
 
-  /* line 44, ../sass/_mobile.scss */
+  /* line 46, ../sass/_mobile.scss */
   #splitter .splitter-head, #splitter2 .splitter-head {
     font-size: 125%;
   }
 
-  /* line 51, ../sass/_mobile.scss */
+  /* line 53, ../sass/_mobile.scss */
   #splitter3 .row h1, #splitter3 .row h3 {
     font-size: 125%;
   }
 
-  /* line 59, ../sass/_mobile.scss */
+  /* line 61, ../sass/_mobile.scss */
   footer .row .footer-container {
     height: 55px;
   }
-  /* line 63, ../sass/_mobile.scss */
+  /* line 65, ../sass/_mobile.scss */
   footer .row h4 {
     font-size: 90%;
     margin-top: 8%;
     margin-bottom: 5%;
   }
-  /* line 69, ../sass/_mobile.scss */
+  /* line 71, ../sass/_mobile.scss */
   footer .row p {
     font-size: 80%;
     margin: 0 0 2%;
     color: #587995;
   }
-  /* line 75, ../sass/_mobile.scss */
+  /* line 77, ../sass/_mobile.scss */
   footer .row img {
     width: 52%;
     margin: 10px 0;
   }
 
-  /* line 84, ../sass/_mobile.scss */
+  /* line 85, ../sass/_mobile.scss */
+  .image .arrow {
+    left: 0;
+    opacity: 1;
+    position: relative;
+    width: 0;
+    border: 10px solid transparent;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    border-bottom-color: #dddfe1;
+    margin: 0 auto;
+    margin-bottom: -2%;
+  }
+
+  /* line 103, ../sass/_mobile.scss */
+  .feat {
+    margin: 2% 7%;
+    border-radius: 5px;
+    height: 70px;
+    padding-top: 3%;
+  }
+  /* line 108, ../sass/_mobile.scss */
   .feat .circ {
-    margin-top: 35px;
+    margin-top: 50%;
     width: 35px;
     height: 35px;
     background-color: #3cbda3;
     border-radius: 50%;
     padding-left: 10px;
   }
-  /* line 91, ../sass/_mobile.scss */
+  /* line 116, ../sass/_mobile.scss */
   .feat .circ [class^="icon-"] {
     line-height: 37px;
     font-size: 110%;
+  }
+  /* line 122, ../sass/_mobile.scss */
+  .feat p, .feat h4 {
+    text-align: left;
+  }
+  /* line 126, ../sass/_mobile.scss */
+  .feat h4 {
+    margin-bottom: 0;
+    font-size: 120%;
+  }
+  /* line 131, ../sass/_mobile.scss */
+  .feat p {
+    color: #666666;
+    font-size: 85%;
   }
 }
 /* line 27, ../sass/main.scss */
