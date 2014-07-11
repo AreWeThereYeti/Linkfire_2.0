@@ -650,11 +650,25 @@ small {
 
 /* line 1, ../sass/_insights.scss */
 #insights {
-  background: url('../images/bg-insights.jpg?1404992485');
-  padding-top: 15%;
-  padding-bottom: 15%;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
-/* line 8, ../sass/_insights.scss */
+/* line 9, ../sass/_insights.scss */
+#insights .bg img {
+  position: relative;
+  top: 60%;
+  right: -300px;
+  -ms-transform: scale(2, 2);
+  /* IE 9 */
+  -webkit-transform: scale(2, 2);
+  /* Chrome, Safari, Opera */
+  transform: scale(2, 2);
+}
+/* line 19, ../sass/_insights.scss */
+#insights .row {
+  position: relative;
+}
+/* line 21, ../sass/_insights.scss */
 #insights .row h4 {
   margin-top: 0px;
 }
@@ -793,7 +807,7 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-/* line 30, ../sass/main.scss */
+/* line 31, ../sass/main.scss */
 .container-fluid {
   padding: 0 5% 0 5%;
 }
