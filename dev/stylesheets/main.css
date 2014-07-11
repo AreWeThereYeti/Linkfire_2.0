@@ -283,7 +283,7 @@ a {
   margin-left: 15px;
   display: block;
   vertical-align: middle;
-  background: url('../images/linkfire_logo_w_text.svg?1405004886');
+  background: url('../images/linkfire_logo_w_text.svg?1405070271');
   -webkit-background-size: contain;
   -moz-background-size: contain;
   -o-background-size: contain;
@@ -342,6 +342,25 @@ footer .row h4 {
   font-size: 18px;
 }
 /* line 10, ../sass/_footer.scss */
+footer .row p, footer .row a {
+  color: #587995;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+/* line 15, ../sass/_footer.scss */
+footer .row a:hover {
+  color: #587995;
+  text-decoration: underline;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+/* line 21, ../sass/_footer.scss */
 footer .row img {
   margin-top: 20px;
   display: block;
@@ -492,7 +511,7 @@ small {
 
 /* line 1, ../sass/_landing.scss */
 #landing {
-  background: url('../images/bg1.jpg?1404992485');
+  background: url('../images/bg1.jpg?1405070271');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -603,7 +622,7 @@ small {
 
 /* line 10, ../sass/_splitters.scss */
 #splitter {
-  background: url('../images/bg-splitter1.jpg?1404992485');
+  background: url('../images/bg-splitter1.jpg?1405070271');
 }
 /* line 13, ../sass/_splitters.scss */
 #splitter .row {
@@ -613,7 +632,7 @@ small {
 
 /* line 20, ../sass/_splitters.scss */
 #splitter2 {
-  background: url('../images/bg-splitter2.jpg?1404992485');
+  background: url('../images/bg-splitter2.jpg?1405070271');
 }
 /* line 23, ../sass/_splitters.scss */
 #splitter2 .row {
@@ -623,7 +642,7 @@ small {
 
 /* line 29, ../sass/_splitters.scss */
 #splitter3 {
-  background: url('../images/bg-splitter3.jpg?1404992485');
+  background: url('../images/bg-splitter3.jpg?1405070271');
 }
 /* line 33, ../sass/_splitters.scss */
 #splitter3 .row {
@@ -650,25 +669,11 @@ small {
 
 /* line 1, ../sass/_insights.scss */
 #insights {
-  padding-top: 5%;
-  padding-bottom: 5%;
+  background: url('../images/bg-insights.jpg?1405070271');
+  padding-top: 15%;
+  padding-bottom: 15%;
 }
-/* line 9, ../sass/_insights.scss */
-#insights .bg img {
-  position: relative;
-  top: 60%;
-  right: -300px;
-  -ms-transform: scale(2, 2);
-  /* IE 9 */
-  -webkit-transform: scale(2, 2);
-  /* Chrome, Safari, Opera */
-  transform: scale(2, 2);
-}
-/* line 19, ../sass/_insights.scss */
-#insights .row {
-  position: relative;
-}
-/* line 21, ../sass/_insights.scss */
+/* line 8, ../sass/_insights.scss */
 #insights .row h4 {
   margin-top: 0px;
 }
@@ -766,14 +771,14 @@ small {
     margin-bottom: -2%;
   }
 
-  /* line 103, ../sass/_mobile.scss */
+  /* line 100, ../sass/_mobile.scss */
   .feat {
     margin: 2% 7%;
     border-radius: 5px;
     height: 70px;
     padding-top: 3%;
   }
-  /* line 108, ../sass/_mobile.scss */
+  /* line 105, ../sass/_mobile.scss */
   .feat .circ {
     margin-top: 50%;
     width: 35px;
@@ -782,21 +787,21 @@ small {
     border-radius: 50%;
     padding-left: 10px;
   }
-  /* line 116, ../sass/_mobile.scss */
+  /* line 113, ../sass/_mobile.scss */
   .feat .circ [class^="icon-"] {
     line-height: 37px;
     font-size: 110%;
   }
-  /* line 122, ../sass/_mobile.scss */
+  /* line 119, ../sass/_mobile.scss */
   .feat p, .feat h4 {
     text-align: left;
   }
-  /* line 126, ../sass/_mobile.scss */
+  /* line 123, ../sass/_mobile.scss */
   .feat h4 {
     margin-bottom: 0;
     font-size: 120%;
   }
-  /* line 131, ../sass/_mobile.scss */
+  /* line 129, ../sass/_mobile.scss */
   .feat p {
     color: #666666;
     font-size: 85%;
@@ -807,7 +812,7 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-/* line 31, ../sass/main.scss */
+/* line 30, ../sass/main.scss */
 .container-fluid {
   padding: 0 5% 0 5%;
 }
@@ -836,7 +841,7 @@ p, span {
 
 /* line 52, ../sass/main.scss */
 #press {
-  background: url('../images/bg-testimonial.jpg?1404992485');
+  background: url('../images/bg-testimonial.jpg?1405070271');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
