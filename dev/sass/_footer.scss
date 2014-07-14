@@ -11,6 +11,7 @@ footer{
       color: #587995;
       @include transition(all, 0.5s, ease);
       display: block;
+      font-weight:300;
     }
 
     a:hover{

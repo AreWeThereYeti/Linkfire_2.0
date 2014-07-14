@@ -1,8 +1,8 @@
 #features{
   //@include background(image-url("bg-section2.jpg"));
   @include background-size(cover);
-  paddin-top:5%;
-  paddin-bottom:5%;
+  padding-top:5%;
+  padding-bottom:5%;
   width: 100%;
   height: 100%;
   background-position:center;
@@ -19,19 +19,13 @@
 
       img{
         height: 500px;
+        padding:5% 0;
+        margin:0 auto 0 auto;
       }
     }
+
   }
 }
 
 
-.feat-content{
-  padding:10% 0 15% 0;
-}
 
-.cn{
-  padding:5% 0 15% 0;
-}
-.feat-img{
-  margin:0 auto 0 auto;
-}
