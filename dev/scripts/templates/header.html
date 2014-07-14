@@ -46,6 +46,7 @@
                     <p >New Here? <a ng-click="show = 'signup'">Create an account</a></p>
                 </div>
                 <div class="form" ng-show="show =='signup'">
+                    <h4>Sign up</h4>
                     <form novalidate name="signupform">
                         <input type="email"    ng-class="{ 'has-error': signupform.email.$invalid && signupform.email.$dirty, 'valid': signupform.email.$valid }" ng-model="$parent.user.email" name="email" placeholder="email" required/>
                         <input type="password" ng-class="{ 'has-error': signupform.pw1.$invalid && signupform.pw1.$dirty, 'valid': signupform.pw1.$valid }" placeholder="password" ng-model="$parent.user.password" id="pw1" name="pw1" ng-minlength="4" required/>

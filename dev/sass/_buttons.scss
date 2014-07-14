@@ -98,6 +98,10 @@
 
 }
 
+.btn:hover, .btn:focus{
+  color: #ffffff;
+}
+
 button.close{
   color: #999999;
   position: absolute;
@@ -111,6 +115,7 @@ button.close{
   line-height: 1;
   right: 10px;
   top: 5px;
+  z-index: 1;
     &:focus{
       outline: 0;
   }
