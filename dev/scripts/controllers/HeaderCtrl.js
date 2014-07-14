@@ -29,7 +29,7 @@ linkfireWebappApp.controller('HeaderCtrl', ['$scope', 'loginService','$modal', '
 
 // Please note that $modalInstance represents a modal window (instance) dependency.
 // It is not the same as the $modal service used above.
-var LoginInstanceCtrl = function ($scope, $modalInstance, loginService, show, $facebook) {
+var LoginInstanceCtrl = function ($scope, $modalInstance, loginService, show, $facebook, notify) {
 
   $scope.signIn = function(){
     var args={
@@ -37,12 +37,15 @@ var LoginInstanceCtrl = function ($scope, $modalInstance, loginService, show, $f
       password: $scope.user.password
     };
 
-//		Legacy sign function. Located in the legacy folder. remove when we move to new api
-	  loginService.Login(args).then(function(){
-	    $window.location.reload();
-
-
-    });
+//	  Login api with notifications
+	  loginService.Login(args).then(function(data){
+		  if(data.success === true){
+			  $window.location.reload();
+			  notify('Success');
+		  }else{
+			  notify('Error');
+		  }
+	  });
 
 //    New login function working. Uncomment when new api is ready
 //    loginService.Login(args)
