@@ -1,5 +1,5 @@
 
-<div class="row">
+<div class="row" ng-controller="CarouselCtrl">
     <div class="col-xs-12 col-sm-12 visible-xs visible-sm text-center info-box">
         <h1>Audience insights across platforms</h1>
         <p>With our private insights you get a clear understanding of how, where and when your link is performing and your fans most preferred music services.</p>
@@ -52,7 +52,7 @@
             <p>With our private insights you get a clear understanding of how, where and when your link is performing and your fans most preferred music services.</p>
         </div>
 
-        <div class=" col-sm-12 col-md-12 shufflebox">
+        <div class=" col-sm-12 col-md-12 shufflebox" ng-class="{feat: hover == 0}" ng-mouseenter="stopTimer(); hover = 0" ng-mouseleave="startTimer()">
             <div class="arrow right hidden-sm"></div>
             <div class="circ col-sm-2 col-md-2"><span class="icon-cursor"></span></div>
             <div class="col-sm-10 col-md-10">
@@ -61,7 +61,7 @@
             </div>
         </div>
 
-        <div class=" col-sm-12 col-md-12 shufflebox">
+        <div class=" col-sm-12 col-md-12 shufflebox" ng-class="{feat: hover == 1}" ng-mouseenter="stopTimer(); hover = 1" ng-mouseleave="startTimer()">
             <div class="arrow right hidden-sm"></div>
             <div class="circ col-sm-2 col-md-2"><span class="icon-music"></span></div>
             <div class=" col-sm-10 col-md-10">
@@ -70,7 +70,7 @@
             </div>
         </div>
 
-        <div class="col-sm-12 col-md-12 shufflebox">
+        <div class="col-sm-12 col-md-12 shufflebox" ng-class="{feat: hover == 2}" ng-mouseenter="stopTimer(); hover = 2" ng-mouseleave="startTimer()">
             <div class="arrow right hidden-sm"></div>
             <div class="circ col-sm-2 col-md-2"><span class="icon-shuffle"></span></div>
 
@@ -82,7 +82,19 @@
     </div>
 
     <div class="col-md-5 hidden-xs hidden-sm valign bg">
-        <img class="img-responsive" src="/images/insights_mac_bg.png">
+        <div class="image" ng-if="hover == 0" ng-cloak>
+           <img class="img-responsive" src="/images/insights_step1.png">
+        </div>
+        <div class="image" ng-if="hover == 1" ng-cloak>
+            <img class="img-responsive" src="/images/insights_step2.png">
+        </div>
+        <div class="image" ng-if="hover == 2 || hover == 3" ng-cloak>
+            <img class="img-responsive" src="/images/insights_step3.png">
+        </div>
     </div>
-   
+
+    
+
+
+
 </div>
