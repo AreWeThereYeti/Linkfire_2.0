@@ -58,16 +58,36 @@
                         <p >New Here? <a ng-click="show = 'signup'">Create an account</a></p>
                     </div>
                 </div>
+
+
+                <div class="form" ng-show="show =='signup'">
+                    <h4>Sign up</h4>
+                    <form novalidate name="signupform">
+                        <input type="email"    ng-class="{ 'has-error': signupform.email.$invalid && signupform.email.$dirty, 'valid': signupform.email.$valid }" ng-model="$parent.user.email" name="email" placeholder="email" required/>
+                        <input type="password" ng-class="{ 'has-error': signupform.pw1.$invalid && signupform.pw1.$dirty, 'valid': signupform.pw1.$valid }" placeholder="password" ng-model="$parent.user.password" id="pw1" name="pw1" ng-minlength="4" required/>
+                        <input type="password" ng-class="{ 'has-error': signupform.pw2.$invalid && signupform.pw2.$dirty, 'valid': signupform.pw2.$valid }"  placeholder="Password again" ng-model="pw2"  id="pw2" name="pw2" pw-check="pw1" ng-minlength="4" required/>
+                        <button ng-click="$parent.signUp()" ng-disabled="signupform.$invalid" class="btn btn-primary btn-block btn-icon">
+                            <span>Sign up</span>
+                            <i class="icon-play3"></i>
+                        </button>
+                    </form>
+                    <button ng-click="facebookSignUp()" class="btn btn-block btn-social btn-facebook btn-icon">
+                        <span>Sign up with Facebook</span>
+                        <i class="icon-play3"></i>
+                    </button>
+                    <p>By creating an account with linkfire, you agree that you have read, understood, and accepted our <a>Terms of use.</a></p>
+                    <p>Go back to <a ng-click="show = 'login'">Sign in</a></p>
+                </div>
+
+
                 <div class="form" ng-show="show =='signup'">
                     <h4>Sign up</h4>
                     <form novalidate name="signupform">
                         <input type="text"    ng-class="{ 'has-error': signupform.signup_name.$invalid && signupform.signup_name.$dirty, 'valid': signupform.signup_name.$valid }" ng-model="$parent.user.name" name="signup_name" placeholder="Name" required/>
                         <input type="email"    ng-class="{ 'has-error': signupform.signup_email.$invalid && signupform.signup_email.$dirty, 'valid': signupform.signup_email.$valid }" ng-model="$parent.user.email" name="signup_email" placeholder="E-mail" required/>
-                        <!--<input type="password"  placeholder="Password" ng-model="$parent.user.password" id="pw1" name="pw1" ng-minlength="4" required/>-->
-                        <!--<input type="password"   placeholder="Password again" ng-model="pw2"  id="pw2" name="pw2" pw-check="pw1" ng-minlength="4" required/>-->
+                        <input type="password"  placeholder="Password" ng-model="$parent.user.password" id="pw1" name="pw1" ng-minlength="4" required/>
+                        <input type="password"   placeholder="Password again" ng-model="pw2"  id="pw2" name="pw2" pw-check="pw1" ng-minlength="4" required/>
 
-                        <input type="password" ng-class="{ 'has-error': signupform.pw1.$invalid && signupform.pw1.$dirty, 'valid': signupform.pw1.$valid }" placeholder="password" ng-model="$parent.user.password" id="pw1" name="pw1" ng-minlength="4" required/>
-                        <input type="password" ng-class="{ 'has-error': signupform.pw2.$invalid && signupform.pw2.$dirty, 'valid': signupform.pw2.$valid }"  placeholder="Password again" ng-model="pw2"  id="pw2" name="pw2" pw-check="pw1" ng-minlength="4" required/>
 
                         <button ng-click="$parent.signUp()" ng-disabled="signupform.$invalid" class="lf-btn-large lf-primary lf-full-width" href="#"><span>Sign up</span><span class="icon-play3"></span></button>
                     </form>
