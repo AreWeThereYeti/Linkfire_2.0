@@ -1,16 +1,14 @@
 'use strict';
 
 var linkfireWebappApp = angular.module('linkfireWebappApp', [
-    'ngResource',
-    'ngRoute',
-    'ui.bootstrap',
-    'duScroll',
-    'ngAnimate',
-		'ngFacebook',
-		'ngTouch',
-		'angular-carousel',
-		'cgNotify',
-		'pwCheck'
+	'ngResource',
+	'ngRoute',
+	'ui.bootstrap',
+	'duScroll',
+	'ngAnimate',
+	'ngFacebook',
+	'ngTouch',
+	'angular-carousel',
   ])
 
   .config(function ($routeProvider,$locationProvider, $httpProvider, $facebookProvider) {

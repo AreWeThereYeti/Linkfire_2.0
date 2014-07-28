@@ -1044,7 +1044,7 @@ small {
 
 /* line 1, ../sass/landing/_landing.scss */
 #landing {
-  background: url('../images/bg1.jpg?1406533702');
+  background: url('../images/bg1.jpg?1406549814');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1078,7 +1078,7 @@ small {
 
 /* line 32, ../sass/landing/_landing.scss */
 #landing-mobile {
-  background: url('../images/landing-mobile.png?1406533702');
+  background: url('../images/landing-mobile.png?1406549814');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1113,7 +1113,7 @@ small {
 @media (min-width: 1200px) {
   /* line 65, ../sass/landing/_landing.scss */
   #landing {
-    background: url('../images/bg2.jpg?1406533702');
+    background: url('../images/bg2.jpg?1406549814');
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
