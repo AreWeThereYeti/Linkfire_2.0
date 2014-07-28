@@ -1,25 +1,30 @@
 //Reset modal
 .modal-dialog{
-  width: 380px;
+  width: 420px;
   background-color: #ffffff;
   border-radius: 8px;
-  margin: 10% auto;
+  margin: 2% auto;
   .modal-body{
     padding: 0px;
   }
 
   p, a{
     text-align: center;
+    line-height:1.5em;
     color: $font-color-grey;
   }
 
   h4{
-    margin: 0px;
-    margin-bottom: 10px;
+    color:$grey-darkest;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .modal-info{
+    padding: 25px 0;
   }
 
   .modal-content{
-    padding: 20px 25px 0 25px;
+    padding: 50px 55px 55px 55px;
     background-color: #ffffff;
     border: 0px solid rgba(0,0,0,.2);
     box-shadow: 0 0px 0px rgba(0,0,0,0);
@@ -31,6 +36,7 @@
 
       a{
         text-decoration: underline;
+        color:$grey-darkest;
       }
 
       input.ng-invalid{

@@ -24,8 +24,8 @@ angular.module('linkfireWebappApp')
       //var pass = CryptoJS.SHA1(params.password);
       $http({
         method	: 'POST',
-        //url		  : urlLogin,
-	      url		  : '/auth/login/',
+        url		  : urlLogin,
+//	      url		  : '/auth/login/',
 	      headers : {
 		      'Content-type' : 'application/json',
 		      'X-Requested-With': 'XMLHttpRequest'
@@ -52,8 +52,8 @@ angular.module('linkfireWebappApp')
 
       $http({
         method	: 'POST',
-        //url		  : urlSignup,
-	      url		  : '/auth/signup/',
+        url		  : urlSignup,
+//	      url		  : '/auth/signup/',
 	      headers : {
 		      'Content-type' : 'application/json',
 		      'X-Requested-With': 'XMLHttpRequest'

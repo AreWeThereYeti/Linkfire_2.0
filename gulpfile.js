@@ -43,11 +43,11 @@ gulp.task('minify', function () {
 //Move html and minify
 gulp.task('minify-template-html', function() {
 	var opts = {comments:true,spare:true};
-	gulp.src('./dev/scripts/templates/**/*.html')
+	gulp.src('./dev/scripts/html/**/*.html')
 			.pipe(minifyHTML({
 				empty:true
 			}))
-			.pipe(gulp.dest('./dist/scripts/templates'))
+			.pipe(gulp.dest('./dist/scripts/html'))
 });
 
 gulp.task('css', function () {

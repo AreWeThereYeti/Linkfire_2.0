@@ -29,7 +29,7 @@ linkfireWebappApp.controller('HeaderCtrl', ['$scope', 'loginService','$modal', '
 
 // Please note that $modalInstance represents a modal window (instance) dependency.
 // It is not the same as the $modal service used above.
-var LoginInstanceCtrl = function ($scope, $modalInstance, loginService, show, $facebook, notify) {
+var LoginInstanceCtrl = function ($scope, $modalInstance, loginService, show, $facebook) {
 
   $scope.signIn = function(){
     var args={
@@ -41,9 +41,8 @@ var LoginInstanceCtrl = function ($scope, $modalInstance, loginService, show, $f
 	  loginService.Login(args).then(function(data){
 		  if(data.success === true){
 			  $window.location.reload();
-			  notify('Success');
 		  }else{
-			  notify('Error');
+
 		  }
 	  });
   };

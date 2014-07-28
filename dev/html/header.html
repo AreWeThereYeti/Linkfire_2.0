@@ -1,0 +1,101 @@
+<div class="header" ng-controller="HeaderCtrl">
+    <div class="row">
+        <div class="col-lg-1">
+        </div>
+        <div class="col-lg-offset-2 col-md-offset-2 col-sm-2 col-md-2 col-lg-2 hidden-xs logo">
+            <a ng-href="#landing" du-smooth-scroll du-scrollspy><img src="images/linkfire_logo_w_text.svg"></a>
+        </div>
+        <div class="col-xs-2 visible-xs logo-mobile">
+            <a ng-href="#landing-mobile" du-smooth-scroll du-scrollspy><img src="images/linkfire_logo_w_text.svg"></a>
+        </div>
+        <div class="col-lg-8">
+            <ul class="nav nav-pills pull-right" role="navigation">
+                <li class="hidden-xs"><a ng-href="#landing" du-smooth-scroll du-scrollspy offset="0">Home</a></li>
+                <li class="hidden-xs"><a ng-href="#feats" du-smooth-scroll du-scrollspy offset="62">Features</a></li>
+                <li class="hidden-xs"><a ng-href="#pricing" du-smooth-scroll du-scrollspy offset="62">Pricing</a></li>
+                <li class="hidden-xs"><a ng-href="#press" du-smooth-scroll du-scrollspy offset="450">Testimonials</a></li>
+
+                <!--<li class="hidden-xs"><a ng-href="#section-3" du-smooth-scroll du-scrollspy>Testimonials</a></li>-->
+                <li><a class="visible-xs" ng-click="show = 'menu'; open()"><span class="icon-list"></span></a></li>
+                <li><a class="hidden-xs" ng-click="show = 'login'; open()"><span class="icon-lock"></span>Login</a></li>
+                <li class="hidden-xs hidden-sm get-started"><button ng-click="show = 'signup'; open()" class="lf-btn-medium lf-primary" href="#"><span>Get started</span><span class="icon-play3"></span></button> </li>
+            </ul>
+        </div>
+    </div>
+
+    <!--signinform/Signup modal-->
+    <script type="text/ng-template" id="loginmodal.html">
+        <button type="button" class="close" ng-click="cancel($event)" aria-hidden="true">&times;</button>
+        <div class="modal-body menu visible-xs">
+            <div class="row">
+                <div class="form" ng-show="show =='menu'">
+                    <img src="/static/landing/images/linkfire_logo_w_text.svg">
+                    <ul class="nav" role="navigation">
+                        <li><a ng-click="cancel($event)" ng-href="#landing-mobile" du-smooth-scroll du-scrollspy offset="0">Home</a></li>
+                        <li><a ng-click="cancel($event)" ng-href="#feats" du-smooth-scroll du-scrollspy offset="62">Features</a></li>
+                        <li><a ng-click="cancel($event)" ng-href="#pricing" du-smooth-scroll du-scrollspy offset="62">Pricing</a></li>
+                        <li><a ng-click="cancel($event)" ng-href="#press" du-smooth-scroll du-scrollspy offset="350">Testimonials</a></li>
+                        <li><a ng-click="show = 'login'; open()"><span class="icon-lock"></span>Login</a></li>
+                    </ul>
+                    <button ng-click="show = 'signup'; open()" class="lf-btn-large lf-primary lf-full-width" href="#"><span>Get started</span><span class="icon-play3"></span></button>
+                </div>
+
+            </div>
+        </div>
+        <div class="modal-body">
+            <div class="row">
+                <div class="form" ng-show="show =='login'">
+                    <h4>Sign in</h4>
+                    <form autocomplete="off" name="signinform" novalidate>
+                        <input type="email" name="signin_email" ng-class="{ 'has-error': signinform.signin_email.$invalid && signinform.signin_email.$dirty, 'valid': signinform.signin_email.$valid }" ng-model="$parent.user.email" placeholder="E-mail" autocomplete="off" required/>
+                        <input type="password" name="signin_password" ng-class="{ 'has-error': signinform.signin_password.$invalid && signinform.signin_password.$dirty, 'valid': signinform.signin_password.$valid }" ng-model="$parent.user.password" ng-minlength="4" placeholder="Password" autocomplete="off" required/>
+
+                        <button ng-click="$parent.signIn()" ng-disabled="signinform.$invalid" class="lf-btn-large lf-primary lf-full-width" href="#"><span>Sign in</span><span class="icon-play3"></span></button>
+                    </form>
+                    <button ng-click="facebookLogin()" class="lf-btn-large lf-fb lf-full-width"><span>Sign in with Facebook</span><span class="icon-play3"></span></button>
+                    <div class="modal-info">
+                        <p><a href="" ng-click="show = 'forgot'; open()">Forgot password?</a></p>
+                        <p >New Here? <a ng-click="show = 'signup'">Create an account</a></p>
+                    </div>
+                </div>
+
+                <div class="form" ng-show="show =='signup'">
+                    <h4>Sign up</h4>
+                    <form novalidate name="signupform">
+                        <input type="text"    ng-class="{ 'has-error': signupform.signup_name.$invalid && signupform.signup_name.$dirty, 'valid': signupform.signup_name.$valid }" ng-model="$parent.user.name" name="signup_name" placeholder="Name" required/>
+                        <input type="email"    ng-class="{ 'has-error': signupform.signup_email.$invalid && signupform.signup_email.$dirty, 'valid': signupform.signup_email.$valid }" ng-model="$parent.user.email" name="signup_email" placeholder="E-mail" required/>
+                        <input type="password" ng-class="{ 'has-error': signupform.pw1.$invalid && signupform.pw1.$dirty, 'valid': signupform.pw1.$valid }" placeholder="Password" ng-model="$parent.user.password" id="pw1" name="pw1" ng-minlength="4" required/>
+                        <input type="password" ng-class="{ 'has-error': signupform.pw2.$invalid && signupform.pw2.$dirty, 'valid': signupform.pw2.$valid }"  placeholder="Password again" ng-model="pw2"  id="pw2" name="pw2" pw-check="pw1" ng-minlength="4" required/>
+
+
+                        <button ng-click="$parent.signUp()" ng-disabled="signupform.$invalid" class="lf-btn-large lf-primary lf-full-width" href="#"><span>Sign up</span><span class="icon-play3"></span></button>
+                    </form>
+                    <button ng-click="facebookSignUp()" class="lf-btn-large lf-fb lf-full-width"><span>Sign up with Facebook</span><span class="icon-play3"></span></button>
+
+                    <div class="modal-info">
+                        <p>By creating an account with linkfire, you agree that you have read, understood, and accepted our <br><a href="/terms" target="_self">Terms of use.</a></p>
+                        <p>Go to <a ng-click="show = 'login'">Sign in</a></p>
+                    </div>
+                </div>
+
+
+                <div class="form" ng-show="show =='forgot'">
+                    <h4>Reset password</h4>
+                    <form novalidate name="forgotform">
+
+                        <input type="email"    ng-class="{ 'has-error': forgotform.email.$invalid && forgotform.email.$dirty, 'valid': forgotform.email.$valid }" ng-model="$parent.user.email" name="email" placeholder="E-mail" required/>
+
+                        <button ng-click="$parent.Forgot()" ng-disabled="forgotform.$invalid" class="lf-btn-large lf-primary lf-full-width" href="#"><span>Reset password</span><span class="icon-play3"></span></button>
+                    </form>
+
+                    <div class="modal-info">
+                        <p>Go to <a ng-click="show = 'login'">Sign in</a></p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </script>
+    <!--End of signinform/Signup modal-->
+</div>

@@ -1,0 +1,268 @@
+
+
+
+.btn {
+  margin: 0px;
+  height: 50px;
+  border: 0;
+  border-radius: 3px;
+  color: $font-color;
+  padding: 14px 44px;
+  transition: all 0.3s ease;
+
+  span{
+    color: #ffffff;
+  }
+
+  &[disabled]{
+    transition: all 0.3s ease;
+  }
+
+  &.btn-primary{
+    background-color: $primary-color;
+
+    i[class^="icon-"] {
+      background-color: $primary-button-icon;
+    }
+  }
+
+  i[class^="icon-"]{
+    @include transition(all, 0.5s, ease);
+  }
+
+  &.btn-primary:hover {
+    background-color: $primary-button-hover;
+
+    i[class^="icon-"] {
+      background-color: $primary-button-icon-hover;
+    }
+  }
+
+  &.btn-green{
+    background-color: $green-medium;
+  }
+  &.btn-green:hover{
+    background-color: $green-darkest;
+  }
+
+  &.btn-block{
+    span{
+      text-align: left;
+      display: inline-block;
+      width: 75%;
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+
+  &.btn-no-border{
+    border-radius: 0px;
+  }
+
+  &.btn-standard{
+    height: $button-height;
+  }
+
+  &.btn-facebook{
+    color: #fff;
+    background-color: #3d60a0;
+    border-color: rgba(0,0,0,0.2);
+
+    i[class^="icon-"] {
+      background-color: #345288;
+    }
+  }
+
+  &.btn-facebook:hover{
+    color: #fff;
+    background-color: #30487b;
+    border-color: rgba(0,0,0,0.2);
+
+    i[class^="icon-"] {
+      background-color: #30487b;
+    }
+  }
+
+  &.btn-social{
+
+  }
+
+  &.btn-icon{
+    padding: 14px 0px 14px 20px;
+
+  }
+
+  i[class^="icon-"]{
+    padding: 20px;
+    padding: 20px;
+    margin: 0px;
+    margin-left: 20px;
+  }
+}
+
+.btn:active {
+
+}
+
+.btn:hover, .btn:focus{
+  color: #ffffff;
+}
+
+button.close{
+  color: #999999;
+  position: absolute;
+  opacity: 1;
+  padding: 0;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  -webkit-appearance: none;
+  font-size: 30px;
+  line-height: 1;
+  right: 10px;
+  top: 5px;
+  z-index: 1;
+    &:focus{
+      outline: 0;
+  }
+}
+
+.input-group-addon{
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  color: #555;
+  text-align: center;
+  background-color: #e5e5e5;
+  border: 0px solid #ccc;
+  border-radius: 0px;
+}
+
+//input fields
+input[type="email"], input[type="password"], input[type="text"]{
+  border-radius: 5px;
+  display: block;
+  width: 100%;
+  border: 1px solid #dbdbdb;
+  color: $font-color-grey;
+  background-color: #ffffff;
+  padding: 15px 5px;
+  padding-left: 20px;
+  margin-bottom: 15px;
+  @include transition(all, 0.3s, ease);
+}
+
+
+
+.lf-btn-medium {
+    display: block;
+    font-size:14px;
+    position: relative;
+    padding-left: 16px;
+    width: 146px;
+    height: 40px;
+    margin-top:10px;
+    @include border-radius(3px);
+
+    span:first-child{
+        float: left;
+        color: #fff;
+        padding-right: 8px;
+        line-height: 40px;
+        height: 40px;
+    }
+    span:last-child{
+        display: block;
+        float: right;
+        width: 40px;
+        height: 40px;
+        padding: 13px;
+        background-color: #01b796;
+        @include border-right-radius(3px);
+    }    
+}
+
+button{
+  border:0;
+  padding:0;
+  text-align:left;
+  margin:0;
+}
+
+.lf-btn-large {
+    display: block;
+    font-size:16px;
+    font-weight:500;
+    position: relative;
+    padding-left: 30px;
+    font-weight:300;
+    height: 50px;
+    margin-top:15px;
+    @include border-radius(5px);
+
+    
+
+    span:first-child{
+        float: left;
+        color: #fff;
+        padding-right: 30px;
+        line-height: 50px;
+        height: 50px;
+    }
+    span:last-child{
+        display: block;
+        float: right;
+        width: 50px;
+        height: 50px;
+        padding: 18px;
+        @include border-right-radius(3px);
+    }    
+
+}
+
+.lf-full-width{
+  width:100%;
+}
+
+.lf-primary{
+      background-color: $primary-color;
+      span:last-child{
+        background-color: $primary-dark;
+      }    
+    }
+.lf-primary:hover {
+    background-color: $primary-dark;
+
+    span:last-child{
+        background-color: $primary-darkest;
+    }    
+
+}
+
+.lf-fb{
+      background-color: #3D60A0;
+      span:last-child{
+        background-color: #30487b;
+      }    
+    }
+.lf-fb:hover {
+    background-color: #30487b;
+
+    span:last-child{
+        background-color: #2c4171;
+    }    
+
+}
+
+
+
+.lf-btn-large[disabled]{
+  pointer-events: none;
+  cursor: not-allowed;
+  filter: alpha(opacity=65);
+  opacity: .65;
+}
+
+
+

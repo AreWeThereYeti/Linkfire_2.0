@@ -1,15 +1,14 @@
 'use strict';
 
 var linkfireWebappApp = angular.module('linkfireWebappApp', [
-    'ngResource',
-    'ngRoute',
-    'ui.bootstrap',
-    'duScroll',
-    'ngAnimate',
-		'ngFacebook',
-		'ngTouch',
-		'angular-carousel',
-		'cgNotify'
+	'ngResource',
+	'ngRoute',
+	'ui.bootstrap',
+	'duScroll',
+	'ngAnimate',
+	'ngFacebook',
+	'ngTouch',
+	'angular-carousel',
   ])
 
   .config(function ($routeProvider,$locationProvider, $httpProvider, $facebookProvider) {
@@ -27,13 +26,16 @@ var linkfireWebappApp = angular.module('linkfireWebappApp', [
 
     /*Removes hashtag from url in supported browsers*/
     $locationProvider.html5Mode(true);
+
+//		Pushes bearer token into all api requests
+		$httpProvider.interceptors.push('authInterceptor');
   })
 
 	//		Use constants for "global" variables
 		.constant('constants', {
 //			Api paths
 			testApi: "http://linkfire.test.dev.rocketlabs.dk'",
-			liveApi: "http://linkfire.com/api"
+			liveApi: "http://api.linkfire.com/"
 	})
 
 	.run( function( $rootScope ) {
@@ -58,4 +60,3 @@ var linkfireWebappApp = angular.module('linkfireWebappApp', [
 				firstScriptElement.parentNode.insertBefore(facebookJS, firstScriptElement);
 			}());
 	});
-

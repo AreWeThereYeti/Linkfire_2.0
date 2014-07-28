@@ -1,0 +1,34 @@
+#target{
+  //@include background(image-url("bg-target.jpg"));
+  //@include background-size(cover);
+  background-color:#f0f1f3;
+  height:100%;
+  width: 100%;
+  background-position:center;
+  color:#000;
+  padding-top:5%;
+  padding-bottom:5%;
+
+  .bg img{
+    position:relative;
+    left:-120px;
+    @include scale(1.1)
+  }
+  .row{
+    position: relative;
+    padding-top:5%;
+    padding-bottom:5%;
+    h4{
+      margin-top: 0px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  #target{
+    .bg img{
+      left:0;
+      @include scale(1)
+    }
+  }
+}

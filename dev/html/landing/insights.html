@@ -1,0 +1,173 @@
+
+<div class="row" ng-controller="CarouselCtrl">
+    <div class="col-xs-12 col-sm-12 visible-xs visible-sm text-center info-box">
+        <h1>Audience insights<br>across platforms</h1>
+        <p>With our private insights you get a clear understanding of how, where and when your link is performing and your fans most preferred music services.</p>
+    </div>
+    <!--
+    <div class="col-xs-offset-1 col-sm-offset-1 col-xs-10 col-sm-10 visible-xs visible-sm">
+        <div class="image" ng-if="hover == 0" ng-cloak>
+           <img class="img-responsive" src="images/insights_step1.png">
+        </div>
+        <div class="image" ng-if="hover == 1" ng-cloak>
+            <img class="img-responsive" src="images/insights_step2.png">
+        </div>
+        <div class="image" ng-if="hover == 2 || hover == 3" ng-cloak>
+            <img class="img-responsive" src="images/insights_step3.png">
+        </div>
+    </div>
+    -->
+
+
+    <!--Tablet-->
+    <div class="row visible-sm">
+        <div class="col-sm-12">
+            <ul rn-carousel rn-carousel-indicator="" class="image">
+                <li class="rn-carousel-slide">
+                    <img class="img-responsive" src="images/insights_step1.png">
+                    <div class="arrow"></div>
+                    <div class="col-sm-12 shufflebox feat">
+                        
+                        <div class="circ col-sm-2 vcenter"><span class="icon-cursor"></span></div>
+                        <div class="col-sm-10 vcenter">
+                            <h4>Total clicks</h4>
+                            <p>We track and compile real-time data about clicks, traffic sources, device types and more…</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="rn-carousel-slide">
+                    <img class="img-responsive" src="images/insights_step2.png">
+                    <div class="arrow"></div>
+                    <div class="col-sm-12 shufflebox feat">
+                        
+                        <div class="circ col-sm-2 vcenter"><span class="icon-music"></span></div>
+                        <div class="col-sm-10 vcenter">
+                            <h4>Top Music App</h4>
+                            <p>Tell your audience what to listen to and we’ll tell you their favorite music app.</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="rn-carousel-slide">
+                    <img class="img-responsive" src="images/insights_step2.png">
+                    <div class="arrow"></div>
+                    <div class="col-sm-12 shufflebox feat">
+                        
+                        <div class="circ col-sm-2 vcenter"><span class="icon-shuffle"></span></div>
+                        <div class="col-sm-10 vcenter">
+                            <h4>Top Referrer</h4>
+                            <p>Discover the relevance of referrers and understand where your traffic really comes from.</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--end Tablet-->
+
+    <!--start mobile -->
+    <div class="row visible-xs">
+        <div class="col-xs-12 col-sm-12">
+            <!-- isolated use of rn-carousel and its indicator, each li is a slide -->
+            <ul rn-carousel rn-carousel-indicator="" class="image">
+                <li class="rn-carousel-slide">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <img class="img-responsive" src="images/insights_step1.png">
+                    </div>
+                    <div class="arrow"></div>
+                    <div class="feat">
+                        <div class="col-xs-3 vcenter">
+                            <div class="circ"><span class="icon-cursor"></span></div>
+                        </div>
+                        <div class="col-xs-9 vcenter">
+                            <h4>Total clicks</h4>
+                            <p>We track and compile real-time data about clicks, traffic sources, device types and more…</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="rn-carousel-slide">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <img class="img-responsive" src="images/insights_step2.png">
+                    </div>
+                    <div class="arrow"></div>
+                    <div class="feat">
+                        <div class="col-xs-3 vcenter">
+                            <div class="circ"><span class="icon-music"></span></div>
+                        </div>
+                        <div class="col-xs-9 vcenter">
+                            <h4>Top Music App</h4>
+                            <p>Tell your audience what to listen to and we’ll tell you their favorite music app.</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="rn-carousel-slide">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <img class="img-responsive" src="images/insights_step3.png">
+                    </div>
+                    <div class="arrow"></div>
+                    <div class="feat">
+                        <div class="col-xs-3 vcenter">
+                            <div class="circ"><span class="icon-shuffle"></span></div>
+                        </div>
+                        <div class="col-xs-9 vcenter">
+                            <h4>Top Referrer</h4>
+                            <p>Discover the relevance of referrers and understand where your traffic really comes from.</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>  
+    <!-- end mobile -->
+
+
+    <div class="col-lg-offset-1 col-md-6 col-lg-4 hidden-xs hidden-sm vcenter">
+        <div class="col-md-12 hidden-xs hidden-sm info-box">
+            <h1>Audience insights<br>across platforms</h1>
+            <p>With our private insights you get a clear understanding of how, where and when your link is performing and your fans most preferred music services.</p>
+        </div>
+
+        <div class="col-md-12 shufflebox interactive" ng-class="{feat: hover == 0}" ng-mouseenter="stopTimer(); hover = 0" ng-mouseleave="startTimer()">
+            <div class="arrow right hidden-sm"></div>
+            <div class="circ col-sm-2 col-md-2 vcenter"><span class="icon-cursor"></span></div>
+            <div class="col-sm-10 col-md-10 vcenter">
+                <h4>Total clicks</h4>
+                <p>We track and compile real-time data about clicks, traffic sources, device types and more…</p>
+            </div>
+        </div>
+
+        <div class=" col-sm-12 col-md-12 shufflebox interactive" ng-class="{feat: hover == 1}" ng-mouseenter="stopTimer(); hover = 1" ng-mouseleave="startTimer()">
+            <div class="arrow right hidden-sm"></div>
+            <div class="circ col-sm-2 col-md-2 vcenter"><span class="icon-music"></span></div>
+            <div class=" col-sm-10 col-md-10 vcenter">
+                <h4>Top Music App</h4>
+                <p>Tell your audience what to listen to and we’ll tell you their favorite music app.</p>
+            </div>
+        </div>
+
+        <div class="col-sm-12 col-md-12 shufflebox interactive" ng-class="{feat: hover == 2}" ng-mouseenter="stopTimer(); hover = 2" ng-mouseleave="startTimer()">
+            <div class="arrow right hidden-sm"></div>
+            <div class="circ col-sm-2 col-md-2 vcenter"><span class="icon-shuffle"></span></div>
+            <div class=" col-sm-10 col-md-10 vcenter">
+                <h4>Top Referrer</h4>
+                <p>Discover the relevance of referrers and understand where your traffic really comes from.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-5 col-lg-6 hidden-xs hidden-sm vcenter bg">
+        <div class="image" ng-if="hover == 0" ng-cloak>
+           <img class="img-responsive" src="images/insights_step1.png">
+        </div>
+        <div class="image" ng-if="hover == 1" ng-cloak>
+            <img class="img-responsive" src="images/insights_step2.png">
+        </div>
+        <div class="image" ng-if="hover == 2 || hover == 3" ng-cloak>
+            <img class="img-responsive" src="images/insights_step3.png">
+        </div>
+    </div>
+
+    
+
+
+
+</div>
