@@ -1,13 +1,13 @@
 $icon-font-path: "/fonts/";
 @import "compass/css3";
 @import "mixins";
-@import "colors";
-@import "buttons";
-@import "infoboxes";
-@import "helpers";
-@import "animation";
+@import "helpers/colors";
+@import "helpers/buttons";
+@import "helpers/infoboxes";
+@import "helpers/helpers";
+@import "helpers/animation";
 @import "modal";
-@import "resets";
+@import "helpers/resets";
 @import "notification";
 
 //header & footer styles
@@ -24,7 +24,7 @@ $icon-font-path: "/fonts/";
 @import "landing/press";
 
 //mobile
-@import "tablet";
+@import "Mobile_and_tablet/tablet";
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -145,7 +145,7 @@ p, span{
 
 
 
-@import "mobile";
+@import "Mobile_and_tablet/mobile";
 
 
 

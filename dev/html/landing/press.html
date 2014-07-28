@@ -1,0 +1,49 @@
+<div class="press" ng-controller="CarouselCtrl">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-offset-1 col-xs-12 col-sm-12 col-md-10 testimonial">
+                <div class="row">
+                    <div>
+                        <span class="icon-quotes-left"></span>
+                    </div>
+                    <div class="col-xs-12 quotes">
+                        <h3 ng-if="hover == 0">
+                            We have used Linkfire since its launch and have found its functionality, aesthetics and support of an exceptionally high standard.<br>
+                            <span class="author">- Harry Hugo, Community Manager, Sportlobster.com</span>
+                        </h3>
+                        <h3 ng-if="hover == 1">
+                            We have worked with Linkfire for some time now and are delighted with the beautiful, straightforward interface that lets our team create and edit links with great ease.<br>
+                            <span class="author">- Tine Thygesen, CEO, Everplaces.com</span>
+                        </h3>
+                        <h3 ng-if="hover == 2">
+                            Linkfire makes working with links a social activity, which helps our community management team to review, align and appreciate each others work.<br>
+                            <span class="author">- Jonas Hansen, Managing partner, Lookcurious.com</span>
+                        </h3>
+                        <h3 ng-if="hover == 3">
+                            We use Linkfire to customise and keep track of all our marketing campaigns. We especially like the brand transparency in our social media posts.<br>
+                            <span class="author">- Anders Fink, Co-founder, Billetto.dk</span>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row presslogos">
+            <div class="col-md-2 hidden-xs">
+            </div>
+            <div class="col-md-2  col-sm-3 col-xs-6" ng-class="{current: hover == 0}" ng-mouseenter="stopTimer(); hover = 0" ng-mouseleave="startTimer()">
+                <img class="img-responsive" src="images/testimonial/testimonial_logos/sportlobster.png" alt=""/>
+            </div>
+            <div class="col-md-2  col-sm-3 col-xs-6" ng-class="{current: hover == 1}" ng-mouseenter="stopTimer(); hover = 1" ng-mouseleave="startTimer()">
+                <img class="img-responsive" src="images/testimonial/testimonial_logos/everplace.png" alt=""/>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-6" ng-class="{current: hover == 2}" ng-mouseenter="stopTimer(); hover = 2" ng-mouseleave="startTimer()">
+                <img class="img-responsive" src="images/testimonial/testimonial_logos/curious.png" alt=""/>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-6" ng-class="{current: hover == 3}" ng-mouseenter="stopTimer(); hover = 3" ng-mouseleave="startTimer()">
+                <img class="img-responsive" src="images/testimonial/testimonial_logos/billetto.png" alt=""/>
+            </div>
+            <div class="col-md-2 hidden-xs">
+            </div>
+        </div>
+    </div>
+</div>

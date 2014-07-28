@@ -9,7 +9,8 @@ var linkfireWebappApp = angular.module('linkfireWebappApp', [
 		'ngFacebook',
 		'ngTouch',
 		'angular-carousel',
-		'cgNotify'
+		'cgNotify',
+		'pwCheck'
   ])
 
   .config(function ($routeProvider,$locationProvider, $httpProvider, $facebookProvider) {

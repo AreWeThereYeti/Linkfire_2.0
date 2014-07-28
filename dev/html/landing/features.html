@@ -1,0 +1,106 @@
+<div class="bg">
+    <div class="row" ng-controller="CarouselCtrl">
+
+    <div ng-init="featureboxes = [
+    {headline:'111Smart link', text:'Use one link instead of many. When its clicked magic happens.', img:'phone_twitter.png', icon:'icon-cursor'},
+    {headline:'Preference page', text:'When you link to a track, we enable fans to access the relevant music store or preferred streaming services.', img:'phone_landing.png', icon:'icon-cog'},
+    {headline:'Music app', text:'Music app opens with the linked track.', img:'phone_spotify.png',icon:'icon-shuffle'}]">
+    </div>
+        <!--Mobile and tablet-->
+        <div class="col-xs-12 visible-xs visible-sm text-center info-box">
+            <h1>Deeplink directly<br>into music apps</h1>
+            <p>With just one link and more than 10 music service integrations - we route fans directly into the music app of their preference.</p>
+            <p>This means higher conversion for marketeers and better music experience for fans.</p>
+        </div>
+        <!--Mobile-->
+
+        <div class="row visible-xs">
+            <div class="col-xs-12">
+                <!-- isolated use of rn-carousel and its indicator, each li is a slide -->
+                <ul rn-carousel rn-carousel-indicator="" class="image">
+                    <li ng-repeat="feature in featureboxes" class="rn-carousel-slide">
+                        <div class="col-sm-8 col-sm-offset-2">
+                            <img class="img-responsive tall-img" ng-src="/images/{{feature.img}}">
+                        </div>
+                        <div class="arrow"></div>
+                        <div class="feat">
+                            <div class="col-xs-3 vcenter">
+                                <div class="circ"><span ng-class="feature.icon"></span></div>
+                            </div>
+                            <div class="col-xs-9 vcenter">
+                                <h4>{{feature.headline}}</h4>
+                                <p>{{feature.text}}</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>  
+
+        <!--Tablet-->
+        <div class="row visible-sm">
+            <div class="col-sm-12">
+                <ul rn-carousel rn-carousel-indicator="" class="image">
+                    <li ng-repeat="feature in featureboxes" class="rn-carousel-slide">
+                        <img class="img-responsive" ng-src="images/{{feature.img}}">
+                        <div class="arrow"></div>
+                        <div class="col-sm-12 shufflebox feat">
+                            
+                            <div class="circ col-sm-2 vcenter"><span ng-class="feature.icon"></span></div>
+                            <div class="col-sm-10 vcenter">
+                                <h4>{{feature.headline}}</h4>
+                                <p>{{feature.text}}</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--end Tablet-->
+
+
+        <!--Start desktop-->
+        <div class="col-md-offset-2 col-md-3 col-lg-offset-3 col-lg-3 hidden-xs hidden-sm vcenter">
+            <div ng-repeat="feature in featureboxes" ng-if="hover == ($index)" ng-cloak>
+               <img ng-src="images/{{feature.img}}">
+            </div>
+        </div>
+
+
+        <div class="col-md-offset-1 col-lg-offset-0 col-md-5 col-lg-4 hidden-xs hidden-sm vcenter">
+            <div class="col-sm-12 col-md-12 content info-box">
+                <h1>Deeplink directly <br>into music apps</h1>
+                <p>With just one link and more than 10 music service integrations - we route fans directly into the music app of their preference.</p>
+                <p>This means higher conversion for marketeers and better music experience for fans.</p>
+            </div>
+
+            <div  class="col-sm-12 col-md-12 shufflebox interactive" ng-class="{feat: hover == 0}" ng-mouseenter="stopTimer(); hover = 0" ng-mouseleave="startTimer()">
+                <div class="arrow hidden-sm"></div>
+                <div class="circ col-sm-2 col-md-2 vcenter"><span class="icon-cursor"></span></div>
+                <div class="col-sm-10 col-md-10 vcenter">
+                    <h4>Smart link</h4>
+                    <p>Use one link instead of many. When it's clicked magic happens.</p>
+                </div>
+            </div>
+
+            <div class=" col-sm-12 col-md-12 shufflebox interactive" ng-class="{feat: hover == 1}" ng-mouseenter="stopTimer(); hover = 1" ng-mouseleave="startTimer()">
+                <div class="arrow hidden-sm"></div>
+                <div class="circ col-sm-2 col-md-2 vcenter"><span class="icon-cog"></span></div>
+                <div class="col-xs-10 col-sm-10 col-md-10 vcenter">
+                    <h4>Preference page</h4>
+                    <p>When you link to a track, we enable fans to access the relevant music store or preferred streaming services.</p>
+                </div>
+            </div>
+
+            <div class=" col-sm-12 col-md-12 shufflebox interactive" ng-class="{feat: hover == 2}" ng-mouseenter="stopTimer(); hover = 2" ng-mouseleave="startTimer()">
+                <div class="arrow hidden-sm"></div>
+                <div class="circ col-sm-2 col-md-2 vcenter"><span class="icon-shuffle"></span></div>
+                <div class="col-sm-10 col-md-10 vcenter">
+                    <h4>Music app</h4>
+                    <p>Music app opens with the linked track.</p>
+                </div>
+            </div>
+        </div>
+        <!--End desktop-->
+    </div>
+</div>
