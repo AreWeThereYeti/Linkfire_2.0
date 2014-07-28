@@ -84,12 +84,11 @@ p, span{
       line-height:1.7em;
     }
   }
-
 }
 
+//Screen adjustments
 // sm //
 @media (min-width: 768px) and (max-width: 991px) {
-  
   .SnapABug_Button {
     display: none !important;
   }
@@ -138,15 +137,11 @@ p, span{
     }
   }
 }
-// lg //
-@media (min-width: 1200px) {
-  
+
+// very lg //
+@media (min-width: 1600px) {
+  .container-fluid > div{
+    width: 1600px !important;
+    margin: auto;
+  }
 }
-
-
-
-@import "Mobile_and_tablet/mobile";
-
-
-
-
