@@ -46,12 +46,6 @@ var LoginInstanceCtrl = function ($scope, $modalInstance, loginService, show, $f
 			  notify('Error');
 		  }
 	  });
-
-//    New login function working. Uncomment when new api is ready
-//    loginService.Login(args)
-//      .then(function(){
-//          $modalInstance.close();
-//      });
   };
 
 //	SignUp Function
