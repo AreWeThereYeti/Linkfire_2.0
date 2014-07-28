@@ -8,15 +8,39 @@ var linkfireWebappApp = angular.module('linkfireWebappApp', [
 	'ngAnimate',
 	'ngFacebook',
 	'ngTouch',
-	'angular-carousel',
+	'angular-carousel'
   ])
 
   .config(function ($routeProvider,$locationProvider, $httpProvider, $facebookProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'app.html',
+        templateUrl: 'html/public.html',
         controller: 'MainCtrl'
       })
+	    .when('/about', {
+		    templateUrl: 'html/about.html',
+		    controller: ''
+	    })
+	    .when('/blog', {
+		    templateUrl: 'html/about.html',
+		    controller: ''
+	    })
+	    .when('/faq', {
+		    templateUrl: 'html/qa.html',
+		    controller: ''
+	    })
+	    .when('/qa', {
+		    templateUrl: 'html/qa.html',
+		    controller: ''
+	    })
+		    .when('/terms', {
+			    templateUrl: 'html/terms.html',
+			    controller: ''
+		    })
+		    .when('/privacy', {
+			    templateUrl: 'html/privacy.html',
+			    controller: ''
+		    })
       .otherwise({
         redirectTo: '/'
       });

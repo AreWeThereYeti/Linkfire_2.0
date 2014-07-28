@@ -12,7 +12,7 @@ angular.module('linkfireWebappApp')
 			},
 			responseError: function (rejection) {
 				if (rejection.status === 401) {
-					console.log('error...');
+					$log.debug('Error... ');
 					// handle the case where the user is not authenticated
 				}
 				return $q.reject(rejection);
