@@ -24,6 +24,12 @@
   background-color: transparent !important;
 }
 
+.vcenter {
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+}
+
 //input fields
 input.has-error{
   transition: all 0.5s ease;
