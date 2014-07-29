@@ -24,8 +24,9 @@ $icon-font-path: "/fonts/";
 @import "landing/insights";
 @import "landing/press";
 
-@import "linkfeed";
-@import "board";
+//Boardsfeed
+@import "boards/linkfeed";
+@import "boards/board";
 
 //mobile
 @import "Mobile_and_tablet/tablet";

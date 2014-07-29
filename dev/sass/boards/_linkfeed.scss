@@ -3,6 +3,13 @@ body  {
   background-color:#f3f3f3;
 }
 
+
+// Center a block
+.center-block{
+  margin:0 auto;
+}
+
+
 .tag {
   float:left;
   height: 40px;
@@ -124,6 +131,8 @@ div #head {
     }
   }
 }
+
+
 
 .loadlogo {
   position: absolute;
@@ -259,21 +268,6 @@ div #head {
 
 
 
-
-.center-block{
-  margin:0 auto;
-}
-
-
-
-.contain{
-  padding: 0 15 0 15 !important;
-}
-
-
-
-
-
 .animate-repeat {
   -moz-transition:all linear 0.2s;
   -o-transition:all linear 0.2s;
@@ -310,46 +304,6 @@ div #head {
   transform: translateX(0);
 }
 
-
-
-
-/*
-.animate-repeat {
-  -moz-transition:all linear 0.2s;
-  -o-transition:all linear 0.2s;
-  transition:all linear 0.2s;
-  -webkit-transition:all linear 0.2s;
-  transition:all linear 0.2s;
-  box-sizing:border-box;
-}
-
-.animate-repeat.ng-move-active,
-.animate-repeat.ng-enter,
-.animate-repeat.ng-leave {
-  -moz-transition:all linear 0.2s;
-  -o-transition:all linear 0.2s;
-  transition:all linear 0.2s;
-  -webkit-transition:all linear 0.2s;
-  transition:all linear 0.2s;
-  box-sizing:border-box;
-}
-
-.animate-repeat.ng-leave.ng-leave-active,
-.animate-repeat.ng-move,
-.animate-repeat.ng-enter {
-  opacity: 0;
-  -webkit-transform: translateX(-100px);
-  transform: translateX(-100px);
-}
-
-.animate-repeat.ng-leave,
-.animate-repeat.ng-move,
-.animate-repeat.ng-enter.ng-enter-active {
-  opacity: 1;
-  -webkit-transform: translateX(0);
-  transform: translateX(0);
-}
-*/
 
 .animate-show {
   -webkit-animation-name: bounce;
