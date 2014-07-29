@@ -26,11 +26,11 @@
 }
 /* line 26, ../sass/helpers/_buttons.scss */
 .btn i[class^="icon-"] {
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s 3ease;
+  -moz-transition: all 0.5s 3ease;
+  -ms-transition: all 0.5s 3ease;
+  -o-transition: all 0.5s 3ease;
+  transition: all 0.5s 3ease;
 }
 /* line 30, ../sass/helpers/_buttons.scss */
 .btn.btn-primary:hover {
@@ -194,6 +194,51 @@ input[type="email"], input[type="password"], input[type="text"] {
 }
 
 /* line 183, ../sass/helpers/_buttons.scss */
+.lf-btn-large {
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  position: relative;
+  padding-left: 30px;
+  font-weight: 300;
+  height: 50px;
+  margin-top: 15px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 196, ../sass/helpers/_buttons.scss */
+.lf-btn-large span:first-child {
+  float: left;
+  color: #fff;
+  padding-right: 30px;
+  line-height: 50px;
+  height: 50px;
+}
+/* line 203, ../sass/helpers/_buttons.scss */
+.lf-btn-large span:last-child {
+  display: block;
+  float: right;
+  width: 50px;
+  height: 50px;
+  padding: 18px;
+  -webkit-border-top-right-radius: 3px;
+  -moz-border-top-right-radius: 3px;
+  -ms-border-top-right-radius: 3px;
+  border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  -moz-border-bottom-right-radius: 3px;
+  -ms-border-bottom-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+/* line 213, ../sass/helpers/_buttons.scss */
+lf-full-width {
+  width: 100%;
+}
+
+/* line 217, ../sass/helpers/_buttons.scss */
 button {
   border: 0;
   padding: 0;
@@ -201,7 +246,7 @@ button {
   margin: 12px;
 }
 
-/* line 189, ../sass/helpers/_buttons.scss */
+/* line 223, ../sass/helpers/_buttons.scss */
 .lf-btn-medium {
   display: block;
   font-size: 14px;
@@ -215,7 +260,7 @@ button {
   -ms-border-radius: 3px;
   border-radius: 3px;
 }
-/* line 199, ../sass/helpers/_buttons.scss */
+/* line 233, ../sass/helpers/_buttons.scss */
 .lf-btn-medium span:first-child {
   float: left;
   color: #fff;
@@ -223,7 +268,7 @@ button {
   line-height: 40px;
   height: 40px;
 }
-/* line 206, ../sass/helpers/_buttons.scss */
+/* line 240, ../sass/helpers/_buttons.scss */
 .lf-btn-medium span:last-child {
   display: block;
   float: right;
@@ -240,53 +285,53 @@ button {
   -ms-border-bottom-right-radius: 3px;
   border-bottom-right-radius: 3px;
 }
-/* line 214, ../sass/helpers/_buttons.scss */
+/* line 248, ../sass/helpers/_buttons.scss */
 .lf-btn-medium span:last-child svg {
   height: 20px;
   width: 20px;
 }
-/* line 217, ../sass/helpers/_buttons.scss */
+/* line 251, ../sass/helpers/_buttons.scss */
 .lf-btn-medium span:last-child svg path {
   fill: white;
 }
 
-/* line 223, ../sass/helpers/_buttons.scss */
+/* line 257, ../sass/helpers/_buttons.scss */
 .lf-primary {
   background-color: #fc3429;
 }
-/* line 225, ../sass/helpers/_buttons.scss */
+/* line 259, ../sass/helpers/_buttons.scss */
 .lf-primary span:last-child {
   background-color: #e82b22;
 }
 
-/* line 229, ../sass/helpers/_buttons.scss */
+/* line 263, ../sass/helpers/_buttons.scss */
 .lf-primary:hover {
   background-color: #e82b22;
 }
-/* line 232, ../sass/helpers/_buttons.scss */
+/* line 266, ../sass/helpers/_buttons.scss */
 .lf-primary:hover span:last-child {
   background-color: #d0271f;
 }
 
-/* line 237, ../sass/helpers/_buttons.scss */
+/* line 271, ../sass/helpers/_buttons.scss */
 .lf-green {
   background-color: #3cbda3;
 }
-/* line 239, ../sass/helpers/_buttons.scss */
+/* line 273, ../sass/helpers/_buttons.scss */
 .lf-green span:last-child {
   background-color: #00a888;
 }
 
-/* line 244, ../sass/helpers/_buttons.scss */
+/* line 278, ../sass/helpers/_buttons.scss */
 .lf-green:hover {
   background-color: #00a888;
 }
-/* line 247, ../sass/helpers/_buttons.scss */
+/* line 281, ../sass/helpers/_buttons.scss */
 .lf-green:hover span:last-child {
   background-color: #2c947f;
 }
 
-/* line 253, ../sass/helpers/_buttons.scss */
+/* line 287, ../sass/helpers/_buttons.scss */
 #create-button {
   display: block;
   position: relative;
@@ -298,12 +343,12 @@ button {
   border-radius: 3px;
 }
 
-/* line 263, ../sass/helpers/_buttons.scss */
+/* line 297, ../sass/helpers/_buttons.scss */
 #create-button:hover {
   background-color: #00a888;
 }
 
-/* line 266, ../sass/helpers/_buttons.scss */
+/* line 300, ../sass/helpers/_buttons.scss */
 #create-button span:first-child {
   float: left;
   color: #fff;
@@ -312,7 +357,7 @@ button {
   height: 40px;
 }
 
-/* line 273, ../sass/helpers/_buttons.scss */
+/* line 307, ../sass/helpers/_buttons.scss */
 #create-button span:last-child {
   display: block;
   float: right;
@@ -328,19 +373,19 @@ button {
   border-bottom-right-radius: 3px;
 }
 
-/* line 290, ../sass/helpers/_buttons.scss */
+/* line 324, ../sass/helpers/_buttons.scss */
 #create-button span:last-child svg {
   width: 20px;
   height: 20px;
   fill: #fff;
 }
 
-/* line 295, ../sass/helpers/_buttons.scss */
+/* line 329, ../sass/helpers/_buttons.scss */
 #create-button span:last-child svg path {
   fill: #fff;
 }
 
-/* line 299, ../sass/helpers/_buttons.scss */
+/* line 333, ../sass/helpers/_buttons.scss */
 #create-button:hover span:last-child {
   background-color: #2c947f;
 }
@@ -2586,12 +2631,11 @@ p, span {
   }
   /* line 107, ../sass/main.scss */
   .info-box p {
-    font-size: 14px;
     word-wrap: normal;
     line-height: 1.7em;
   }
 
-  /* line 114, ../sass/main.scss */
+  /* line 113, ../sass/main.scss */
   li .arrow {
     left: 0;
     opacity: 1;
@@ -2609,17 +2653,17 @@ p, span {
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  /* line 130, ../sass/main.scss */
+  /* line 129, ../sass/main.scss */
   .info-box {
     margin-bottom: 20px;
   }
-  /* line 132, ../sass/main.scss */
+  /* line 131, ../sass/main.scss */
   .info-box h1 {
     font-size: 32px;
     line-height: 1.1em;
     font-weight: 900;
   }
-  /* line 137, ../sass/main.scss */
+  /* line 136, ../sass/main.scss */
   .info-box p {
     font-size: 12px;
     word-wrap: normal;
@@ -2627,7 +2671,7 @@ p, span {
   }
 }
 @media (min-width: 1600px) {
-  /* line 147, ../sass/main.scss */
+  /* line 146, ../sass/main.scss */
   .container-fluid > div {
     width: 1600px !important;
     margin: auto;
