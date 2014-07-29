@@ -214,6 +214,21 @@ lf-full-width{
   width:100%;
 }
 
+.lf-fb{
+  background-color: #3D60A0;
+  span:last-child{
+    background-color: #30487b;
+  }
+}
+.lf-fb:hover {
+  background-color: #30487b;
+
+  span:last-child{
+    background-color: #2c4171;
+  }
+
+}
+
 button{
   border:0;
   padding:0;

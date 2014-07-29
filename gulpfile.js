@@ -113,4 +113,4 @@ gulp.task('default', function() {
 
 gulp.task('build', ['minify', 'css', 'minify-html', 'minify-template-html' ]);
 
-gulp.task('minify-images', ['images']):
+gulp.task('minify-images', ['images']);
