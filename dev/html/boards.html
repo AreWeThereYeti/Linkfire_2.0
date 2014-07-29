@@ -55,16 +55,13 @@
 	//  
 </script>
 
-
-
-
 <div ng-controller="BoardsCtrl">
 	<div ng-hide="pageLoaded" id="page_loader" class="loadscreen" >
 		<div class="loadlogo">
 			<a ng-click="pageLoaded = !pageLoaded"><img class="svg" src="/images/logo.svg"></a>
 		</div>
 	</div>
-	<div ng-show="pageLoaded" class="container-fluid animate-show">
+	<div ng-show="pageLoaded" class="animate-show">
 		<!-- row can be used for debugging 
 		<div class="row">
 			<div class="col-md-12">
