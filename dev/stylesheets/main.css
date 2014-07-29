@@ -1196,7 +1196,7 @@ small {
 
 /* line 1, ../sass/landing/_landing.scss */
 #landing {
-  background: url('../images/bg1.jpg?1406556238');
+  background: url('../images/bg1.jpg?1406630404');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1230,7 +1230,7 @@ small {
 
 /* line 32, ../sass/landing/_landing.scss */
 #landing-mobile {
-  background: url('../images/landing-mobile.png?1406556238');
+  background: url('../images/landing-mobile.png?1406630404');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1265,7 +1265,7 @@ small {
 @media (min-width: 1200px) {
   /* line 65, ../sass/landing/_landing.scss */
   #landing {
-    background: url('../images/bg2.jpg?1406556238');
+    background: url('../images/bg2.jpg?1406630404');
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -1367,7 +1367,7 @@ small {
 
 /* line 10, ../sass/landing/_splitters.scss */
 #splitter {
-  background: url('../images/bg-splitter1.jpg?1405070271');
+  background: url('../images/bg-splitter1.jpg?1406630084');
 }
 /* line 13, ../sass/landing/_splitters.scss */
 #splitter .row {
@@ -1377,7 +1377,7 @@ small {
 
 /* line 20, ../sass/landing/_splitters.scss */
 #splitter2 {
-  background: url('../images/bg-splitter2.jpg?1405070271');
+  background: url('../images/bg-splitter2.jpg?1406630084');
 }
 /* line 23, ../sass/landing/_splitters.scss */
 #splitter2 .row {
@@ -1387,7 +1387,7 @@ small {
 
 /* line 29, ../sass/landing/_splitters.scss */
 #splitter3 {
-  background: url('../images/bg-splitter3.jpg?1405070271');
+  background: url('../images/bg-splitter3.jpg?1406630084');
 }
 /* line 33, ../sass/landing/_splitters.scss */
 #splitter3 .row {
@@ -1448,7 +1448,7 @@ small {
 }
 /* line 1, ../sass/landing/_press.scss */
 #press {
-  background: url('../images/bg-testimonial.jpg?1405070271');
+  background: url('../images/bg-testimonial.jpg?1406630084');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
