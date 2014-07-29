@@ -1,3 +1,98 @@
+#boards{
+  padding:0 12px 12px 12px;
+  height:auto;
+}
+
+// Board content wrapper for all baords //
+.board-content {
+  width:100%;
+  height: 320px;
+  background-color: $white;
+  .info{
+    padding:15px;
+    p.headline{
+      margin-top:5px;
+      font-size:18px;
+      font-weight:900;
+      color:#000;
+    }
+  }
+}
+
+// "Create board"-board styles //
+#create{
+  .board-content{
+    border: dashed 1px #e1e1e1;
+  }
+  .close-btn{
+    width:100%;
+    height:28px;
+    padding:9px;
+    a svg{
+      width:10px;
+      height:10px;
+      float:right;
+      polygon{
+        fill:#ededed;
+      }
+    }
+    svg:hover polygon{
+      fill:#ccc;
+    }
+  }
+  .manage{
+    padding:15px;
+    svg.create-board-logo{
+      width: 65px;
+      display: block;
+      margin:0 auto 25px auto;
+      path{
+        fill: $grey-light;
+      }
+    }
+    p.headline  {
+      text-align:center;
+      max-height:22px;
+      font-size:16px;
+      font-weight:bold;
+      color:#c6c6c6;
+    }
+    p.text{
+      text-align:center;
+      max-height:40px;
+      font-weight:300;
+      font-size:14px;
+      color:#c6c6c6;
+    }
+  }
+  button{
+    margin-top:30px;
+  }
+
+  .boardmask{
+    width:100%;
+    height:auto;
+    @include transition(all, 0.2s, linear);
+
+    .ng-hide-remove{
+      width:100%;
+    }
+    .ng-hide-add{
+      width:0%;
+    }
+  }
+
+}
+
+#create.boardmask.lf-grid-sm.remove{
+  width:0%;
+  padding:0px;
+  @include transition(all, 0.1s, linear);
+}
+
+
+// Regular board styles //
+
 .mask {
   width:100%;
   height:140px;
@@ -7,7 +102,7 @@
     width:100%;
     float:left;
     //-webkit-backface-visibility: hidden;
-    @include transition-duration(0.1s);
+
   }
   .lnkBtn{
     display:block;
@@ -63,21 +158,6 @@
 }
 
 
-.board-content {
-    width:100%;
-    height: 320px;
-    background-color: $white;
-    .info{
-      padding:15px;
-      p.headline{
-          margin-top:5px;
-          font-size:18px;
-          font-weight:900;
-          color:#000;
-        }
-    }
-}
-
 .member{
   width:16%;
   margin-right:5%;
@@ -93,19 +173,19 @@
 
 }
 .overlay {
-    position: relative;
+  position: relative;
+  width:100%;
+  height:100%;
+  top:-10px;
+  color:#000;
+  p{
+    padding-top:50%;
+    display:inline-block;
     width:100%;
     height:100%;
-    top:-10px;
     color:#000;
-    p{
-        padding-top:50%;
-        display:inline-block;
-        width:100%;
-        height:100%;
-        color:#000;
-        text-align:center;
-        vertical-align:middle;
-    }
+    text-align:center;
+    vertical-align:middle;
+  }
 }
 

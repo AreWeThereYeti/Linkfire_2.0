@@ -1,15 +1,19 @@
-
 body  {
   background-color:#f3f3f3;
 }
-
 
 // Center a block
 .center-block{
   margin:0 auto;
 }
+.vcenter {
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+}
 
 
+/* not currently being developed
 .tag {
   float:left;
   height: 40px;
@@ -17,7 +21,7 @@ body  {
   padding:9px;
   background-color:$black;
 }
-
+*/
 // main content containers //
 
 
@@ -29,17 +33,7 @@ body  {
   padding:12px 12px 0px 12px;
   height:76px;
 }
-#boards{
-  padding:0 12px 12px 12px;
-  height:auto;
-}
-.vcenter {
-  display: inline-block;
-  vertical-align: middle;
-  float: none;
-}
-
-div#page_loader {
+#page_loader {
   position: absolute;
   top: 0;
   bottom: 0%;
@@ -47,11 +41,24 @@ div#page_loader {
   right: 0%;
   background-color: #292f38;
   z-index: 99;
+  .loadlogo {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    margin-left: -50px; /* margin is -0.5 * dimension */
+    margin-top: -50px;
+    a svg{
+      width:80px;
+      height:80px;
+      display:block;
+      margin:0 auto;
+    }
+  }
 }
 
-
-
-div #head {
+#head {
   a svg {
     float: left;
     display:block;
@@ -133,26 +140,7 @@ div #head {
 }
 
 
-
-.loadlogo {
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  top: 50%;
-  left: 50%;
-  margin-left: -50px; /* margin is -0.5 * dimension */
-  margin-top: -50px;
-  a svg{
-    width:80px;
-    height:80px;
-    display:block;
-    margin:0 auto;
-  }
-}
-
 // search field styles //
-
-
 .search{
   width:100%;
   background-color:#fff;
@@ -194,8 +182,9 @@ div #head {
     }
   }
 }
-// search field placeholder text styling //
 
+
+// search field placeholder text styling //
 ::-webkit-input-placeholder {
   color: #cfcfcf;
 }
@@ -209,81 +198,19 @@ div #head {
   color: #cfcfcf;
 }
 
-#create .board-content{
-  border: dashed 1px #e1e1e1;
-}
 
 
-// small close button on create-board //
-#create{
-  .close-btn{
-    width:100%;
-    height:28px;
-    padding:9px;
-    a svg{
-      width:10px;
-      height:10px;
-      float:right;
-      polygon{
-        fill:#ededed;
-      }
-    }
-    svg:hover polygon{
-      fill:#ccc;
-    }
-  }
-  .manage{
-    padding:15px;
-    svg.create-board-logo{
-      width: 65px;
-      display: block;
-      margin:0 auto 25px auto;
-      path{
-        fill: $grey-light;
-      }
-    }
-    p.headline  {
-      text-align:center;
-      max-height:22px;
-      font-size:16px;
-      font-weight:bold;
-      color:#c6c6c6;
-    }
-    p.text{
-      text-align:center;
-      max-height:40px;
-      font-weight:300;
-      font-size:14px;
-      color:#c6c6c6;
-    }
-  }
-  button{
-    margin-top:30px;
-  }
-}
-
-
-
+// Animations applied to repeated boards (standard ones) //
 .animate-repeat {
-  -moz-transition:all linear 0.2s;
-  -o-transition:all linear 0.2s;
-  transition:all linear 0.2s;
-  -webkit-transition:all linear 0.2s;
-  transition:all linear 0.2s;
+  @include transition(all, 0.2s, linear);
   box-sizing:border-box;
 }
-
 .animate-repeat.ng-move-active,
 .animate-repeat.ng-enter,
 .animate-repeat.ng-leave {
-  -moz-transition:all linear 0.2s;
-  -o-transition:all linear 0.2s;
-  transition:all linear 0.2s;
-  -webkit-transition:all linear 0.2s;
-  transition:all linear 0.2s;
+  @include transition(all, 0.2s, linear);
   box-sizing:border-box;
 }
-
 .animate-repeat.ng-leave.ng-leave-active,
 .animate-repeat.ng-move,
 .animate-repeat.ng-enter {
@@ -291,7 +218,6 @@ div #head {
   -webkit-animation: lfBounceOut 0.5s;
   animation: lfBounceOut 0.5s;
 }
-
 .animate-repeat.ng-leave,
 .animate-repeat.ng-move,
 .animate-repeat.ng-enter.ng-enter-active {
@@ -301,6 +227,7 @@ div #head {
 }
 
 
+// Animation applied to "Create-board" board //
 .animate-show {
   -webkit-animation-name: bounce;
   animation-name: bounce;
@@ -315,6 +242,8 @@ div #head {
   display: block !important;
 }
 
+
+// Apply animation to load screen, animations are in _animation.scss //
 .loadscreen {
   -webkit-animation-name: bounce;
   animation-name: bounce;
@@ -330,227 +259,8 @@ div #head {
 }
 
 
-@-webkit-keyframes lfflipInX {
-  0% {
-    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 20deg) scale3d(.6, .6, .6);
-    transform: perspective(400px) rotate3d(1, 0, 0, 20deg) scale3d(.6, .6, .6);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: perspective(400px);
-    transform: perspective(400px);
-  }
-}
-
-@keyframes lfflipInX {
-  0% {
-    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 20deg) scale3d(.6, .6, .6);
-    -ms-transform: perspective(400px) rotate3d(1, 0, 0, 20deg) scale3d(.6, .6, .6);
-    transform: perspective(400px) rotate3d(1, 0, 0, 20deg) scale3d(.6, .6, .6);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: perspective(400px);
-    -ms-transform: perspective(400px);
-    transform: perspective(400px);
-  }
-}
-
-.lfflipInX {
-  -webkit-backface-visibility: visible !important;
-  -ms-backface-visibility: visible !important;
-  backface-visibility: visible !important;
-  -webkit-animation-name: lfflipInX;
-  animation-name: lfflipInX;
-}
-
-
-
-
-@-webkit-keyframes lfflipOutX {
-  0% {
-    -webkit-transform: perspective(400px);
-    transform: perspective(400px);
-  }
-
-  100% {
-    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 20deg) scale3d(.6, .6, .6);
-    transform: perspective(400px) rotate3d(1, 0, 0, 20deg) scale3d(.6, .6, .6);
-    opacity: 0;
-  }
-}
-@keyframes lfflipOutX {
-  0% {
-    -webkit-transform: perspective(400px);
-    -ms-transform: perspective(400px);
-    transform: perspective(400px);
-  }
-
-  100% {
-    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 20deg) scale3d(.6, .6, .6);
-    -ms-transform: perspective(400px) rotate3d(1, 0, 0, 20deg) scale3d(.6, .6, .6);
-    transform: perspective(400px) rotate3d(1, 0, 0, 20deg) scale3d(.6, .6, .6);
-    opacity: 0;
-  }
-}
-.lfflipOutX {
-  -webkit-animation-name: flipOutX;
-  animation-name: flipOutX;
-  -webkit-animation-duration: .75s;
-  animation-duration: .75s;
-  -webkit-backface-visibility: visible !important;
-  -ms-backface-visibility: visible !important;
-  backface-visibility: visible !important;
-}
-
-
-
-.boardmask{
-  width:100%;
-  height:auto;
-  -moz-transition:all linear 0.2s;
-  -o-transition:all linear 0.2s;
-  transition:all linear 0.2s;
-  -webkit-transition:all linear 0.2s;
-  transition:all linear 0.2s;
-}
-.boardmask.ng-hide-remove{
-  width:100%;
-}
-.boardmask.ng-hide-add{
-  width:0%;
-}
-
-div#create.boardmask.lf-grid-sm.remove{
-  width:0%;
-  padding:0px;
-}
-
-
-.super{
-  -moz-transition:all linear 0.2s;
-  -o-transition:all linear 0.2s;
-  transition:all linear 0.2s;
-  -webkit-transition:all linear 0.2s;
-  transition:all linear 0.2s;
-}
-.super.ng-hide-remove{
-  width:100%;
-}
-.super.ng-hide-add{
-  width:0%;
-}
-
-
-
-/*
-.animate-show {
-  -moz-transition:all linear 0.2s;
-  -o-transition:all linear 0.2s;
-  transition:all linear 0.2s;
-  -webkit-transition:all linear 0.2s;
-  transition:all linear 0.2s;
-  opacity:1;
-  -webkit-transform: translateX(0);
-  transform: translateX(0);
-}
-.animate-show.ng-hide-add,
-.animate-show.ng-hide-remove {
-  display:block!important;
-  
-}
-.animate-show.ng-hide {
-  opacity: 0;
-  width:0%;
-  min-widht:0px;
-  -webkit-transform: translateX(-240px);
-  transform: translateX(-240px);
-}
-*/
-
-
-
-@-webkit-keyframes lfbounceIn {
-  0%, 20%, 40%, 60%, 80%, 100% {
-    -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-  }
-  0% {
-    opacity: 0;
-    -webkit-transform: scale3d(.3, .3, .3);
-    transform: scale3d(.3, .3, .3);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-}
-
-@keyframes lfbounceIn {
-  0%, 20%, 40%, 60%, 80%, 100% {
-    -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-  }
-
-  0% {
-    opacity: 0;
-    -webkit-transform: scale3d(.3, .3, .3);
-    -ms-transform: scale3d(.3, .3, .3);
-    transform: scale3d(.3, .3, .3);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: scale3d(1, 1, 1);
-    -ms-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-}
-
-.lfbounceIn {
-  -webkit-animation-name: lfbounceIn;
-  animation-name: lfbounceIn;
-  -webkit-animation-duration: .75s;
-  animation-duration: .75s;
-}
-
-
-
-
-
-@-webkit-keyframes lfBounceOut {
-  0% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-
-
-  100% {
-    opacity: 0;
-    -webkit-transform: scale(.3);
-    transform: scale(.3);
-  }
-}
-
-@keyframes lfBounceOut {
-  0% {
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
-  }
-
-  100% {
-    opacity: 0;
-    -webkit-transform: scale(.3);
-    -ms-transform: scale(.3);
-    transform: scale(.3);
-  }
-}
-
-
 
 // linkfire grid classes small (boards) and large (links)
-
 .lf-grid-sm {
   position:relative;
   width:100%;
@@ -563,7 +273,6 @@ div#create.boardmask.lf-grid-sm.remove{
   float: left;
   padding: 12px;
 }
-
 
 @media (min-width: 595px){.lf-grid-sm{width:50%}}
 @media (min-width: 820px){.lf-grid-sm{width:33.33333%}}
