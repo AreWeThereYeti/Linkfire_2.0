@@ -6,3 +6,4 @@
 autoprefixer
 has-ansi
 node_modules
+dist/
