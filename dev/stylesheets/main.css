@@ -644,35 +644,45 @@ button {
 }
 
 /* line 19, ../sass/helpers/_helpers.scss */
+.no-padding {
+  padding: 0 !important;
+}
+
+/* line 23, ../sass/helpers/_helpers.scss */
+.no-margin {
+  margin: 0 !important;
+}
+
+/* line 27, ../sass/helpers/_helpers.scss */
 .bold {
   font-weight: 600;
 }
 
-/* line 23, ../sass/helpers/_helpers.scss */
+/* line 31, ../sass/helpers/_helpers.scss */
 .svg {
   height: 100%;
 }
 
-/* line 27, ../sass/helpers/_helpers.scss */
+/* line 35, ../sass/helpers/_helpers.scss */
 .no-bg {
   background-color: transparent !important;
 }
 
-/* line 31, ../sass/helpers/_helpers.scss */
+/* line 39, ../sass/helpers/_helpers.scss */
 .vcenter {
   display: inline-block;
   vertical-align: middle;
   float: none;
 }
 
-/* line 38, ../sass/helpers/_helpers.scss */
+/* line 46, ../sass/helpers/_helpers.scss */
 input.has-error {
   transition: all 0.5s ease;
   color: #fc3429;
   border: 1px solid #fc3429;
 }
 
-/* line 44, ../sass/helpers/_helpers.scss */
+/* line 52, ../sass/helpers/_helpers.scss */
 input.valid {
   transition: all 0.5s ease;
   color: #2c947f;
@@ -1583,6 +1593,24 @@ small {
   -ms-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
+}
+
+/* line 2, ../sass/_about.scss */
+#about h3, #about h4, #about p {
+  color: black;
+}
+/* line 7, ../sass/_about.scss */
+#about .team .row {
+  margin-bottom: 30px;
+}
+/* line 9, ../sass/_about.scss */
+#about .team .row .border {
+  border: 1px solid #dddfe1;
+}
+/* line 11, ../sass/_about.scss */
+#about .team .row .border h3, #about .team .row .border h4, #about .team .row .border p {
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /* line 2, ../sass/_linkfeed.scss */
@@ -2556,23 +2584,23 @@ div#create.boardmask.lf-grid-sm.remove {
   vertical-align: middle;
 }
 
-/* line 33, ../sass/main.scss */
+/* line 37, ../sass/main.scss */
 body {
   font-family: 'Roboto', sans-serif;
 }
 
-/* line 37, ../sass/main.scss */
+/* line 41, ../sass/main.scss */
 .container-fluid {
   padding: 0 5% 0 5%;
   overflow: hidden;
 }
 
-/* line 42, ../sass/main.scss */
+/* line 46, ../sass/main.scss */
 p, span {
   color: whitesmoke;
 }
 
-/* line 46, ../sass/main.scss */
+/* line 50, ../sass/main.scss */
 .bg-prefs, #splitter, #splitter2, #splitter3, #insights {
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -2584,39 +2612,39 @@ p, span {
   color: #000;
 }
 
-/* line 54, ../sass/main.scss */
+/* line 58, ../sass/main.scss */
 #logo-banner {
   background-color: #f0f1f3;
 }
 
-/* line 58, ../sass/main.scss */
+/* line 62, ../sass/main.scss */
 #footer {
   background-color: #22272f;
 }
 
-/* line 63, ../sass/main.scss */
+/* line 67, ../sass/main.scss */
 .SnapABug_Button {
   background-color: blue-darkest;
 }
 
 @media (max-width: 767px) {
-  /* line 72, ../sass/main.scss */
+  /* line 76, ../sass/main.scss */
   .SnapABug_Button {
     display: none !important;
   }
 
-  /* line 77, ../sass/main.scss */
+  /* line 81, ../sass/main.scss */
   .info-box {
     margin-bottom: 20px;
   }
-  /* line 79, ../sass/main.scss */
+  /* line 83, ../sass/main.scss */
   .info-box h1 {
     font-size: 22px;
     color: #405a72;
     line-height: 1.1em;
     font-weight: 900;
   }
-  /* line 85, ../sass/main.scss */
+  /* line 89, ../sass/main.scss */
   .info-box p {
     font-size: 12px;
     word-wrap: normal;
@@ -2624,29 +2652,29 @@ p, span {
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 96, ../sass/main.scss */
+  /* line 100, ../sass/main.scss */
   .SnapABug_Button {
     display: none !important;
   }
 
-  /* line 99, ../sass/main.scss */
+  /* line 103, ../sass/main.scss */
   .info-box {
     margin-bottom: 20px;
   }
-  /* line 101, ../sass/main.scss */
+  /* line 105, ../sass/main.scss */
   .info-box h1 {
     font-size: 32px;
     color: #405a72;
     line-height: 1.1em;
     font-weight: 900;
   }
-  /* line 107, ../sass/main.scss */
+  /* line 111, ../sass/main.scss */
   .info-box p {
     word-wrap: normal;
     line-height: 1.7em;
   }
 
-  /* line 113, ../sass/main.scss */
+  /* line 117, ../sass/main.scss */
   li .arrow {
     left: 0;
     opacity: 1;
@@ -2664,17 +2692,17 @@ p, span {
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  /* line 129, ../sass/main.scss */
+  /* line 133, ../sass/main.scss */
   .info-box {
     margin-bottom: 20px;
   }
-  /* line 131, ../sass/main.scss */
+  /* line 135, ../sass/main.scss */
   .info-box h1 {
     font-size: 32px;
     line-height: 1.1em;
     font-weight: 900;
   }
-  /* line 136, ../sass/main.scss */
+  /* line 140, ../sass/main.scss */
   .info-box p {
     font-size: 12px;
     word-wrap: normal;
@@ -2682,7 +2710,7 @@ p, span {
   }
 }
 @media (min-width: 1600px) {
-  /* line 146, ../sass/main.scss */
+  /* line 150, ../sass/main.scss */
   .container-fluid > div {
     width: 1600px !important;
     margin: auto;

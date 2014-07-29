@@ -27,7 +27,7 @@ var linkfireWebappApp = angular.module('linkfireWebappApp', [
   .config(function ($routeProvider,$locationProvider, $httpProvider, $facebookProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'html/public.html',
+        templateUrl: 'html/landing.html',
         controller: 'MainCtrl'
       })
 		  .when('/boards', {
@@ -35,9 +35,9 @@ var linkfireWebappApp = angular.module('linkfireWebappApp', [
         controller: 'BoardsCtrl'
       })
 
-	    //Static pages
+	    /*----------Static pages-----------*/
 	    .when('/about', {
-		    templateUrl: 'html/about.html',
+		    templateUrl: 'html/static/about.html',
 		    controller: ''
 	    })
 	    .when('/blog', {

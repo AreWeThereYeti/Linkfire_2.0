@@ -43,22 +43,25 @@
 	        });
 	    });
 	});
-	$(".close-btn a").click(function() {
-		$(".animate-show").on('oanimationend animationend webkitAnimationEnd', function() { 
-			console.log("run");
-		   $(this).parent(".boardmask").addClass("remove"); 
-		});
-	});
+//	$(".close-btn a").click(function() {
+//		$(".animate-show").on('oanimationend animationend webkitAnimationEnd', function() {
+//			console.log("run");
+//		   $(this).parent(".boardmask").addClass("remove");
+//		});
+//	});
 	//  
 </script>
 
 <div ng-controller="BoardsCtrl">
+    <!--encapsulate this in a global service-->
 	<div ng-hide="pageLoaded" id="page_loader" class="loadscreen" >
 		<div class="loadlogo">
 			<a ng-click="pageLoaded = !pageLoaded"><img class="svg" src="/images/logo.svg"></a>
 		</div>
 	</div>
+
 	<div ng-show="pageLoaded" class="animate-show">
+        <!-- Header-->
         <div ng-include="'html/boards/header.html'"></div>
 
         <!-- Searchbar-->

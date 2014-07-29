@@ -1,0 +1,39 @@
+<div class="row" >
+    <div id="head" class="col-md-12">
+        <a ng-click="pageLoaded = !pageLoaded" ><img class="svg" src="/images/linkfire_logo_w_text.svg"></a>
+        <div class="profile">
+            <div class="profile-img">
+                <img src="/images/profile/user.png">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#"><span>Anders Ibsen</span><span class="arrow-down"></span></a>
+                        <ul>
+                            <li><a href="#">Profile</a></li>
+                            <li><a href="#">Settings</a></li>
+                            <li><a href="#">Log out</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div id="lf-menu">
+                <a ng-class="{active: ononon}" ng-click="ononon = !ononon" class="boards">
+                    <div ng-show="ononon" class="arrow">
+                    </div>
+                    <span><img class="svg" src="/images/pin.svg"></span>
+                </a>
+                <!-- create link page -->
+                <a ng-class="{active: !ononon}" ng-click="ononon = !ononon" class="links">
+                    <div ng-show="!ononon" class="arrow">
+                    </div>
+                    <span><img class="svg" src="/images/link.svg"></span>
+                </a>
+                <a popover-placement="bottom" popover="On the Bottom!" class="notifications">
+                    <div ng-hide="true" class="arrow">
+                    </div>
+                    <span><img class="svg" src="/images/bell.svg"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
