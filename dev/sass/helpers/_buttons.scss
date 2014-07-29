@@ -24,7 +24,7 @@
   }
 
   i[class^="icon-"]{
-    @include transition(all, 0.5s, ease);
+    @include transition(all, 0.5s, 3ease);
   }
 
   &.btn-primary:hover {
@@ -178,6 +178,55 @@ input[type="email"], input[type="password"], input[type="text"]{
         background-color: #01b796;
         @include border-right-radius(3px);
     }
+}
+
+.lf-btn-large {
+  display: block;
+  font-size:16px;
+  font-weight:500;
+  position: relative;
+  padding-left: 30px;
+  font-weight:300;
+  height: 50px;
+  margin-top:15px;
+  @include border-radius(5px);
+
+
+
+  span:first-child{
+    float: left;
+    color: #fff;
+    padding-right: 30px;
+    line-height: 50px;
+    height: 50px;
+  }
+  span:last-child{
+    display: block;
+    float: right;
+    width: 50px;
+    height: 50px;
+    padding: 18px;
+    @include border-right-radius(3px);
+  }
+}
+
+lf-full-width{
+  width:100%;
+}
+
+.lf-fb{
+  background-color: #3D60A0;
+  span:last-child{
+    background-color: #30487b;
+  }
+}
+.lf-fb:hover {
+  background-color: #30487b;
+
+  span:last-child{
+    background-color: #2c4171;
+  }
+
 }
 
 button{
