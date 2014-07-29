@@ -6,6 +6,7 @@ $primary-darkest: #d0271f;
 
 //Primary blue colors
 $blue-darkest: #292f38;
+$blue-darker: #292f38;
 $blue-dark: #364253;
 $blue-light: #405a72;
 $blue-lightest: #587995;
@@ -40,6 +41,11 @@ $header-darkest: $black;
 //buttons
 $hover-color : #fc3429;
 $green-button : #2c947f;
+$std-createBrd: #c6c6c6;
+$std-search: #c6c6c6;
+
+$btn-createBrd: #00bf9d;
+$btn-createBrdHover: #01b796;
 
 //font color
 $font-color-grey : $grey-darker;
@@ -53,8 +59,11 @@ $font-color-darker : #666666;
 $dark-grey: #acacad;
 $light-grey : #dddfe1;
 $deep-blue: #22272f;
-
 $button-height : 42px;
+
+//boards
+$header-bg : #292f38;
+$board-bg : #fff;
 
 //Other colors
 $green: #10C499;

@@ -6,8 +6,9 @@ $icon-font-path: "/fonts/";
 @import "helpers/infoboxes";
 @import "helpers/helpers";
 @import "helpers/animation";
-@import "modal";
 @import "helpers/resets";
+@import "helpers/arrows";
+@import "modal";
 @import "notification";
 
 //header & footer styles
@@ -22,6 +23,7 @@ $icon-font-path: "/fonts/";
 @import "landing/splitters";
 @import "landing/insights";
 @import "landing/press";
+@import "linkfeed";
 
 //mobile
 @import "Mobile_and_tablet/tablet";

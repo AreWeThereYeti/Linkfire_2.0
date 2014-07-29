@@ -48,6 +48,25 @@
     text-transform:uppercase;
     color:$blue-dark;
   }
+  .arrow {
+    top:50%;
+    margin-top:-10px;
+    content: ' ';
+    height: 0;
+    position: absolute;
+    width: 0;
+    opacity:0;
+    left:-20px;
+    border: 10px solid transparent;
+    @include transition(all, 0.5s, ease);
+    border-right-color: $grey-lighter;
+  }
+  .right{
+    right:-20px;
+    left: inherit;
+    border-right-color: transparent;
+    border-left-color: $grey-lighter;
+  }
 }
   
 
@@ -66,25 +85,7 @@
     font-size: 140%;
   }
 }
-.arrow {
-  top:50%;
-  margin-top:-10px;
-  content: ' ';
-  height: 0;
-  position: absolute;
-  width: 0;
-  opacity:0;
-  left:-20px;
-  border: 10px solid transparent;
-  @include transition(all, 0.5s, ease);
-  border-right-color: $grey-lighter;
-}
-.right{
-  right:-20px;
-  left: inherit;
-  border-right-color: transparent;
-  border-left-color: $grey-lighter;
-}
+
 .feat{
   background-color:$grey-lighter;
   opacity: 1;
@@ -97,11 +98,7 @@
   }
 }
 
-
-
-
 // Carousel for mobile and tablet //
-
 
 .rn-carousel{
   img{
@@ -120,9 +117,6 @@
 
 
 @media (max-width: 767px) {
-
-  
-
   .feat{
     @include border-radius(5px);
     padding: 15px 20px 15px 10px;
