@@ -1696,7 +1696,6 @@ div #head .profile .profile-img img {
   background-color: #fff;
   height: 40px;
 }
-
 /* line 161, ../sass/boards/_linkfeed.scss */
 .search input {
   color: #caccce;
@@ -1710,18 +1709,15 @@ div #head .profile .profile-img img {
   padding: 0 15px 0 15px;
   font-weight: 300;
 }
-
-/* line 173, ../sass/boards/_linkfeed.scss */
-.search input, select, textarea {
+/* line 172, ../sass/boards/_linkfeed.scss */
+.search input, .search select, .search textarea {
   color: #c6c6c6;
 }
-
-/* line 177, ../sass/boards/_linkfeed.scss */
-.search textarea:focus, input:focus {
+/* line 175, ../sass/boards/_linkfeed.scss */
+.search textarea:focus, .search input:focus {
   color: #c6c6c6;
 }
-
-/* line 182, ../sass/boards/_linkfeed.scss */
+/* line 178, ../sass/boards/_linkfeed.scss */
 .search a {
   position: relative;
   width: 40px;
@@ -1730,8 +1726,7 @@ div #head .profile .profile-img img {
   float: right;
   background-color: #fff;
 }
-
-/* line 190, ../sass/boards/_linkfeed.scss */
+/* line 185, ../sass/boards/_linkfeed.scss */
 .search a svg {
   position: relative;
   width: 40px;
@@ -1739,74 +1734,73 @@ div #head .profile .profile-img img {
   top: 11px;
   border-left: 1px #e9e9e9 solid;
 }
-
-/* line 197, ../sass/boards/_linkfeed.scss */
+/* line 191, ../sass/boards/_linkfeed.scss */
 .search a svg path {
   fill: #caccce;
 }
 
-/* line 203, ../sass/boards/_linkfeed.scss */
+/* line 199, ../sass/boards/_linkfeed.scss */
 ::-webkit-input-placeholder {
   color: #cfcfcf;
 }
 
-/* line 206, ../sass/boards/_linkfeed.scss */
+/* line 202, ../sass/boards/_linkfeed.scss */
 :-moz-placeholder {
   /* older Firefox*/
   color: #cfcfcf;
 }
 
-/* line 209, ../sass/boards/_linkfeed.scss */
+/* line 205, ../sass/boards/_linkfeed.scss */
 ::-moz-placeholder {
   /* Firefox 19+ */
   color: #cfcfcf;
 }
 
-/* line 212, ../sass/boards/_linkfeed.scss */
+/* line 208, ../sass/boards/_linkfeed.scss */
 :-ms-input-placeholder {
   color: #cfcfcf;
 }
 
-/* line 216, ../sass/boards/_linkfeed.scss */
-#hlp .cont {
+/* line 212, ../sass/boards/_linkfeed.scss */
+#create .board-content {
   border: dashed 1px #e1e1e1;
 }
 
-/* line 223, ../sass/boards/_linkfeed.scss */
+/* line 219, ../sass/boards/_linkfeed.scss */
 #create .close-btn {
   width: 100%;
   height: 28px;
   padding: 9px;
 }
-/* line 227, ../sass/boards/_linkfeed.scss */
+/* line 223, ../sass/boards/_linkfeed.scss */
 #create .close-btn a svg {
   width: 10px;
   height: 10px;
   float: right;
 }
-/* line 231, ../sass/boards/_linkfeed.scss */
+/* line 227, ../sass/boards/_linkfeed.scss */
 #create .close-btn a svg polygon {
   fill: #ededed;
 }
-/* line 235, ../sass/boards/_linkfeed.scss */
+/* line 231, ../sass/boards/_linkfeed.scss */
 #create .close-btn svg:hover polygon {
   fill: #ccc;
 }
-/* line 239, ../sass/boards/_linkfeed.scss */
+/* line 235, ../sass/boards/_linkfeed.scss */
 #create .manage {
   padding: 15px;
 }
-/* line 241, ../sass/boards/_linkfeed.scss */
+/* line 237, ../sass/boards/_linkfeed.scss */
 #create .manage svg.create-board-logo {
   width: 65px;
   display: block;
   margin: 0 auto 25px auto;
 }
-/* line 245, ../sass/boards/_linkfeed.scss */
+/* line 241, ../sass/boards/_linkfeed.scss */
 #create .manage svg.create-board-logo path {
   fill: #caccce;
 }
-/* line 249, ../sass/boards/_linkfeed.scss */
+/* line 245, ../sass/boards/_linkfeed.scss */
 #create .manage p.headline {
   text-align: center;
   max-height: 22px;
@@ -1814,7 +1808,7 @@ div #head .profile .profile-img img {
   font-weight: bold;
   color: #c6c6c6;
 }
-/* line 256, ../sass/boards/_linkfeed.scss */
+/* line 252, ../sass/boards/_linkfeed.scss */
 #create .manage p.text {
   text-align: center;
   max-height: 40px;
@@ -1822,12 +1816,12 @@ div #head .profile .profile-img img {
   font-size: 14px;
   color: #c6c6c6;
 }
-/* line 264, ../sass/boards/_linkfeed.scss */
+/* line 260, ../sass/boards/_linkfeed.scss */
 #create button {
   margin-top: 30px;
 }
 
-/* line 271, ../sass/boards/_linkfeed.scss */
+/* line 267, ../sass/boards/_linkfeed.scss */
 .animate-repeat {
   -moz-transition: all linear 0.2s;
   -o-transition: all linear 0.2s;
@@ -1837,7 +1831,7 @@ div #head .profile .profile-img img {
   box-sizing: border-box;
 }
 
-/* line 282, ../sass/boards/_linkfeed.scss */
+/* line 278, ../sass/boards/_linkfeed.scss */
 .animate-repeat.ng-move-active,
 .animate-repeat.ng-enter,
 .animate-repeat.ng-leave {
@@ -1849,7 +1843,7 @@ div #head .profile .profile-img img {
   box-sizing: border-box;
 }
 
-/* line 293, ../sass/boards/_linkfeed.scss */
+/* line 289, ../sass/boards/_linkfeed.scss */
 .animate-repeat.ng-leave.ng-leave-active,
 .animate-repeat.ng-move,
 .animate-repeat.ng-enter {
@@ -1858,7 +1852,7 @@ div #head .profile .profile-img img {
   animation: lfBounceOut 0.5s;
 }
 
-/* line 301, ../sass/boards/_linkfeed.scss */
+/* line 297, ../sass/boards/_linkfeed.scss */
 .animate-repeat.ng-leave,
 .animate-repeat.ng-move,
 .animate-repeat.ng-enter.ng-enter-active {
@@ -1867,38 +1861,38 @@ div #head .profile .profile-img img {
   transform: translateX(0);
 }
 
-/* line 308, ../sass/boards/_linkfeed.scss */
+/* line 304, ../sass/boards/_linkfeed.scss */
 .animate-show {
   -webkit-animation-name: bounce;
   animation-name: bounce;
 }
 
-/* line 312, ../sass/boards/_linkfeed.scss */
+/* line 308, ../sass/boards/_linkfeed.scss */
 .animate-show.ng-hide-remove {
   -webkit-animation: lfbounceIn 0.5s;
   animation: lfbounceIn 0.5s;
 }
 
-/* line 316, ../sass/boards/_linkfeed.scss */
+/* line 312, ../sass/boards/_linkfeed.scss */
 .animate-show.ng-hide-add {
   -webkit-animation: lfBounceOut 0.5s;
   animation: lfBounceOut 0.5s;
   display: block !important;
 }
 
-/* line 322, ../sass/boards/_linkfeed.scss */
+/* line 318, ../sass/boards/_linkfeed.scss */
 .loadscreen {
   -webkit-animation-name: bounce;
   animation-name: bounce;
 }
 
-/* line 326, ../sass/boards/_linkfeed.scss */
+/* line 322, ../sass/boards/_linkfeed.scss */
 .loadscreen.ng-hide-remove {
   -webkit-animation: lfflipInX 0.5s;
   animation: lfflipInX 0.5s;
 }
 
-/* line 330, ../sass/boards/_linkfeed.scss */
+/* line 326, ../sass/boards/_linkfeed.scss */
 .loadscreen.ng-hide-add {
   -webkit-animation: lfflipOutX 0.5s;
   animation: lfflipOutX 0.5s;
@@ -1906,14 +1900,14 @@ div #head .profile .profile-img img {
 }
 
 @-webkit-keyframes lfflipInX {
-  /* line 338, ../sass/boards/_linkfeed.scss */
+  /* line 334, ../sass/boards/_linkfeed.scss */
   0% {
     -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 20deg) scale3d(0.6, 0.6, 0.6);
     transform: perspective(400px) rotate3d(1, 0, 0, 20deg) scale3d(0.6, 0.6, 0.6);
     opacity: 0;
   }
 
-  /* line 343, ../sass/boards/_linkfeed.scss */
+  /* line 339, ../sass/boards/_linkfeed.scss */
   100% {
     -webkit-transform: perspective(400px);
     transform: perspective(400px);
@@ -1921,7 +1915,7 @@ div #head .profile .profile-img img {
 }
 
 @keyframes lfflipInX {
-  /* line 350, ../sass/boards/_linkfeed.scss */
+  /* line 346, ../sass/boards/_linkfeed.scss */
   0% {
     -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 20deg) scale3d(0.6, 0.6, 0.6);
     -ms-transform: perspective(400px) rotate3d(1, 0, 0, 20deg) scale3d(0.6, 0.6, 0.6);
@@ -1929,7 +1923,7 @@ div #head .profile .profile-img img {
     opacity: 0;
   }
 
-  /* line 356, ../sass/boards/_linkfeed.scss */
+  /* line 352, ../sass/boards/_linkfeed.scss */
   100% {
     -webkit-transform: perspective(400px);
     -ms-transform: perspective(400px);
@@ -1937,7 +1931,7 @@ div #head .profile .profile-img img {
   }
 }
 
-/* line 363, ../sass/boards/_linkfeed.scss */
+/* line 359, ../sass/boards/_linkfeed.scss */
 .lfflipInX {
   -webkit-backface-visibility: visible !important;
   -ms-backface-visibility: visible !important;
@@ -1947,13 +1941,13 @@ div #head .profile .profile-img img {
 }
 
 @-webkit-keyframes lfflipOutX {
-  /* line 375, ../sass/boards/_linkfeed.scss */
+  /* line 371, ../sass/boards/_linkfeed.scss */
   0% {
     -webkit-transform: perspective(400px);
     transform: perspective(400px);
   }
 
-  /* line 380, ../sass/boards/_linkfeed.scss */
+  /* line 376, ../sass/boards/_linkfeed.scss */
   100% {
     -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 20deg) scale3d(0.6, 0.6, 0.6);
     transform: perspective(400px) rotate3d(1, 0, 0, 20deg) scale3d(0.6, 0.6, 0.6);
@@ -1962,14 +1956,14 @@ div #head .profile .profile-img img {
 }
 
 @keyframes lfflipOutX {
-  /* line 387, ../sass/boards/_linkfeed.scss */
+  /* line 383, ../sass/boards/_linkfeed.scss */
   0% {
     -webkit-transform: perspective(400px);
     -ms-transform: perspective(400px);
     transform: perspective(400px);
   }
 
-  /* line 393, ../sass/boards/_linkfeed.scss */
+  /* line 389, ../sass/boards/_linkfeed.scss */
   100% {
     -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 20deg) scale3d(0.6, 0.6, 0.6);
     -ms-transform: perspective(400px) rotate3d(1, 0, 0, 20deg) scale3d(0.6, 0.6, 0.6);
@@ -1978,7 +1972,7 @@ div #head .profile .profile-img img {
   }
 }
 
-/* line 400, ../sass/boards/_linkfeed.scss */
+/* line 396, ../sass/boards/_linkfeed.scss */
 .lfflipOutX {
   -webkit-animation-name: flipOutX;
   animation-name: flipOutX;
@@ -1989,7 +1983,7 @@ div #head .profile .profile-img img {
   backface-visibility: visible !important;
 }
 
-/* line 412, ../sass/boards/_linkfeed.scss */
+/* line 408, ../sass/boards/_linkfeed.scss */
 .boardmask {
   width: 100%;
   height: auto;
@@ -2000,23 +1994,23 @@ div #head .profile .profile-img img {
   transition: all linear 0.2s;
 }
 
-/* line 421, ../sass/boards/_linkfeed.scss */
+/* line 417, ../sass/boards/_linkfeed.scss */
 .boardmask.ng-hide-remove {
   width: 100%;
 }
 
-/* line 424, ../sass/boards/_linkfeed.scss */
+/* line 420, ../sass/boards/_linkfeed.scss */
 .boardmask.ng-hide-add {
   width: 0%;
 }
 
-/* line 428, ../sass/boards/_linkfeed.scss */
+/* line 424, ../sass/boards/_linkfeed.scss */
 div#create.boardmask.lf-grid-sm.remove {
   width: 0%;
   padding: 0px;
 }
 
-/* line 434, ../sass/boards/_linkfeed.scss */
+/* line 430, ../sass/boards/_linkfeed.scss */
 .super {
   -moz-transition: all linear 0.2s;
   -o-transition: all linear 0.2s;
@@ -2025,12 +2019,12 @@ div#create.boardmask.lf-grid-sm.remove {
   transition: all linear 0.2s;
 }
 
-/* line 441, ../sass/boards/_linkfeed.scss */
+/* line 437, ../sass/boards/_linkfeed.scss */
 .super.ng-hide-remove {
   width: 100%;
 }
 
-/* line 444, ../sass/boards/_linkfeed.scss */
+/* line 440, ../sass/boards/_linkfeed.scss */
 .super.ng-hide-add {
   width: 0%;
 }
@@ -2060,20 +2054,20 @@ div#create.boardmask.lf-grid-sm.remove {
 }
 */
 @-webkit-keyframes lfbounceIn {
-  /* line 478, ../sass/boards/_linkfeed.scss */
+  /* line 474, ../sass/boards/_linkfeed.scss */
   0%, 20%, 40%, 60%, 80%, 100% {
     -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
     transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
   }
 
-  /* line 482, ../sass/boards/_linkfeed.scss */
+  /* line 478, ../sass/boards/_linkfeed.scss */
   0% {
     opacity: 0;
     -webkit-transform: scale3d(0.3, 0.3, 0.3);
     transform: scale3d(0.3, 0.3, 0.3);
   }
 
-  /* line 487, ../sass/boards/_linkfeed.scss */
+  /* line 483, ../sass/boards/_linkfeed.scss */
   100% {
     opacity: 1;
     -webkit-transform: scale3d(1, 1, 1);
@@ -2082,13 +2076,13 @@ div#create.boardmask.lf-grid-sm.remove {
 }
 
 @keyframes lfbounceIn {
-  /* line 495, ../sass/boards/_linkfeed.scss */
+  /* line 491, ../sass/boards/_linkfeed.scss */
   0%, 20%, 40%, 60%, 80%, 100% {
     -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
     transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
   }
 
-  /* line 500, ../sass/boards/_linkfeed.scss */
+  /* line 496, ../sass/boards/_linkfeed.scss */
   0% {
     opacity: 0;
     -webkit-transform: scale3d(0.3, 0.3, 0.3);
@@ -2096,7 +2090,7 @@ div#create.boardmask.lf-grid-sm.remove {
     transform: scale3d(0.3, 0.3, 0.3);
   }
 
-  /* line 506, ../sass/boards/_linkfeed.scss */
+  /* line 502, ../sass/boards/_linkfeed.scss */
   100% {
     opacity: 1;
     -webkit-transform: scale3d(1, 1, 1);
@@ -2105,7 +2099,7 @@ div#create.boardmask.lf-grid-sm.remove {
   }
 }
 
-/* line 514, ../sass/boards/_linkfeed.scss */
+/* line 510, ../sass/boards/_linkfeed.scss */
 .lfbounceIn {
   -webkit-animation-name: lfbounceIn;
   animation-name: lfbounceIn;
@@ -2114,13 +2108,13 @@ div#create.boardmask.lf-grid-sm.remove {
 }
 
 @-webkit-keyframes lfBounceOut {
-  /* line 526, ../sass/boards/_linkfeed.scss */
+  /* line 522, ../sass/boards/_linkfeed.scss */
   0% {
     -webkit-transform: scale(1);
     transform: scale(1);
   }
 
-  /* line 532, ../sass/boards/_linkfeed.scss */
+  /* line 528, ../sass/boards/_linkfeed.scss */
   100% {
     opacity: 0;
     -webkit-transform: scale(0.3);
@@ -2129,14 +2123,14 @@ div#create.boardmask.lf-grid-sm.remove {
 }
 
 @keyframes lfBounceOut {
-  /* line 540, ../sass/boards/_linkfeed.scss */
+  /* line 536, ../sass/boards/_linkfeed.scss */
   0% {
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1);
   }
 
-  /* line 546, ../sass/boards/_linkfeed.scss */
+  /* line 542, ../sass/boards/_linkfeed.scss */
   100% {
     opacity: 0;
     -webkit-transform: scale(0.3);
@@ -2145,7 +2139,7 @@ div#create.boardmask.lf-grid-sm.remove {
   }
 }
 
-/* line 558, ../sass/boards/_linkfeed.scss */
+/* line 554, ../sass/boards/_linkfeed.scss */
 .lf-grid-sm {
   position: relative;
   width: 100%;
@@ -2153,7 +2147,7 @@ div#create.boardmask.lf-grid-sm.remove {
   padding: 12px;
 }
 
-/* line 565, ../sass/boards/_linkfeed.scss */
+/* line 561, ../sass/boards/_linkfeed.scss */
 .lf-grid-lg {
   width: 100%;
   float: left;
@@ -2161,163 +2155,163 @@ div#create.boardmask.lf-grid-sm.remove {
 }
 
 @media (min-width: 595px) {
-  /* line 572, ../sass/boards/_linkfeed.scss */
+  /* line 568, ../sass/boards/_linkfeed.scss */
   .lf-grid-sm {
     width: 50%;
   }
 }
 @media (min-width: 820px) {
-  /* line 573, ../sass/boards/_linkfeed.scss */
+  /* line 569, ../sass/boards/_linkfeed.scss */
   .lf-grid-sm {
     width: 33.33333%;
   }
 }
 @media (min-width: 1045px) {
-  /* line 574, ../sass/boards/_linkfeed.scss */
+  /* line 570, ../sass/boards/_linkfeed.scss */
   .lf-grid-sm {
     width: 25%;
   }
 }
 @media (min-width: 1270px) {
-  /* line 575, ../sass/boards/_linkfeed.scss */
+  /* line 571, ../sass/boards/_linkfeed.scss */
   .lf-grid-sm {
     width: 20%;
   }
 }
 @media (min-width: 1495px) {
-  /* line 576, ../sass/boards/_linkfeed.scss */
+  /* line 572, ../sass/boards/_linkfeed.scss */
   .lf-grid-sm {
     width: 16.66667%;
   }
 }
 @media (min-width: 1720px) {
-  /* line 577, ../sass/boards/_linkfeed.scss */
+  /* line 573, ../sass/boards/_linkfeed.scss */
   .lf-grid-sm {
     width: 14.28571%;
   }
 }
 @media (min-width: 1945px) {
-  /* line 578, ../sass/boards/_linkfeed.scss */
+  /* line 574, ../sass/boards/_linkfeed.scss */
   .lf-grid-sm {
     width: 12.5%;
   }
 }
 @media (min-width: 2170px) {
-  /* line 579, ../sass/boards/_linkfeed.scss */
+  /* line 575, ../sass/boards/_linkfeed.scss */
   .lf-grid-sm {
     width: 11.11111%;
   }
 }
 @media (min-width: 2395px) {
-  /* line 580, ../sass/boards/_linkfeed.scss */
+  /* line 576, ../sass/boards/_linkfeed.scss */
   .lf-grid-sm {
     width: 10%;
   }
 }
 @media (min-width: 2620px) {
-  /* line 581, ../sass/boards/_linkfeed.scss */
+  /* line 577, ../sass/boards/_linkfeed.scss */
   .lf-grid-sm {
     width: 9.09091%;
   }
 }
 @media (min-width: 2845px) {
-  /* line 582, ../sass/boards/_linkfeed.scss */
+  /* line 578, ../sass/boards/_linkfeed.scss */
   .lf-grid-sm {
     width: 8.33333%;
   }
 }
 @media (min-width: 3070px) {
-  /* line 583, ../sass/boards/_linkfeed.scss */
+  /* line 579, ../sass/boards/_linkfeed.scss */
   .lf-grid-sm {
     width: 7.69231%;
   }
 }
 @media (min-width: 3295px) {
-  /* line 584, ../sass/boards/_linkfeed.scss */
+  /* line 580, ../sass/boards/_linkfeed.scss */
   .lf-grid-sm {
     width: 7.14286%;
   }
 }
 @media (min-width: 3520px) {
-  /* line 585, ../sass/boards/_linkfeed.scss */
+  /* line 581, ../sass/boards/_linkfeed.scss */
   .lf-grid-sm {
     width: 6.66667%;
   }
 }
 @media (min-width: 820px) {
-  /* line 588, ../sass/boards/_linkfeed.scss */
+  /* line 584, ../sass/boards/_linkfeed.scss */
   .lf-grid-lg {
     width: 66.66666%;
   }
 }
 @media (min-width: 1045px) {
-  /* line 589, ../sass/boards/_linkfeed.scss */
+  /* line 585, ../sass/boards/_linkfeed.scss */
   .lf-grid-lg {
     width: 50%;
   }
 }
 @media (min-width: 1270px) {
-  /* line 590, ../sass/boards/_linkfeed.scss */
+  /* line 586, ../sass/boards/_linkfeed.scss */
   .lf-grid-lg {
     width: 40%;
   }
 }
 @media (min-width: 1495px) {
-  /* line 591, ../sass/boards/_linkfeed.scss */
+  /* line 587, ../sass/boards/_linkfeed.scss */
   .lf-grid-lg {
     width: 33.33333%;
   }
 }
 @media (min-width: 1720px) {
-  /* line 592, ../sass/boards/_linkfeed.scss */
+  /* line 588, ../sass/boards/_linkfeed.scss */
   .lf-grid-lg {
     width: 28.57142%;
   }
 }
 @media (min-width: 1945px) {
-  /* line 593, ../sass/boards/_linkfeed.scss */
+  /* line 589, ../sass/boards/_linkfeed.scss */
   .lf-grid-lg {
     width: 25%;
   }
 }
 @media (min-width: 2170px) {
-  /* line 594, ../sass/boards/_linkfeed.scss */
+  /* line 590, ../sass/boards/_linkfeed.scss */
   .lf-grid-lg {
     width: 22.22222%;
   }
 }
 @media (min-width: 2395px) {
-  /* line 595, ../sass/boards/_linkfeed.scss */
+  /* line 591, ../sass/boards/_linkfeed.scss */
   .lf-grid-lg {
     width: 20%;
   }
 }
 @media (min-width: 2620px) {
-  /* line 596, ../sass/boards/_linkfeed.scss */
+  /* line 592, ../sass/boards/_linkfeed.scss */
   .lf-grid-lg {
     width: 18.18182%;
   }
 }
 @media (min-width: 2845px) {
-  /* line 597, ../sass/boards/_linkfeed.scss */
+  /* line 593, ../sass/boards/_linkfeed.scss */
   .lf-grid-lg {
     width: 16.666666%;
   }
 }
 @media (min-width: 3070px) {
-  /* line 598, ../sass/boards/_linkfeed.scss */
+  /* line 594, ../sass/boards/_linkfeed.scss */
   .lf-grid-lg {
     width: 15.38462%;
   }
 }
 @media (min-width: 3295px) {
-  /* line 599, ../sass/boards/_linkfeed.scss */
+  /* line 595, ../sass/boards/_linkfeed.scss */
   .lf-grid-lg {
     width: 14.28571%;
   }
 }
 @media (min-width: 3520px) {
-  /* line 600, ../sass/boards/_linkfeed.scss */
+  /* line 596, ../sass/boards/_linkfeed.scss */
   .lf-grid-lg {
     width: 13.33334%;
   }
