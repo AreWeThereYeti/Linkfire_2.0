@@ -43,9 +43,6 @@
 	        });
 	    });
 	});
-	
-	
-	
 	$(".close-btn a").click(function() {
 		$(".animate-show").on('oanimationend animationend webkitAnimationEnd', function() { 
 			console.log("run");
@@ -62,94 +59,13 @@
 		</div>
 	</div>
 	<div ng-show="pageLoaded" class="animate-show">
-        <div ng-include="'scripts/templates/header.html'"></div>
+        <div ng-include="'html/boards/header.html'"></div>
 
         <!-- Searchbar-->
-        <div ng-include="'scripts/templates/searchbar.html'"></div>
+        <div ng-include="'html/boards/searchbar.html'"></div>
 
 		<!-- Body content here-->
-
-		<div id="boards" >
-			<div id="create" class="boardmask lf-grid-sm" ng-controller="MainCtrl">
-				<div class="animate-show" ng-show="show">
-					<div class="board-content">
-						<div class="close-btn">
-							<a ng-click="show=!show" href="#"><img class="svg" src="/images/btnClose.svg"></a>
-						</div>
-						<div class="manage">
-							<img class="svg create-board-logo" src="/images/pin.svg">
-							<p class="headline">MANAGE LINKS</p>
-							<p class="text">Organise links, insights and collaborations with a board</p>
-							<button class="lf-btn-medium lf-green center-block" ng-click="openBoardModal()" href="#"><span>Create board</span><span><img class="svg" src="/images/pin.svg"></span></button>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="boardmask lf-grid-sm" ng-repeat="board in boards | filter:item" >
-				<div class="animate-repeat">
-					<div class="board-content">
-						<div class="mask">
-							<!--<img src="/images/overlay.jpg">-->
-							<img src="/images/test2.jpg" ng-src={{board.url}}>
-							<a class="lnkBtn medium" href="#">
-							</a>
-							<span>Load links</span>
-						</div>
-						<div class="info">
-							<p class="headline">{{board.name + " " + board.album}}</p>
-							<div class="member" ng-repeat="member in board.members | limitTo: 4" ng-show="board.members[0]">
-								<img class="img-responsive img-circle" src="/images/member.jpg" ng-src={{member.url}}>
-							</div>
-							<div class="member" ng-show="board.members.length >= 4">
-								<img class="img-responsive img-circle" src="/images/more.svg">
-								<div class="overlay">
-									<p>+{{board.members.length - 4}}</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="lf-grid-sm">
-				<div class="board-content">
-					<div class="mask">
-						<!--<img src="/images/overlay.jpg">-->
-						<img src="/images/test.jpg">
-						<a class="lnkBtn medium" href="#">
-						</a>
-						<span>Load links</span>
-					</div>
-					<div class="info">
-						<p class="headline">AFROJACK</p>
-						<div class="member">
-							<img class="img-responsive img-circle" src="/images/member.jpg">
-						</div>
-						<div class="member">
-							<img class="img-responsive img-circle" src="/images/member.jpg">
-						</div>
-						<div class="member">
-							<img class="img-responsive img-circle" src="/images/member.jpg">
-						</div>
-						<div class="member">
-							<img class="img-responsive img-circle" src="/images/member.jpg">
-						</div>
-						<div class="member">
-							<img class="img-responsive img-circle" src="/images/more.svg">
-							<div class="overlay">
-								<p>+1</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="lf-grid-lg">
-				<div class="board-content">
-				</div>
-			</div>
-
-
-		 </div>
+        <div ng-include="'html/boards/boards.html'"></div>
 	</div>
 </div>
 <div ng-include="'html/footer.html'"></div>
