@@ -1,0 +1,24 @@
+<button type="button" class="close ng-scope ng-click-active" ng-click="cancel($event)" aria-hidden="true">×</button>
+<h2>Create board</h2>
+
+<form name="createBoard">
+	<input type="text" placeholder="Name your board" required/>
+	<input type="text" placeholder="Name your link" required/>
+	<h4>Source</h4>
+	<!-- Single button -->
+    <div class="btn-group" dropdown is-open="status.isopen">
+      <button type="button" class="btn btn-primary dropdown-toggle" ng-disabled="disabled">
+        Button dropdown <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu" role="menu">
+        <li><a href="#">YouTube</a></li>
+        <li class="divider"></li>
+        <li><a href="#">Wimp</a></li>
+        <li class="divider"></li>
+        <li><a href="#">Spotify</a></li>
+      </ul>
+    </div>
+
+
+	<button class="lf-btn-medium lf-green" href="#"><span>Create board</span><span><img class="svg" src="/images/pin.svg"></span></button> 
+</form>

@@ -1,0 +1,22 @@
+
+<!-- start desktop -->
+<div class="row hidden-xs" ng-controller="HeaderCtrl">
+    <div class="col-lg-offset-1 col-md-7 col-lg-7 col-sm-10">
+        <h1>Smart links for<br>the music industry</h1>
+        <p>Create intelligent links that route fans to the music<br>they love, in the apps they love</p>
+        <button ng-click="show = 'signup'; open()" class="lf-btn-large lf-primary" href="#"><span>Get started</span><span class="icon-play3"></span></button> 
+    </div>
+</div>
+<!-- end desktop -->
+
+<!-- start mobile -->
+<div class="row visible-xs" ng-controller="HeaderCtrl">
+    <div class="col-xs-12">
+        <h1>Smart links for<br>the music industry</h1>
+        <p>Create intelligent links that route fans<br>to the music they love.</p>
+    </div>
+    <div class="col-xs-6 col-sm-6">
+    	<button ng-click="show = 'signup'; open()" class="lf-btn-medium lf-primary" href="#"><span>Get started</span><span class="icon-play3"></span></button> 
+    </div>
+</div>
+<!-- end mobile -->
