@@ -26,6 +26,7 @@ function startExpress() {
 	app.listen(EXPRESS_PORT);
 }
 
+//Livereload
 function startLivereload() {
 	lr = require('tiny-lr')();
 	lr.listen(LIVERELOAD_PORT);

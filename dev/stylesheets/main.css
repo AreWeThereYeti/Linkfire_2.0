@@ -1599,16 +1599,16 @@ small {
 #about h3, #about h4, #about p {
   color: black;
 }
-/* line 7, ../sass/_about.scss */
-#about .team .row {
+/* line 6, ../sass/_about.scss */
+#about .team .row, #about .advisors .row {
   margin-bottom: 30px;
 }
-/* line 9, ../sass/_about.scss */
-#about .team .row .border {
+/* line 8, ../sass/_about.scss */
+#about .team .row .border, #about .advisors .row .border {
   border: 1px solid #dddfe1;
 }
-/* line 11, ../sass/_about.scss */
-#about .team .row .border h3, #about .team .row .border h4, #about .team .row .border p {
+/* line 10, ../sass/_about.scss */
+#about .team .row .border h3, #about .team .row .border h4, #about .team .row .border p, #about .advisors .row .border h3, #about .advisors .row .border h4, #about .advisors .row .border p {
   padding-left: 15px;
   padding-right: 15px;
 }
