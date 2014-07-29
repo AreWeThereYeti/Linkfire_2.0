@@ -27,6 +27,8 @@ $icon-font-path: "/fonts/";
 //Boardsfeed
 @import "boards/linkfeed";
 @import "boards/board";
+@import "about";
+
 
 //mobile
 @import "Mobile_and_tablet/tablet";
@@ -106,7 +108,6 @@ p, span{
       font-weight:900;
     }
     p{
-      font-size:14px;
       word-wrap: normal;
       line-height:1.7em;
     }
