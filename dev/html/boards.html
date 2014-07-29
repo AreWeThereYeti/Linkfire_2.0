@@ -62,76 +62,14 @@
 		</div>
 	</div>
 	<div ng-show="pageLoaded" class="animate-show">
-		<!-- row can be used for debugging 
-		<div class="row">
-			<div class="col-md-12">
-				<span style="color:#000;">Debug: {{items}}, Loaded: {{loaded}}</span>
-			</div>
-		</div>
-		-->
+        <div ng-include="'scripts/templates/header.html'"></div>
 
-		<div class="row">
-		  <div id="head" class="col-md-12">
-				<a ng-click="pageLoaded = !pageLoaded" ><img class="svg" src="/images/linkfire_logo_w_text.svg"></a>
-				<div class="profile">
-					<div class="profile-img">
-						<img src="/images/profile/user.png">
-					</div>
-					<nav>
-						<ul>
-							<li><a href="#"><span>Anders Ibsen</span><span class="arrow-down"></span></a>
-								<ul>
-									<li><a href="#">Profile</a></li>
-									<li><a href="#">Settings</a></li>
-									<li><a href="#">Log out</a></li>
-								</ul>
-							</li>
-						</ul>
-					</nav>
-					<div id="lf-menu">
-						
-						
-						<a ng-class="{active: ononon}" ng-click="ononon = !ononon" class="boards">
-							<div ng-show="ononon" class="arrow">
-							</div>
-							<span><img class="svg" src="/images/pin.svg"></span>
-						</a>
-						<!-- create link page -->
-						<a ng-class="{active: !ononon}" ng-click="ononon = !ononon" class="links">
-							<div ng-show="!ononon" class="arrow">
-							</div>
-							<span><img class="svg" src="/images/link.svg"></span>
-						</a>
-						<a popover-placement="bottom" popover="On the Bottom!" class="notifications">
-							<div ng-hide="true" class="arrow">
-							</div>
-							<span><img class="svg" src="/images/bell.svg"></span>
-						</a>
-					</div>
-					
-				</div>
-		  </div>
-		</div>
-		<div id="subhead">
-			<div class="lf-grid-sm animate-show">
-				<div class="search">
-					<input type="search" name="s" ng-model="item" placeholder="Search in boards" />
-					<a href="#"><img class="svg" src="/images/search.svg"></a>
-				</div>
-
-			</div>
-			<!-- Container for tags // not being implemented currently.
-			<div ng-repeat="item in items" class="tag"><span>{{ item.tag }}</span><a ng-click="" href="#"><img class="svg" src="/images/btnClose.svg"></a></div>-->
-			
-			<button style="float:right;"class="lf-btn-medium lf-green" href="#"><span>Create board</span><span><img class="svg" src="/images/pin.svg"></span></button> 
-			<!-- button for link creation -->
-			<!--<button style="float:right;"class="lf-btn-medium lf-primary" href="#"><span>Create link</span><span><img class="svg" src="/images/link.svg"></span></button> -->
-		</div>
+        <!-- Searchbar-->
+        <div ng-include="'scripts/templates/searchbar.html'"></div>
 
 		<!-- Body content here-->
 
 		<div id="boards" >
-
 			<div id="create" class="boardmask lf-grid-sm" ng-controller="MainCtrl">
 				<div class="animate-show" ng-show="show">
 					<div class="board-content">
@@ -214,4 +152,4 @@
 		 </div>
 	</div>
 </div>
- <!--<div class="" ng-include="'scripts/templates/footer.html'"></div>-->
+<div ng-include="'html/footer.html'"></div>

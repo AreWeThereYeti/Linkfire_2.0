@@ -12,24 +12,17 @@ body  {
 }
 
 // main content containers //
-
-
-#head {
-  background-color: $blue-darker;
-  height:50px;
-}
 #subhead{
   padding:12px 12px 0px 12px;
   height:76px;
+  button{
+    float: right
+  }
 }
 #boards{
   padding:0 12px 12px 12px;
   height:auto;
-}
-.vcenter {
   display: inline-block;
-  vertical-align: middle;
-  float: none;
 }
 
 div#page_loader {
@@ -42,10 +35,10 @@ div#page_loader {
   z-index: 99;
 }
 
-
-
-div #head {
-  a svg {
+#head {
+  background-color: $blue-darker;
+  height:50px;
+  .svg {
     float: left;
     display:block;
     padding:5px;
@@ -142,51 +135,46 @@ div #head {
 }
 
 // search field styles //
-
-
 .search{
   width:100%;
   background-color:#fff;
   height:40px;
-}
-.search input{
-  color:$grey-light;
-  width:100%;
-  width: 100%; /* fallback if needed */
-  width: calc(100% - 40px);
-  height:40px;
-  border:0;
-  float:left;
-  padding:0 15px 0 15px;
-  font-weight: 300;
-}
-
-.search input, select, textarea{
-  color: #c6c6c6;
-}
-
-.search textarea:focus, input:focus {
-  color: #c6c6c6;
-}
-
-
-.search a{
+  input{
+    color:$grey-light;
+    width:100%;
+    width: 100%; /* fallback if needed */
+    width: calc(100% - 40px);
+    height:40px;
+    border:0;
+    float:left;
+    padding:0 15px 0 15px;
+    font-weight: 300;
+  }
+  input, select, textarea{
+    color: #c6c6c6;
+  }
+  textarea:focus, input:focus {
+    color: #c6c6c6;
+  }
+  a{
   position:relative;
   width: 40px;
   height: 40px;
   border: 0;
   float:right;
   background-color:#fff;
+
+  .svg{
+    position:relative;
+    width: 40px;
+    height: 18px;
+    top: 11px;
+    border-left:1px #e9e9e9 solid;
+    path{
+      fill:$grey-light;
+    }
+  }
 }
-.search a svg{
-  position:relative;
-  width: 40px;
-  height: 18px;
-  top: 11px;
-  border-left:1px #e9e9e9 solid;
-}
-.search a svg path{
-  fill:$grey-light;
 }
 
 // search field placeholder text styling //
@@ -507,7 +495,7 @@ div#create.boardmask.lf-grid-sm.remove{
 .animate-show.ng-hide-add,
 .animate-show.ng-hide-remove {
   display:block!important;
-  
+
 }
 .animate-show.ng-hide {
   opacity: 0;
