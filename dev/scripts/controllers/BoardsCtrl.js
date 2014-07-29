@@ -3,7 +3,8 @@ angular.module('linkfireWebappApp')
 	.controller('BoardsCtrl', ['$scope','$modal', function ($scope, $modal) {
 
 	//  Needs comments
-  $scope.pageLoaded = false;
+  $scope.pageLoaded = true;
+
   $scope.loadScreen = function(){
     $scope.pageLoaded = !$scope.pageLoaded;
   };
@@ -23,11 +24,11 @@ angular.module('linkfireWebappApp')
       }
     };
 //  Needs comments
-		$scope.open = function () {
+		$scope.openBoardModal = function () {
 
 			var modalInstance = $modal.open({
 				templateUrl: '/scripts/templates/createBoard.html',
-				controller: 'VideoModalInstanceCtrl'
+				controller: 'CreateBoardModalInstanceCtrl'
 			});
 
 			modalInstance.result.then(function () {
@@ -68,7 +69,7 @@ angular.module('linkfireWebappApp')
 
 // Please note that $modalInstance represents a modal window (instance) dependency.
 // It is not the same as the $modal service used above.
-var VideoModalInstanceCtrl = function ($scope, $modalInstance) {
+var CreateBoardModalInstanceCtrl = function ($scope, $modalInstance) {
 
 	$scope.cancel = function () {
 		$modalInstance.dismiss('cancel');
