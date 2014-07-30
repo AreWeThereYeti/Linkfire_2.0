@@ -3,7 +3,8 @@ linkfireWebappApp.controller('MainCtrl', ['$scope', '$modal', 'constants', funct
   $scope.open = function () {
     var modalInstance = $modal.open({
         templateUrl: 'videomodal.html',
-        controller: 'VideoModalInstanceCtrl'
+        controller: 'VideoModalInstanceCtrl',
+
     });
     modalInstance.result.then(function () {
     }, function () {

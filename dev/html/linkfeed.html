@@ -43,15 +43,16 @@
 	        });
 	    });
 	});
-	$(".close-btn a").click(function() {
-		$(".animate-show").on('oanimationend animationend webkitAnimationEnd', function() {
-			console.log("run");
-		   $(this).parent(".boardmask").addClass("remove");
-		});
-	});
+//	$(".close-btn a").click(function() {
+//		$(".animate-show").on('oanimationend animationend webkitAnimationEnd', function() {
+//			console.log("run");
+//		   $(this).parent(".boardmask").addClass("remove");
+//		});
+//	});
+	//  
 </script>
 
-<div ng-controller="BoardsCtrl">
+<div ng-controller="LinkfeedCtrl">
     <!--encapsulate this in a global service-->
 	<div ng-hide="pageLoaded" id="page_loader" class="loadscreen" >
 		<div class="loadlogo">
@@ -62,12 +63,31 @@
 	<div ng-show="pageLoaded" class="animate-show">
         <!-- Header-->
         <div ng-include="'html/private/header.html'"></div>
+        <div class="row" id="artist">
+            <div class="col-md-12">
+                <h1>Artist page</h1>
+                <span>{{linkfeed.clicks}} Clicks - {{linkfeed.links}} Links ... {{linkfeed.members[0].name}}</span>
+                <div class="info">
+                    <p class="headline">{{linkfeed.boards.name + " " + boards.album}}</p>
+                    <div class="member" ng-repeat="member in linkfeed.members | limitTo: 4" >
+                        <p>{{member.name}}</p>
+                        <img class="img-responsive img-circle" ng-src={{member.url}}>
+                    </div>
+                    <div class="member" ng-show="members.length >= 4">
+                        <img class="img-responsive img-circle" src="images/more.svg">
+                        <div class="overlay">
+                            <p>+{{member.length - 4}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- Searchbar-->
         <div ng-include="'html/private/searchbar.html'"></div>
 
 		<!-- Body content here-->
-        <div ng-include="'html/boards/boards.html'"></div>
+        <div ng-include="'html/linkfeed/linkfeed.html'"></div>
 	</div>
 </div>
 <div ng-include="'html/footer.html'"></div>

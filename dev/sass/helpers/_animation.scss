@@ -170,3 +170,59 @@
 }
 
 
+// Animations applied to repeated boards (standard ones) //
+.animate-repeat {
+  @include transition(all, 0.2s, linear);
+  box-sizing:border-box;
+}
+.animate-repeat.ng-move-active,
+.animate-repeat.ng-enter,
+.animate-repeat.ng-leave {
+  @include transition(all, 0.2s, linear);
+  box-sizing:border-box;
+}
+.animate-repeat.ng-leave.ng-leave-active,
+.animate-repeat.ng-move,
+.animate-repeat.ng-enter {
+  opacity: 0;
+  -webkit-animation: lfBounceOut 0.5s;
+  animation: lfBounceOut 0.5s;
+}
+.animate-repeat.ng-leave,
+.animate-repeat.ng-move,
+.animate-repeat.ng-enter.ng-enter-active {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+
+
+// Animation applied to "Create-board" board //
+.animate-show {
+  -webkit-animation-name: bounce;
+  animation-name: bounce;
+}
+.animate-show.ng-hide-remove {
+  -webkit-animation: lfbounceIn 0.5s;
+  animation: lfbounceIn 0.5s;
+}
+.animate-show.ng-hide-add {
+  -webkit-animation: lfBounceOut 0.5s;
+  animation: lfBounceOut 0.5s;
+  display: block !important;
+}
+
+// Apply animation to load screen, animations are in _animation.scss //
+.loadscreen {
+  -webkit-animation-name: bounce;
+  animation-name: bounce;
+}
+.loadscreen.ng-hide-remove {
+  -webkit-animation: lfflipInX 0.5s;
+  animation: lfflipInX 0.5s;
+}
+.loadscreen.ng-hide-add {
+  -webkit-animation: lfflipOutX 0.5s;
+  animation: lfflipOutX 0.5s;
+  display: block !important;
+}
