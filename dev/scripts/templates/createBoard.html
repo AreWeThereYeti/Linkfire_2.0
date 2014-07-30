@@ -1,24 +1,56 @@
-<div id="create-boards-dialog">
+<div id="create-boards-dialog" ng-controller="CreateBoardCtrl">
     <button type="button" class="close ng-scope ng-click-active" ng-click="cancel($event)" aria-hidden="true">×</button>
     <h2>Create board</h2>
 
     <form name="createBoard">
         <input type="text" placeholder="Name your board" required/>
-        <input type="text" placeholder="Name your link" required/>
-        <h4>Source</h4>
-        <!-- Single button -->
-        <div class="btn-group" dropdown is-open="status.isopen">
-          <button type="button" class="lf-btn-medium dropdown-toggle" ng-disabled="disabled">
-            SRC <span class="caret"></span>
-          </button>
-          <ul class="dropdown-menu" role="menu">
-            <li><a>YouTube</a></li>
-            <li class="divider"></li>
-            <li><a>Wimp</a></li>
-            <li class="divider"></li>
-            <li><a>Spotify</a></li>
-          </ul>
+        <div class="linkname">
+            <input type="text" placeholder="Name your link" required/>
+            <span class="verify">V</span>
+            <span class="lf">.lnk.to</span>
         </div>
+        <div class="source">
+            <h4>Source</h4>
+            <!-- Single button -->
+            <div class="add-src">
+                <div class="btn-group" dropdown is-open="status.isopen">
+                    <button type="button" class="dropdown-toggle" ng-disabled="disabled">
+                        <span><img class="center-block" src="/images/createboard/src_youtube.png"></span><span class="drop">v</span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a>YouTube</a></li>
+                        <li class="divider"></li>
+                        <li><a>Wimp</a></li>
+                        <li class="divider"></li>
+                        <li><a>Spotify</a></li>
+                    </ul>
+                </div>
+                <input type="text" placeholder="Add new source" required/>
+            </div>
+            <div class="add-src">
+                <div class="btn-group" dropdown>
+                    <button type="button" class="dropdown-toggle" ng-disabled="disabled">
+                        <span><img class="center-block" src="/images/createboard/src_youtube.png"></span><span class="drop">v</span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a>YouTube</a></li>
+                        <li class="divider"></li>
+                        <li><a>Wimp</a></li>
+                        <li class="divider"></li>
+                        <li><a>Spotify</a></li>
+                    </ul>
+                </div>
+                <input type="text" placeholder="Add new source" required/>
+            </div>
+        </div>
+        <div class="members">
+            <h4>Members</h4>
+            <!--<textarea placeholder="Add team members" style="width:100%">{{tags}}</textarea>-->
+            <tags-input ng-model="tags" placeholder="Add a team member" ><auto-complete source="loadTags($query)"></auto-complete></tags-input>
+
+        </div>
+
+
         <button class="lf-btn-medium lf-green center-block" href="#"><span>Create board</span><span><img class="svg" src="/images/pin.svg"></span></button>
     </form>
 </div>
