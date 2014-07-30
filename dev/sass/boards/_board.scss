@@ -29,13 +29,10 @@
     width:100%;
     height:28px;
     padding:9px;
-    a svg{
+    a .svg{
       width:10px;
       height:10px;
       float:right;
-      polygon{
-        fill:#ededed;
-      }
     }
     svg:hover polygon{
       fill:#ccc;

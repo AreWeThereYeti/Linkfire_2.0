@@ -267,7 +267,7 @@ input[type="email"], input[type="password"], input[type="text"]{
   }
 }
 
-lf-full-width{
+.lf-full-width{
   width:100%;
 }
 
@@ -290,7 +290,7 @@ button{
   border:0;
   padding:0;
   text-align:left;
-  margin:12px;
+  margin:0px;
 }
 .lf-btn-medium {
   display: block;

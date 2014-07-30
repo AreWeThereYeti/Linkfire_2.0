@@ -28,7 +28,7 @@ angular.module('linkfireWebappApp')
 			var modalInstance = $modal.open({
 				templateUrl: '/scripts/templates/createBoard.html',
 				controller: 'CreateBoardModalInstanceCtrl',
-                size: 'lg'
+        size: 'lg'
 			});
 			modalInstance.result.then(function () {
 			}, function () {
