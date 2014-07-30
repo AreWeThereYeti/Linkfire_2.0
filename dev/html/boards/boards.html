@@ -3,13 +3,13 @@
         <div class="animate-show" ng-show="show">
             <div class="board-content">
                 <div class="close-btn">
-                    <a ng-click="show=!show" href="#"><img class="svg" src="/images/btnClose.svg"></a>
+                    <a ng-click="show=!show"><img class="svg" src="/images/btnClose.svg"></a>
                 </div>
                 <div class="manage">
                     <img class="svg create-board-logo" src="/images/pin.svg">
                     <p class="headline">MANAGE LINKS</p>
                     <p class="text">Organise links, insights and collaborations with a board</p>
-                    <button class="lf-btn-medium lf-green center-block" ng-click="openBoardModal()" href="#"><span>Create board</span><span><img class="svg" src="/images/pin.svg"></span></button>
+                    <button class="lf-btn-medium lf-green center-block" ng-click="openBoardModal()"><span>Create board</span><span><img class="svg" src="/images/pin.svg"></span></button>
                 </div>
             </div>
         </div>
@@ -20,7 +20,11 @@
                 <div class="mask">
                     <!--<img src="/images/overlay.jpg">-->
                     <img src="/images/test2.jpg" ng-src={{board.url}}>
+<<<<<<< HEAD
                     <a class="lnkBtn medium" href="#/linkfeed">
+=======
+                    <a class="lnkBtn medium">
+>>>>>>> 3a310d47defec4d55a18e460e23b94749aa0aa09
                     </a>
                     <span ng-href="#/linkfeed">Load links</span>
                 </div>
@@ -44,7 +48,7 @@
             <div class="mask">
                 <!--<img src="/images/overlay.jpg">-->
                 <img src="/images/test.jpg">
-                <a class="lnkBtn medium" href="#">
+                <a class="lnkBtn medium">
                 </a>
                 <span >Load links</span>
             </div>
