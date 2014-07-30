@@ -206,37 +206,6 @@ input[type="email"], input[type="password"], input[type="text"]{
   width:100%;
 }
 
-
-
-
-.lf-btn-medium {
-    display: block;
-    font-size:14px;
-    position: relative;
-    padding-left: 16px;
-    width: 146px;
-    height: 40px;
-    margin-top:10px;
-    @include border-radius(3px);
-
-    span:first-child{
-        float: left;
-        color: #fff;
-        padding-right: 8px;
-        line-height: 40px;
-        height: 40px;
-    }
-    span:last-child{
-        display: block;
-        float: right;
-        width: 40px;
-        height: 40px;
-        padding: 13px;
-        background-color: #01b796;
-        @include border-right-radius(3px);
-    }
-}
-
 .lf-btn-large {
   display: block;
   font-size:16px;
@@ -299,7 +268,6 @@ button{
   padding-left: 16px;
   width: 146px;
   height: 40px;
-  margin-top:10px;
   @include border-radius(3px);
 
   span:first-child{
