@@ -1460,7 +1460,7 @@ small {
 
 /* line 1, ../sass/landing/_landing.scss */
 #landing {
-  background: url('../images/bg1.jpg?1406630404');
+  background: url('../images/bg1.jpg?1406627939');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1494,7 +1494,7 @@ small {
 
 /* line 32, ../sass/landing/_landing.scss */
 #landing-mobile {
-  background: url('../images/landing-mobile.png?1406630404');
+  background: url('../images/landing-mobile.png?1406627939');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1529,7 +1529,7 @@ small {
 @media (min-width: 1200px) {
   /* line 65, ../sass/landing/_landing.scss */
   #landing {
-    background: url('../images/bg2.jpg?1406630404');
+    background: url('../images/bg2.jpg?1406627939');
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -1631,7 +1631,7 @@ small {
 
 /* line 10, ../sass/landing/_splitters.scss */
 #splitter {
-  background: url('../images/bg-splitter1.jpg?1406630084');
+  background: url('../images/bg-splitter1.jpg?1405070271');
 }
 /* line 13, ../sass/landing/_splitters.scss */
 #splitter .row {
@@ -1641,7 +1641,7 @@ small {
 
 /* line 20, ../sass/landing/_splitters.scss */
 #splitter2 {
-  background: url('../images/bg-splitter2.jpg?1406630084');
+  background: url('../images/bg-splitter2.jpg?1405070271');
 }
 /* line 23, ../sass/landing/_splitters.scss */
 #splitter2 .row {
@@ -1651,7 +1651,7 @@ small {
 
 /* line 29, ../sass/landing/_splitters.scss */
 #splitter3 {
-  background: url('../images/bg-splitter3.jpg?1406630084');
+  background: url('../images/bg-splitter3.jpg?1405070271');
 }
 /* line 33, ../sass/landing/_splitters.scss */
 #splitter3 .row {
@@ -1712,7 +1712,7 @@ small {
 }
 /* line 1, ../sass/landing/_press.scss */
 #press {
-  background: url('../images/bg-testimonial.jpg?1406630084');
+  background: url('../images/bg-testimonial.jpg?1405070271');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1849,7 +1849,7 @@ body {
 }
 
 /* line 62, ../sass/boards/_linkfeed.scss */
-#head a svg {
+#head a .svg {
   float: left;
   display: block;
   padding: 5px;
@@ -1972,41 +1972,37 @@ body {
   background-color: #fff;
 }
 /* line 173, ../sass/boards/_linkfeed.scss */
-.search a svg {
+.search a .svg {
   position: relative;
   width: 40px;
   height: 18px;
   top: 11px;
   border-left: 1px #e9e9e9 solid;
 }
-/* line 179, ../sass/boards/_linkfeed.scss */
-.search a svg path {
-  fill: #caccce;
-}
 
-/* line 188, ../sass/boards/_linkfeed.scss */
+/* line 185, ../sass/boards/_linkfeed.scss */
 ::-webkit-input-placeholder {
   color: #cfcfcf;
 }
 
-/* line 191, ../sass/boards/_linkfeed.scss */
+/* line 188, ../sass/boards/_linkfeed.scss */
 :-moz-placeholder {
   /* older Firefox*/
   color: #cfcfcf;
 }
 
-/* line 194, ../sass/boards/_linkfeed.scss */
+/* line 191, ../sass/boards/_linkfeed.scss */
 ::-moz-placeholder {
   /* Firefox 19+ */
   color: #cfcfcf;
 }
 
-/* line 197, ../sass/boards/_linkfeed.scss */
+/* line 194, ../sass/boards/_linkfeed.scss */
 :-ms-input-placeholder {
   color: #cfcfcf;
 }
 
-/* line 204, ../sass/boards/_linkfeed.scss */
+/* line 201, ../sass/boards/_linkfeed.scss */
 .animate-repeat {
   -webkit-transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
@@ -2016,7 +2012,7 @@ body {
   box-sizing: border-box;
 }
 
-/* line 210, ../sass/boards/_linkfeed.scss */
+/* line 207, ../sass/boards/_linkfeed.scss */
 .animate-repeat.ng-move-active,
 .animate-repeat.ng-enter,
 .animate-repeat.ng-leave {
@@ -2028,7 +2024,7 @@ body {
   box-sizing: border-box;
 }
 
-/* line 216, ../sass/boards/_linkfeed.scss */
+/* line 213, ../sass/boards/_linkfeed.scss */
 .animate-repeat.ng-leave.ng-leave-active,
 .animate-repeat.ng-move,
 .animate-repeat.ng-enter {
@@ -2037,7 +2033,7 @@ body {
   animation: lfBounceOut 0.5s;
 }
 
-/* line 223, ../sass/boards/_linkfeed.scss */
+/* line 220, ../sass/boards/_linkfeed.scss */
 .animate-repeat.ng-leave,
 .animate-repeat.ng-move,
 .animate-repeat.ng-enter.ng-enter-active {
@@ -2046,45 +2042,45 @@ body {
   transform: translateX(0);
 }
 
-/* line 231, ../sass/boards/_linkfeed.scss */
+/* line 228, ../sass/boards/_linkfeed.scss */
 .animate-show {
   -webkit-animation-name: bounce;
   animation-name: bounce;
 }
 
-/* line 235, ../sass/boards/_linkfeed.scss */
+/* line 232, ../sass/boards/_linkfeed.scss */
 .animate-show.ng-hide-remove {
   -webkit-animation: lfbounceIn 0.5s;
   animation: lfbounceIn 0.5s;
 }
 
-/* line 239, ../sass/boards/_linkfeed.scss */
+/* line 236, ../sass/boards/_linkfeed.scss */
 .animate-show.ng-hide-add {
   -webkit-animation: lfBounceOut 0.5s;
   animation: lfBounceOut 0.5s;
   display: block !important;
 }
 
-/* line 247, ../sass/boards/_linkfeed.scss */
+/* line 244, ../sass/boards/_linkfeed.scss */
 .loadscreen {
   -webkit-animation-name: bounce;
   animation-name: bounce;
 }
 
-/* line 251, ../sass/boards/_linkfeed.scss */
+/* line 248, ../sass/boards/_linkfeed.scss */
 .loadscreen.ng-hide-remove {
   -webkit-animation: lfflipInX 0.5s;
   animation: lfflipInX 0.5s;
 }
 
-/* line 255, ../sass/boards/_linkfeed.scss */
+/* line 252, ../sass/boards/_linkfeed.scss */
 .loadscreen.ng-hide-add {
   -webkit-animation: lfflipOutX 0.5s;
   animation: lfflipOutX 0.5s;
   display: block !important;
 }
 
-/* line 264, ../sass/boards/_linkfeed.scss */
+/* line 261, ../sass/boards/_linkfeed.scss */
 .lf-grid-sm {
   position: relative;
   width: 100%;
@@ -2092,7 +2088,7 @@ body {
   padding: 12px;
 }
 
-/* line 271, ../sass/boards/_linkfeed.scss */
+/* line 268, ../sass/boards/_linkfeed.scss */
 .lf-grid-lg {
   width: 100%;
   float: left;
@@ -2100,163 +2096,163 @@ body {
 }
 
 @media (min-width: 595px) {
-  /* line 277, ../sass/boards/_linkfeed.scss */
+  /* line 274, ../sass/boards/_linkfeed.scss */
   .lf-grid-sm {
     width: 50%;
   }
 }
 @media (min-width: 820px) {
-  /* line 278, ../sass/boards/_linkfeed.scss */
+  /* line 275, ../sass/boards/_linkfeed.scss */
   .lf-grid-sm {
     width: 33.33333%;
   }
 }
 @media (min-width: 1045px) {
-  /* line 279, ../sass/boards/_linkfeed.scss */
+  /* line 276, ../sass/boards/_linkfeed.scss */
   .lf-grid-sm {
     width: 25%;
   }
 }
 @media (min-width: 1270px) {
-  /* line 280, ../sass/boards/_linkfeed.scss */
+  /* line 277, ../sass/boards/_linkfeed.scss */
   .lf-grid-sm {
     width: 20%;
   }
 }
 @media (min-width: 1495px) {
-  /* line 281, ../sass/boards/_linkfeed.scss */
+  /* line 278, ../sass/boards/_linkfeed.scss */
   .lf-grid-sm {
     width: 16.66667%;
   }
 }
 @media (min-width: 1720px) {
-  /* line 282, ../sass/boards/_linkfeed.scss */
+  /* line 279, ../sass/boards/_linkfeed.scss */
   .lf-grid-sm {
     width: 14.28571%;
   }
 }
 @media (min-width: 1945px) {
-  /* line 283, ../sass/boards/_linkfeed.scss */
+  /* line 280, ../sass/boards/_linkfeed.scss */
   .lf-grid-sm {
     width: 12.5%;
   }
 }
 @media (min-width: 2170px) {
-  /* line 284, ../sass/boards/_linkfeed.scss */
+  /* line 281, ../sass/boards/_linkfeed.scss */
   .lf-grid-sm {
     width: 11.11111%;
   }
 }
 @media (min-width: 2395px) {
-  /* line 285, ../sass/boards/_linkfeed.scss */
+  /* line 282, ../sass/boards/_linkfeed.scss */
   .lf-grid-sm {
     width: 10%;
   }
 }
 @media (min-width: 2620px) {
-  /* line 286, ../sass/boards/_linkfeed.scss */
+  /* line 283, ../sass/boards/_linkfeed.scss */
   .lf-grid-sm {
     width: 9.09091%;
   }
 }
 @media (min-width: 2845px) {
-  /* line 287, ../sass/boards/_linkfeed.scss */
+  /* line 284, ../sass/boards/_linkfeed.scss */
   .lf-grid-sm {
     width: 8.33333%;
   }
 }
 @media (min-width: 3070px) {
-  /* line 288, ../sass/boards/_linkfeed.scss */
+  /* line 285, ../sass/boards/_linkfeed.scss */
   .lf-grid-sm {
     width: 7.69231%;
   }
 }
 @media (min-width: 3295px) {
-  /* line 289, ../sass/boards/_linkfeed.scss */
+  /* line 286, ../sass/boards/_linkfeed.scss */
   .lf-grid-sm {
     width: 7.14286%;
   }
 }
 @media (min-width: 3520px) {
-  /* line 290, ../sass/boards/_linkfeed.scss */
+  /* line 287, ../sass/boards/_linkfeed.scss */
   .lf-grid-sm {
     width: 6.66667%;
   }
 }
 @media (min-width: 820px) {
-  /* line 293, ../sass/boards/_linkfeed.scss */
+  /* line 290, ../sass/boards/_linkfeed.scss */
   .lf-grid-lg {
     width: 66.66666%;
   }
 }
 @media (min-width: 1045px) {
-  /* line 294, ../sass/boards/_linkfeed.scss */
+  /* line 291, ../sass/boards/_linkfeed.scss */
   .lf-grid-lg {
     width: 50%;
   }
 }
 @media (min-width: 1270px) {
-  /* line 295, ../sass/boards/_linkfeed.scss */
+  /* line 292, ../sass/boards/_linkfeed.scss */
   .lf-grid-lg {
     width: 40%;
   }
 }
 @media (min-width: 1495px) {
-  /* line 296, ../sass/boards/_linkfeed.scss */
+  /* line 293, ../sass/boards/_linkfeed.scss */
   .lf-grid-lg {
     width: 33.33333%;
   }
 }
 @media (min-width: 1720px) {
-  /* line 297, ../sass/boards/_linkfeed.scss */
+  /* line 294, ../sass/boards/_linkfeed.scss */
   .lf-grid-lg {
     width: 28.57142%;
   }
 }
 @media (min-width: 1945px) {
-  /* line 298, ../sass/boards/_linkfeed.scss */
+  /* line 295, ../sass/boards/_linkfeed.scss */
   .lf-grid-lg {
     width: 25%;
   }
 }
 @media (min-width: 2170px) {
-  /* line 299, ../sass/boards/_linkfeed.scss */
+  /* line 296, ../sass/boards/_linkfeed.scss */
   .lf-grid-lg {
     width: 22.22222%;
   }
 }
 @media (min-width: 2395px) {
-  /* line 300, ../sass/boards/_linkfeed.scss */
+  /* line 297, ../sass/boards/_linkfeed.scss */
   .lf-grid-lg {
     width: 20%;
   }
 }
 @media (min-width: 2620px) {
-  /* line 301, ../sass/boards/_linkfeed.scss */
+  /* line 298, ../sass/boards/_linkfeed.scss */
   .lf-grid-lg {
     width: 18.18182%;
   }
 }
 @media (min-width: 2845px) {
-  /* line 302, ../sass/boards/_linkfeed.scss */
+  /* line 299, ../sass/boards/_linkfeed.scss */
   .lf-grid-lg {
     width: 16.666666%;
   }
 }
 @media (min-width: 3070px) {
-  /* line 303, ../sass/boards/_linkfeed.scss */
+  /* line 300, ../sass/boards/_linkfeed.scss */
   .lf-grid-lg {
     width: 15.38462%;
   }
 }
 @media (min-width: 3295px) {
-  /* line 304, ../sass/boards/_linkfeed.scss */
+  /* line 301, ../sass/boards/_linkfeed.scss */
   .lf-grid-lg {
     width: 14.28571%;
   }
 }
 @media (min-width: 3520px) {
-  /* line 305, ../sass/boards/_linkfeed.scss */
+  /* line 302, ../sass/boards/_linkfeed.scss */
   .lf-grid-lg {
     width: 13.33334%;
   }
@@ -2265,19 +2261,20 @@ body {
 #boards {
   padding: 0 12px 12px 12px;
   height: auto;
+  display: inline-block;
 }
 
-/* line 7, ../sass/boards/_board.scss */
+/* line 8, ../sass/boards/_board.scss */
 .board-content {
   width: 100%;
   height: 320px;
   background-color: white;
 }
-/* line 11, ../sass/boards/_board.scss */
+/* line 12, ../sass/boards/_board.scss */
 .board-content .info {
   padding: 15px;
 }
-/* line 13, ../sass/boards/_board.scss */
+/* line 14, ../sass/boards/_board.scss */
 .board-content .info p.headline {
   margin-top: 5px;
   font-size: 18px;
@@ -2285,45 +2282,45 @@ body {
   color: #000;
 }
 
-/* line 24, ../sass/boards/_board.scss */
+/* line 25, ../sass/boards/_board.scss */
 #create .board-content {
   border: dashed 1px #e1e1e1;
 }
-/* line 27, ../sass/boards/_board.scss */
+/* line 28, ../sass/boards/_board.scss */
 #create .close-btn {
   width: 100%;
   height: 28px;
   padding: 9px;
 }
-/* line 31, ../sass/boards/_board.scss */
+/* line 32, ../sass/boards/_board.scss */
 #create .close-btn a svg {
   width: 10px;
   height: 10px;
   float: right;
 }
-/* line 35, ../sass/boards/_board.scss */
+/* line 36, ../sass/boards/_board.scss */
 #create .close-btn a svg polygon {
   fill: #ededed;
 }
-/* line 39, ../sass/boards/_board.scss */
+/* line 40, ../sass/boards/_board.scss */
 #create .close-btn svg:hover polygon {
   fill: #ccc;
 }
-/* line 43, ../sass/boards/_board.scss */
+/* line 44, ../sass/boards/_board.scss */
 #create .manage {
   padding: 15px;
 }
-/* line 45, ../sass/boards/_board.scss */
+/* line 46, ../sass/boards/_board.scss */
 #create .manage svg.create-board-logo {
   width: 65px;
   display: block;
   margin: 0 auto 25px auto;
 }
-/* line 49, ../sass/boards/_board.scss */
+/* line 50, ../sass/boards/_board.scss */
 #create .manage svg.create-board-logo path {
   fill: #caccce;
 }
-/* line 53, ../sass/boards/_board.scss */
+/* line 54, ../sass/boards/_board.scss */
 #create .manage p.headline {
   text-align: center;
   max-height: 22px;
@@ -2331,7 +2328,7 @@ body {
   font-weight: bold;
   color: #c6c6c6;
 }
-/* line 60, ../sass/boards/_board.scss */
+/* line 61, ../sass/boards/_board.scss */
 #create .manage p.text {
   text-align: center;
   max-height: 40px;
@@ -2339,11 +2336,11 @@ body {
   font-size: 14px;
   color: #c6c6c6;
 }
-/* line 68, ../sass/boards/_board.scss */
+/* line 69, ../sass/boards/_board.scss */
 #create button {
   margin-top: 30px;
 }
-/* line 72, ../sass/boards/_board.scss */
+/* line 73, ../sass/boards/_board.scss */
 #create .boardmask {
   width: 100%;
   height: auto;
@@ -2353,16 +2350,16 @@ body {
   -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
-/* line 77, ../sass/boards/_board.scss */
+/* line 78, ../sass/boards/_board.scss */
 #create .boardmask .ng-hide-remove {
   width: 100%;
 }
-/* line 80, ../sass/boards/_board.scss */
+/* line 81, ../sass/boards/_board.scss */
 #create .boardmask .ng-hide-add {
   width: 0%;
 }
 
-/* line 87, ../sass/boards/_board.scss */
+/* line 88, ../sass/boards/_board.scss */
 #create.boardmask.lf-grid-sm.remove {
   width: 0%;
   padding: 0px;
@@ -2373,19 +2370,19 @@ body {
   transition: all 0.1s linear;
 }
 
-/* line 96, ../sass/boards/_board.scss */
+/* line 97, ../sass/boards/_board.scss */
 .mask {
   width: 100%;
   height: 140px;
   overflow: hidden;
 }
-/* line 100, ../sass/boards/_board.scss */
+/* line 101, ../sass/boards/_board.scss */
 .mask img {
   position: relative;
   width: 100%;
   float: left;
 }
-/* line 107, ../sass/boards/_board.scss */
+/* line 108, ../sass/boards/_board.scss */
 .mask .lnkBtn {
   display: block;
   position: relative;
@@ -2404,7 +2401,7 @@ body {
   -webkit-backface-visibility: hidden;
   opacity: 0;
 }
-/* line 121, ../sass/boards/_board.scss */
+/* line 122, ../sass/boards/_board.scss */
 .mask span {
   display: block;
   position: absolute;
@@ -2425,7 +2422,7 @@ body {
   opacity: 0;
 }
 
-/* line 139, ../sass/boards/_board.scss */
+/* line 140, ../sass/boards/_board.scss */
 .mask:hover img {
   position: relative;
   -webkit-transition-duration: 0.1s;
@@ -2442,7 +2439,7 @@ body {
   /* IE6-9 */
   -webkit-filter: blur(2px) grayscale(1);
 }
-/* line 147, ../sass/boards/_board.scss */
+/* line 148, ../sass/boards/_board.scss */
 .mask:hover .lnkBtn {
   -webkit-transition-duration: 0.1s;
   -moz-transition-duration: 0.1s;
@@ -2453,7 +2450,7 @@ body {
   filter: alpha(opacity=50);
   opacity: 0.5;
 }
-/* line 152, ../sass/boards/_board.scss */
+/* line 153, ../sass/boards/_board.scss */
 .mask:hover span {
   -webkit-font-smoothing: antialiased;
   -webkit-transition-duration: 0.1s;
@@ -2466,26 +2463,26 @@ body {
   opacity: 1;
 }
 
-/* line 161, ../sass/boards/_board.scss */
+/* line 162, ../sass/boards/_board.scss */
 .member {
   width: 16%;
   margin-right: 5%;
   float: left;
 }
 
-/* line 166, ../sass/boards/_board.scss */
+/* line 167, ../sass/boards/_board.scss */
 .member:last-child {
   position: relative;
   margin-right: 0%;
   display: table;
 }
 
-/* line 171, ../sass/boards/_board.scss */
+/* line 172, ../sass/boards/_board.scss */
 .member:last-child img {
   position: absolute;
 }
 
-/* line 175, ../sass/boards/_board.scss */
+/* line 176, ../sass/boards/_board.scss */
 .overlay {
   position: relative;
   width: 100%;
@@ -2493,7 +2490,7 @@ body {
   top: -10px;
   color: #000;
 }
-/* line 181, ../sass/boards/_board.scss */
+/* line 182, ../sass/boards/_board.scss */
 .overlay p {
   padding-top: 50%;
   display: inline-block;
