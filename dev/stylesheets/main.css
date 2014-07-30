@@ -2673,7 +2673,7 @@ tags-input .tags .tag-item .remove-button {
 
 /* line 53, ../sass/boards/_tags.scss */
 tags-input .tags .tag-item .remove-button:active {
-  color: red;
+  color: #292f38;
 }
 
 /* line 56, ../sass/boards/_tags.scss */
@@ -2690,7 +2690,7 @@ tags-input .tags .input {
 
 /* line 66, ../sass/boards/_tags.scss */
 tags-input .tags .input.invalid-tag {
-  color: red;
+  color: #292f38;
 }
 
 /* line 69, ../sass/boards/_tags.scss */

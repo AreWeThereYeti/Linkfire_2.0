@@ -51,7 +51,7 @@ tags-input .tags .tag-item .remove-button {
   color: $white;
 }
 tags-input .tags .tag-item .remove-button:active {
-  color: red;
+  color: $blue-darkest;
 }
 tags-input .tags .input {
   border: 0;
@@ -64,7 +64,7 @@ tags-input .tags .input {
   height: 26px;
 }
 tags-input .tags .input.invalid-tag {
-  color: red;
+  color: $blue-darkest;
 }
 tags-input .tags .input::-ms-clear {
   display: none;
