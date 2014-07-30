@@ -1,0 +1,93 @@
+
+<!-- Header content here-->
+
+<script type="text/javascript">  
+	jQuery(document).ready(function() {
+		jQuery('img').each(function(){
+			var $img = jQuery(this);
+			var imgURL = $img.attr('src');
+			//console.log("got image " + imgURL);
+
+			if(window.location.href.indexOf("linkfire.com") > -1) {
+	            imgURL = "/lf2" + imgURL;
+	            //console.log("running on testserver " + imgURL);
+	            $img.attr("src", imgURL);
+	          }
+	          else{
+	            //console.log("running locally " + imgURL);
+	          }
+		});
+	    /*
+	     * Replace all SVG images with inline SVG
+	     */
+	    jQuery('img.svg').each(function(){
+	        var $img = jQuery(this);
+	        var imgID = $img.attr('id');
+	        var imgClass = $img.attr('class');
+	        var imgURL = $img.attr('src');
+	        jQuery.get(imgURL, function(data) {
+	            // Get the SVG tag, ignore the rest
+	            var $svg = jQuery(data).find('svg');
+	            // Add replaced image's ID to the new SVG
+	            if(typeof imgID !== 'undefined') {
+	                $svg = $svg.attr('id', imgID);
+	            }
+	            // Add replaced image's classes to the new SVG
+	            if(typeof imgClass !== 'undefined') {
+	                $svg = $svg.attr('class', imgClass+' replaced-svg');
+	            }
+	            // Remove any invalid XML tags as per http://validator.w3.org
+	            $svg = $svg.removeAttr('xmlns:a');
+	            // Replace image with new SVG
+	            $img.replaceWith($svg);
+	        });
+	    });
+	});
+//	$(".close-btn a").click(function() {
+//		$(".animate-show").on('oanimationend animationend webkitAnimationEnd', function() {
+//			console.log("run");
+//		   $(this).parent(".boardmask").addClass("remove");
+//		});
+//	});
+	//  
+</script>
+
+<div ng-controller="LinkfeedCtrl">
+    <!--encapsulate this in a global service-->
+	<div ng-hide="pageLoaded" id="page_loader" class="loadscreen" >
+		<div class="loadlogo">
+			<a ng-click="pageLoaded = !pageLoaded"><img class="svg" src="/images/logo.svg"></a>
+		</div>
+	</div>
+
+	<div ng-show="pageLoaded" class="animate-show">
+        <!-- Header-->
+        <div ng-include="'html/private/header.html'"></div>
+        <div class="row" id="artist">
+            <div class="col-md-12">
+                <h1>Artist page</h1>
+                <span>{{linkfeed.clicks}} Clicks - {{linkfeed.links}} Links ... {{linkfeed.members[0].name}}</span>
+                <div class="info">
+                    <p class="headline">{{linkfeed.boards.name + " " + boards.album}}</p>
+                    <div class="member" ng-repeat="member in linkfeed.members | limitTo: 4" >
+                        <p>{{member.name}}</p>
+                        <img class="img-responsive img-circle" ng-src={{member.url}}>
+                    </div>
+                    <div class="member" ng-show="members.length >= 4">
+                        <img class="img-responsive img-circle" src="images/more.svg">
+                        <div class="overlay">
+                            <p>+{{member.length - 4}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Searchbar-->
+        <div ng-include="'html/private/searchbar.html'"></div>
+
+		<!-- Body content here-->
+        <div ng-include="'html/linkfeed/linkfeed.html'"></div>
+	</div>
+</div>
+<div ng-include="'html/footer.html'"></div>
