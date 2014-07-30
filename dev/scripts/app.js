@@ -27,12 +27,17 @@ var linkfireWebappApp = angular.module('linkfireWebappApp', [
   .config(function ($routeProvider,$locationProvider, $httpProvider, $facebookProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'html/landing.html',
+        templateUrl: 'html/public/landing.html',
         controller: 'MainCtrl'
       })
 		  .when('/boards', {
         templateUrl: 'html/boards.html',
         controller: 'BoardsCtrl'
+      })
+		    .when('/linkfeed', {
+        templateUrl: 'html/linkfeed.html',
+        controller: 'LinkfeedCtrl',
+			  controllerAs : 'linkfeed'
       })
 
 	    /*----------Static pages-----------*/
