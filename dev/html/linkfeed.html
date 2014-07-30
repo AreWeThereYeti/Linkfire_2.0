@@ -63,14 +63,13 @@
 	<div ng-show="pageLoaded" class="animate-show">
         <!-- Header-->
         <div ng-include="'html/private/header.html'"></div>
-        <div class="row" id="artist">
+
+        <div id="artist" back-img={{linkfeed.img}}>
             <div class="col-md-12">
                 <h1>Artist page</h1>
-                <span>{{linkfeed.clicks}} Clicks - {{linkfeed.links}} Links ... {{linkfeed.members[0].name}}</span>
+                <span>{{linkfeed.clicks}} Clicks - {{linkfeed.links}} Links</span>
                 <div class="info">
-                    <p class="headline">{{linkfeed.boards.name + " " + boards.album}}</p>
                     <div class="member" ng-repeat="member in linkfeed.members | limitTo: 4" >
-                        <p>{{member.name}}</p>
                         <img class="img-responsive img-circle" ng-src={{member.url}}>
                     </div>
                     <div class="member" ng-show="members.length >= 4">

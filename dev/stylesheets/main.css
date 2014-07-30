@@ -224,47 +224,7 @@ input[type="email"], input[type="password"], input[type="text"] {
   width: 100%;
 }
 
-/* line 212, ../sass/helpers/_buttons.scss */
-.lf-btn-medium {
-  display: block;
-  font-size: 14px;
-  position: relative;
-  padding-left: 16px;
-  width: 146px;
-  height: 40px;
-  margin-top: 10px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  border-radius: 3px;
-}
-/* line 222, ../sass/helpers/_buttons.scss */
-.lf-btn-medium span:first-child {
-  float: left;
-  color: #fff;
-  padding-right: 8px;
-  line-height: 40px;
-  height: 40px;
-}
-/* line 229, ../sass/helpers/_buttons.scss */
-.lf-btn-medium span:last-child {
-  display: block;
-  float: right;
-  width: 40px;
-  height: 40px;
-  padding: 13px;
-  background-color: #01b796;
-  -webkit-border-top-right-radius: 3px;
-  -moz-border-top-right-radius: 3px;
-  -ms-border-top-right-radius: 3px;
-  border-top-right-radius: 3px;
-  -webkit-border-bottom-right-radius: 3px;
-  -moz-border-bottom-right-radius: 3px;
-  -ms-border-bottom-right-radius: 3px;
-  border-bottom-right-radius: 3px;
-}
-
-/* line 240, ../sass/helpers/_buttons.scss */
+/* line 209, ../sass/helpers/_buttons.scss */
 .lf-btn-large {
   display: block;
   font-size: 16px;
@@ -279,7 +239,7 @@ input[type="email"], input[type="password"], input[type="text"] {
   -ms-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 253, ../sass/helpers/_buttons.scss */
+/* line 222, ../sass/helpers/_buttons.scss */
 .lf-btn-large span:first-child {
   float: left;
   color: #fff;
@@ -287,7 +247,7 @@ input[type="email"], input[type="password"], input[type="text"] {
   line-height: 50px;
   height: 50px;
 }
-/* line 260, ../sass/helpers/_buttons.scss */
+/* line 229, ../sass/helpers/_buttons.scss */
 .lf-btn-large span:last-child {
   display: block;
   float: right;
@@ -304,30 +264,30 @@ input[type="email"], input[type="password"], input[type="text"] {
   border-bottom-right-radius: 3px;
 }
 
-/* line 270, ../sass/helpers/_buttons.scss */
+/* line 239, ../sass/helpers/_buttons.scss */
 .lf-full-width {
   width: 100%;
 }
 
-/* line 274, ../sass/helpers/_buttons.scss */
+/* line 243, ../sass/helpers/_buttons.scss */
 .lf-fb {
   background-color: #3D60A0;
 }
-/* line 276, ../sass/helpers/_buttons.scss */
+/* line 245, ../sass/helpers/_buttons.scss */
 .lf-fb span:last-child {
   background-color: #30487b;
 }
 
-/* line 280, ../sass/helpers/_buttons.scss */
+/* line 249, ../sass/helpers/_buttons.scss */
 .lf-fb:hover {
   background-color: #30487b;
 }
-/* line 283, ../sass/helpers/_buttons.scss */
+/* line 252, ../sass/helpers/_buttons.scss */
 .lf-fb:hover span:last-child {
   background-color: #2c4171;
 }
 
-/* line 289, ../sass/helpers/_buttons.scss */
+/* line 258, ../sass/helpers/_buttons.scss */
 button {
   border: 0;
   padding: 0;
@@ -335,7 +295,7 @@ button {
   margin: 0px;
 }
 
-/* line 295, ../sass/helpers/_buttons.scss */
+/* line 264, ../sass/helpers/_buttons.scss */
 .lf-btn-medium {
   display: block;
   font-size: 14px;
@@ -343,13 +303,12 @@ button {
   padding-left: 16px;
   width: 146px;
   height: 40px;
-  margin-top: 10px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
   border-radius: 3px;
 }
-/* line 305, ../sass/helpers/_buttons.scss */
+/* line 273, ../sass/helpers/_buttons.scss */
 .lf-btn-medium span:first-child {
   float: left;
   color: #fff;
@@ -357,7 +316,7 @@ button {
   line-height: 40px;
   height: 40px;
 }
-/* line 312, ../sass/helpers/_buttons.scss */
+/* line 280, ../sass/helpers/_buttons.scss */
 .lf-btn-medium span:last-child {
   display: block;
   float: right;
@@ -374,53 +333,53 @@ button {
   -ms-border-bottom-right-radius: 3px;
   border-bottom-right-radius: 3px;
 }
-/* line 320, ../sass/helpers/_buttons.scss */
+/* line 288, ../sass/helpers/_buttons.scss */
 .lf-btn-medium span:last-child svg {
   height: 20px;
   width: 20px;
 }
-/* line 323, ../sass/helpers/_buttons.scss */
+/* line 291, ../sass/helpers/_buttons.scss */
 .lf-btn-medium span:last-child svg path {
   fill: white;
 }
-/* line 327, ../sass/helpers/_buttons.scss */
+/* line 295, ../sass/helpers/_buttons.scss */
 .lf-btn-medium span:last-child img {
   height: 20px;
   width: 20px;
 }
 
-/* line 334, ../sass/helpers/_buttons.scss */
+/* line 302, ../sass/helpers/_buttons.scss */
 .lf-primary {
   background-color: #fc3429;
 }
-/* line 336, ../sass/helpers/_buttons.scss */
+/* line 304, ../sass/helpers/_buttons.scss */
 .lf-primary span:last-child {
   background-color: #e82b22;
 }
 
-/* line 340, ../sass/helpers/_buttons.scss */
+/* line 308, ../sass/helpers/_buttons.scss */
 .lf-primary:hover {
   background-color: #e82b22;
 }
-/* line 343, ../sass/helpers/_buttons.scss */
+/* line 311, ../sass/helpers/_buttons.scss */
 .lf-primary:hover span:last-child {
   background-color: #d0271f;
 }
 
-/* line 348, ../sass/helpers/_buttons.scss */
+/* line 316, ../sass/helpers/_buttons.scss */
 .lf-green {
   background-color: #3cbda3;
 }
-/* line 350, ../sass/helpers/_buttons.scss */
+/* line 318, ../sass/helpers/_buttons.scss */
 .lf-green span:last-child {
   background-color: #00a888;
 }
 
-/* line 355, ../sass/helpers/_buttons.scss */
+/* line 323, ../sass/helpers/_buttons.scss */
 .lf-green:hover {
   background-color: #00a888;
 }
-/* line 358, ../sass/helpers/_buttons.scss */
+/* line 326, ../sass/helpers/_buttons.scss */
 .lf-green:hover span:last-child {
   background-color: #2c947f;
 }
@@ -1989,9 +1948,21 @@ small {
 #artist {
   background-color: #364253;
   height: 150px;
+  padding: 12px 12px 0px 12px;
+}
+/* line 114, ../sass/boards/_linkfeed.scss */
+#artist h1 {
+  margin-top: 5px;
+}
+/* line 117, ../sass/boards/_linkfeed.scss */
+#artist .member {
+  width: 32px;
+  margin-right: 2%;
+  float: left;
+  margin-top: 1%;
 }
 
-/* line 115, ../sass/boards/_linkfeed.scss */
+/* line 125, ../sass/boards/_linkfeed.scss */
 #linkfeed {
   padding: 0 12px 12px 12px;
   height: auto;
@@ -1999,20 +1970,93 @@ small {
   background-color: #f3f3f3;
   width: 100%;
 }
+/* line 131, ../sass/boards/_linkfeed.scss */
+#linkfeed .link {
+  width: 50%;
+  float: left;
+  padding: 12px;
+}
+/* line 135, ../sass/boards/_linkfeed.scss */
+#linkfeed .link .link-content {
+  width: 100%;
+  height: 160px;
+  background-color: white;
+}
+/* line 139, ../sass/boards/_linkfeed.scss */
+#linkfeed .link .link-content .img-container {
+  display: inline-block;
+  max-width: 25%;
+  vertical-align: top;
+}
+/* line 144, ../sass/boards/_linkfeed.scss */
+#linkfeed .link .link-content .info {
+  width: 75%;
+  padding: 20px;
+  display: inline-block;
+}
+/* line 148, ../sass/boards/_linkfeed.scss */
+#linkfeed .link .link-content .info .clicks {
+  float: right;
+}
+/* line 151, ../sass/boards/_linkfeed.scss */
+#linkfeed .link .link-content .info .clicks:after {
+  content: "f";
+}
+/* line 155, ../sass/boards/_linkfeed.scss */
+#linkfeed .link .link-content .info h3 {
+  margin: 0;
+}
+/* line 158, ../sass/boards/_linkfeed.scss */
+#linkfeed .link .link-content .info p {
+  margin: 0 0 5px;
+}
+/* line 161, ../sass/boards/_linkfeed.scss */
+#linkfeed .link .link-content .info .tag {
+  color: #292f38;
+  margin-right: 7px;
+  font-size: 12px;
+}
+/* line 166, ../sass/boards/_linkfeed.scss */
+#linkfeed .link .link-content .info .shortlink-container {
+  width: 100%;
+  background-color: #f0f1f3;
+  display: inline-block;
+  margin-top: 10px;
+}
+/* line 171, ../sass/boards/_linkfeed.scss */
+#linkfeed .link .link-content .info .shortlink-container .shortlink {
+  padding: 10px 20px;
+  color: #292f38;
+}
+/* line 175, ../sass/boards/_linkfeed.scss */
+#linkfeed .link .link-content .info .shortlink-container .copy {
+  text-align: center;
+  background-color: #292f38;
+  border-radius: 0px 5px 5px 0px;
+  padding: 10px;
+  cursor: pointer;
+}
+/* line 182, ../sass/boards/_linkfeed.scss */
+#linkfeed .link .link-content .info .shortlink-container .copy:hover {
+  text-align: center;
+  background-color: #292f38;
+  border-radius: 0px 5px 5px 0px;
+  padding: 10px;
+  cursor: pointer;
+}
 
-/* line 124, ../sass/boards/_linkfeed.scss */
+/* line 196, ../sass/boards/_linkfeed.scss */
 #subhead {
   padding: 12px 12px 0px 12px;
   height: 76px;
   background-color: #f3f3f3;
 }
-/* line 128, ../sass/boards/_linkfeed.scss */
+/* line 200, ../sass/boards/_linkfeed.scss */
 #subhead .search {
-  width: 100%;
   background-color: #f3f3f3;
   height: 40px;
 }
-/* line 132, ../sass/boards/_linkfeed.scss */
+/* line 203, ../sass/boards/_linkfeed.scss */
 #subhead .search input {
   color: #caccce;
   width: 100%;
@@ -2025,15 +2069,15 @@ small {
   padding: 0 15px 0 15px;
   font-weight: 300;
 }
-/* line 143, ../sass/boards/_linkfeed.scss */
+/* line 214, ../sass/boards/_linkfeed.scss */
 #subhead .search input, #subhead .search select, #subhead .search textarea {
   color: #c6c6c6;
 }
-/* line 146, ../sass/boards/_linkfeed.scss */
+/* line 217, ../sass/boards/_linkfeed.scss */
 #subhead .search textarea:focus, #subhead .search input:focus {
   color: #c6c6c6;
 }
-/* line 149, ../sass/boards/_linkfeed.scss */
+/* line 220, ../sass/boards/_linkfeed.scss */
 #subhead .search a {
   position: relative;
   width: 40px;
@@ -2042,7 +2086,7 @@ small {
   float: right;
   background-color: #fff;
 }
-/* line 156, ../sass/boards/_linkfeed.scss */
+/* line 227, ../sass/boards/_linkfeed.scss */
 #subhead .search a .svg {
   position: relative;
   width: 40px;
@@ -2051,29 +2095,29 @@ small {
   border-left: 1px #e9e9e9 solid;
 }
 
-/* line 168, ../sass/boards/_linkfeed.scss */
+/* line 239, ../sass/boards/_linkfeed.scss */
 ::-webkit-input-placeholder {
   color: #cfcfcf;
 }
 
-/* line 171, ../sass/boards/_linkfeed.scss */
+/* line 242, ../sass/boards/_linkfeed.scss */
 :-moz-placeholder {
   /* older Firefox*/
   color: #cfcfcf;
 }
 
-/* line 174, ../sass/boards/_linkfeed.scss */
+/* line 245, ../sass/boards/_linkfeed.scss */
 ::-moz-placeholder {
   /* Firefox 19+ */
   color: #cfcfcf;
 }
 
-/* line 177, ../sass/boards/_linkfeed.scss */
+/* line 248, ../sass/boards/_linkfeed.scss */
 :-ms-input-placeholder {
   color: #cfcfcf;
 }
 
-/* line 182, ../sass/boards/_linkfeed.scss */
+/* line 253, ../sass/boards/_linkfeed.scss */
 .lf-grid-sm {
   position: relative;
   width: 100%;
@@ -2081,7 +2125,7 @@ small {
   padding: 12px;
 }
 
-/* line 189, ../sass/boards/_linkfeed.scss */
+/* line 260, ../sass/boards/_linkfeed.scss */
 .lf-grid-lg {
   width: 100%;
   float: left;
@@ -2089,163 +2133,163 @@ small {
 }
 
 @media (min-width: 595px) {
-  /* line 195, ../sass/boards/_linkfeed.scss */
+  /* line 266, ../sass/boards/_linkfeed.scss */
   .lf-grid-sm {
     width: 50%;
   }
 }
 @media (min-width: 820px) {
-  /* line 196, ../sass/boards/_linkfeed.scss */
+  /* line 267, ../sass/boards/_linkfeed.scss */
   .lf-grid-sm {
     width: 33.33333%;
   }
 }
 @media (min-width: 1045px) {
-  /* line 197, ../sass/boards/_linkfeed.scss */
+  /* line 268, ../sass/boards/_linkfeed.scss */
   .lf-grid-sm {
     width: 25%;
   }
 }
 @media (min-width: 1270px) {
-  /* line 198, ../sass/boards/_linkfeed.scss */
+  /* line 269, ../sass/boards/_linkfeed.scss */
   .lf-grid-sm {
     width: 20%;
   }
 }
 @media (min-width: 1495px) {
-  /* line 199, ../sass/boards/_linkfeed.scss */
+  /* line 270, ../sass/boards/_linkfeed.scss */
   .lf-grid-sm {
     width: 16.66667%;
   }
 }
 @media (min-width: 1720px) {
-  /* line 200, ../sass/boards/_linkfeed.scss */
+  /* line 271, ../sass/boards/_linkfeed.scss */
   .lf-grid-sm {
     width: 14.28571%;
   }
 }
 @media (min-width: 1945px) {
-  /* line 201, ../sass/boards/_linkfeed.scss */
+  /* line 272, ../sass/boards/_linkfeed.scss */
   .lf-grid-sm {
     width: 12.5%;
   }
 }
 @media (min-width: 2170px) {
-  /* line 202, ../sass/boards/_linkfeed.scss */
+  /* line 273, ../sass/boards/_linkfeed.scss */
   .lf-grid-sm {
     width: 11.11111%;
   }
 }
 @media (min-width: 2395px) {
-  /* line 203, ../sass/boards/_linkfeed.scss */
+  /* line 274, ../sass/boards/_linkfeed.scss */
   .lf-grid-sm {
     width: 10%;
   }
 }
 @media (min-width: 2620px) {
-  /* line 204, ../sass/boards/_linkfeed.scss */
+  /* line 275, ../sass/boards/_linkfeed.scss */
   .lf-grid-sm {
     width: 9.09091%;
   }
 }
 @media (min-width: 2845px) {
-  /* line 205, ../sass/boards/_linkfeed.scss */
+  /* line 276, ../sass/boards/_linkfeed.scss */
   .lf-grid-sm {
     width: 8.33333%;
   }
 }
 @media (min-width: 3070px) {
-  /* line 206, ../sass/boards/_linkfeed.scss */
+  /* line 277, ../sass/boards/_linkfeed.scss */
   .lf-grid-sm {
     width: 7.69231%;
   }
 }
 @media (min-width: 3295px) {
-  /* line 207, ../sass/boards/_linkfeed.scss */
+  /* line 278, ../sass/boards/_linkfeed.scss */
   .lf-grid-sm {
     width: 7.14286%;
   }
 }
 @media (min-width: 3520px) {
-  /* line 208, ../sass/boards/_linkfeed.scss */
+  /* line 279, ../sass/boards/_linkfeed.scss */
   .lf-grid-sm {
     width: 6.66667%;
   }
 }
 @media (min-width: 820px) {
-  /* line 211, ../sass/boards/_linkfeed.scss */
+  /* line 282, ../sass/boards/_linkfeed.scss */
   .lf-grid-lg {
     width: 66.66666%;
   }
 }
 @media (min-width: 1045px) {
-  /* line 212, ../sass/boards/_linkfeed.scss */
+  /* line 283, ../sass/boards/_linkfeed.scss */
   .lf-grid-lg {
     width: 50%;
   }
 }
 @media (min-width: 1270px) {
-  /* line 213, ../sass/boards/_linkfeed.scss */
+  /* line 284, ../sass/boards/_linkfeed.scss */
   .lf-grid-lg {
     width: 40%;
   }
 }
 @media (min-width: 1495px) {
-  /* line 214, ../sass/boards/_linkfeed.scss */
+  /* line 285, ../sass/boards/_linkfeed.scss */
   .lf-grid-lg {
     width: 33.33333%;
   }
 }
 @media (min-width: 1720px) {
-  /* line 215, ../sass/boards/_linkfeed.scss */
+  /* line 286, ../sass/boards/_linkfeed.scss */
   .lf-grid-lg {
     width: 28.57142%;
   }
 }
 @media (min-width: 1945px) {
-  /* line 216, ../sass/boards/_linkfeed.scss */
+  /* line 287, ../sass/boards/_linkfeed.scss */
   .lf-grid-lg {
     width: 25%;
   }
 }
 @media (min-width: 2170px) {
-  /* line 217, ../sass/boards/_linkfeed.scss */
+  /* line 288, ../sass/boards/_linkfeed.scss */
   .lf-grid-lg {
     width: 22.22222%;
   }
 }
 @media (min-width: 2395px) {
-  /* line 218, ../sass/boards/_linkfeed.scss */
+  /* line 289, ../sass/boards/_linkfeed.scss */
   .lf-grid-lg {
     width: 20%;
   }
 }
 @media (min-width: 2620px) {
-  /* line 219, ../sass/boards/_linkfeed.scss */
+  /* line 290, ../sass/boards/_linkfeed.scss */
   .lf-grid-lg {
     width: 18.18182%;
   }
 }
 @media (min-width: 2845px) {
-  /* line 220, ../sass/boards/_linkfeed.scss */
+  /* line 291, ../sass/boards/_linkfeed.scss */
   .lf-grid-lg {
     width: 16.666666%;
   }
 }
 @media (min-width: 3070px) {
-  /* line 221, ../sass/boards/_linkfeed.scss */
+  /* line 292, ../sass/boards/_linkfeed.scss */
   .lf-grid-lg {
     width: 15.38462%;
   }
 }
 @media (min-width: 3295px) {
-  /* line 222, ../sass/boards/_linkfeed.scss */
+  /* line 293, ../sass/boards/_linkfeed.scss */
   .lf-grid-lg {
     width: 14.28571%;
   }
 }
 @media (min-width: 3520px) {
-  /* line 223, ../sass/boards/_linkfeed.scss */
+  /* line 294, ../sass/boards/_linkfeed.scss */
   .lf-grid-lg {
     width: 13.33334%;
   }
