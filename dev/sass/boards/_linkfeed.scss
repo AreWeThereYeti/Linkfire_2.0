@@ -112,7 +112,11 @@
   height: 150px;
   padding: 12px 12px 0px 12px;
   h1{
+    color: #ffffff;
     margin-top: 5px;
+  }
+  span{
+    color: #ffffff;
   }
   .member{
     width: 32px;
@@ -134,16 +138,21 @@
     padding: 12px;
     .link-content{
       width: 100%;
-      height: 160px;
       background-color: white;
+      display: inline-block;
       .img-container{
+        padding: 0;
         display: inline-block;
         max-width: 25%;
         vertical-align: top;
+        img{
+          width: 100%;
+        }
       }
       .info{
         width: 75%;
-        padding: 20px;
+        padding: 0px 20px;
+        padding-top: 3%;
         display: inline-block;
         .clicks{
           float: right;

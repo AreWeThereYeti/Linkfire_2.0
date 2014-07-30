@@ -6,7 +6,7 @@ angular.module('linkfireWebappApp')
 		return function(scope, element, attrs){
 			var url = attrs.backImg;
 			element.css({
-				'background-image': 'url(' + url +')',
+				'background-image': '-webkit-linear-gradient(left, rgba(0,0,0,0.7) 0% ,rgba(0,0,0, 0) 100%), url(' + url +')',
 				'background-size' : 'cover'
 			});
 		};
