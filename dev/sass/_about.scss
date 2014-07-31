@@ -1,7 +1,17 @@
 #about{
-  h3,h4, p{
+  h3,h4{
     color: black;
   }
+  .about-text{
+      font-family: 'Roboto Light', sans-serif;
+      color: #364253;
+      line-height: 28px;
+      font-size: 21px;
+  }
+  p{
+    color : $grey-darker;
+  }
+
   .team, .advisors{
     .row{
       margin-bottom: 30px;
