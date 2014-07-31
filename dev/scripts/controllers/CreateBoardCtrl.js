@@ -2,6 +2,15 @@
 linkfireWebappApp.controller('CreateBoardCtrl', function ($scope, $http, $q) {
     $scope.tags = [];
 
+    $scope.supported_services = [
+        { "service": "itunes", "name":"iTunes", "exUrl":"lorem.ipzum/1234" },
+        { "service": "deezer", "name":"Deezer", "exUrl":"lorem.ipzum/1234" },
+        { "service": "wimp", "name":"Wimp", "exUrl":"lorem.ipzum/1234" },
+        { "service": "beats", "name":"Beats Music", "exUrl":"lorem.ipzum/1234" },
+        { "service": "spotify", "name":"Spotify", "exUrl":"lorem.ipzum/1234" },
+        { "service": "soundcloud", "name":"SoundCloud", "exUrl":"lorem.ipzum/1234" }
+    ];
+
     $scope.autocomplete_options = [
         { "text": "nr@linkfire.com" },
         { "text": "le@linkfire.com" },
@@ -21,4 +30,3 @@ linkfireWebappApp.controller('CreateBoardCtrl', function ($scope, $http, $q) {
         return $http.get('tags.json');
     };
 });
-
