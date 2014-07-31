@@ -32,6 +32,11 @@
   height: 100%;
 }
 
+//backgrounds
+.bg-grey{
+  background-color: $grey-lightest;
+}
+
 .no-bg{
   background-color: transparent !important;
 }

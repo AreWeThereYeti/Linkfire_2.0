@@ -4,9 +4,11 @@ angular.module('linkfireWebappApp')
 			$scope.pageLoaded = true;
 
 			this.img = "http://placekitten.com/g/200/200";
-
+			this.title = "Inte stor nok - EP by Timbuktu";
+			this.type = "audiotrack w. deeplinks";
 			this.clicks = 122.112;
 			this.links = 123.443;
+			this.shortlink = "rocketlabs.lnk.to/XP_QZ";
 
 			this.members = [
 				{
@@ -24,7 +26,7 @@ angular.module('linkfireWebappApp')
 				{
 					name: "Enrico", url: "/images/members/5.jpg"
 				}
-			]
+			];
 
 			this.tags = [
 				{

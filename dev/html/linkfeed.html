@@ -38,7 +38,7 @@
 	            }
 	            // Remove any invalid XML tags as per http://validator.w3.org
 	            $svg = $svg.removeAttr('xmlns:a');
-	            // Replace image with new SVG
+	            // Replace image with new SVGLinkfeedCtrl
 	            $img.replaceWith($svg);
 	        });
 	    });
@@ -52,7 +52,7 @@
 	//  
 </script>
 
-<div ng-controller="LinkfeedCtrl">
+<div ng-controller="LinkfeedCtrl" id="bg">
     <!--encapsulate this in a global service-->
 	<div ng-hide="pageLoaded" id="page_loader" class="loadscreen" >
 		<div class="loadlogo">
@@ -86,7 +86,6 @@
         <div ng-include="'html/private/searchbar.html'"></div>
 
 		<!-- Body content here-->
-        <div ng-include="'html/linkfeed/linkfeed.html'"></div>
+        <div ng-include="'html/linkfeed/linkfeed.html'" class="bg-grey"></div>
 	</div>
 </div>
-<div ng-include="'html/footer.html'"></div>
