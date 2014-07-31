@@ -2560,17 +2560,23 @@ small {
   text-transform: uppercase;
 }
 /* line 13, ../sass/boards/_createboard.scss */
+#create-boards-dialog button.close {
+  color: #dddfe1;
+  font-size: 40px;
+  right: 15px;
+}
+/* line 19, ../sass/boards/_createboard.scss */
 #create-boards-dialog .linkname {
   width: 100%;
   height: 67px;
 }
-/* line 16, ../sass/boards/_createboard.scss */
+/* line 22, ../sass/boards/_createboard.scss */
 #create-boards-dialog .linkname input {
   width: calc(100% - 90px);
   float: left;
   padding-right: 62px;
 }
-/* line 21, ../sass/boards/_createboard.scss */
+/* line 27, ../sass/boards/_createboard.scss */
 #create-boards-dialog .linkname span.verify {
   display: inline-block;
   position: relative;
@@ -2586,7 +2592,11 @@ small {
   width: 52px;
   border-left: 1px solid #f0f1f3;
 }
-/* line 36, ../sass/boards/_createboard.scss */
+/* line 41, ../sass/boards/_createboard.scss */
+#create-boards-dialog .linkname span.verify span {
+  color: #00a888;
+}
+/* line 45, ../sass/boards/_createboard.scss */
 #create-boards-dialog .linkname span.lf {
   display: inline-block;
   height: 52px;
@@ -2598,11 +2608,11 @@ small {
   color: black;
   font-size: 28px;
 }
-/* line 50, ../sass/boards/_createboard.scss */
+/* line 59, ../sass/boards/_createboard.scss */
 #create-boards-dialog .source .add-src {
   height: 68px;
 }
-/* line 52, ../sass/boards/_createboard.scss */
+/* line 61, ../sass/boards/_createboard.scss */
 #create-boards-dialog .source .add-src button {
   height: 52px;
   width: 104px;
@@ -2615,14 +2625,14 @@ small {
   border-radius: 5px;
   border: 1px solid #caccce;
 }
-/* line 60, ../sass/boards/_createboard.scss */
+/* line 69, ../sass/boards/_createboard.scss */
 #create-boards-dialog .source .add-src button span:first-child {
   display: inline-block;
   width: 50%;
   height: 20px;
   margin-top: 5px;
 }
-/* line 66, ../sass/boards/_createboard.scss */
+/* line 75, ../sass/boards/_createboard.scss */
 #create-boards-dialog .source .add-src button span:last-child {
   width: 50%;
   display: inline-block;
@@ -2637,16 +2647,16 @@ small {
   height: 30px;
   border-left: 1px solid #f0f1f3;
 }
-/* line 81, ../sass/boards/_createboard.scss */
+/* line 90, ../sass/boards/_createboard.scss */
 #create-boards-dialog .source .add-src input {
   width: calc(100% - 134px);
   float: right;
 }
-/* line 88, ../sass/boards/_createboard.scss */
+/* line 97, ../sass/boards/_createboard.scss */
 #create-boards-dialog .members {
   margin-bottom: 30px;
 }
-/* line 90, ../sass/boards/_createboard.scss */
+/* line 99, ../sass/boards/_createboard.scss */
 #create-boards-dialog .members textarea {
   width: 100%;
   height: 150px;
@@ -2659,14 +2669,10 @@ small {
   border: 1px solid #caccce;
 }
 
-/* line 102, ../sass/boards/_createboard.scss */
-span {
+/* line 111, ../sass/boards/_createboard.scss */
+span, a, h4, li {
   -webkit-transform-style: preserve-3d;
-}
-
-/* line 105, ../sass/boards/_createboard.scss */
-a {
-  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
 }
 
 /* line 1, ../sass/boards/_tags.scss */
@@ -2843,7 +2849,7 @@ p, span {
   color: whitesmoke;
 }
 
-/* line 51, ../sass/main.scss */
+/* line 52, ../sass/main.scss */
 .bg-prefs, #splitter, #splitter2, #splitter3, #insights {
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -2855,39 +2861,39 @@ p, span {
   color: #000;
 }
 
-/* line 59, ../sass/main.scss */
+/* line 60, ../sass/main.scss */
 #logo-banner {
   background-color: #f0f1f3;
 }
 
-/* line 63, ../sass/main.scss */
+/* line 64, ../sass/main.scss */
 #footer {
   background-color: #22272f;
 }
 
-/* line 68, ../sass/main.scss */
+/* line 69, ../sass/main.scss */
 .SnapABug_Button {
   background-color: blue-darkest;
 }
 
 @media (max-width: 767px) {
-  /* line 77, ../sass/main.scss */
+  /* line 78, ../sass/main.scss */
   .SnapABug_Button {
     display: none !important;
   }
 
-  /* line 82, ../sass/main.scss */
+  /* line 83, ../sass/main.scss */
   .info-box {
     margin-bottom: 20px;
   }
-  /* line 84, ../sass/main.scss */
+  /* line 85, ../sass/main.scss */
   .info-box h1 {
     font-size: 22px;
     color: #405a72;
     line-height: 1.1em;
     font-weight: 900;
   }
-  /* line 90, ../sass/main.scss */
+  /* line 91, ../sass/main.scss */
   .info-box p {
     font-size: 12px;
     word-wrap: normal;
@@ -2895,29 +2901,29 @@ p, span {
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 101, ../sass/main.scss */
+  /* line 102, ../sass/main.scss */
   .SnapABug_Button {
     display: none !important;
   }
 
-  /* line 104, ../sass/main.scss */
+  /* line 105, ../sass/main.scss */
   .info-box {
     margin-bottom: 20px;
   }
-  /* line 106, ../sass/main.scss */
+  /* line 107, ../sass/main.scss */
   .info-box h1 {
     font-size: 32px;
     color: #405a72;
     line-height: 1.1em;
     font-weight: 900;
   }
-  /* line 112, ../sass/main.scss */
+  /* line 113, ../sass/main.scss */
   .info-box p {
     word-wrap: normal;
     line-height: 1.7em;
   }
 
-  /* line 118, ../sass/main.scss */
+  /* line 119, ../sass/main.scss */
   li .arrow {
     left: 0;
     opacity: 1;
@@ -2935,17 +2941,17 @@ p, span {
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  /* line 134, ../sass/main.scss */
+  /* line 135, ../sass/main.scss */
   .info-box {
     margin-bottom: 20px;
   }
-  /* line 136, ../sass/main.scss */
+  /* line 137, ../sass/main.scss */
   .info-box h1 {
     font-size: 32px;
     line-height: 1.1em;
     font-weight: 900;
   }
-  /* line 141, ../sass/main.scss */
+  /* line 142, ../sass/main.scss */
   .info-box p {
     font-size: 12px;
     word-wrap: normal;
@@ -2953,7 +2959,7 @@ p, span {
   }
 }
 @media (min-width: 1600px) {
-  /* line 151, ../sass/main.scss */
+  /* line 152, ../sass/main.scss */
   .container-fluid > div {
     width: 1600px !important;
     margin: auto;
