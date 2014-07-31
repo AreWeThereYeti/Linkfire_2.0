@@ -30,13 +30,13 @@
             </div>
 
             <div class="add-src">
-                <div class="btn-group" dropdown ng-model="aservice">
-                    <p>{{aservice}}</p>
+                <div class="btn-group" dropdown ng-model="myChosenService" ng-init="myChosenService='deezer'">
+                    <p>{{myChosenService}}</p>
                     <button type="button" class="dropdown-toggle" ng-disabled="disabled">
-                        <span><img class="center-block" ng-src="/images/createboard/src_{{aservice}}.png"></span><span class="icon-arrow-down"></span>
+                        <span><img class="center-block" ng-src="/images/createboard/src_{{myChosenService}}.png"></span><span class="icon-arrow-down"></span>
                     </button>
                     <ul class="dropdown-menu" role="menu">
-                        <li ng-repeat="this_service in supported_services"><a dropdown-toggle ng-click="aservice='lol'"><span><img class="center-block" ng-src="/images/createboard/src_{{this_service.service}}.png"></span>{{$index + 1}} {{this_service.service}}</a></li>
+                        <li ng-repeat="this_service in supported_services"><a dropdown-toggle ng-click="$parent.myChosenService=={{this_service.service}}"><span><img class="center-block" ng-src="/images/createboard/src_{{this_service.service}}.png"></span>{{$index + 1}} {{this_service.service}}</a></li>
                     </ul>
                 </div>
                 <input type="text" placeholder="Add new source" required/>

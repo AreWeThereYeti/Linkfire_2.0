@@ -30,22 +30,3 @@ linkfireWebappApp.controller('CreateBoardCtrl', function ($scope, $http, $q) {
         return $http.get('tags.json');
     };
 });
-
-
-$scope.publicationData = [
-
-    { pubId:'1' , pubName:'Level 1 A' , pubCat:
-        [
-        { pubCatId:'1' , pubCatName:'Level 2 A', pubSubCat:
-            [
-                { pubSubCatId:'1' , pubSubCatName:'Level 3 A' },
-                { pubSubCatId:'2' , pubSubCatName:'Level 3 B' }
-            ]
-        },
-        { pubCatId:'2' , pubCatName:'Level 2 B', pubSubCat:[
-            { pubSubCatId:'3' , pubSubCatName:'Level 3 C' },
-            { pubSubCatId:'4' , pubSubCatName:'Level 3 D' }
-        ]
-        }
-    ]
-    }];
