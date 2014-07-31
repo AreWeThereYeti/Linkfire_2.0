@@ -127,7 +127,7 @@
 }
 
 #linkfeed{
-  padding:0 12px 12px 12px;
+  padding:10px 12px 12px 12px;
   height:auto;
   display: inline-block;
   background-color: $grey-lightest;
@@ -208,80 +208,100 @@
 
 // search field styles //
 #subhead{
-  padding:12px 12px 0px 12px;
-  height:76px;
+  padding:20px 12px 0px 12px;
   background-color: $grey-lightest;
-  .search{
-    background-color:$grey-lightest;
-    height:40px;
-    width: 15%;
+  .search-container{
+    width: 50%;
     float: left;
-    padding-left:12px;
-    padding-right: 12px;
-    input{
-      color:$grey-light;
-      width:100%;
-      width: 100%; /* fallback if needed */
-      width: calc(100% - 40px);
+    padding-left: 12px;
+    .search{
+      background-color:$grey-lightest;
       height:40px;
-      border:0;
-      float:left;
-      padding:0 15px 0 15px;
-      font-weight: 300;
-    }
-    input, select, textarea{
-      color: #c6c6c6;
-    }
-    textarea:focus, input:focus {
-      color: #c6c6c6;
-    }
-    a{
-      position:relative;
-      width: 40px;
-      height: 40px;
-      border: 0;
-      float:right;
-      background-color:#fff;
-      .svg{
+      width: 30%;
+      float: left;
+      padding-right: 20px;
+      input{
+        color:$grey-light;
+        width:100%;
+        width: 100%; /* fallback if needed */
+        width: calc(100% - 40px);
+        height:40px;
+        border:0;
+        float:left;
+        padding:0 15px 0 15px;
+        font-weight: 300;
+      }
+      input, select, textarea{
+        color: #c6c6c6;
+      }
+      textarea:focus, input:focus {
+        color: #c6c6c6;
+      }
+      a{
         position:relative;
         width: 40px;
-        height: 18px;
-        top: 11px;
-        border-left:1px #e9e9e9 solid;
+        height: 40px;
+        border: 0;
+        float:right;
+        background-color:#fff;
+        .svg{
+          position:relative;
+          width: 40px;
+          height: 18px;
+          top: 11px;
+          border-left:1px #e9e9e9 solid;
+        }
       }
     }
-  }
-  .sort{
-    float: left;
-    width: 40%; /* fallback if needed */
-    width: calc(35% - 12px);
-    display: inline-block;
-    padding: 12px;
-    height: 40px;
-    vertical-align: middle;
-    background-color: ghostwhite;
-    span{
-      color: black;
-      width: calc(100% / 7);
+    .sort{
       float: left;
-      text-align: center;
-      color: $std-search;
-      &.first{
-        border-right:1px $std-search solid;
-      }
-
-      &:not(.first){
-        cursor: pointer;
-      }
-      &:not(.first):hover{
-        cursor: pointer;
-        text-decoration: underline;
+      width: 70%; /* fallback if needed */
+      width: calc(70% - 12px);
+      display: inline-block;
+      padding: 12px;
+      height: 40px;
+      vertical-align: middle;
+      background-color: white;
+      span{
         color: black;
+        width: calc(100% / 7);
+        float: left;
+        text-align: center;
+        font-size: 13px;
+        color: $std-search;
+        &.first{
+          border-right:1px $std-search solid;
+        }
+
+        &:not(.first){
+          cursor: pointer;
+        }
+        &:not(.first):hover{
+          cursor: pointer;
+          text-decoration: underline;
+          color: black;
+        }
       }
     }
-  }
-  button{
-    float: right
+    .latest{
+      float: left;
+      padding: 12px;
+      height: 40px;
+      background-color: white;
+      .span{
+        color: $std-search;
+      }
+      a{
+        position: relative;
+        width: 40px;
+        height: 40px;
+        border: 0;
+        background-color: #fff;
+      }
+    }
+    button{
+      float: right
+    }
   }
 }
 
