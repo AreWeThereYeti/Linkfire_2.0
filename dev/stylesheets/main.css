@@ -388,7 +388,7 @@ button {
 .info-box h1 {
   font-size: 32px;
   text-transform: uppercase;
-  color: #292f38;
+  color: #22272f;
   line-height: 1.2em;
   padding: 0;
   font-weight: 900;
@@ -1262,7 +1262,7 @@ a {
 }
 /* line 102, ../sass/_header.scss */
 #lf-menu .active {
-  background-color: #292f38;
+  background-color: #22272f;
 }
 /* line 105, ../sass/_header.scss */
 #lf-menu .arrow {
@@ -1368,7 +1368,7 @@ footer .row img {
 /* line 16, ../sass/landing/_pricing.scss */
 #pricing .row .price-info h1 {
   font-size: 38px;
-  color: #292f38;
+  color: #22272f;
   text-transform: uppercase;
   font-weight: 700;
 }
@@ -1390,14 +1390,14 @@ footer .row img {
 /* line 37, ../sass/landing/_pricing.scss */
 #pricing .row h3 {
   text-transform: uppercase;
-  color: #292f38;
+  color: #22272f;
   font-size: 22px;
   font-weight: 700;
 }
 /* line 43, ../sass/landing/_pricing.scss */
 #pricing .row h4 {
   text-transform: uppercase;
-  color: #292f38;
+  color: #22272f;
   font-size: 22px;
   font-weight: 700;
 }
@@ -1455,7 +1455,7 @@ footer .row img {
 }
 /* line 100, ../sass/landing/_pricing.scss */
 #pricing .row .panel .panel-heading {
-  background-color: #292f38;
+  background-color: #22272f;
 }
 /* line 102, ../sass/landing/_pricing.scss */
 #pricing .row .panel .panel-heading h3 {
@@ -1900,7 +1900,7 @@ small {
 }
 /* line 61, ../sass/boards/_linkfeed.scss */
 #head nav ul li:hover {
-  background: #292f38;
+  background: #22272f;
 }
 /* line 63, ../sass/boards/_linkfeed.scss */
 #head nav ul li:hover a {
@@ -2029,7 +2029,7 @@ small {
 }
 /* line 175, ../sass/boards/_linkfeed.scss */
 #linkfeed .link .link-content .info .tag {
-  color: #292f38;
+  color: #22272f;
   margin-right: 7px;
   font-size: 12px;
 }
@@ -2043,12 +2043,12 @@ small {
 /* line 185, ../sass/boards/_linkfeed.scss */
 #linkfeed .link .link-content .info .shortlink-container .shortlink {
   padding: 10px 20px;
-  color: #292f38;
+  color: #22272f;
 }
 /* line 189, ../sass/boards/_linkfeed.scss */
 #linkfeed .link .link-content .info .shortlink-container .copy {
   text-align: center;
-  background-color: #292f38;
+  background-color: #22272f;
   border-radius: 0px 5px 5px 0px;
   padding: 10px;
   cursor: pointer;
@@ -2056,7 +2056,7 @@ small {
 /* line 196, ../sass/boards/_linkfeed.scss */
 #linkfeed .link .link-content .info .shortlink-container .copy:hover {
   text-align: center;
-  background-color: #292f38;
+  background-color: #22272f;
   border-radius: 0px 5px 5px 0px;
   padding: 10px;
   cursor: pointer;
@@ -2664,6 +2664,16 @@ small {
   border: 1px solid #caccce;
 }
 
+/* line 102, ../sass/boards/_createboard.scss */
+span {
+  -webkit-transform-style: preserve-3d;
+}
+
+/* line 105, ../sass/boards/_createboard.scss */
+a {
+  -webkit-transform-style: preserve-3d;
+}
+
 /* line 1, ../sass/boards/_tags.scss */
 tags-input *, *:before, *:after {
   -moz-box-sizing: border-box;
@@ -2718,7 +2728,7 @@ tags-input .tags .tag-item {
   float: left;
   line-height: 25px;
   border-radius: 3px;
-  background-color: #292f38;
+  background-color: #22272f;
 }
 
 /* line 45, ../sass/boards/_tags.scss */
@@ -2733,7 +2743,7 @@ tags-input .tags .tag-item .remove-button {
 
 /* line 53, ../sass/boards/_tags.scss */
 tags-input .tags .tag-item .remove-button:active {
-  color: #292f38;
+  color: #22272f;
 }
 
 /* line 56, ../sass/boards/_tags.scss */
@@ -2750,7 +2760,7 @@ tags-input .tags .input {
 
 /* line 66, ../sass/boards/_tags.scss */
 tags-input .tags .input.invalid-tag {
-  color: #292f38;
+  color: #22272f;
 }
 
 /* line 69, ../sass/boards/_tags.scss */
