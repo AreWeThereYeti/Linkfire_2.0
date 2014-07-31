@@ -13,35 +13,37 @@
             <h4>Source</h4>
             <!-- Single button -->
             <div class="add-src">
-                <div class="btn-group" dropdown is-open="status.isopen">
+                <div class="btn-group" dropdown  ng-model="src" ng-init="src='itunes'">
                     <button type="button" class="dropdown-toggle" ng-disabled="disabled">
-                        <span><img class="center-block" src="/images/createboard/src_youtube.png"></span><span class="icon-arrow-down"></span>
+                        <span><img class="center-block" ng-src="/images/createboard/src_{{src}}.png"></span><span class="icon-arrow-down"></span>
                     </button>
                     <ul class="dropdown-menu" role="menu">
-                        <li><img class="center-block" src="/images/createboard/src_youtube.png"><a>YouTube</a></li>
-                        <li class="divider"></li>
-                        <li><img class="center-block" src="/images/createboard/src_youtube.png"><a>Wimp</a></li>
-                        <li class="divider"></li>
-                        <li><img class="center-block" src="/images/createboard/src_youtube.png"><a>Spotify</a></li>
+                        <li><a dropdown-toggle ng-click="src='itunes'"><span><img class="center-block" src="/images/createboard/src_itunes.png"></span>iTunes</a></li>
+                        <li><a dropdown-toggle ng-click="src='deezer'"><span><img class="center-block" src="/images/createboard/src_deezer.png"></span>Deezer</a></li>
+                        <li><a dropdown-toggle ng-click="src='wimp'"><span><img class="center-block" src="/images/createboard/src_wimp.png"></span>Wimp</a></li>
+                        <li><a dropdown-toggle ng-click="src='beats'"><span><img class="center-block" src="/images/createboard/src_beats.png"></span>Beats Music</a></li>
+                        <li><a dropdown-toggle ng-click="src='spotify'"><span><img class="center-block" src="/images/createboard/src_spotify.png"></span>Spotify</a></li>
+                        <li><a dropdown-toggle ng-click="src='soundcloud'"><span><img class="center-block" src="/images/createboard/src_soundcloud.png"></span>Soundcloud</a></li>
                     </ul>
                 </div>
                 <input type="text" placeholder="Add new source" required/>
             </div>
+
             <div class="add-src">
-                <div class="btn-group" dropdown>
+                <div class="btn-group" dropdown ng-model="aservice">
+                    <p>{{aservice}}</p>
                     <button type="button" class="dropdown-toggle" ng-disabled="disabled">
-                        <span><img class="center-block" src="/images/createboard/src_youtube.png"></span><span class="icon-arrow-down"></span>
+                        <span><img class="center-block" ng-src="/images/createboard/src_{{aservice}}.png"></span><span class="icon-arrow-down"></span>
                     </button>
                     <ul class="dropdown-menu" role="menu">
-                        <li><a>YouTube</a></li>
-                        <li class="divider"></li>
-                        <li><a>Wimp</a></li>
-                        <li class="divider"></li>
-                        <li><a>Spotify</a></li>
+                        <li ng-repeat="this_service in supported_services"><a dropdown-toggle ng-click="aservice='lol'"><span><img class="center-block" ng-src="/images/createboard/src_{{this_service.service}}.png"></span>{{$index + 1}} {{this_service.service}}</a></li>
                     </ul>
                 </div>
                 <input type="text" placeholder="Add new source" required/>
             </div>
+
+
+
         </div>
         <div class="members">
             <h4>Members</h4>

@@ -10,7 +10,7 @@ tags-input .host {
   margin-bottom: 5px;
   height:150px;
   padding:10px;
-  @include border-radius(5px);
+  //@include border-radius(5px);
   border: 1px solid $grey-light;
 }
 tags-input .host:active {

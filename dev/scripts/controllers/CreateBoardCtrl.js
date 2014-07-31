@@ -2,6 +2,15 @@
 linkfireWebappApp.controller('CreateBoardCtrl', function ($scope, $http, $q) {
     $scope.tags = [];
 
+    $scope.supported_services = [
+        { "service": "itunes", "name":"iTunes", "exUrl":"lorem.ipzum/1234" },
+        { "service": "deezer", "name":"Deezer", "exUrl":"lorem.ipzum/1234" },
+        { "service": "wimp", "name":"Wimp", "exUrl":"lorem.ipzum/1234" },
+        { "service": "beats", "name":"Beats Music", "exUrl":"lorem.ipzum/1234" },
+        { "service": "spotify", "name":"Spotify", "exUrl":"lorem.ipzum/1234" },
+        { "service": "soundcloud", "name":"SoundCloud", "exUrl":"lorem.ipzum/1234" }
+    ];
+
     $scope.autocomplete_options = [
         { "text": "nr@linkfire.com" },
         { "text": "le@linkfire.com" },
@@ -22,3 +31,21 @@ linkfireWebappApp.controller('CreateBoardCtrl', function ($scope, $http, $q) {
     };
 });
 
+
+$scope.publicationData = [
+
+    { pubId:'1' , pubName:'Level 1 A' , pubCat:
+        [
+        { pubCatId:'1' , pubCatName:'Level 2 A', pubSubCat:
+            [
+                { pubSubCatId:'1' , pubSubCatName:'Level 3 A' },
+                { pubSubCatId:'2' , pubSubCatName:'Level 3 B' }
+            ]
+        },
+        { pubCatId:'2' , pubCatName:'Level 2 B', pubSubCat:[
+            { pubSubCatId:'3' , pubSubCatName:'Level 3 C' },
+            { pubSubCatId:'4' , pubSubCatName:'Level 3 D' }
+        ]
+        }
+    ]
+    }];
