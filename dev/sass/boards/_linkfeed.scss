@@ -122,7 +122,7 @@
     width: 32px;
     margin-right: 2%;
     float: left;
-    margin-top: 1%;
+    margin-top: 0.5%;
   }
 }
 
@@ -130,12 +130,12 @@
   padding:0 12px 12px 12px;
   height:auto;
   display: inline-block;
-  background-color: #f3f3f3;
+  background-color: $grey-lightest;
   width: 100%;
   .link{
-    width: 50%;
     float: left;
     padding: 12px;
+    width: 50%;
     .link-content{
       width: 100%;
       background-color: white;
@@ -143,19 +143,22 @@
       .img-container{
         padding: 0;
         display: inline-block;
-        max-width: 25%;
         vertical-align: top;
+        float: left;
         img{
-          width: 100%;
+
         }
       }
       .info{
-        width: 75%;
+        width: calc(100% - 160px);
         padding: 0px 20px;
-        padding-top: 3%;
+        padding-top: 15px;
         display: inline-block;
+        float: right;
         .clicks{
           float: right;
+          font-size: 12px;
+          color: $grey-light;
         }
         .clicks:after{
           content: "f";
@@ -166,6 +169,8 @@
         }
         p{
           margin: 0 0 5px;
+          font-size: 12px;
+          color: $grey-light;
         }
         .tag{
           color: $blue-darkest;
@@ -205,9 +210,9 @@
 #subhead{
   padding:12px 12px 0px 12px;
   height:76px;
-  background-color: #f3f3f3;
+  background-color: $grey-lightest;
   .search{
-    background-color:#f3f3f3;
+    background-color:$grey-lightest;
     height:40px;
     input{
       color:$grey-light;
