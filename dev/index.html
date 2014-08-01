@@ -3,11 +3,11 @@
 <!--[if IE 7]>         <html class="no-scripts lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-scripts lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-  <head>
+<head>
     <meta charset="utf-8">
     <title>Linkfire</title>
     <meta name="description" content="">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <link rel="icon" type="image/png" href="../dist/favicon.png">
     <link rel="stylesheet" href="stylesheets/bootstrap.min.css" type="text/css" />
@@ -17,101 +17,85 @@
     <link href="stylesheets/notify.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="stylesheets/main.css">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,400italic' rel='stylesheet' type='text/css'>
-  </head>
-  <body ng-app="linkfireWebappApp">
-    <!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
+</head>
+<body ng-app="linkfireWebappApp">
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
 
-    <div ng-view=""></div>
+<div ng-view=""></div>
 
-    <!--Facebook login-->
-    <div id="fb-root"></div>
-    <script>
-        /**
-         * Global settings
-         */
-        var SITEURL = '/'; //'<?php echo $_SERVER['REQUEST_URI']; ?>';
-    </script>
+<!--Facebook login-->
+<div id="fb-root"></div>
+<script>
+    /**
+     * Global settings
+     */
+    var SITEURL = '/'; //'<?php echo $_SERVER['REQUEST_URI']; ?>';
+</script>
 
 
-    <!-- SnapEngage -->
-    <script type="text/javascript">
-        (function() {
-            var se = document.createElement('script'); se.type = 'text/javascript'; se.async = true;
-            se.src = '//commondatastorage.googleapis.com/code.snapengage.com/js/6ad3f9b3-975f-4449-b150-51b49c38a633.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(se, s);
-        })();
-    </script>
+<!-- SnapEngage -->
+<script type="text/javascript">
+    (function() {
+        var se = document.createElement('script'); se.type = 'text/javascript'; se.async = true;
+        se.src = '//commondatastorage.googleapis.com/code.snapengage.com/js/6ad3f9b3-975f-4449-b150-51b49c38a633.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(se, s);
+    })();
+</script>
 
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
-     <script>
-       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-       ga('create', 'UA-XXXXX-X');
-       ga('send', 'pageview');
-    </script>
-    <!--Angular cdn-->
-    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    ga('create', 'UA-XXXXX-X');
+    ga('send', 'pageview');
+</script>
+<!--Angular cdn-->
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 
-    <!--Libraries-->
-<<<<<<< HEAD
-    <script src="scripts/libs/jquery.min.js"></script>
-    <script src="scripts/libs/angular.min.js"></script>
-    <script src="scripts/libs/angular-resource.min.js"></script>
-    <script src="scripts/libs/angular-route.min.js"></script>
-    <script src="scripts/libs/bootstrap.min.js"></script>
-    <script src="scripts/libs/angular-touch.min.js"></script>
-    <script src="scripts/libs/angular-animate.min.js"></script>
-    <script src="scripts/libs/angular-carousel.min.js"></script>
-    <script src="scripts/libs/ui-bootstrap-tpls.min.js"></script>
-    <script src="scripts/libs/angular-scroll.min.js"></script>
-=======
-    <script src="scripts/_libs/angular.min.js"></script>
-    <script src="scripts/_libs/angular-resource.min.js"></script>
-    <script src="scripts/_libs/angular-route.min.js"></script>
-    <script src="scripts/_libs/bootstrap.min.js"></script>
-    <script src="scripts/_libs/angular-animate.min.js"></script>
-    <script src="scripts/_libs/angular-carousel.min.js"></script>
-    <script src="scripts/_libs/ui-bootstrap-tpls.min.js"></script>
-    <script src="scripts/_libs/angular-scroll.min.js"></script>
-<<<<<<< HEAD
->>>>>>> develop
-=======
-    <script src="scripts/_libs/ng-tags-input.min.js"></script>
->>>>>>> develop
+<!--Libraries-->
+<script src="scripts/_libs/angular.min.js"></script>
+<script src="scripts/_libs/angular-resource.min.js"></script>
+<script src="scripts/_libs/angular-route.min.js"></script>
+<script src="scripts/_libs/bootstrap.min.js"></script>
+<script src="scripts/_libs/angular-animate.min.js"></script>
+<script src="scripts/_libs/angular-carousel.min.js"></script>
+<script src="scripts/_libs/ui-bootstrap-tpls.min.js"></script>
+<script src="scripts/_libs/angular-scroll.min.js"></script>
+<script src="scripts/_libs/ng-tags-input.min.js"></script>
 
-    <!--Legacy scripts-->
-    <!--<script src="scripts/legacy/social.scripts"></script>-->
+<!--Legacy scripts-->
+<!--<script src="scripts/legacy/social.scripts"></script>-->
 
-    <!--<script src="scripts/_libs/sha1.scripts"></script>-->
+<!--<script src="scripts/_libs/sha1.scripts"></script>-->
 
-    <script src="scripts/_libs/angular-touch.min.js"></script>
+<script src="scripts/_libs/angular-touch.min.js"></script>
 
-    <!--controllers-->
-    <script src="scripts/app.js"></script>
-    <script src="scripts/controllers/MainCtrl.js"></script>
-    <script src="scripts/controllers/BoardsCtrl.js"></script>
-    <script src="scripts/controllers/LinkfeedCtrl.js"></script>
-    <script src="scripts/controllers/HeaderCtrl.js"></script>
-    <script src="scripts/controllers/CarouselCtrl.js"></script>
-    <script src="scripts/controllers/CreateBoardCtrl.js"></script>
+<!--controllers-->
+<script src="scripts/app.js"></script>
+<script src="scripts/controllers/MainCtrl.js"></script>
+<script src="scripts/controllers/BoardsCtrl.js"></script>
+<script src="scripts/controllers/LinkfeedCtrl.js"></script>
+<script src="scripts/controllers/HeaderCtrl.js"></script>
+<script src="scripts/controllers/CarouselCtrl.js"></script>
+<script src="scripts/controllers/CreateBoardCtrl.js"></script>
 
-    <!--services-->
-    <script src="scripts/services/loginservice.js"></script>
-    <script src="scripts/services/ngFacebook.js"></script>
-    <script src="scripts/services/authInterceptor.js"></script>
+<!--services-->
+<script src="scripts/services/loginservice.js"></script>
+<script src="scripts/services/ngFacebook.js"></script>
+<script src="scripts/services/authInterceptor.js"></script>
 
-    <!--Directives-->
-    <script src="scripts/directive/scroll.js"></script>
-    <script src="scripts/directive/backImg.js"></script>
-    <script src="scripts/directive/password_checker.js"></script>
+<!--Directives-->
+<script src="scripts/directive/scroll.js"></script>
+<script src="scripts/directive/backImg.js"></script>
+<script src="scripts/directive/password_checker.js"></script>
 
-    <!--Modules-->
-    <script src="scripts/modules/notify.js"></script>
+<!--Modules-->
+<script src="scripts/modules/notify.js"></script>
 
-  </body>
+</body>
 </html>
