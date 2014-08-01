@@ -2,6 +2,8 @@
 linkfireWebappApp.controller('CreateBoardCtrl', function ($scope, $http, $q) {
     $scope.tags = [];
 
+    $scope.sources = [];
+
     $scope.supported_services = [
         { "service": "itunes", "name":"iTunes", "exUrl":"lorem.ipzum/1234" },
         { "service": "deezer", "name":"Deezer", "exUrl":"lorem.ipzum/1234" },
@@ -18,6 +20,22 @@ linkfireWebappApp.controller('CreateBoardCtrl', function ($scope, $http, $q) {
         { "text": "jj@linkfire.com" },
         { "text": "ja@linkfire.com" }
     ];
+
+
+    $scope.addSrc = function () {
+
+        $scope.sources.push({
+            service: $scope.src,
+            name: $scope.srcDest
+        });
+
+        // Clear input fields after push
+        $scope.srcService = "";
+        $scope.srcName = "";
+
+    };
+
+
 
     $scope.autocomplete_example = function(){
         var deferred = $q.defer();
