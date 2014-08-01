@@ -34,9 +34,9 @@
                 </div>
                 -->
                 <input type="text" name="src2" placeholder="Add new source" ng-pattern="/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/" ng-model="srcDest" required/>
+                
                 <span class="verification-help">
-                    <span class="logo"><img ng-show="createBoard.src2.$valid" ng-src="/images/createboard/src_spotify.png"></span>
-
+                    <span class="logo"><img ng-show="createBoard.src2.$valid" ng-src="/images/createboard/src_{{logo1}}.png"></span>
                     <span class="verify"><span ng-class="{ok: createBoard.src2.$valid}" class="icon-checkmark"></span></span>
                 </span>
                 <!--<p style="color:#000;">{{createBoard.src2.$valid}}</p>-->
@@ -52,9 +52,13 @@
                     </ul>
                 </div>
                 -->
-                <input type="text" placeholder="{{source.name}}" required/>
+                <input type="text" name="src3" value={{source.name}} ng-pattern="/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/" required/>
+
+                 <span class="verification-help">
+                    <span class="verify"><span ng-class="{ok: createBoard.src3.$valid}" class="icon-checkmark"></span></span>
+                </span>
             </div>
-            <button ng-click="addSrc()">Add to list</button>
+            <button ng-disabled="!createBoard.src2.$valid" ng-click="addSrc()">Add to list</button>
             <!--<div id="AddItem">
                 <h3>Add Item</h3>
                 <p>{{sources}}</p>

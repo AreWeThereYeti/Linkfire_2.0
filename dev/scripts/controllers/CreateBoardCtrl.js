@@ -3,7 +3,7 @@
 
 linkfireWebappApp.controller('CreateBoardCtrl', function ($scope, $http, $q, $filter) {
     $scope.tags = [];
-
+    $scope.logo = "john";
     $scope.sources = [];
 
     $scope.supported_services = [
@@ -23,6 +23,26 @@ linkfireWebappApp.controller('CreateBoardCtrl', function ($scope, $http, $q, $fi
         { "text": "ja@linkfire.com" }
     ];
 
+    $scope.$watch('srcDest', function() {
+        if($scope.srcDest){
+            if($scope.srcDest.indexOf("spotify.com") > -1){
+                $scope.logo1 = "spotify";
+            }
+            else if($scope.srcDest.indexOf("itunes.com") > -1){
+                $scope.logo1 = "itunes";
+            }
+            else {
+                $scope.logo1 = "no logo";
+            }
+
+
+        }
+        else{
+            console.log("fuck off");
+        }
+
+    });
+
 
     $scope.addSrc = function () {
 
@@ -32,8 +52,8 @@ linkfireWebappApp.controller('CreateBoardCtrl', function ($scope, $http, $q, $fi
         });
 
         // Clear input fields after push
-        $scope.srcService = "";
-        $scope.srcName = "";
+        $scope.src = "";
+        $scope.srcDest = "";
 
     };
 
@@ -56,5 +76,17 @@ linkfireWebappApp.controller('CreateBoardCtrl', function ($scope, $http, $q, $fi
 linkfireWebappApp.filter('reverse', function() {
     return function(items) {
         return items.slice().reverse();
+    };
+});
+
+linkfireWebappApp.filter('contains', function() {
+    return function(input) {
+        if( input.indexOf('spotify.com') >= 0){
+            return "spotify";
+        }
+        else{
+            return input;
+        }
+
     };
 });
