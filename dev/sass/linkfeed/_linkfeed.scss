@@ -20,6 +20,11 @@
       height:80px;
       display:block;
       margin:0 auto;
+      -webkit-animation: pulse 750ms ease-in;
+      -webkit-animation-iteration-count: infinite;
+      path{
+
+      }
     }
   }
 }
