@@ -11,6 +11,7 @@ linkfireWebappApp.controller('HeaderCtrl', ['$scope', 'loginService','$modal', '
 	    var modalInstance = $modal.open({
 	      templateUrl: 'loginmodal.html',
 	      controller: 'LoginInstanceCtrl',
+		    size: 'sm',
 	      resolve: {
 	        show : function () {
 	          return $scope.show;

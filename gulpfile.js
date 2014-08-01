@@ -1,17 +1,48 @@
 var gulp = require('gulp'),
 		uglify = require('gulp-uglify'),
-		connect = require('gulp-connect'),
+	  express = require('express'),
 		cssmin = require('gulp-cssmin'),
+		path = require('path'),
 		gutil = require('gulp-util'),
 		concat = require('gulp-concat'),
 		rename    = require('gulp-rename'),
 		watch = require('gulp-watch'),
-		livereload = require('gulp-livereload'),
 		ngAnnotate = require('gulp-ng-annotate'),
 		clean = require('gulp-clean'),
 		minifyHTML = require('gulp-minify-html'),
 		imagemin = require('gulp-imagemin'),
 		pngcrush = require('imagemin-pngcrush');
+
+var EXPRESS_PORT = 3000;
+var EXPRESS_ROOT = __dirname + '/dev';
+var LIVERELOAD_PORT = 35729;
+var lr;
+
+//------- Start live-reload and webserver-----------------------
+function startExpress() {
+	var app = express();
+	app.use(require('connect-livereload')());
+	app.use(express.static(EXPRESS_ROOT));
+	app.listen(EXPRESS_PORT);
+}
+
+//Livereload
+function startLivereload() {
+	lr = require('tiny-lr')();
+	lr.listen(LIVERELOAD_PORT);
+}
+
+function notifyLivereload(event) {
+	// `gulp.watch()` events provide an absolute path
+	// so we need to make it relative to the server root
+	var fileName = require('path').relative(EXPRESS_ROOT, event.path);
+	lr.changed({
+		body: {
+			files: [fileName]
+		}
+	});
+}
+//----------- End of livereload and webserver-------------------
 
 //Clean tmp folder after tasks
 gulp.task('clean', function () {
@@ -21,13 +52,25 @@ gulp.task('clean', function () {
 
 //optimize images and move to dist folder.
 gulp.task('images', function () {
+	//source
 	return gulp.src('dev/images/*')
+<<<<<<< HEAD
 			.pipe(imagemin({
 				progressive: true,
 				svgoPlugins: [{removeViewBox: false}],
 				use: [pngcrush()]
 			}))
 			.pipe(gulp.dest('dist/images'));
+=======
+			//optimization process
+		.pipe(imagemin({
+			progressive: true,
+			svgoPlugins: [{removeViewBox: false}],
+			use: [pngcrush()]
+		}))
+			//Destination
+		.pipe(gulp.dest('dist/images'));
+>>>>>>> develop
 });
 
 //Move html and minify
@@ -71,21 +114,13 @@ gulp.task('css', function () {
 			.pipe(gulp.dest('dist/stylesheets'));
 });
 
-
-//Watch folders and livereload on changes
-gulp.task('watch', function() {
-	livereload.listen();
-	gulp.watch('dev/**').on('change', livereload.changed);
-});
-
 //Start webserver on localhost /localhost:3000
-gulp.task('webserver', function() {
-	connect.server({
-//  Start project from "dev" folder
-		root : ['dev'],
-		port: process.env.PORT || 3000,
-	});
+gulp.task('default', function() {
+	startExpress();
+	startLivereload();
+	gulp.watch('dev/**').on('change', notifyLivereload);
 });
 
-gulp.task('default', ['webserver', 'watch']);
 gulp.task('build', ['minify', 'css', 'minify-html', 'minify-template-html' ]);
+
+gulp.task('minify-images', ['images']);

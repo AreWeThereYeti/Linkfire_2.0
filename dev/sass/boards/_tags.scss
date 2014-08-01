@@ -1,0 +1,109 @@
+tags-input *, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+tags-input .host {
+  position: relative;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  height:150px;
+  padding:10px;
+  //@include border-radius(5px);
+  border: 1px solid $grey-light;
+}
+tags-input .host:active {
+  outline: none;
+}
+
+tags-input .tags {
+  padding: 1px;
+  overflow: hidden;
+  word-wrap: break-word;
+  cursor: text;
+}
+tags-input .tags.focused {
+  outline: none;
+}
+tags-input .tags .tag-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+tags-input .tags .tag-item {
+  margin: 2px;
+  padding: 3px 10px;
+  display: inline-block;
+  float: left;
+  line-height: 25px;
+  border-radius: 3px;
+  background-color: $blue-darkest;
+}
+tags-input .tags .tag-item.selected {
+}
+tags-input .tags .tag-item .remove-button {
+  margin: 0 0 0 5px;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: $white;
+}
+tags-input .tags .tag-item .remove-button:active {
+  color: $blue-darkest;
+}
+tags-input .tags .input {
+  border: 0;
+  outline: none;
+  margin: 2px;
+  padding: 0;
+  padding-left: 5px;
+  padding-top:3px;
+  float: left;
+  height: 26px;
+}
+tags-input .tags .input.invalid-tag {
+  color: $blue-darkest;
+}
+tags-input .tags .input::-ms-clear {
+  display: none;
+}
+tags-input.ng-invalid .tags {
+
+}
+
+tags-input .autocomplete {
+  margin-top: 5px;
+  position: absolute;
+  padding: 5px 0;
+  z-index: 999;
+  width: 100%;
+  background-color: white;
+}
+tags-input .autocomplete .suggestion-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+tags-input .autocomplete .suggestion-item {
+  padding: 5px 10px;
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: black;
+  background-color: white;
+}
+tags-input .autocomplete .suggestion-item.selected {
+  color: white;
+  background-color: #0097cf;
+}
+tags-input .autocomplete .suggestion-item.selected em {
+  color: white;
+  background-color: #0097cf;
+}
+tags-input .autocomplete .suggestion-item em {
+  color: black;
+  background-color: white;
+}

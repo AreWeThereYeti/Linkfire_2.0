@@ -21,23 +21,29 @@ var linkfireWebappApp = angular.module('linkfireWebappApp', [
 	'ngAnimate',
 	'ngFacebook',
 	'ngTouch',
-	'angular-carousel'
+	'angular-carousel',
+    'ngTagsInput'
   ])
 
   .config(function ($routeProvider,$locationProvider, $httpProvider, $facebookProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'html/public.html',
+        templateUrl: 'html/public/landing.html',
         controller: 'MainCtrl'
       })
 		  .when('/boards', {
         templateUrl: 'html/boards.html',
         controller: 'BoardsCtrl'
       })
+		    .when('/linkfeed', {
+        templateUrl: 'html/linkfeed.html',
+        controller: 'LinkfeedCtrl',
+			  controllerAs : 'linkfeed'
+      })
 
-	    //Static pages
+	    /*----------Static pages-----------*/
 	    .when('/about', {
-		    templateUrl: 'html/about.html',
+		    templateUrl: 'html/static/about.html',
 		    controller: ''
 	    })
 	    .when('/blog', {

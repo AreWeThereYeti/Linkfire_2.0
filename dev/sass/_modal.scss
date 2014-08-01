@@ -1,6 +1,6 @@
 //Reset modal
 .modal-dialog{
-  width: 420px;
+  //width: 420px;
   background-color: #ffffff;
   border-radius: 8px;
   margin: 2% auto;
@@ -59,4 +59,8 @@
     opacity: .75;
     filter: alpha(opacity=75);
   }
+}
+
+.modal-sm{
+  width: 420px;
 }

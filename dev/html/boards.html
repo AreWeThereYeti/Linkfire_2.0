@@ -43,175 +43,30 @@
 	        });
 	    });
 	});
-	
-	
-	
 	$(".close-btn a").click(function() {
-		$(".animate-show").on('oanimationend animationend webkitAnimationEnd', function() { 
+		$(".animate-show").on('oanimationend animationend webkitAnimationEnd', function() {
 			console.log("run");
-		   $(this).parent(".boardmask").addClass("remove"); 
+		   $(this).parent(".boardmask").addClass("remove");
 		});
 	});
-	//  
 </script>
 
 <div ng-controller="BoardsCtrl">
+    <!--encapsulate this in a global service-->
 	<div ng-hide="pageLoaded" id="page_loader" class="loadscreen" >
 		<div class="loadlogo">
 			<a ng-click="pageLoaded = !pageLoaded"><img class="svg" src="/images/logo.svg"></a>
 		</div>
 	</div>
+
 	<div ng-show="pageLoaded" class="animate-show">
-		<!-- row can be used for debugging 
-		<div class="row">
-			<div class="col-md-12">
-				<span style="color:#000;">Debug: {{items}}, Loaded: {{loaded}}</span>
-			</div>
-		</div>
-		-->
+        <!-- Header-->
+        <div ng-include="'html/private/header.html'"></div>
 
-		<div class="row">
-		  <div id="head" class="col-md-12">
-				<a ng-click="pageLoaded = !pageLoaded" ><img class="svg" src="/images/linkfire_logo_w_text.svg"></a>
-				<div class="profile">
-					<div class="profile-img">
-						<img src="/images/profile/user.png">
-					</div>
-					<nav>
-						<ul>
-							<li><a href="#"><span>Anders Ibsen</span><span class="arrow-down"></span></a>
-								<ul>
-									<li><a href="#">Profile</a></li>
-									<li><a href="#">Settings</a></li>
-									<li><a href="#">Log out</a></li>
-								</ul>
-							</li>
-						</ul>
-					</nav>
-					<div id="lf-menu">
-						
-						
-						<a ng-class="{active: ononon}" ng-click="ononon = !ononon" class="boards">
-							<div ng-show="ononon" class="arrow">
-							</div>
-							<span><img class="svg" src="/images/pin.svg"></span>
-						</a>
-						<!-- create link page -->
-						<a ng-class="{active: !ononon}" ng-click="ononon = !ononon" class="links">
-							<div ng-show="!ononon" class="arrow">
-							</div>
-							<span><img class="svg" src="/images/link.svg"></span>
-						</a>
-						<a popover-placement="bottom" popover="On the Bottom!" class="notifications">
-							<div ng-hide="true" class="arrow">
-							</div>
-							<span><img class="svg" src="/images/bell.svg"></span>
-						</a>
-					</div>
-					
-				</div>
-		  </div>
-		</div>
-		<div id="subhead">
-			<div class="lf-grid-sm animate-show">
-				<div class="search">
-					<input type="search" name="s" ng-model="item" placeholder="Search in boards" />
-					<a href="#"><img class="svg" src="/images/search.svg"></a>
-				</div>
-
-			</div>
-			<!-- Container for tags // not being implemented currently.
-			<div ng-repeat="item in items" class="tag"><span>{{ item.tag }}</span><a ng-click="" href="#"><img class="svg" src="/images/btnClose.svg"></a></div>-->
-			
-			<button style="float:right;"class="lf-btn-medium lf-green" href="#"><span>Create board</span><span><img class="svg" src="/images/pin.svg"></span></button> 
-			<!-- button for link creation -->
-			<!--<button style="float:right;"class="lf-btn-medium lf-primary" href="#"><span>Create link</span><span><img class="svg" src="/images/link.svg"></span></button> -->
-		</div>
+        <!-- Searchbar-->
+        <div ng-include="'html/private/searchbar.html'"></div>
 
 		<!-- Body content here-->
-
-		<div id="boards" >
-
-			<div id="create" class="boardmask lf-grid-sm" ng-controller="MainCtrl">
-				<div class="animate-show" ng-show="show">
-					<div class="board-content">
-						<div class="close-btn">
-							<a ng-click="show=!show" href="#"><img class="svg" src="/images/btnClose.svg"></a>
-						</div>
-						<div class="manage">
-							<img class="svg create-board-logo" src="/images/pin.svg">
-							<p class="headline">MANAGE LINKS</p>
-							<p class="text">Organise links, insights and collaborations with a board</p>
-							<button class="lf-btn-medium lf-green center-block" ng-click="openBoardModal()" href="#"><span>Create board</span><span><img class="svg" src="/images/pin.svg"></span></button>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="boardmask lf-grid-sm" ng-repeat="board in boards | filter:item" >
-				<div class="animate-repeat">
-					<div class="board-content">
-						<div class="mask">
-							<!--<img src="/images/overlay.jpg">-->
-							<img src="/images/test2.jpg" ng-src={{board.url}}>
-							<a class="lnkBtn medium" href="#">
-							</a>
-							<span>Load links</span>
-						</div>
-						<div class="info">
-							<p class="headline">{{board.name + " " + board.album}}</p>
-							<div class="member" ng-repeat="member in board.members | limitTo: 4" ng-show="board.members[0]">
-								<img class="img-responsive img-circle" src="/images/member.jpg" ng-src={{member.url}}>
-							</div>
-							<div class="member" ng-show="board.members.length >= 4">
-								<img class="img-responsive img-circle" src="/images/more.svg">
-								<div class="overlay">
-									<p>+{{board.members.length - 4}}</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="lf-grid-sm">
-				<div class="board-content">
-					<div class="mask">
-						<!--<img src="/images/overlay.jpg">-->
-						<img src="/images/test.jpg">
-						<a class="lnkBtn medium" href="#">
-						</a>
-						<span>Load links</span>
-					</div>
-					<div class="info">
-						<p class="headline">AFROJACK</p>
-						<div class="member">
-							<img class="img-responsive img-circle" src="/images/member.jpg">
-						</div>
-						<div class="member">
-							<img class="img-responsive img-circle" src="/images/member.jpg">
-						</div>
-						<div class="member">
-							<img class="img-responsive img-circle" src="/images/member.jpg">
-						</div>
-						<div class="member">
-							<img class="img-responsive img-circle" src="/images/member.jpg">
-						</div>
-						<div class="member">
-							<img class="img-responsive img-circle" src="/images/more.svg">
-							<div class="overlay">
-								<p>+1</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="lf-grid-lg">
-				<div class="board-content">
-				</div>
-			</div>
-
-
-		 </div>
+        <div ng-include="'html/boards/boards.html'" class="bg-grey"></div>
 	</div>
 </div>
- <!--<div class="" ng-include="'scripts/templates/footer.html'"></div>-->

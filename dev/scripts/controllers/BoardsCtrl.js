@@ -25,12 +25,11 @@ angular.module('linkfireWebappApp')
     };
 //  Needs comments
 		$scope.openBoardModal = function () {
-
 			var modalInstance = $modal.open({
 				templateUrl: '/scripts/templates/createBoard.html',
-				controller: 'CreateBoardModalInstanceCtrl'
+				controller: 'CreateBoardModalInstanceCtrl',
+        size: 'lg'
 			});
-
 			modalInstance.result.then(function () {
 			}, function () {
 
@@ -50,7 +49,8 @@ angular.module('linkfireWebappApp')
           {name: "Jerry", url: "/lf2/images/members/3.jpg"},
           {name: "Jerry", url: "/lf2/images/members/4.jpg"},
           {name: "John", url: "/lf2/images/members/5.jpg"},
-          {name: "Elaine", url: "/lf2/images/members/6.jpg"}]},
+          {name: "Elaine", url: "/lf2/images/members/6.jpg"}
+        ]},
       {name:'Jessie'},
       {name:'Johanna'},
       {name:'Joy'},
