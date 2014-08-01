@@ -1,5 +1,7 @@
 'use strict';
-linkfireWebappApp.controller('CreateBoardCtrl', function ($scope, $http, $q) {
+
+
+linkfireWebappApp.controller('CreateBoardCtrl', function ($scope, $http, $q, $filter) {
     $scope.tags = [];
 
     $scope.sources = [];
@@ -46,5 +48,13 @@ linkfireWebappApp.controller('CreateBoardCtrl', function ($scope, $http, $q) {
     //fetching autocompletes from json
     $scope.loadTags = function(query) {
         return $http.get('tags.json');
+    };
+});
+
+
+
+linkfireWebappApp.filter('reverse', function() {
+    return function(items) {
+        return items.slice().reverse();
     };
 });
