@@ -63,6 +63,7 @@
 
   .source{
     .add-src {
+<<<<<<< HEAD
       height:67px;
       width:100%;
       input {
@@ -206,9 +207,14 @@
 
 
 
+=======
+      height:68px;
+      input {
+        width: calc(100% - 134px);
+        float: right;
+>>>>>>> develop
 
     }
-
   }
   .members{
     margin-bottom:30px;
@@ -220,14 +226,14 @@
       //@include border-radius(5px);
       border: 1px solid $grey-light;
     }
-
   }
-
 }
+
 span, a, h4, li{
   -webkit-transform-style: preserve-3d;
   -webkit-backface-visibility: hidden;
 }
+
 
 
 
