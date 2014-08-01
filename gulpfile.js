@@ -1,6 +1,6 @@
 var gulp = require('gulp'),
 		uglify = require('gulp-uglify'),
-	  express = require('express'),
+		express = require('express'),
 		cssmin = require('gulp-cssmin'),
 		path = require('path'),
 		gutil = require('gulp-util'),
@@ -54,23 +54,14 @@ gulp.task('clean', function () {
 gulp.task('images', function () {
 	//source
 	return gulp.src('dev/images/*')
-<<<<<<< HEAD
+		//optimization process
 			.pipe(imagemin({
 				progressive: true,
 				svgoPlugins: [{removeViewBox: false}],
 				use: [pngcrush()]
 			}))
+		//Destination
 			.pipe(gulp.dest('dist/images'));
-=======
-			//optimization process
-		.pipe(imagemin({
-			progressive: true,
-			svgoPlugins: [{removeViewBox: false}],
-			use: [pngcrush()]
-		}))
-			//Destination
-		.pipe(gulp.dest('dist/images'));
->>>>>>> develop
 });
 
 //Move html and minify
