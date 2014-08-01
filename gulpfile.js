@@ -1,6 +1,6 @@
 var gulp = require('gulp'),
 		uglify = require('gulp-uglify'),
-	  express = require('express'),
+		express = require('express'),
 		cssmin = require('gulp-cssmin'),
 		path = require('path'),
 		gutil = require('gulp-util'),
@@ -47,62 +47,62 @@ function notifyLivereload(event) {
 //Clean tmp folder after tasks
 gulp.task('clean', function () {
 	return gulp.src('.tmp/', {read: false})
-		.pipe(clean());
+			.pipe(clean());
 });
 
 //optimize images and move to dist folder.
 gulp.task('images', function () {
 	//source
 	return gulp.src('dev/images/*')
-			//optimization process
-		.pipe(imagemin({
-			progressive: true,
-			svgoPlugins: [{removeViewBox: false}],
-			use: [pngcrush()]
-		}))
-			//Destination
-		.pipe(gulp.dest('dist/images'));
+		//optimization process
+			.pipe(imagemin({
+				progressive: true,
+				svgoPlugins: [{removeViewBox: false}],
+				use: [pngcrush()]
+			}))
+		//Destination
+			.pipe(gulp.dest('dist/images'));
 });
 
 //Move html and minify
 gulp.task('minify-html', function() {
 	var opts = {comments:true,spare:true};
 	gulp.src('./dev/*.html')
-		.pipe(minifyHTML({
-			empty:true
-		}))
-		.pipe(gulp.dest('./dist/'))
+			.pipe(minifyHTML({
+				empty:true
+			}))
+			.pipe(gulp.dest('./dist/'))
 });
 
 //Minify js and move to dist
 gulp.task('minify', function () {
 	gulp.src('dev/scripts/**/*.js')
-		.pipe(ngAnnotate())
-		.pipe(uglify('app.js', {
-			mangle: false,
-			output: {
-				beautify: true
-			}
-		}))
-		.pipe(gulp.dest('./dist/scripts'))
+			.pipe(ngAnnotate())
+			.pipe(uglify('app.js', {
+				mangle: false,
+				output: {
+					beautify: true
+				}
+			}))
+			.pipe(gulp.dest('./dist/scripts'))
 });
 
 //Move html and minify
 gulp.task('minify-template-html', function() {
 	var opts = {comments:true,spare:true};
 	gulp.src('./dev/html/**/*.html')
-		.pipe(minifyHTML({
-			empty:true
-		}))
-		.pipe(gulp.dest('./dist/html'))
+			.pipe(minifyHTML({
+				empty:true
+			}))
+			.pipe(gulp.dest('./dist/html'))
 });
 
 gulp.task('css', function () {
 	gulp.src('dev/stylesheets/**/*.css')
-		.pipe(cssmin())
-		.pipe(concat('main.css'))
-		.pipe(rename({suffix: '.min'}))
-		.pipe(gulp.dest('dist/stylesheets'));
+			.pipe(cssmin())
+			.pipe(concat('main.css'))
+			.pipe(rename({suffix: '.min'}))
+			.pipe(gulp.dest('dist/stylesheets'));
 });
 
 //Start webserver on localhost /localhost:3000
