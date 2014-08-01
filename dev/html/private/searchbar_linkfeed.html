@@ -16,19 +16,19 @@
             </div>
         </div>
         <div class="search-container">
-            <div class="latest">
-                <span>Latest</span>
-                <span class="img-container">
-                    <img class="svg" src="/images/search.svg">
-                </span>
+            <div class="btn-group dropd" dropdown  ng-model="src" ng-init="src='itunes'">
+                <button type="button" class="dropdown-toggle" ng-disabled="disabled">
+                    <span>Latest</span><span class="icon-arrow-down"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a dropdown-toggle ng-click="src='Latest'">Latest</a></li>
+                    <li><a dropdown-toggle ng-click="src='Ascending'">Ascending</a></li>
+                    <li><a dropdown-toggle ng-click="src='Descending'">Descending</a></li>
+                </ul>
             </div>
-            <!-- Container for tags // not being implemented currently.
-            <div ng-repeat="item in items" class="tag"><span>{{ item.tag }}</span><a ng-click="" href="#"><img class="svg" src="/images/btnClose.svg"></a></div>-->
             <div class=" pull-right">
                 <button class="lf-btn-medium lf-primary pull-right" href="#"><span>Create Link</span><span><img class="svg" src="/images/link.svg"></span></button>
             </div>
         </div>
     </div>
-    <!-- button for link creation -->
-    <!--<button style="float:right;"class="lf-btn-medium lf-primary" href="#"><span>Create link</span><span><img class="svg" src="/images/link.svg"></span></button> -->
 </div>
