@@ -67,7 +67,7 @@
         <div id="artist" back-img={{linkfeed.img}}>
             <div class="col-md-12">
                 <button class="lf-btn-medium lf-green pull-right" ng-click="openBoardModal()">
-                    <span>Edit board</span>
+                    <span ng-click="linkfeed.debug()">Edit board</span>
                     <span>
                         <img class="svg" src="/images/pin.svg">
                     </span>
@@ -89,7 +89,7 @@
         </div>
 
         <!-- Searchbar-->
-        <div ng-include="'html/private/searchbar_linkfeedz.html'"></div>
+        <div ng-include="'html/private/searchbar_linkfeed.html'"></div>
 
 		<!-- Body content here-->
         <div ng-include="'html/linkfeed/linkfeed.html'" class="bg-grey"></div>
