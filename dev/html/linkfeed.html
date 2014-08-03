@@ -52,7 +52,7 @@
 	//  
 </script>
 
-<div ng-controller="LinkfeedCtrl" id="bg">
+<div id="bg">
     <!--encapsulate this in a global service-->
 	<div ng-hide="pageLoaded" id="page_loader" class="loadscreen" >
 		<div class="loadlogo">
@@ -72,7 +72,7 @@
                         <img class="svg" src="/images/pin.svg">
                     </span>
                 </button>
-                <h1>Artist page</h1>
+                <h1>Artist page - Preloaded? : {{linkfeed.test}}</h1>
                 <span>{{linkfeed.clicks}} Clicks - {{linkfeed.links}} Links</span>
                 <div class="info">
                     <div class="member" ng-repeat="member in linkfeed.members | limitTo: 4" >

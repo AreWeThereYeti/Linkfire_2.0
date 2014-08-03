@@ -22,7 +22,8 @@ var linkfireWebappApp = angular.module('linkfireWebappApp', [
 	'ngFacebook',
 	'ngTouch',
 	'angular-carousel',
-  'ngTagsInput'
+  'ngTagsInput',
+	'linkfireWebappApp.services'
   ])
 
   .config(['$routeProvider', '$locationProvider', '$httpProvider', '$facebookProvider',function ($routeProvider, $locationProvider, $httpProvider, $facebookProvider) {

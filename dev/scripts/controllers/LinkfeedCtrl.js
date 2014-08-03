@@ -3,7 +3,9 @@ angular.module('linkfireWebappApp')
 	.controller('LinkfeedCtrl', ['$scope','$log','$routeParams','links', function ($scope, $log, $routeParams, links) {
 			$scope.pageLoaded = true;
 
-			$scope.phoneId = $routeParams.id;
+			this.test = links.data;
+
+//			$scope.phoneId = $routeParams.id;
 
 			this.img = "http://placekitten.com/g/200/200";
 			this.title = "Inte stor nok - EP by Timbuktu";
