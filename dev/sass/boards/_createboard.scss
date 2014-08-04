@@ -117,6 +117,9 @@
       input.ng-invalid{
         border-color:$primary-color;
       }
+      input:focus .valig{
+        border-color:yellow;
+      }
 
       img{
         float:left;
