@@ -7,6 +7,7 @@ $icon-font-path: "/fonts/";
 @import "helpers/helpers";
 @import "helpers/animation";
 @import "helpers/resets";
+@import "helpers/bootstrap_override";
 @import "helpers/arrows";
 @import "modal";
 @import "notification";
@@ -35,9 +36,6 @@ $icon-font-path: "/fonts/";
 
 //Elements
 @import "elements/dropdown";
-
-
-
 
 //mobile
 @import "Mobile_and_tablet/mobile";

@@ -1065,6 +1065,21 @@ a {
   border-radius: 0px;
 }
 
+/* line 1, ../sass/helpers/_bootstrap_override.scss */
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 12px;
+  padding-left: 12px;
+}
+
+@media (max-width: 767px) {
+  /* line 9, ../sass/helpers/_bootstrap_override.scss */
+  .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
 /* line 1, ../sass/helpers/_arrows.scss */
 .arrow-up {
   width: 0;
@@ -3140,147 +3155,141 @@ tags-input .autocomplete .suggestion-item em {
 
 @media (max-width: 767px) {
   /* Styles */
-  /* line 5, ../sass/Mobile_and_tablet/_mobile.scss */
-  .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
-    padding-left: 5px;
-    padding-right: 5px;
-  }
-
-  /* line 10, ../sass/Mobile_and_tablet/_mobile.scss */
+  /* line 4, ../sass/Mobile_and_tablet/_mobile.scss */
   #header {
     height: 50px;
   }
-  /* line 13, ../sass/Mobile_and_tablet/_mobile.scss */
+  /* line 7, ../sass/Mobile_and_tablet/_mobile.scss */
   #header .header .logo {
     height: 25px;
     margin-left: 0px;
     margin-top: 17px;
   }
 
-  /* line 21, ../sass/Mobile_and_tablet/_mobile.scss */
+  /* line 15, ../sass/Mobile_and_tablet/_mobile.scss */
   .modal .modal-dialog {
     width: 97%;
     margin: 1.5%;
   }
-  /* line 24, ../sass/Mobile_and_tablet/_mobile.scss */
+  /* line 18, ../sass/Mobile_and_tablet/_mobile.scss */
   .modal .modal-dialog .modal-content {
     background-color: #22272f;
     padding: 5%;
   }
-  /* line 28, ../sass/Mobile_and_tablet/_mobile.scss */
+  /* line 22, ../sass/Mobile_and_tablet/_mobile.scss */
   .modal .modal-dialog .modal-content .close {
     color: #fff;
     text-shadow: 0 0px 0 #fff;
     font-weight: 100;
   }
-  /* line 33, ../sass/Mobile_and_tablet/_mobile.scss */
+  /* line 27, ../sass/Mobile_and_tablet/_mobile.scss */
   .modal .modal-dialog .modal-content .modal-body {
     padding-top: 5%;
     background-color: #22272f;
   }
-  /* line 36, ../sass/Mobile_and_tablet/_mobile.scss */
+  /* line 30, ../sass/Mobile_and_tablet/_mobile.scss */
   .modal .modal-dialog .modal-content .modal-body .form {
     background-color: #22272f;
   }
-  /* line 38, ../sass/Mobile_and_tablet/_mobile.scss */
+  /* line 32, ../sass/Mobile_and_tablet/_mobile.scss */
   .modal .modal-dialog .modal-content .modal-body .form h4 {
     color: #fff;
   }
-  /* line 41, ../sass/Mobile_and_tablet/_mobile.scss */
+  /* line 35, ../sass/Mobile_and_tablet/_mobile.scss */
   .modal .modal-dialog .modal-content .modal-body .form p {
     color: #fff;
   }
-  /* line 44, ../sass/Mobile_and_tablet/_mobile.scss */
+  /* line 38, ../sass/Mobile_and_tablet/_mobile.scss */
   .modal .modal-dialog .modal-content .modal-body .form a {
     color: #f0f1f3;
   }
-  /* line 51, ../sass/Mobile_and_tablet/_mobile.scss */
+  /* line 45, ../sass/Mobile_and_tablet/_mobile.scss */
   .modal .menu {
     text-align: left;
   }
-  /* line 53, ../sass/Mobile_and_tablet/_mobile.scss */
+  /* line 47, ../sass/Mobile_and_tablet/_mobile.scss */
   .modal .menu img {
     position: relative;
     width: 50%;
     top: -17px;
   }
-  /* line 59, ../sass/Mobile_and_tablet/_mobile.scss */
+  /* line 53, ../sass/Mobile_and_tablet/_mobile.scss */
   .modal .menu .form {
     background-color: #22272f;
   }
-  /* line 64, ../sass/Mobile_and_tablet/_mobile.scss */
+  /* line 58, ../sass/Mobile_and_tablet/_mobile.scss */
   .modal .menu .form ul li a {
     color: #fff;
     text-align: left;
     text-decoration: none;
   }
-  /* line 69, ../sass/Mobile_and_tablet/_mobile.scss */
+  /* line 63, ../sass/Mobile_and_tablet/_mobile.scss */
   .modal .menu .form ul li a:focus {
     background-color: transparent;
   }
-  /* line 72, ../sass/Mobile_and_tablet/_mobile.scss */
+  /* line 66, ../sass/Mobile_and_tablet/_mobile.scss */
   .modal .menu .form ul li a:hover {
     background-color: transparent;
   }
 
-  /* line 83, ../sass/Mobile_and_tablet/_mobile.scss */
+  /* line 77, ../sass/Mobile_and_tablet/_mobile.scss */
   #header .nav-pills > li > a {
     padding-top: 15px;
   }
 
-  /* line 87, ../sass/Mobile_and_tablet/_mobile.scss */
+  /* line 81, ../sass/Mobile_and_tablet/_mobile.scss */
   #features .feat-img {
     width: 55%;
   }
 
-  /* line 93, ../sass/Mobile_and_tablet/_mobile.scss */
+  /* line 87, ../sass/Mobile_and_tablet/_mobile.scss */
   #splitter .splitter-head, #splitter2 .splitter-head {
     font-size: 125%;
   }
 
-  /* line 100, ../sass/Mobile_and_tablet/_mobile.scss */
+  /* line 94, ../sass/Mobile_and_tablet/_mobile.scss */
   #splitter3 .row h1 {
     margin-top: 10px;
     font-size: 32px;
   }
-  /* line 105, ../sass/Mobile_and_tablet/_mobile.scss */
+  /* line 99, ../sass/Mobile_and_tablet/_mobile.scss */
   #splitter3 .row h3 {
     font-size: 16px;
   }
 
-  /* line 114, ../sass/Mobile_and_tablet/_mobile.scss */
+  /* line 108, ../sass/Mobile_and_tablet/_mobile.scss */
   footer .row h4 {
     font-size: 90%;
     margin-top: 8%;
     margin-bottom: 5%;
   }
-  /* line 120, ../sass/Mobile_and_tablet/_mobile.scss */
+  /* line 114, ../sass/Mobile_and_tablet/_mobile.scss */
   footer .row p {
     font-size: 80%;
     margin: 0 0 2%;
     color: #587995;
   }
-  /* line 125, ../sass/Mobile_and_tablet/_mobile.scss */
+  /* line 119, ../sass/Mobile_and_tablet/_mobile.scss */
   footer .row img {
     width: 20%;
     display: block;
     margin: 10px auto 25px auto;
   }
 
-  /* line 134, ../sass/Mobile_and_tablet/_mobile.scss */
+  /* line 128, ../sass/Mobile_and_tablet/_mobile.scss */
   #pricing .row .panel-heading .ribbon-wrapper {
     right: 5px;
   }
-  /* line 137, ../sass/Mobile_and_tablet/_mobile.scss */
+  /* line 131, ../sass/Mobile_and_tablet/_mobile.scss */
   #pricing .row .panel-heading h3 {
     font-size: 24px;
   }
 
-  /* line 149, ../sass/Mobile_and_tablet/_mobile.scss */
+  /* line 143, ../sass/Mobile_and_tablet/_mobile.scss */
   #press .testimonial {
     padding: 5px;
   }
-  /* line 152, ../sass/Mobile_and_tablet/_mobile.scss */
+  /* line 146, ../sass/Mobile_and_tablet/_mobile.scss */
   #press .testimonial .row .icon-quotes-left {
     display: inline-block;
     padding-top: 30px;
@@ -3288,11 +3297,11 @@ tags-input .autocomplete .suggestion-item em {
     line-height: 1em;
     font-weight: 100;
   }
-  /* line 160, ../sass/Mobile_and_tablet/_mobile.scss */
+  /* line 154, ../sass/Mobile_and_tablet/_mobile.scss */
   #press .testimonial .row div {
     text-align: center;
   }
-  /* line 163, ../sass/Mobile_and_tablet/_mobile.scss */
+  /* line 157, ../sass/Mobile_and_tablet/_mobile.scss */
   #press .testimonial .row h3 {
     color: #fff;
     font-size: 14px;
@@ -3302,7 +3311,7 @@ tags-input .autocomplete .suggestion-item em {
     font-style: italic;
     line-height: 1.5em;
   }
-  /* line 172, ../sass/Mobile_and_tablet/_mobile.scss */
+  /* line 166, ../sass/Mobile_and_tablet/_mobile.scss */
   #press .testimonial .row .author {
     display: inline-block;
     font-style: normal;
@@ -3310,16 +3319,16 @@ tags-input .autocomplete .suggestion-item em {
     font-size: 12px;
     margin-top: 20px;
   }
-  /* line 181, ../sass/Mobile_and_tablet/_mobile.scss */
+  /* line 175, ../sass/Mobile_and_tablet/_mobile.scss */
   #press .row {
     margin-bottom: 2%;
     margin-top: 2%;
   }
-  /* line 188, ../sass/Mobile_and_tablet/_mobile.scss */
+  /* line 182, ../sass/Mobile_and_tablet/_mobile.scss */
   #press .presslogos div {
     opacity: 0.5;
   }
-  /* line 191, ../sass/Mobile_and_tablet/_mobile.scss */
+  /* line 185, ../sass/Mobile_and_tablet/_mobile.scss */
   #press .presslogos div.current {
     opacity: 1;
     -webkit-transition: all 0.5s ease;
@@ -3332,23 +3341,23 @@ tags-input .autocomplete .suggestion-item em {
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   /* Styles */
 }
-/* line 46, ../sass/main.scss */
+/* line 44, ../sass/main.scss */
 body {
   font-family: 'Roboto', sans-serif;
 }
 
-/* line 50, ../sass/main.scss */
+/* line 48, ../sass/main.scss */
 .container-fluid {
   padding: 0 5% 0 5%;
   overflow: hidden;
 }
 
-/* line 55, ../sass/main.scss */
+/* line 53, ../sass/main.scss */
 p, span {
   color: whitesmoke;
 }
 
-/* line 60, ../sass/main.scss */
+/* line 58, ../sass/main.scss */
 .bg-prefs, #splitter, #splitter2, #splitter3, #insights {
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -3360,39 +3369,39 @@ p, span {
   color: #000;
 }
 
-/* line 68, ../sass/main.scss */
+/* line 66, ../sass/main.scss */
 #logo-banner {
   background-color: #f0f1f3;
 }
 
-/* line 72, ../sass/main.scss */
+/* line 70, ../sass/main.scss */
 #footer {
   background-color: #22272f;
 }
 
-/* line 77, ../sass/main.scss */
+/* line 75, ../sass/main.scss */
 .SnapABug_Button {
   background-color: blue-darkest;
 }
 
 @media (max-width: 767px) {
-  /* line 86, ../sass/main.scss */
+  /* line 84, ../sass/main.scss */
   .SnapABug_Button {
     display: none !important;
   }
 
-  /* line 91, ../sass/main.scss */
+  /* line 89, ../sass/main.scss */
   .info-box {
     margin-bottom: 20px;
   }
-  /* line 93, ../sass/main.scss */
+  /* line 91, ../sass/main.scss */
   .info-box h1 {
     font-size: 22px;
     color: #405a72;
     line-height: 1.1em;
     font-weight: 900;
   }
-  /* line 99, ../sass/main.scss */
+  /* line 97, ../sass/main.scss */
   .info-box p {
     font-size: 12px;
     word-wrap: normal;
@@ -3400,29 +3409,29 @@ p, span {
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 110, ../sass/main.scss */
+  /* line 108, ../sass/main.scss */
   .SnapABug_Button {
     display: none !important;
   }
 
-  /* line 113, ../sass/main.scss */
+  /* line 111, ../sass/main.scss */
   .info-box {
     margin-bottom: 20px;
   }
-  /* line 115, ../sass/main.scss */
+  /* line 113, ../sass/main.scss */
   .info-box h1 {
     font-size: 32px;
     color: #405a72;
     line-height: 1.1em;
     font-weight: 900;
   }
-  /* line 121, ../sass/main.scss */
+  /* line 119, ../sass/main.scss */
   .info-box p {
     word-wrap: normal;
     line-height: 1.7em;
   }
 
-  /* line 127, ../sass/main.scss */
+  /* line 125, ../sass/main.scss */
   li .arrow {
     left: 0;
     opacity: 1;
@@ -3440,17 +3449,17 @@ p, span {
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  /* line 143, ../sass/main.scss */
+  /* line 141, ../sass/main.scss */
   .info-box {
     margin-bottom: 20px;
   }
-  /* line 145, ../sass/main.scss */
+  /* line 143, ../sass/main.scss */
   .info-box h1 {
     font-size: 32px;
     line-height: 1.1em;
     font-weight: 900;
   }
-  /* line 150, ../sass/main.scss */
+  /* line 148, ../sass/main.scss */
   .info-box p {
     font-size: 12px;
     word-wrap: normal;
@@ -3458,7 +3467,7 @@ p, span {
   }
 }
 @media (min-width: 1600px) {
-  /* line 160, ../sass/main.scss */
+  /* line 158, ../sass/main.scss */
   .container-fluid > div {
     width: 1600px !important;
     margin: auto;
