@@ -27,6 +27,7 @@ var linkfireWebappApp = angular.module('linkfireWebappApp', [
   ])
 
   .config(['$routeProvider', '$locationProvider', '$httpProvider', '$facebookProvider',function ($routeProvider, $locationProvider, $httpProvider, $facebookProvider) {
+
     $routeProvider
       .when('/', {
         templateUrl: 'html/public/landing.html',
@@ -41,8 +42,8 @@ var linkfireWebappApp = angular.module('linkfireWebappApp', [
         controller: 'LinkfeedCtrl',
 			  controllerAs : 'linkfeed',
 		    resolve: {
-			    links: function (dataService) {
-				    return dataService.getLinks();
+			    links: function (dataService, $route) {
+				    return dataService.getLinks($route.current.params);
 			    }
 		    }
       })

@@ -34,8 +34,6 @@ linkfireWebappApp.controller('CreateBoardCtrl', function ($scope, $http, $q, $fi
             else {
                 $scope.logo1 = "no logo";
             }
-
-
         }
         else{
             console.log("fuck off");
