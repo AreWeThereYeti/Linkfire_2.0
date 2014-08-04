@@ -2744,42 +2744,83 @@ small {
   font-size: 30px;
   right: 15px;
 }
-/* line 25, ../sass/boards/_createboard.scss */
+/* line 23, ../sass/boards/_createboard.scss */
+#create-boards-dialog input.ng-valid {
+  border-color: #00a888;
+}
+/* line 26, ../sass/boards/_createboard.scss */
+#create-boards-dialog input.ng-dirty.ng-invalid {
+  border-color: #fc3429;
+}
+/* line 29, ../sass/boards/_createboard.scss */
+#create-boards-dialog .boardname {
+  width: 100%;
+  height: 67px;
+}
+/* line 32, ../sass/boards/_createboard.scss */
+#create-boards-dialog .boardname span.verify {
+  display: inline-block;
+  position: relative;
+  float: right;
+  text-align: center;
+  line-height: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  padding-right: 3px;
+  color: #00a888;
+  top: -51px;
+  height: 20px;
+  width: 52px;
+  border-left: 1px solid #f0f1f3;
+}
+/* line 46, ../sass/boards/_createboard.scss */
+#create-boards-dialog .boardname span.verify span {
+  color: #f0f1f3;
+}
+/* line 49, ../sass/boards/_createboard.scss */
+#create-boards-dialog .boardname span.verify span.ok {
+  color: #00a888;
+}
+/* line 55, ../sass/boards/_createboard.scss */
 #create-boards-dialog .linkname {
   width: 100%;
   height: 67px;
 }
-/* line 28, ../sass/boards/_createboard.scss */
+/* line 58, ../sass/boards/_createboard.scss */
 #create-boards-dialog .linkname input {
   width: calc(100% - 90px);
   float: left;
   padding-right: 62px;
 }
-/* line 33, ../sass/boards/_createboard.scss */
+/* line 63, ../sass/boards/_createboard.scss */
 #create-boards-dialog .linkname span.verify {
   display: inline-block;
   position: relative;
   left: -52px;
   text-align: center;
-  line-height: 30px;
+  line-height: 20px;
   font-size: 18px;
   font-weight: 500;
   padding-right: 3px;
   color: #00a888;
-  top: 11px;
-  height: 30px;
+  top: -3px;
+  height: 20px;
   width: 52px;
   border-left: 1px solid #f0f1f3;
 }
-/* line 47, ../sass/boards/_createboard.scss */
+/* line 77, ../sass/boards/_createboard.scss */
 #create-boards-dialog .linkname span.verify span {
+  color: #f0f1f3;
+}
+/* line 80, ../sass/boards/_createboard.scss */
+#create-boards-dialog .linkname span.verify span.ok {
   color: #00a888;
 }
-/* line 51, ../sass/boards/_createboard.scss */
+/* line 84, ../sass/boards/_createboard.scss */
 #create-boards-dialog .linkname span.lf {
   display: inline-block;
   height: 52px;
-  top: -28px;
+  top: -40px;
   position: relative;
   float: right;
   font-weight: 900;
@@ -2787,18 +2828,18 @@ small {
   color: black;
   font-size: 28px;
 }
-/* line 65, ../sass/boards/_createboard.scss */
+/* line 98, ../sass/boards/_createboard.scss */
 #create-boards-dialog .source .add-src {
   height: 67px;
   width: 100%;
 }
-/* line 68, ../sass/boards/_createboard.scss */
+/* line 101, ../sass/boards/_createboard.scss */
 #create-boards-dialog .source .add-src input {
   width: 100%;
   float: left;
   padding-right: 62px;
 }
-/* line 74, ../sass/boards/_createboard.scss */
+/* line 107, ../sass/boards/_createboard.scss */
 #create-boards-dialog .source .add-src span.verification-help {
   width: 100%;
   display: inline-block;
@@ -2806,13 +2847,13 @@ small {
   top: -52px;
   pointer-events: none;
 }
-/* line 80, ../sass/boards/_createboard.scss */
+/* line 113, ../sass/boards/_createboard.scss */
 #create-boards-dialog .source .add-src span.verification-help span.logo {
   display: inline-block;
   height: 52px;
   width: 52px;
 }
-/* line 85, ../sass/boards/_createboard.scss */
+/* line 118, ../sass/boards/_createboard.scss */
 #create-boards-dialog .source .add-src span.verification-help span.verify {
   height: 20px;
   width: 52px;
@@ -2826,11 +2867,11 @@ small {
   color: #00a888;
   border-left: 1px solid #f0f1f3;
 }
-/* line 97, ../sass/boards/_createboard.scss */
+/* line 130, ../sass/boards/_createboard.scss */
 #create-boards-dialog .source .add-src span.verification-help span.verify span.ok {
   color: #00a888;
 }
-/* line 101, ../sass/boards/_createboard.scss */
+/* line 134, ../sass/boards/_createboard.scss */
 #create-boards-dialog .source .add-src span.verification-help a.delete {
   height: 20px;
   width: 52px;
@@ -2844,52 +2885,35 @@ small {
   pointer-events: auto;
   text-decoration: none;
 }
-/* line 113, ../sass/boards/_createboard.scss */
+/* line 146, ../sass/boards/_createboard.scss */
 #create-boards-dialog .source .add-src span.verification-help a.delete span {
   color: #f0f1f3;
 }
-/* line 118, ../sass/boards/_createboard.scss */
+/* line 151, ../sass/boards/_createboard.scss */
 #create-boards-dialog .source .add-src span.verification-help a.delete:hover span {
   color: #fc3429;
 }
-/* line 126, ../sass/boards/_createboard.scss */
-#create-boards-dialog .source .add-src input.ng-pristine {
-  border-color: orange;
-}
-/* line 129, ../sass/boards/_createboard.scss */
-#create-boards-dialog .source .add-src input.ng-dirty {
-  border-color: blue;
-}
-/* line 132, ../sass/boards/_createboard.scss */
+/* line 159, ../sass/boards/_createboard.scss */
 #create-boards-dialog .source .add-src input.ng-valid {
-  border-color: #00a888;
   padding-left: 40px;
 }
-/* line 136, ../sass/boards/_createboard.scss */
-#create-boards-dialog .source .add-src input.ng-invalid {
-  border-color: #fc3429;
-}
-/* line 139, ../sass/boards/_createboard.scss */
-#create-boards-dialog .source .add-src input:focus .valid {
-  border-color: yellow;
-}
-/* line 143, ../sass/boards/_createboard.scss */
+/* line 163, ../sass/boards/_createboard.scss */
 #create-boards-dialog .source .add-src img {
   float: left;
   width: 24px;
   height: 24px;
   margin-left: 10px;
 }
-/* line 154, ../sass/boards/_createboard.scss */
+/* line 174, ../sass/boards/_createboard.scss */
 #create-boards-dialog .source button {
   visibility: hidden;
   height: 0px;
 }
-/* line 160, ../sass/boards/_createboard.scss */
+/* line 180, ../sass/boards/_createboard.scss */
 #create-boards-dialog .members {
   margin-bottom: 30px;
 }
-/* line 162, ../sass/boards/_createboard.scss */
+/* line 182, ../sass/boards/_createboard.scss */
 #create-boards-dialog .members textarea {
   width: 100%;
   height: 150px;
@@ -2898,7 +2922,7 @@ small {
   border: 1px solid #caccce;
 }
 
-/* line 174, ../sass/boards/_createboard.scss */
+/* line 194, ../sass/boards/_createboard.scss */
 span, a, h4, li {
   -webkit-transform-style: preserve-3d;
   -webkit-backface-visibility: hidden;

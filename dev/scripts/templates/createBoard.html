@@ -3,10 +3,13 @@
     <h2>Create board</h2>
 
     <form name="createBoard">
-        <input type="text" placeholder="Name your board" required/>
+        <div class="boardname">
+            <input type="text" name="boardname" ng-model="boardName" ng-minlength="1" placeholder="Name your board" required/>
+            <span class="verify"><span ng-class="{ok: createBoard.boardname.$valid}" class="icon-checkmark"></span></span>
+        </div>
         <div class="linkname">
-            <input type="text" placeholder="Name your link" required/>
-            <span class="verify"><span class="icon-checkmark"></span></span>
+            <input type="text" name="linkname" ng-model="linkName" ng-minlength="1" placeholder="Name your link" required/>
+            <span class="verify"><span ng-class="{ok: createBoard.linkname.$valid}" class="icon-checkmark"></span></span>
             <span class="lf">.lnk.to</span>
         </div>
         <div class="source">

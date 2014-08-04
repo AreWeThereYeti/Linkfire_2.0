@@ -20,7 +20,37 @@
 
   }
 
-
+  input.ng-valid {
+    border-color:$green-light;
+  }
+  input.ng-dirty.ng-invalid{
+    border-color:$primary-color;
+  }
+  .boardname{
+    width:100%;
+    height:67px;
+    span.verify{
+      display:inline-block;
+      position:relative;
+      float:right;
+      text-align:center;
+      line-height:20px;
+      font-size:18px;
+      font-weight: 500;
+      padding-right:3px;
+      color:$green-light;
+      top:-51px;
+      height:20px;
+      width:52px;
+      border-left:1px solid $grey-lightest;
+      span{
+        color:$grey-lightest;
+      }
+      span.ok{
+        color:$green-light;
+      }
+    }
+  }
 
   .linkname{
     width:100%;
@@ -35,23 +65,26 @@
       position:relative;
       left:-52px;
       text-align:center;
-      line-height:30px;
+      line-height:20px;
       font-size:18px;
       font-weight: 500;
       padding-right:3px;
       color:$green-light;
-      top:11px;
-      height:30px;
+      top:-3px;
+      height:20px;
       width:52px;
       border-left:1px solid $grey-lightest;
       span{
+        color:$grey-lightest;
+      }
+      span.ok{
         color:$green-light;
       }
     }
     span.lf{
       display:inline-block;
       height:52px;
-      top:-28px;
+      top:-40px;
       position:relative;
       float:right;
       font-weight:900;
@@ -123,21 +156,8 @@
 
 
       }
-      input.ng-pristine{
-        border-color:orange;
-      }
-      input.ng-dirty{
-        border-color:blue;
-      }
       input.ng-valid {
-        border-color:$green-light;
         padding-left:40px;
-      }
-      input.ng-invalid{
-        border-color:$primary-color;
-      }
-      input:focus .valid{
-        border-color:yellow;
       }
 
       img{
