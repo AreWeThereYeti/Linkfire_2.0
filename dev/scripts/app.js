@@ -37,7 +37,7 @@ var linkfireWebappApp = angular.module('linkfireWebappApp', [
         templateUrl: 'html/boards.html',
         controller: 'BoardsCtrl'
       })
-		    .when('/linkfeed/:id', {
+	    .when('/linkfeed/:id', {
         templateUrl: 'html/linkfeed.html',
         controller: 'LinkfeedCtrl',
 			  controllerAs : 'linkfeed',

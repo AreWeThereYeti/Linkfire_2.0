@@ -138,9 +138,6 @@
   background-color: $grey-lightest;
   width: 100%;
   .link{
-    float: left;
-    padding: 12px;
-    width: 50%;
     .link-content{
       width: 100%;
       background-color: white;
@@ -216,15 +213,10 @@
   padding:20px 12px 0px 12px;
   background-color: $grey-lightest;
   .search-container{
-    width: 50%;
-    float: left;
-    padding-left: 12px;
     .search{
+      padding-right: 12px;
+      padding-left: 0;
       background-color:$grey-lightest;
-      height:40px;
-      width: 30%;
-      float: left;
-      padding-right: 20px;
       input{
         color:$grey-light;
         width:100%;
@@ -259,9 +251,6 @@
       }
     }
     .sort{
-      float: left;
-      width: 70%; /* fallback if needed */
-      width: calc(70% - 12px);
       display: inline-block;
       padding: 12px;
       height: 40px;
@@ -289,9 +278,13 @@
       }
     }
     .dropd{
+      background-color: transparent;
       button{
         height: 40px;
         border: 0;
+        background-color: white;
+        margin-left: -15px;
+        float: none;
         span{
           float: left;
           text-align: center;

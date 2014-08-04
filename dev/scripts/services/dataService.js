@@ -3,7 +3,7 @@ angular.module('linkfireWebappApp.services', [])
 		var sdo = {
 
 			getLinks: function() {
-				var promise = $http({ method: 'GET', url: 'http://www.mocky.io/v2/53de99af3a67ab29014b5a05' }).success(function(data, status, headers, config) {
+				var promise = $http({ method: 'GET', url: 'http://www.mocky.io/v2/53df3eea3a67abd30e4b5a16' }).success(function(data, status, headers, config) {
 					data = 'data';
 					return data;
 				});
