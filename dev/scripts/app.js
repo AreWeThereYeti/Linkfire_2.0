@@ -58,8 +58,8 @@ var linkfireWebappApp = angular.module('linkfireWebappApp', [
 		    controller: ''
 	    })
 	    .when('/faq', {
-		    templateUrl: 'html/faq.html',
-		    controller: ''
+		    templateUrl: 'html/static/faq.html',
+		    controller: '',
 	    })
 	    .when('/qa', {
 		    templateUrl: 'html/qa.html',

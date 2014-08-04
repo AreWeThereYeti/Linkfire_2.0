@@ -1941,6 +1941,16 @@ small {
   padding-right: 15px;
 }
 
+/* line 2, ../sass/_faq.scss */
+#faq p {
+  color: #999999;
+}
+/* line 5, ../sass/_faq.scss */
+#faq h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
 /* line 2, ../sass/linkfeed/_linkfeed.scss */
 #page_loader {
   position: absolute;
@@ -3361,23 +3371,23 @@ tags-input .autocomplete .suggestion-item em {
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   /* Styles */
 }
-/* line 44, ../sass/main.scss */
+/* line 45, ../sass/main.scss */
 body {
   font-family: 'Roboto', sans-serif;
 }
 
-/* line 48, ../sass/main.scss */
+/* line 49, ../sass/main.scss */
 .container-fluid {
   padding: 0 5% 0 5%;
   overflow: hidden;
 }
 
-/* line 53, ../sass/main.scss */
+/* line 54, ../sass/main.scss */
 p, span {
   color: whitesmoke;
 }
 
-/* line 58, ../sass/main.scss */
+/* line 59, ../sass/main.scss */
 .bg-prefs, #splitter, #splitter2, #splitter3, #insights {
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -3389,39 +3399,39 @@ p, span {
   color: #000;
 }
 
-/* line 66, ../sass/main.scss */
+/* line 67, ../sass/main.scss */
 #logo-banner {
   background-color: #f0f1f3;
 }
 
-/* line 70, ../sass/main.scss */
+/* line 71, ../sass/main.scss */
 #footer {
   background-color: #22272f;
 }
 
-/* line 75, ../sass/main.scss */
+/* line 76, ../sass/main.scss */
 .SnapABug_Button {
   background-color: blue-darkest;
 }
 
 @media (max-width: 767px) {
-  /* line 84, ../sass/main.scss */
+  /* line 83, ../sass/main.scss */
   .SnapABug_Button {
     display: none !important;
   }
 
-  /* line 89, ../sass/main.scss */
+  /* line 88, ../sass/main.scss */
   .info-box {
     margin-bottom: 20px;
   }
-  /* line 91, ../sass/main.scss */
+  /* line 90, ../sass/main.scss */
   .info-box h1 {
     font-size: 22px;
     color: #405a72;
     line-height: 1.1em;
     font-weight: 900;
   }
-  /* line 97, ../sass/main.scss */
+  /* line 96, ../sass/main.scss */
   .info-box p {
     font-size: 12px;
     word-wrap: normal;
@@ -3429,29 +3439,29 @@ p, span {
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 108, ../sass/main.scss */
+  /* line 107, ../sass/main.scss */
   .SnapABug_Button {
     display: none !important;
   }
 
-  /* line 111, ../sass/main.scss */
+  /* line 110, ../sass/main.scss */
   .info-box {
     margin-bottom: 20px;
   }
-  /* line 113, ../sass/main.scss */
+  /* line 112, ../sass/main.scss */
   .info-box h1 {
     font-size: 32px;
     color: #405a72;
     line-height: 1.1em;
     font-weight: 900;
   }
-  /* line 119, ../sass/main.scss */
+  /* line 118, ../sass/main.scss */
   .info-box p {
     word-wrap: normal;
     line-height: 1.7em;
   }
 
-  /* line 125, ../sass/main.scss */
+  /* line 124, ../sass/main.scss */
   li .arrow {
     left: 0;
     opacity: 1;
@@ -3469,17 +3479,17 @@ p, span {
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  /* line 141, ../sass/main.scss */
+  /* line 140, ../sass/main.scss */
   .info-box {
     margin-bottom: 20px;
   }
-  /* line 143, ../sass/main.scss */
+  /* line 142, ../sass/main.scss */
   .info-box h1 {
     font-size: 32px;
     line-height: 1.1em;
     font-weight: 900;
   }
-  /* line 148, ../sass/main.scss */
+  /* line 147, ../sass/main.scss */
   .info-box p {
     font-size: 12px;
     word-wrap: normal;
@@ -3487,7 +3497,7 @@ p, span {
   }
 }
 @media (min-width: 1600px) {
-  /* line 158, ../sass/main.scss */
+  /* line 157, ../sass/main.scss */
   .container-fluid > div {
     width: 1600px !important;
     margin: auto;
