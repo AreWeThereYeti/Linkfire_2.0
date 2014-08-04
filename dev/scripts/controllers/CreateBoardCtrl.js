@@ -46,70 +46,8 @@ linkfireWebappApp.controller('CreateBoardCtrl', function ($scope, $http, $q, $fi
             else {
                 $scope.logo1 = "linkfire";
             }
-
-
         }
-        else{
-            console.log("fuck off");
-        }
-
     });
-
-    $scope.updateLogo() = function () {
-        if($scope.name){
-            if($scope.name.indexOf("spotify.com") > -1){
-                $scope.source.service = "spotify";
-            }
-            else if($scope.name.indexOf("apple.com") > -1){
-                $scope.source.service = "itunes";
-            }
-            else if($scope.name.indexOf("deezer.com") > -1){
-                $scope.service = "deezer";
-            }
-            else if($scope.name.indexOf("wimp.dk") > -1){
-                $scope.source.service = "wimp";
-            }
-            else if($scope.name.indexOf("soundcloud.com") > -1){
-                $scope.source.service = "soundcloud";
-            }
-            else if($scope.name.indexOf("beatsmusic.com") > -1){
-                $scope.source.service = "beats";
-            }
-        }
-        console.log("lol");
-    };
-
-
-    $scope.$watch('name', function() {
-        console.log("change");
-        if($scope.name){
-            if($scope.name.indexOf("spotify.com") > -1){
-                $scope.source.service = "spotify";
-            }
-            else if($scope.name.indexOf("apple.com") > -1){
-                $scope.source.service = "itunes";
-            }
-            else if($scope.name.indexOf("deezer.com") > -1){
-                $scope.service = "deezer";
-            }
-            else if($scope.name.indexOf("wimp.dk") > -1){
-                $scope.source.service = "wimp";
-            }
-            else if($scope.name.indexOf("soundcloud.com") > -1){
-                $scope.source.service = "soundcloud";
-            }
-            else if($scope.name.indexOf("beatsmusic.com") > -1){
-                $scope.source.service = "beats";
-            }
-
-
-
-        }
-
-
-    });
-
-
     $scope.addSrc = function () {
 
         $scope.sources.push({
@@ -122,7 +60,9 @@ linkfireWebappApp.controller('CreateBoardCtrl', function ($scope, $http, $q, $fi
         $scope.srcDest = "";
 
     };
-
+    $scope.removeSrc = function(index) {
+        $scope.sources.splice(index, 1);
+    }
 
 
     $scope.autocomplete_example = function(){
