@@ -22,10 +22,12 @@ var linkfireWebappApp = angular.module('linkfireWebappApp', [
 	'ngFacebook',
 	'ngTouch',
 	'angular-carousel',
-    'ngTagsInput'
+  'ngTagsInput',
+	'linkfireWebappApp.services'
   ])
 
-  .config(function ($routeProvider,$locationProvider, $httpProvider, $facebookProvider) {
+  .config(['$routeProvider', '$locationProvider', '$httpProvider', '$facebookProvider',function ($routeProvider, $locationProvider, $httpProvider, $facebookProvider) {
+
     $routeProvider
       .when('/', {
         templateUrl: 'html/public/landing.html',
@@ -35,10 +37,15 @@ var linkfireWebappApp = angular.module('linkfireWebappApp', [
         templateUrl: 'html/boards.html',
         controller: 'BoardsCtrl'
       })
-		    .when('/linkfeed', {
+	    .when('/linkfeed/:id', {
         templateUrl: 'html/linkfeed.html',
         controller: 'LinkfeedCtrl',
-			  controllerAs : 'linkfeed'
+			  controllerAs : 'linkfeed',
+		    resolve: {
+			    links: function (dataService, $route) {
+				    return dataService.getLinks($route.current.params);
+			    }
+		    }
       })
 
 	    /*----------Static pages-----------*/
@@ -82,7 +89,7 @@ var linkfireWebappApp = angular.module('linkfireWebappApp', [
 
 //		Pushes bearer token into all api requests
 		$httpProvider.interceptors.push('authInterceptor');
-  })
+  }])
 
 	//		Use constants for "global" variables
 		.constant('constants', {

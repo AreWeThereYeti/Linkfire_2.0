@@ -1,11 +1,11 @@
 <div id="subhead">
-    <div class="animate-show">
-        <div class="search-container">
-            <div class="search">
+    <div class="animate-show row">
+        <div class="search-container col-md-6 col-sm-6 col-xs-6">
+            <div class="search col-md-4 col-sm-6 col-xs-6">
                 <input type="search" name="search" ng-model="item" placeholder="Search in boards" />
                 <a><img class="svg" src="/images/search.svg"></a>
             </div>
-            <div class="sort">
+            <div class="sort col-md-8 col-sm-6 col-xs-6">
                 <span class="first">Show</span>
                 <span>All Links</span>
                 <span>Tracks</span>
@@ -15,8 +15,8 @@
                 <span>Video</span>
             </div>
         </div>
-        <div class="search-container">
-            <div class="btn-group dropd" dropdown  ng-model="src" ng-init="src='itunes'">
+        <div class="search-container col-md-6 col-sm-6 col-xs-6">
+            <div class="btn-group dropd col-md-2" dropdown  ng-model="src" ng-init="src='itunes'">
                 <button type="button" class="dropdown-toggle" ng-disabled="disabled">
                     <span>Latest</span><span class="icon-arrow-down"></span>
                 </button>

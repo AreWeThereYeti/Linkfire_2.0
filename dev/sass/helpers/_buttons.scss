@@ -20,6 +20,7 @@
 
     i[class^="icon-"] {
       background-color: $primary-button-icon;
+      vertical-align: middle;
     }
   }
 
@@ -162,7 +163,10 @@ input[type="email"], input[type="password"], input[type="text"]{
   margin-top:15px;
   @include border-radius(5px);
 
-
+  i[class^="icon-"] {
+    background-color: $primary-button-icon;
+    vertical-align: middle;
+  }
 
   span:first-child{
     float: left;
@@ -269,6 +273,11 @@ button{
   width: 146px;
   height: 40px;
   @include border-radius(3px);
+
+  span[class^="icon-"] {
+    background-color: $primary-button-icon;
+    vertical-align: middle;
+  }
 
   span:first-child{
     float: left;

@@ -1,7 +1,11 @@
 'use strict';
 angular.module('linkfireWebappApp')
-	.controller('LinkfeedCtrl', ['$scope', function ($scope) {
-			$scope.pageLoaded = false;
+	.controller('LinkfeedCtrl', ['$scope','$log','$routeParams','links', function ($scope, $log, $routeParams, links) {
+			$scope.pageLoaded = true;
+
+			this.test = links.data.preload;
+
+			this.page_id = $routeParams.id;
 
 			this.img = "http://placekitten.com/g/200/200";
 			this.title = "Inte stor nok - EP by Timbuktu";

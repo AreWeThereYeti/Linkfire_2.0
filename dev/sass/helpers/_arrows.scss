@@ -35,7 +35,6 @@
 	border-right:5px solid blue; 
 }
 
-
 .arrow:after, .arrow_box:before {
 	top: 40px;
 	left: 50%;
@@ -47,12 +46,6 @@
 	pointer-events: none;
 }
 
-.arrow:after {
-	border-color: rgba(136, 183, 213, 0);
-	border-bottom-color: $grey-lightest;
-	border-width: 5px;
-	margin-left: -5px;
-}
 .arrow:before {
 	border-color: rgba(194, 225, 245, 0);
 	border-bottom-color: #c2e1f5;
