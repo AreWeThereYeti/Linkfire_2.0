@@ -36,3 +36,15 @@ a{
   border: 0px solid #ccc;
   border-radius: 0px;
 }
+
+.rn-carousel-indicator{
+  background-color: transparent;
+
+  span{
+    color: $grey-lighter;
+  }
+
+  .active {
+    color: #000000;
+  }
+}
