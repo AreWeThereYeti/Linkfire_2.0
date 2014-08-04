@@ -11,10 +11,10 @@
         </div>
         <div class="source">
             <h4>Source</h4>
-
             <!-- Single button -->
 
             <div class="add-src" ng-model="src" ng-init="src='itunes'">
+
                <!--<div class="btn-group" dropdown>
 
             <div class="add-src">
@@ -36,9 +36,12 @@
                 <input type="text" name="src2" placeholder="Add new source" ng-pattern="/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/" ng-model="srcDest" required/>
                 
                 <span class="verification-help">
-                    <span class="logo"><img ng-show="createBoard.src2.$valid" ng-src="/images/createboard/src_{{logo1}}.png"></span>
+                    <span class="logo"><img ng-show="logo1" ng-hide="!createBoard.src2.$valid" ng-src="/images/createboard/src_{{logo1}}.png"></span>
                     <span class="verify"><span ng-class="{ok: createBoard.src2.$valid}" class="icon-checkmark"></span></span>
                 </span>
+
+
+
                 <!--<p style="color:#000;">{{createBoard.src2.$valid}}</p>-->
             </div>
             <div ng-repeat="source in sources | reverse" class="add-src">
@@ -52,11 +55,15 @@
                     </ul>
                 </div>
                 -->
-                <input type="text" name="src3" value={{source.name}} ng-pattern="/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/" required/>
+                <ng-form name="mine">
+                    <input type="text" name="src3" ng-model="name" value={{source.name}} ng-init="name = source.name"  ng-pattern="/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/" required/>
+                     <span class="verification-help">
+                        <span class="logo"><img ng-show="source.service" ng-hide="!mine.src3.$valid" ng-src="/images/createboard/src_{{source.service}}.png"></span>
 
-                 <span class="verification-help">
-                    <span class="verify"><span ng-class="{ok: createBoard.src3.$valid}" class="icon-checkmark"></span></span>
-                </span>
+                        <span class="verify"><span ng-class="{ok: mine.src3.$valid}" class="icon-checkmark"></span></span>
+                        <a href="" data-ng-click="removeSrc($index)" class="delete"><span ng-class="{ok: mine.src3.$valid}" class="icon-close"></span></a>
+                    </span>
+                </ng-form>
             </div>
             <button ng-disabled="!createBoard.src2.$valid" ng-click="addSrc()">Add to list</button>
             <!--<div id="AddItem">

@@ -1591,7 +1591,7 @@ small {
 
 /* line 1, ../sass/landing/_landing.scss */
 #landing {
-  background: url('../images/bg1.jpg?1406627939');
+  background: url('../images/bg1.jpg?1406630404');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1625,7 +1625,7 @@ small {
 
 /* line 32, ../sass/landing/_landing.scss */
 #landing-mobile {
-  background: url('../images/landing-mobile.png?1406627939');
+  background: url('../images/landing-mobile.png?1406630404');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1660,7 +1660,7 @@ small {
 @media (min-width: 1200px) {
   /* line 65, ../sass/landing/_landing.scss */
   #landing {
-    background: url('../images/bg2.jpg?1406627939');
+    background: url('../images/bg2.jpg?1406630404');
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -1762,7 +1762,7 @@ small {
 
 /* line 10, ../sass/landing/_splitters.scss */
 #splitter {
-  background: url('../images/bg-splitter1.jpg?1405070271');
+  background: url('../images/bg-splitter1.jpg?1406630084');
 }
 /* line 13, ../sass/landing/_splitters.scss */
 #splitter .row {
@@ -1772,7 +1772,7 @@ small {
 
 /* line 20, ../sass/landing/_splitters.scss */
 #splitter2 {
-  background: url('../images/bg-splitter2.jpg?1405070271');
+  background: url('../images/bg-splitter2.jpg?1406630084');
 }
 /* line 23, ../sass/landing/_splitters.scss */
 #splitter2 .row {
@@ -1782,7 +1782,7 @@ small {
 
 /* line 29, ../sass/landing/_splitters.scss */
 #splitter3 {
-  background: url('../images/bg-splitter3.jpg?1405070271');
+  background: url('../images/bg-splitter3.jpg?1406630084');
 }
 /* line 33, ../sass/landing/_splitters.scss */
 #splitter3 .row {
@@ -1843,7 +1843,7 @@ small {
 }
 /* line 1, ../sass/landing/_press.scss */
 #press {
-  background: url('../images/bg-testimonial.jpg?1405070271');
+  background: url('../images/bg-testimonial.jpg?1406630084');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -2801,79 +2801,6 @@ small {
 #create-boards-dialog .source .add-src {
   height: 67px;
   width: 100%;
-      /*
-      button {
-        height: 52px;
-        width: 104px;
-        margin: 0px;
-        float: left;
-        background-color: transparent;
-        //@include border-radius(5px);
-        border: 1px solid $grey-light;
-        span{
-          img{
-            width:20px;
-            height:20px;
-          }
-        }
-        span:first-child {
-          display: inline-block;;
-          width: 50%;
-          height: 20px;
-          margin-top: 5px;
-        }
-        span:last-child {
-          width: 50%;
-          display: inline-block;
-          position: relative;
-          float: right;
-          text-align: center;
-          line-height: 34px;
-          font-size: 18px;
-          font-weight: 500;
-          padding-right: 3px;
-          color: $grey-lighter;
-          height: 30px;
-          border-left: 1px solid $grey-lightest;
-        }
-      }
-      ul{
-        margin-top:0;
-        @include border-radius(0px);
-        li{
-
-          a{
-            color:$grey-light;
-            clear:none;
-            padding:10px 10px 8px 10px;
-            text-align: left;
-            img{
-              filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
-              filter: gray;
-              -webkit-filter: grayscale(1);
-              width:20px;
-              height:20px;
-              @include opacity(0.5);
-             }
-
-          }
-          span:first-child{
-            width:40px;
-            float:left;
-          }
-          a:hover{
-            background-color: transparent;
-            color:$grey-darkest;
-            img{
-              filter: none;
-              filter: none;
-              -webkit-filter: none;
-              @include opacity(1);
-            }
-          }
-        }
-      }
-      */
 }
 /* line 68, ../sass/boards/_createboard.scss */
 #create-boards-dialog .source .add-src input {
@@ -2911,41 +2838,68 @@ small {
 }
 /* line 97, ../sass/boards/_createboard.scss */
 #create-boards-dialog .source .add-src span.verification-help span.verify span.ok {
-  color: #caccce;
-}
-/* line 100, ../sass/boards/_createboard.scss */
-#create-boards-dialog .source .add-src span.verification-help span.verify span.ok {
   color: #00a888;
 }
-/* line 107, ../sass/boards/_createboard.scss */
+/* line 101, ../sass/boards/_createboard.scss */
+#create-boards-dialog .source .add-src span.verification-help a.delete {
+  height: 20px;
+  width: 52px;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  float: right;
+  font-size: 18px;
+  font-weight: 500;
+  padding-right: 3px;
+  pointer-events: auto;
+  text-decoration: none;
+}
+/* line 113, ../sass/boards/_createboard.scss */
+#create-boards-dialog .source .add-src span.verification-help a.delete span {
+  color: #f0f1f3;
+}
+/* line 118, ../sass/boards/_createboard.scss */
+#create-boards-dialog .source .add-src span.verification-help a.delete:hover span {
+  color: #fc3429;
+}
+/* line 126, ../sass/boards/_createboard.scss */
 #create-boards-dialog .source .add-src input.ng-pristine {
   border-color: orange;
 }
-/* line 110, ../sass/boards/_createboard.scss */
+/* line 129, ../sass/boards/_createboard.scss */
 #create-boards-dialog .source .add-src input.ng-dirty {
   border-color: blue;
 }
-/* line 113, ../sass/boards/_createboard.scss */
+/* line 132, ../sass/boards/_createboard.scss */
 #create-boards-dialog .source .add-src input.ng-valid {
   border-color: #00a888;
   padding-left: 40px;
 }
-/* line 117, ../sass/boards/_createboard.scss */
+/* line 136, ../sass/boards/_createboard.scss */
 #create-boards-dialog .source .add-src input.ng-invalid {
   border-color: #fc3429;
 }
-/* line 121, ../sass/boards/_createboard.scss */
+/* line 139, ../sass/boards/_createboard.scss */
+#create-boards-dialog .source .add-src input:focus .valid {
+  border-color: yellow;
+}
+/* line 143, ../sass/boards/_createboard.scss */
 #create-boards-dialog .source .add-src img {
   float: left;
   width: 24px;
   height: 24px;
   margin-left: 10px;
 }
-/* line 213, ../sass/boards/_createboard.scss */
+/* line 154, ../sass/boards/_createboard.scss */
+#create-boards-dialog .source button {
+  visibility: hidden;
+  height: 0px;
+}
+/* line 160, ../sass/boards/_createboard.scss */
 #create-boards-dialog .members {
   margin-bottom: 30px;
 }
-/* line 215, ../sass/boards/_createboard.scss */
+/* line 162, ../sass/boards/_createboard.scss */
 #create-boards-dialog .members textarea {
   width: 100%;
   height: 150px;
@@ -2954,7 +2908,7 @@ small {
   border: 1px solid #caccce;
 }
 
-/* line 227, ../sass/boards/_createboard.scss */
+/* line 174, ../sass/boards/_createboard.scss */
 span, a, h4, li {
   -webkit-transform-style: preserve-3d;
   -webkit-backface-visibility: hidden;

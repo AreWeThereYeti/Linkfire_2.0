@@ -28,24 +28,30 @@ linkfireWebappApp.controller('CreateBoardCtrl', function ($scope, $http, $q, $fi
             if($scope.srcDest.indexOf("spotify.com") > -1){
                 $scope.logo1 = "spotify";
             }
-            else if($scope.srcDest.indexOf("itunes.com") > -1){
+            else if($scope.srcDest.indexOf("apple.com") > -1){
                 $scope.logo1 = "itunes";
             }
+            else if($scope.srcDest.indexOf("deezer.com") > -1){
+                $scope.logo1 = "deezer";
+            }
+            else if($scope.srcDest.indexOf("wimp.dk") > -1){
+                $scope.logo1 = "wimp";
+            }
+            else if($scope.srcDest.indexOf("soundcloud.com") > -1){
+                $scope.logo1 = "soundcloud";
+            }
+            else if($scope.srcDest.indexOf("beatsmusic.com") > -1){
+                $scope.logo1 = "beats";
+            }
             else {
-                $scope.logo1 = "no logo";
+                $scope.logo1 = "linkfire";
             }
         }
-        else{
-            console.log("fuck off");
-        }
-
     });
-
-
     $scope.addSrc = function () {
 
         $scope.sources.push({
-            service: $scope.src,
+            service: $scope.logo1,
             name: $scope.srcDest
         });
 
@@ -54,7 +60,9 @@ linkfireWebappApp.controller('CreateBoardCtrl', function ($scope, $http, $q, $fi
         $scope.srcDest = "";
 
     };
-
+    $scope.removeSrc = function(index) {
+        $scope.sources.splice(index, 1);
+    }
 
 
     $scope.autocomplete_example = function(){

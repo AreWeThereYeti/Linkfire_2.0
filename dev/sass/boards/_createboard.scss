@@ -95,12 +95,31 @@
           color:$green-light;
           border-left:1px solid $grey-lightest;
           span.ok{
-            color:$grey-light;
-          }
-          span.ok{
             color:$green-light;
           }
-      }
+        }
+        a.delete {
+          height: 20px;
+          width: 52px;
+          display: inline-block;
+          position: relative;
+          text-align: center;
+          float: right;
+          font-size: 18px;
+          font-weight: 500;
+          padding-right: 3px;
+          pointer-events:auto;
+          text-decoration: none;
+          span{
+            color: $grey-lightest;
+          }
+        }
+        a.delete:hover {
+          span{
+            color:$primary-color;
+          }
+
+        }
 
 
       }
@@ -117,6 +136,9 @@
       input.ng-invalid{
         border-color:$primary-color;
       }
+      input:focus .valid{
+        border-color:yellow;
+      }
 
       img{
         float:left;
@@ -128,85 +150,10 @@
 
 
 
-
-
-      /*
-      button {
-        height: 52px;
-        width: 104px;
-        margin: 0px;
-        float: left;
-        background-color: transparent;
-        //@include border-radius(5px);
-        border: 1px solid $grey-light;
-        span{
-          img{
-            width:20px;
-            height:20px;
-          }
-        }
-        span:first-child {
-          display: inline-block;;
-          width: 50%;
-          height: 20px;
-          margin-top: 5px;
-        }
-        span:last-child {
-          width: 50%;
-          display: inline-block;
-          position: relative;
-          float: right;
-          text-align: center;
-          line-height: 34px;
-          font-size: 18px;
-          font-weight: 500;
-          padding-right: 3px;
-          color: $grey-lighter;
-          height: 30px;
-          border-left: 1px solid $grey-lightest;
-        }
-      }
-      ul{
-        margin-top:0;
-        @include border-radius(0px);
-        li{
-
-          a{
-            color:$grey-light;
-            clear:none;
-            padding:10px 10px 8px 10px;
-            text-align: left;
-            img{
-              filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
-              filter: gray;
-              -webkit-filter: grayscale(1);
-              width:20px;
-              height:20px;
-              @include opacity(0.5);
-             }
-
-          }
-          span:first-child{
-            width:40px;
-            float:left;
-          }
-          a:hover{
-            background-color: transparent;
-            color:$grey-darkest;
-            img{
-              filter: none;
-              filter: none;
-              -webkit-filter: none;
-              @include opacity(1);
-            }
-          }
-        }
-      }
-      */
-
-
-
-
+    }
+    button{
+      visibility: hidden;
+      height:0px;
     }
 
   }
