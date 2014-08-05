@@ -1,6 +1,4 @@
 'use strict';
-
-
 linkfireWebappApp.controller('CreateBoardCtrl', function ($scope, $http, $q, $filter) {
     $scope.tags = [];
     $scope.logo = "john";
@@ -48,6 +46,7 @@ linkfireWebappApp.controller('CreateBoardCtrl', function ($scope, $http, $q, $fi
             }
         }
     });
+
     $scope.addSrc = function () {
 
         $scope.sources.push({
@@ -77,8 +76,6 @@ linkfireWebappApp.controller('CreateBoardCtrl', function ($scope, $http, $q, $fi
     };
 });
 
-
-
 linkfireWebappApp.filter('reverse', function() {
     return function(items) {
         return items.slice().reverse();
@@ -93,6 +90,5 @@ linkfireWebappApp.filter('contains', function() {
         else{
             return input;
         }
-
     };
 });

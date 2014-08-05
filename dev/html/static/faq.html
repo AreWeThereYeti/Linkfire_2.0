@@ -1,5 +1,5 @@
 <div ng-include="'html/boards/header.html'"></div>
-<div class="container" id="faq" ng-init="faqTab= 1">
+<div class="container" id="faq" ng-init="faqTab= 1" ng-cloak>
     <div class="col-md-10 col-md-offset-1">
         <div class="col-md-3">
             <p ng-click="faqTab = 1" >1. General knowledgebase</p>
@@ -27,12 +27,12 @@
             <div ng-include="'html/static/faq/1_general_knowledgebase.html'"></div>
         </div>
     </div>
-    <div ng-if="faqTab == 3">
+    <div ng-if="faqTab == 2">
         <div class="col-md-10 col-md-offset-1 col-sm-6  col-xs-6" >
             <div ng-include="'html/static/faq/2_linkfeed.html'"></div>
         </div>
     </div>
-    <div ng-if="faqTab == 4">
+    <div ng-if="faqTab == 3">
         <div class="col-md-10 col-md-offset-1 col-sm-6  col-xs-6" >
             <div ng-include="'html/static/faq/3_creating_links.html'"></div>
         </div>
