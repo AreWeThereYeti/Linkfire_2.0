@@ -11,7 +11,8 @@ var gulp = require('gulp'),
 		clean = require('gulp-clean'),
 		minifyHTML = require('gulp-minify-html'),
 		imagemin = require('gulp-imagemin'),
-		pngcrush = require('imagemin-pngcrush');
+		pngcrush = require('imagemin-pngcrush'),
+		open = require("gulp-open");
 
 var EXPRESS_PORT = 3000;
 var EXPRESS_ROOT = __dirname + '/dev';

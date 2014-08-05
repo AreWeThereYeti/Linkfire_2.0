@@ -25,6 +25,7 @@ $icon-font-path: "/fonts/";
 @import "landing/insights";
 @import "landing/press";
 @import "about";
+@import "faq";
 
 //Linkfeed
 @import "linkfeed/linkfeed";
@@ -77,8 +78,6 @@ p, span{
 
   }
 // Custom media specific classes //
-
-
 // xs //
 @media (max-width: 767px) {
   .SnapABug_Button {

@@ -609,144 +609,227 @@ button {
   }
 }
 /* line 1, ../sass/helpers/_helpers.scss */
+[ng\:cloak], [ng-cloak], .ng-cloak {
+  display: none;
+}
+
+/* line 5, ../sass/helpers/_helpers.scss */
 .text-left {
   text-align: left;
 }
 
-/* line 5, ../sass/helpers/_helpers.scss */
+/* line 9, ../sass/helpers/_helpers.scss */
 .text-center {
   text-align: center;
 }
 
-/* line 9, ../sass/helpers/_helpers.scss */
+/* line 13, ../sass/helpers/_helpers.scss */
 .text-right {
   text-align: right;
 }
 
-/* line 13, ../sass/helpers/_helpers.scss */
+/* line 17, ../sass/helpers/_helpers.scss */
 .center-block {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 19, ../sass/helpers/_helpers.scss */
+/* line 23, ../sass/helpers/_helpers.scss */
 .no-padding {
   padding: 0 !important;
 }
 
-/* line 23, ../sass/helpers/_helpers.scss */
+/* line 27, ../sass/helpers/_helpers.scss */
 .no-margin {
   margin: 0 !important;
 }
 
-/* line 27, ../sass/helpers/_helpers.scss */
+/* line 31, ../sass/helpers/_helpers.scss */
 .bold {
   font-weight: 600;
 }
 
-/* line 31, ../sass/helpers/_helpers.scss */
+/* line 35, ../sass/helpers/_helpers.scss */
 .svg {
   height: 100%;
 }
 
-/* line 36, ../sass/helpers/_helpers.scss */
+/* line 40, ../sass/helpers/_helpers.scss */
 .bg-grey {
   background-color: #f0f1f3;
 }
 
-/* line 40, ../sass/helpers/_helpers.scss */
+/* line 44, ../sass/helpers/_helpers.scss */
 .no-bg {
   background-color: transparent !important;
 }
 
-/* line 44, ../sass/helpers/_helpers.scss */
+/* line 48, ../sass/helpers/_helpers.scss */
 .vcenter {
   display: inline-block;
   vertical-align: middle;
   float: none;
 }
 
-/* line 51, ../sass/helpers/_helpers.scss */
+/* line 55, ../sass/helpers/_helpers.scss */
 input.has-error {
   transition: all 0.5s ease;
   color: #fc3429;
   border: 1px solid #fc3429;
 }
 
-/* line 57, ../sass/helpers/_helpers.scss */
+/* line 61, ../sass/helpers/_helpers.scss */
 input.valid {
   transition: all 0.5s ease;
   color: #2c947f;
   border: 1px solid #2c947f;
 }
 
-/* line 1, ../sass/helpers/_animation.scss */
+/* line 2, ../sass/helpers/_animation.scss */
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+/* line 9, ../sass/helpers/_animation.scss */
 .ng-enter {
   opacity: 0;
 }
 
-/* line 5, ../sass/helpers/_animation.scss */
+/* line 13, ../sass/helpers/_animation.scss */
 .ng-enter-active {
   opacity: 1;
 }
 
-/* line 10, ../sass/helpers/_animation.scss */
+/* line 18, ../sass/helpers/_animation.scss */
 .ng-leave {
   opacity: 1;
 }
 
-/* line 14, ../sass/helpers/_animation.scss */
+/* line 22, ../sass/helpers/_animation.scss */
 .ng-leave-active {
   opacity: 0;
 }
 
 @keyframes shake {
-  /* line 19, ../sass/helpers/_animation.scss */
+  /* line 27, ../sass/helpers/_animation.scss */
   0% {
     transform: translateX(0);
   }
 
-  /* line 20, ../sass/helpers/_animation.scss */
+  /* line 28, ../sass/helpers/_animation.scss */
   12.5% {
     transform: translateX(-6px) rotateY(-5deg);
   }
 
-  /* line 21, ../sass/helpers/_animation.scss */
+  /* line 29, ../sass/helpers/_animation.scss */
   37.5% {
     transform: translateX(5px) rotateY(4deg);
   }
 
-  /* line 22, ../sass/helpers/_animation.scss */
+  /* line 30, ../sass/helpers/_animation.scss */
   62.5% {
     transform: translateX(-3px) rotateY(-2deg);
   }
 
-  /* line 23, ../sass/helpers/_animation.scss */
+  /* line 31, ../sass/helpers/_animation.scss */
   87.5% {
     transform: translateX(2px) rotateY(1deg);
   }
 
-  /* line 24, ../sass/helpers/_animation.scss */
+  /* line 32, ../sass/helpers/_animation.scss */
   100% {
     transform: translateX(0);
   }
 }
 
-/* line 27, ../sass/helpers/_animation.scss */
+/* line 35, ../sass/helpers/_animation.scss */
 .shake {
   animation: shake 400ms ease-in-out;
 }
 
+@-webkit-keyframes fadeIn {
+  /* line 42, ../sass/helpers/_animation.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 45, ../sass/helpers/_animation.scss */
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  /* line 50, ../sass/helpers/_animation.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 53, ../sass/helpers/_animation.scss */
+  100% {
+    opacity: 1;
+  }
+}
+
+/* line 57, ../sass/helpers/_animation.scss */
+.fadeIn {
+  -webkit-animation-name: fadeIn 10s;
+  animation-name: fadeIn 10s;
+}
+
+@-webkit-keyframes fadeInUp {
+  /* line 64, ../sass/helpers/_animation.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+
+  /* line 69, ../sass/helpers/_animation.scss */
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  /* line 75, ../sass/helpers/_animation.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+
+  /* line 81, ../sass/helpers/_animation.scss */
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+/* line 87, ../sass/helpers/_animation.scss */
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
 @-webkit-keyframes lfflipInX {
-  /* line 36, ../sass/helpers/_animation.scss */
+  /* line 96, ../sass/helpers/_animation.scss */
   0% {
     -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 20deg) scale3d(0.6, 0.6, 0.6);
     transform: perspective(400px) rotate3d(1, 0, 0, 20deg) scale3d(0.6, 0.6, 0.6);
     opacity: 0;
   }
 
-  /* line 41, ../sass/helpers/_animation.scss */
+  /* line 101, ../sass/helpers/_animation.scss */
   100% {
     -webkit-transform: perspective(400px);
     transform: perspective(400px);
@@ -754,7 +837,7 @@ input.valid {
 }
 
 @keyframes lfflipInX {
-  /* line 47, ../sass/helpers/_animation.scss */
+  /* line 107, ../sass/helpers/_animation.scss */
   0% {
     -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 20deg) scale3d(0.6, 0.6, 0.6);
     -ms-transform: perspective(400px) rotate3d(1, 0, 0, 20deg) scale3d(0.6, 0.6, 0.6);
@@ -762,7 +845,7 @@ input.valid {
     opacity: 0;
   }
 
-  /* line 53, ../sass/helpers/_animation.scss */
+  /* line 113, ../sass/helpers/_animation.scss */
   100% {
     -webkit-transform: perspective(400px);
     -ms-transform: perspective(400px);
@@ -770,7 +853,7 @@ input.valid {
   }
 }
 
-/* line 59, ../sass/helpers/_animation.scss */
+/* line 119, ../sass/helpers/_animation.scss */
 .lfflipInX {
   -webkit-backface-visibility: visible !important;
   -ms-backface-visibility: visible !important;
@@ -780,13 +863,13 @@ input.valid {
 }
 
 @-webkit-keyframes lfflipOutX {
-  /* line 69, ../sass/helpers/_animation.scss */
+  /* line 129, ../sass/helpers/_animation.scss */
   0% {
     -webkit-transform: perspective(400px);
     transform: perspective(400px);
   }
 
-  /* line 73, ../sass/helpers/_animation.scss */
+  /* line 133, ../sass/helpers/_animation.scss */
   100% {
     -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 20deg) scale3d(0.6, 0.6, 0.6);
     transform: perspective(400px) rotate3d(1, 0, 0, 20deg) scale3d(0.6, 0.6, 0.6);
@@ -795,14 +878,14 @@ input.valid {
 }
 
 @keyframes lfflipOutX {
-  /* line 80, ../sass/helpers/_animation.scss */
+  /* line 140, ../sass/helpers/_animation.scss */
   0% {
     -webkit-transform: perspective(400px);
     -ms-transform: perspective(400px);
     transform: perspective(400px);
   }
 
-  /* line 85, ../sass/helpers/_animation.scss */
+  /* line 145, ../sass/helpers/_animation.scss */
   100% {
     -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 20deg) scale3d(0.6, 0.6, 0.6);
     -ms-transform: perspective(400px) rotate3d(1, 0, 0, 20deg) scale3d(0.6, 0.6, 0.6);
@@ -811,7 +894,7 @@ input.valid {
   }
 }
 
-/* line 92, ../sass/helpers/_animation.scss */
+/* line 152, ../sass/helpers/_animation.scss */
 .lfflipOutX {
   -webkit-animation-name: flipOutX;
   animation-name: flipOutX;
@@ -823,20 +906,20 @@ input.valid {
 }
 
 @-webkit-keyframes lfbounceIn {
-  /* line 107, ../sass/helpers/_animation.scss */
+  /* line 167, ../sass/helpers/_animation.scss */
   0%, 20%, 40%, 60%, 80%, 100% {
     -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
     transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
   }
 
-  /* line 111, ../sass/helpers/_animation.scss */
+  /* line 171, ../sass/helpers/_animation.scss */
   0% {
     opacity: 0;
     -webkit-transform: scale3d(0.3, 0.3, 0.3);
     transform: scale3d(0.3, 0.3, 0.3);
   }
 
-  /* line 116, ../sass/helpers/_animation.scss */
+  /* line 176, ../sass/helpers/_animation.scss */
   100% {
     opacity: 1;
     -webkit-transform: scale3d(1, 1, 1);
@@ -845,13 +928,13 @@ input.valid {
 }
 
 @keyframes lfbounceIn {
-  /* line 123, ../sass/helpers/_animation.scss */
+  /* line 183, ../sass/helpers/_animation.scss */
   0%, 20%, 40%, 60%, 80%, 100% {
     -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
     transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
   }
 
-  /* line 128, ../sass/helpers/_animation.scss */
+  /* line 188, ../sass/helpers/_animation.scss */
   0% {
     opacity: 0;
     -webkit-transform: scale3d(0.3, 0.3, 0.3);
@@ -859,7 +942,7 @@ input.valid {
     transform: scale3d(0.3, 0.3, 0.3);
   }
 
-  /* line 134, ../sass/helpers/_animation.scss */
+  /* line 194, ../sass/helpers/_animation.scss */
   100% {
     opacity: 1;
     -webkit-transform: scale3d(1, 1, 1);
@@ -868,7 +951,7 @@ input.valid {
   }
 }
 
-/* line 141, ../sass/helpers/_animation.scss */
+/* line 201, ../sass/helpers/_animation.scss */
 .lfbounceIn {
   -webkit-animation-name: lfbounceIn;
   animation-name: lfbounceIn;
@@ -877,13 +960,13 @@ input.valid {
 }
 
 @-webkit-keyframes lfBounceOut {
-  /* line 148, ../sass/helpers/_animation.scss */
+  /* line 208, ../sass/helpers/_animation.scss */
   0% {
     -webkit-transform: scale(1);
     transform: scale(1);
   }
 
-  /* line 152, ../sass/helpers/_animation.scss */
+  /* line 212, ../sass/helpers/_animation.scss */
   100% {
     opacity: 0;
     -webkit-transform: scale(0.3);
@@ -892,14 +975,14 @@ input.valid {
 }
 
 @keyframes lfBounceOut {
-  /* line 159, ../sass/helpers/_animation.scss */
+  /* line 219, ../sass/helpers/_animation.scss */
   0% {
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1);
   }
 
-  /* line 164, ../sass/helpers/_animation.scss */
+  /* line 224, ../sass/helpers/_animation.scss */
   100% {
     opacity: 0;
     -webkit-transform: scale(0.3);
@@ -908,7 +991,7 @@ input.valid {
   }
 }
 
-/* line 174, ../sass/helpers/_animation.scss */
+/* line 234, ../sass/helpers/_animation.scss */
 .animate-repeat {
   -webkit-transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
@@ -918,7 +1001,7 @@ input.valid {
   box-sizing: border-box;
 }
 
-/* line 180, ../sass/helpers/_animation.scss */
+/* line 240, ../sass/helpers/_animation.scss */
 .animate-repeat.ng-move-active,
 .animate-repeat.ng-enter,
 .animate-repeat.ng-leave {
@@ -930,7 +1013,7 @@ input.valid {
   box-sizing: border-box;
 }
 
-/* line 186, ../sass/helpers/_animation.scss */
+/* line 246, ../sass/helpers/_animation.scss */
 .animate-repeat.ng-leave.ng-leave-active,
 .animate-repeat.ng-move,
 .animate-repeat.ng-enter {
@@ -939,7 +1022,7 @@ input.valid {
   animation: lfBounceOut 0.5s;
 }
 
-/* line 193, ../sass/helpers/_animation.scss */
+/* line 253, ../sass/helpers/_animation.scss */
 .animate-repeat.ng-leave,
 .animate-repeat.ng-move,
 .animate-repeat.ng-enter.ng-enter-active {
@@ -948,58 +1031,46 @@ input.valid {
   transform: translateX(0);
 }
 
-/* line 201, ../sass/helpers/_animation.scss */
+/* line 261, ../sass/helpers/_animation.scss */
 .animate-show {
   -webkit-animation-name: bounce;
   animation-name: bounce;
 }
 
-/* line 205, ../sass/helpers/_animation.scss */
+/* line 265, ../sass/helpers/_animation.scss */
 .animate-show.ng-hide-remove {
   -webkit-animation: lfbounceIn 0.5s;
   animation: lfbounceIn 0.5s;
 }
 
-/* line 209, ../sass/helpers/_animation.scss */
+/* line 269, ../sass/helpers/_animation.scss */
 .animate-show.ng-hide-add {
   -webkit-animation: lfBounceOut 0.5s;
   animation: lfBounceOut 0.5s;
   display: block !important;
 }
 
-/* line 216, ../sass/helpers/_animation.scss */
-.loadscreen {
-  -webkit-animation-name: bounce;
-  animation-name: bounce;
-}
-
-/* line 220, ../sass/helpers/_animation.scss */
-.loadscreen.ng-hide-remove {
-  -webkit-animation: lfflipInX 0.5s;
-  animation: lfflipInX 0.5s;
-}
-
-/* line 224, ../sass/helpers/_animation.scss */
+/* line 277, ../sass/helpers/_animation.scss */
 .loadscreen.ng-hide-add {
-  -webkit-animation: lfflipOutX 0.5s;
-  animation: lfflipOutX 0.5s;
+  -webkit-animation: lfflipOutX 0.75s;
+  animation: lfflipOutX 0.75s;
   display: block !important;
 }
 
 @-webkit-keyframes pulse {
-  /* line 231, ../sass/helpers/_animation.scss */
+  /* line 284, ../sass/helpers/_animation.scss */
   0% {
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
   }
 
-  /* line 236, ../sass/helpers/_animation.scss */
+  /* line 289, ../sass/helpers/_animation.scss */
   50% {
     -webkit-transform: scale3d(1.2, 1.2, 1.2);
     transform: scale3d(1.2, 1.2, 1.2);
   }
 
-  /* line 241, ../sass/helpers/_animation.scss */
+  /* line 294, ../sass/helpers/_animation.scss */
   75% {
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
@@ -1007,21 +1078,21 @@ input.valid {
 }
 
 @keyframes pulse {
-  /* line 248, ../sass/helpers/_animation.scss */
+  /* line 301, ../sass/helpers/_animation.scss */
   0% {
     -webkit-transform: scale3d(1, 1, 1);
     -ms-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
   }
 
-  /* line 254, ../sass/helpers/_animation.scss */
+  /* line 307, ../sass/helpers/_animation.scss */
   50% {
     -webkit-transform: scale3d(1.2, 1.2, 1.2);
     -ms-transform: scale3d(1.2, 1.2, 1.2);
     transform: scale3d(1.2, 1.2, 1.2);
   }
 
-  /* line 260, ../sass/helpers/_animation.scss */
+  /* line 313, ../sass/helpers/_animation.scss */
   75% {
     -webkit-transform: scale3d(1, 1, 1);
     -ms-transform: scale3d(1, 1, 1);
@@ -1029,7 +1100,7 @@ input.valid {
   }
 }
 
-/* line 267, ../sass/helpers/_animation.scss */
+/* line 320, ../sass/helpers/_animation.scss */
 .pulse {
   -webkit-animation-name: pulse;
   animation-name: pulse;
@@ -1591,7 +1662,7 @@ small {
 
 /* line 1, ../sass/landing/_landing.scss */
 #landing {
-  background: url('../images/bg1.jpg?1406630404');
+  background: url('../images/bg1.jpg?1406627939');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1625,7 +1696,7 @@ small {
 
 /* line 32, ../sass/landing/_landing.scss */
 #landing-mobile {
-  background: url('../images/landing-mobile.png?1406630404');
+  background: url('../images/landing-mobile.png?1406627939');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1660,7 +1731,7 @@ small {
 @media (min-width: 1200px) {
   /* line 65, ../sass/landing/_landing.scss */
   #landing {
-    background: url('../images/bg2.jpg?1406630404');
+    background: url('../images/bg2.jpg?1406627939');
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -1762,7 +1833,7 @@ small {
 
 /* line 10, ../sass/landing/_splitters.scss */
 #splitter {
-  background: url('../images/bg-splitter1.jpg?1406630084');
+  background: url('../images/bg-splitter1.jpg?1405070271');
 }
 /* line 13, ../sass/landing/_splitters.scss */
 #splitter .row {
@@ -1772,7 +1843,7 @@ small {
 
 /* line 20, ../sass/landing/_splitters.scss */
 #splitter2 {
-  background: url('../images/bg-splitter2.jpg?1406630084');
+  background: url('../images/bg-splitter2.jpg?1405070271');
 }
 /* line 23, ../sass/landing/_splitters.scss */
 #splitter2 .row {
@@ -1782,7 +1853,7 @@ small {
 
 /* line 29, ../sass/landing/_splitters.scss */
 #splitter3 {
-  background: url('../images/bg-splitter3.jpg?1406630084');
+  background: url('../images/bg-splitter3.jpg?1405070271');
 }
 /* line 33, ../sass/landing/_splitters.scss */
 #splitter3 .row {
@@ -1843,7 +1914,7 @@ small {
 }
 /* line 1, ../sass/landing/_press.scss */
 #press {
-  background: url('../images/bg-testimonial.jpg?1406630084');
+  background: url('../images/bg-testimonial.jpg?1405070271');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1939,6 +2010,42 @@ small {
 #about .team .row .border h3, #about .team .row .border h4, #about .team .row .border p, #about .advisors .row .border h3, #about .advisors .row .border h4, #about .advisors .row .border p {
   padding-left: 15px;
   padding-right: 15px;
+}
+
+/* line 2, ../sass/_faq.scss */
+#faq .categories {
+  margin-top: 30px;
+}
+/* line 4, ../sass/_faq.scss */
+#faq .categories p {
+  font-size: 15px;
+  cursor: pointer;
+}
+/* line 7, ../sass/_faq.scss */
+#faq .categories p:hover {
+  text-decoration: underline;
+}
+/* line 13, ../sass/_faq.scss */
+#faq .header h1 {
+  font-weight: bold;
+}
+/* line 16, ../sass/_faq.scss */
+#faq .header p {
+  font-size: 21px;
+  color: #000000;
+}
+/* line 21, ../sass/_faq.scss */
+#faq p {
+  color: #999999;
+}
+/* line 24, ../sass/_faq.scss */
+#faq h1 {
+  font-weight: bold;
+}
+/* line 27, ../sass/_faq.scss */
+#faq h3 {
+  font-size: 20px;
+  font-weight: bold;
 }
 
 /* line 2, ../sass/linkfeed/_linkfeed.scss */
@@ -2277,31 +2384,32 @@ small {
 /* line 300, ../sass/linkfeed/_linkfeed.scss */
 #subhead .search-container:last-of-type {
   padding-right: 12px;
+  padding-left: 15px;
 }
 
-/* line 306, ../sass/linkfeed/_linkfeed.scss */
+/* line 307, ../sass/linkfeed/_linkfeed.scss */
 ::-webkit-input-placeholder {
   color: #cfcfcf;
 }
 
-/* line 309, ../sass/linkfeed/_linkfeed.scss */
+/* line 310, ../sass/linkfeed/_linkfeed.scss */
 :-moz-placeholder {
   /* older Firefox*/
   color: #cfcfcf;
 }
 
-/* line 312, ../sass/linkfeed/_linkfeed.scss */
+/* line 313, ../sass/linkfeed/_linkfeed.scss */
 ::-moz-placeholder {
   /* Firefox 19+ */
   color: #cfcfcf;
 }
 
-/* line 315, ../sass/linkfeed/_linkfeed.scss */
+/* line 316, ../sass/linkfeed/_linkfeed.scss */
 :-ms-input-placeholder {
   color: #cfcfcf;
 }
 
-/* line 320, ../sass/linkfeed/_linkfeed.scss */
+/* line 321, ../sass/linkfeed/_linkfeed.scss */
 .lf-grid-sm {
   position: relative;
   width: 100%;
@@ -2309,7 +2417,7 @@ small {
   padding: 12px;
 }
 
-/* line 327, ../sass/linkfeed/_linkfeed.scss */
+/* line 328, ../sass/linkfeed/_linkfeed.scss */
 .lf-grid-lg {
   width: 100%;
   float: left;
@@ -2317,163 +2425,163 @@ small {
 }
 
 @media (min-width: 595px) {
-  /* line 333, ../sass/linkfeed/_linkfeed.scss */
+  /* line 334, ../sass/linkfeed/_linkfeed.scss */
   .lf-grid-sm {
     width: 50%;
   }
 }
 @media (min-width: 820px) {
-  /* line 334, ../sass/linkfeed/_linkfeed.scss */
+  /* line 335, ../sass/linkfeed/_linkfeed.scss */
   .lf-grid-sm {
     width: 33.33333%;
   }
 }
 @media (min-width: 1045px) {
-  /* line 335, ../sass/linkfeed/_linkfeed.scss */
+  /* line 336, ../sass/linkfeed/_linkfeed.scss */
   .lf-grid-sm {
     width: 25%;
   }
 }
 @media (min-width: 1270px) {
-  /* line 336, ../sass/linkfeed/_linkfeed.scss */
+  /* line 337, ../sass/linkfeed/_linkfeed.scss */
   .lf-grid-sm {
     width: 20%;
   }
 }
 @media (min-width: 1495px) {
-  /* line 337, ../sass/linkfeed/_linkfeed.scss */
+  /* line 338, ../sass/linkfeed/_linkfeed.scss */
   .lf-grid-sm {
     width: 16.66667%;
   }
 }
 @media (min-width: 1720px) {
-  /* line 338, ../sass/linkfeed/_linkfeed.scss */
+  /* line 339, ../sass/linkfeed/_linkfeed.scss */
   .lf-grid-sm {
     width: 14.28571%;
   }
 }
 @media (min-width: 1945px) {
-  /* line 339, ../sass/linkfeed/_linkfeed.scss */
+  /* line 340, ../sass/linkfeed/_linkfeed.scss */
   .lf-grid-sm {
     width: 12.5%;
   }
 }
 @media (min-width: 2170px) {
-  /* line 340, ../sass/linkfeed/_linkfeed.scss */
+  /* line 341, ../sass/linkfeed/_linkfeed.scss */
   .lf-grid-sm {
     width: 11.11111%;
   }
 }
 @media (min-width: 2395px) {
-  /* line 341, ../sass/linkfeed/_linkfeed.scss */
+  /* line 342, ../sass/linkfeed/_linkfeed.scss */
   .lf-grid-sm {
     width: 10%;
   }
 }
 @media (min-width: 2620px) {
-  /* line 342, ../sass/linkfeed/_linkfeed.scss */
+  /* line 343, ../sass/linkfeed/_linkfeed.scss */
   .lf-grid-sm {
     width: 9.09091%;
   }
 }
 @media (min-width: 2845px) {
-  /* line 343, ../sass/linkfeed/_linkfeed.scss */
+  /* line 344, ../sass/linkfeed/_linkfeed.scss */
   .lf-grid-sm {
     width: 8.33333%;
   }
 }
 @media (min-width: 3070px) {
-  /* line 344, ../sass/linkfeed/_linkfeed.scss */
+  /* line 345, ../sass/linkfeed/_linkfeed.scss */
   .lf-grid-sm {
     width: 7.69231%;
   }
 }
 @media (min-width: 3295px) {
-  /* line 345, ../sass/linkfeed/_linkfeed.scss */
+  /* line 346, ../sass/linkfeed/_linkfeed.scss */
   .lf-grid-sm {
     width: 7.14286%;
   }
 }
 @media (min-width: 3520px) {
-  /* line 346, ../sass/linkfeed/_linkfeed.scss */
+  /* line 347, ../sass/linkfeed/_linkfeed.scss */
   .lf-grid-sm {
     width: 6.66667%;
   }
 }
 @media (min-width: 820px) {
-  /* line 349, ../sass/linkfeed/_linkfeed.scss */
+  /* line 350, ../sass/linkfeed/_linkfeed.scss */
   .lf-grid-lg {
     width: 66.66666%;
   }
 }
 @media (min-width: 1045px) {
-  /* line 350, ../sass/linkfeed/_linkfeed.scss */
+  /* line 351, ../sass/linkfeed/_linkfeed.scss */
   .lf-grid-lg {
     width: 50%;
   }
 }
 @media (min-width: 1270px) {
-  /* line 351, ../sass/linkfeed/_linkfeed.scss */
+  /* line 352, ../sass/linkfeed/_linkfeed.scss */
   .lf-grid-lg {
     width: 40%;
   }
 }
 @media (min-width: 1495px) {
-  /* line 352, ../sass/linkfeed/_linkfeed.scss */
+  /* line 353, ../sass/linkfeed/_linkfeed.scss */
   .lf-grid-lg {
     width: 33.33333%;
   }
 }
 @media (min-width: 1720px) {
-  /* line 353, ../sass/linkfeed/_linkfeed.scss */
+  /* line 354, ../sass/linkfeed/_linkfeed.scss */
   .lf-grid-lg {
     width: 28.57142%;
   }
 }
 @media (min-width: 1945px) {
-  /* line 354, ../sass/linkfeed/_linkfeed.scss */
+  /* line 355, ../sass/linkfeed/_linkfeed.scss */
   .lf-grid-lg {
     width: 25%;
   }
 }
 @media (min-width: 2170px) {
-  /* line 355, ../sass/linkfeed/_linkfeed.scss */
+  /* line 356, ../sass/linkfeed/_linkfeed.scss */
   .lf-grid-lg {
     width: 22.22222%;
   }
 }
 @media (min-width: 2395px) {
-  /* line 356, ../sass/linkfeed/_linkfeed.scss */
+  /* line 357, ../sass/linkfeed/_linkfeed.scss */
   .lf-grid-lg {
     width: 20%;
   }
 }
 @media (min-width: 2620px) {
-  /* line 357, ../sass/linkfeed/_linkfeed.scss */
+  /* line 358, ../sass/linkfeed/_linkfeed.scss */
   .lf-grid-lg {
     width: 18.18182%;
   }
 }
 @media (min-width: 2845px) {
-  /* line 358, ../sass/linkfeed/_linkfeed.scss */
+  /* line 359, ../sass/linkfeed/_linkfeed.scss */
   .lf-grid-lg {
     width: 16.666666%;
   }
 }
 @media (min-width: 3070px) {
-  /* line 359, ../sass/linkfeed/_linkfeed.scss */
+  /* line 360, ../sass/linkfeed/_linkfeed.scss */
   .lf-grid-lg {
     width: 15.38462%;
   }
 }
 @media (min-width: 3295px) {
-  /* line 360, ../sass/linkfeed/_linkfeed.scss */
+  /* line 361, ../sass/linkfeed/_linkfeed.scss */
   .lf-grid-lg {
     width: 14.28571%;
   }
 }
 @media (min-width: 3520px) {
-  /* line 361, ../sass/linkfeed/_linkfeed.scss */
+  /* line 362, ../sass/linkfeed/_linkfeed.scss */
   .lf-grid-lg {
     width: 13.33334%;
   }
@@ -3339,23 +3447,23 @@ tags-input .autocomplete .suggestion-item em {
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   /* Styles */
 }
-/* line 44, ../sass/main.scss */
+/* line 45, ../sass/main.scss */
 body {
   font-family: 'Roboto', sans-serif;
 }
 
-/* line 48, ../sass/main.scss */
+/* line 49, ../sass/main.scss */
 .container-fluid {
   padding: 0 5% 0 5%;
   overflow: hidden;
 }
 
-/* line 53, ../sass/main.scss */
+/* line 54, ../sass/main.scss */
 p, span {
   color: whitesmoke;
 }
 
-/* line 58, ../sass/main.scss */
+/* line 59, ../sass/main.scss */
 .bg-prefs, #splitter, #splitter2, #splitter3, #insights {
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -3367,39 +3475,39 @@ p, span {
   color: #000;
 }
 
-/* line 66, ../sass/main.scss */
+/* line 67, ../sass/main.scss */
 #logo-banner {
   background-color: #f0f1f3;
 }
 
-/* line 70, ../sass/main.scss */
+/* line 71, ../sass/main.scss */
 #footer {
   background-color: #22272f;
 }
 
-/* line 75, ../sass/main.scss */
+/* line 76, ../sass/main.scss */
 .SnapABug_Button {
   background-color: blue-darkest;
 }
 
 @media (max-width: 767px) {
-  /* line 84, ../sass/main.scss */
+  /* line 83, ../sass/main.scss */
   .SnapABug_Button {
     display: none !important;
   }
 
-  /* line 89, ../sass/main.scss */
+  /* line 88, ../sass/main.scss */
   .info-box {
     margin-bottom: 20px;
   }
-  /* line 91, ../sass/main.scss */
+  /* line 90, ../sass/main.scss */
   .info-box h1 {
     font-size: 22px;
     color: #405a72;
     line-height: 1.1em;
     font-weight: 900;
   }
-  /* line 97, ../sass/main.scss */
+  /* line 96, ../sass/main.scss */
   .info-box p {
     font-size: 12px;
     word-wrap: normal;
@@ -3407,29 +3515,29 @@ p, span {
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 108, ../sass/main.scss */
+  /* line 107, ../sass/main.scss */
   .SnapABug_Button {
     display: none !important;
   }
 
-  /* line 111, ../sass/main.scss */
+  /* line 110, ../sass/main.scss */
   .info-box {
     margin-bottom: 20px;
   }
-  /* line 113, ../sass/main.scss */
+  /* line 112, ../sass/main.scss */
   .info-box h1 {
     font-size: 32px;
     color: #405a72;
     line-height: 1.1em;
     font-weight: 900;
   }
-  /* line 119, ../sass/main.scss */
+  /* line 118, ../sass/main.scss */
   .info-box p {
     word-wrap: normal;
     line-height: 1.7em;
   }
 
-  /* line 125, ../sass/main.scss */
+  /* line 124, ../sass/main.scss */
   li .arrow {
     left: 0;
     opacity: 1;
@@ -3447,17 +3555,17 @@ p, span {
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  /* line 141, ../sass/main.scss */
+  /* line 140, ../sass/main.scss */
   .info-box {
     margin-bottom: 20px;
   }
-  /* line 143, ../sass/main.scss */
+  /* line 142, ../sass/main.scss */
   .info-box h1 {
     font-size: 32px;
     line-height: 1.1em;
     font-weight: 900;
   }
-  /* line 148, ../sass/main.scss */
+  /* line 147, ../sass/main.scss */
   .info-box p {
     font-size: 12px;
     word-wrap: normal;
@@ -3465,7 +3573,7 @@ p, span {
   }
 }
 @media (min-width: 1600px) {
-  /* line 158, ../sass/main.scss */
+  /* line 157, ../sass/main.scss */
   .container-fluid > div {
     width: 1600px !important;
     margin: auto;

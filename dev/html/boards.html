@@ -43,30 +43,17 @@
 	        });
 	    });
 	});
-	$(".close-btn a").click(function() {
-		$(".animate-show").on('oanimationend animationend webkitAnimationEnd', function() {
-			console.log("run");
-		   $(this).parent(".boardmask").addClass("remove");
-		});
-	});
 </script>
 
 <div ng-controller="BoardsCtrl">
-    <!--encapsulate this in a global service-->
-	<div ng-hide="pageLoaded" id="page_loader" class="loadscreen" >
-		<div class="loadlogo">
-			<a ng-click="pageLoaded = !pageLoaded"><img class="svg" src="/images/logo.svg"></a>
-		</div>
-	</div>
-
-	<div ng-show="pageLoaded" class="animate-show">
+	<div ng-hide="$root.loadView" class="animate-show">
         <!-- Header-->
-        <div ng-include="'html/private/header.html'"></div>
+        <div ng-include="'html/private/header.html'" ng-cloak></div>
 
         <!-- Searchbar-->
-        <div ng-include="'html/private/searchbar.html'"></div>
+        <div ng-include="'html/private/searchbar.html'" ng-cloak></div>
 
 		<!-- Body content here-->
-        <div ng-include="'html/boards/boards.html'" class="bg-grey"></div>
+        <div ng-include="'html/boards/boards.html'" class="bg-grey" ng-cloak></div>
 	</div>
 </div>

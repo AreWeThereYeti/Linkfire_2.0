@@ -35,7 +35,12 @@ var linkfireWebappApp = angular.module('linkfireWebappApp', [
       })
 		  .when('/boards', {
         templateUrl: 'html/boards.html',
-        controller: 'BoardsCtrl'
+        controller: 'BoardsCtrl',
+		    resolve: {
+			    links: function (dataService, $route) {
+				    return dataService.getBoards($route.current.params);
+			    }
+		    }
       })
 	    .when('/linkfeed/:id', {
         templateUrl: 'html/linkfeed.html',
@@ -58,8 +63,8 @@ var linkfireWebappApp = angular.module('linkfireWebappApp', [
 		    controller: ''
 	    })
 	    .when('/faq', {
-		    templateUrl: 'html/faq.html',
-		    controller: ''
+		    templateUrl: 'html/static/faq.html',
+		    controller: '',
 	    })
 	    .when('/qa', {
 		    templateUrl: 'html/qa.html',
@@ -93,14 +98,35 @@ var linkfireWebappApp = angular.module('linkfireWebappApp', [
 
 	//		Use constants for "global" variables
 		.constant('constants', {
-//			Api paths
+//			Api Endpoints
 			testApi: "http://linkfire.test.dev.rocketlabs.dk'",
 			liveApi: "http://api.linkfire.com/"
 	})
 
-	.run( function( $rootScope ) {
-		// Cut and paste the "Load the SDK" code from the facebook javascript sdk page.
+	.run(['$rootScope', function( $rootScope ) {
+//-------------------			For debugging loading screen------------------------------
+			$(".close-btn a").click(function() {
+				$(".animate-show").on('oanimationend animationend webkitAnimationEnd', function() {
+					console.log("run");
+					$(this).parent(".biboardmask").addClass("remove");
+				});
+			});
+//-------------------------      End debugging ------ ------------------------------
 
+//			Look for route changes
+			$rootScope.$on('$routeChangeStart', function(e, curr, prev) {
+				if (curr.$$route && curr.$$route.resolve) {
+					// Show a loading message until promises are not resolved
+					$rootScope.loadingView = true;
+				}
+			});
+			$rootScope.$on('$routeChangeSuccess', function(e, curr, prev) {
+				// Hide loading message
+				console.log('hiding loading message');
+				$rootScope.loadingView = false;
+			});
+
+		// Cut and paste the "Load the SDK" code from the facebook javascript sdk page.
 			// Load the facebook SDK asynchronously
 			(function(){
 				// If we've already installed the SDK, we're done
@@ -119,4 +145,4 @@ var linkfireWebappApp = angular.module('linkfireWebappApp', [
 				// Insert the Facebook JS SDK into the DOM
 				firstScriptElement.parentNode.insertBefore(facebookJS, firstScriptElement);
 			}());
-	});
+	}]);

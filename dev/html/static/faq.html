@@ -1,0 +1,432 @@
+<div ng-include="'html/boards/header.html'"></div>
+<div class="container" id="faq" ng-init="faqTab= 1" ng-cloak>
+    <div class="categories col-md-10 col-md-offset-1">
+        <div class="col-md-3">
+            <p ng-click="faqTab = 1" >1. General knowledgebase</p>
+            <p ng-click="faqTab = 2" >2. Linkfeed</p>
+        </div>
+        <div class="col-md-3">
+            <p ng-click="faqTab = 3" >3. Creating Links</p>
+            <p ng-click="faqTab = 4" >4. Linkfire Insights</p>
+        </div>
+        <div class="col-md-3">
+            <p ng-click="faqTab = 5" >5. Working in teams</p>
+            <p ng-click="faqTab = 6" >6. Adding domains</p>
+        </div>
+        <div class="col-md-3">
+            <p ng-click="faqTab = 7" >7. Payments</p>
+            <p ng-click="faqTab = 8" >8. Deeplinking </p>
+        </div>
+    </div>
+    <div class="col-md-10 col-md-offset-1 header">
+        <h1>Question & answers</h1>
+        <p class="about-text">Bacon ipsum dolor sit amet id filet mignon exercitation fatback, laborum short ribs irure boudin ullamco spare ribs esse chicken leberkas jowl. Landjaeger fatback ham hock swine dolor, beef ribs in ground round eiusmod pastrami ut irure. In incididunt ham in, beef ribs porchetta ribeye filet mignon. Sausage flank laborum, tenderloin spare ribs dolore kielbasa. Meatloaf ullamco ham, deserunt kielbasa shoulder aliqua non est ut drumstick.</p>
+    </div>
+    <div ng-if="faqTab == 1">
+        <div class="col-md-10 col-md-offset-1 col-sm-6 col-xs-6" >
+            <h1>General knowledgebase</h1>
+            <div class="row">
+                <h3>
+                    What is linkfire
+                </h3>
+                <p>
+                    Linkfire is a next-generation URL shortener, giving you the power to completely customise your links. You can keep your brand identity by adding your own domains. You can set different destinations for different users based on their location, device type and time period.
+                    And there's no need to wave goodbye once your link is flying across the web - you can edit and adapt your link at any time, without having to change your original URL. Linkfire is a free tool. However if you want more power, more options and more awesomeness, we have created some paid plans. All of them with a free trial of course.
+                </p>
+                <h3>
+                    How do I sign up for an account?
+                </h3>
+                <p>
+                    You can sign up at http://linkfire.com. It is free to sign up for a Linkfire account but we also have tailor made Plans & Pricing to cover your needs. You can sign up using a valid email address, Facebook account, Twitter account or Google + account.
+                </p>
+                <h3>
+                    How to select a profile picture?
+                </h3>
+                <p>
+                    Go to the profile menu in the top bar in the right corner. Click on 'Account settings'. Here you can change the profile picture associated with your account. Drag and drop an image into the designated area, or simply click it to upload a picture. If you have a profile picture on your connected social account, we will automatically fetch and add this to your Linkfire account.You can sign up at http://linkfire.com. It is free to sign up for a Linkfire account but we also have tailor made Plans & Pricing to cover your needs. You can sign up using a valid email address, Facebook account, Twitter account or Google + account.
+                </p>
+                <h3>
+                    Can i change my username?
+                </h3>
+                <p>
+                    Go to your profile menu in the top bar in the right side. Click on your Account settings. Go to 'Change username' and edit your name. Remember to click 'Update' when you're done.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div ng-if="faqTab == 2">
+        <div class="col-md-10 col-md-offset-1 col-sm-6  col-xs-6" >
+            <h1>Linkfeed</h1>
+            <div class="row">
+                <h3>
+                    What is the Linkfeed?
+                </h3>
+                <p>
+                    The Linkfeed is your personal dashboard of all the links you have created. If you are using a Business or Enterprise plan you have access to Social Linkfeed, allowing you to view and/or edit all the links created by you and your team members.
+                </p>
+                <h3>
+                    How do I access my Linkfeed?
+                </h3>
+                <p>
+                    When logged in click the Linkfire logo in the left side of the header or go to the profile menu in the top bar in the right corner. Click on 'Linkfeed'.Facebook account, Twitter account or Google + account.
+                </p>
+                <h3>
+                    How to use the filter options?
+                </h3>
+                <p>
+                    The Linkfeed shows you all the links created by you and the people you are connected to in teams. You may want to filter out some of these links and only view links with certain characteristics. You can filter by teams, members and creation period if you only want to view links created in a certain time period, or you can choose only to view links within a certain range of received shares or likes.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div ng-if="faqTab == 3">
+        <div class="col-md-10 col-md-offset-1 col-sm-6  col-xs-6" >
+            <h1>Creating Links</h1>
+            <div class="row">
+                <h3>
+                    How do I create a customised link?
+                </h3>
+                <p>
+                    To create a customised link, paste the URL you want to change into the box 'Paste your URL here' in the top bar in the right corner. Click forward and you will be taken to the 'Create link' page, where you can customise your link. When you are setting up your link, simply click 'Create link' to complete.    </p>
+                <h3>
+                    What is my original link?
+                </h3>
+                <p>
+                    Your original link is the URL you pasted into 'Paste your URL here'. The destination of the original link is where users who click on your customised link will be directed to, unless you use 'Destinations' to redirect your users to different destinations based on geographical location, device type or time period.    </p>
+                <h3>
+                    Why should I choose a team?
+                </h3>
+                <p>
+                    When you create a link using the default 'lnk.to/', you can write whatever you want after the '/', as long as the link you are trying to create doesn't already exist. E.g. if you insert a URL and the new link looks like this lnk.to/jdj5I, you can change it to: lnk.to/mylink, by replacing the last part of the new link. (See Adding domains for information about custom domains)
+                </p>
+                <h3>
+                    How can I build a link?
+                </h3>
+                <p>
+                    The 'Build section' is where you can customise the information that will be shown when you post your link. This information is often referred to as Metadata. Metadata are the title and description that allows your users to see what content the link you are sharing is carrying. If you don't find the original Metadata from your link to be appealing, you can customise the title, description and image (thumbnail) that appear when your link is posted and/or shared. (Note: Metadata do not affect how the destination page is displayed)
+                </p>
+                <h3>
+                    What is media in regard to my link?
+                </h3>
+                <p>
+                    The Media is a reduced size image that is shown together with the Metadata, when your link is posted and/or shared. Some links might include a thumbnail image when you paste it into Linkfire. Whether or not your link has a thumbnail image, you can always change the image when you create a link. Simply click 'Choose file' and 'Add media'. The image that is listed with a green marker is active. If you don't wish to have more than one image, you can delete the ones you don't want to use by clicking on the garbage can icon. If you want a new image to be the active one, simply click the marker sign that appears when you hover over the image.
+                </p>
+                <h3>
+                    What is destinations?
+                </h3>
+                <p>
+                    You can use Destinations to separate your target audience and redirect them to different landing pages based on country, device and/or time period. Maybe you have landing pages in different languages that you want to redirect users from different countries to. You could also prefer that users from mobile devices be redirected to an App Store depending on whether they use IOS or Android. All this is possible with Linkfire!
+                </p>
+                <h3>
+                    What is app deeplinking?
+                </h3>
+                <p>
+                    Deeplinking, in the mobile app world, means linking into a specific part, page or state of a mobile app that is tuned for displaying content on mobile devices in a nice way. Enabling mobile app deeplinking means that instead of directing users to the (http://) weblink it will send them to an app via a link (example://) if this is installed into the user's phone or tablet.
+                    <br/>In order to enable deeplinking on mobile apps it requires these apps to be configured properly to handle a uniform resource identifier (URI). Just like a URL is an address for a website, a URI is the address for an app on a mobile device. Examples of URIs that launch a mobile app:
+                    <br/>fb:// is the iOS URI to launch twitter's mobile app
+                    <br/>twitter:// is the iOS URI to launch twitter's mobile app
+                    <br/>YouTube:// is the iOS URI to launch YouTube's mobile app
+                    <br/>instagram:// is the IOS URI to launch Instagram's mobile app
+                    <br/>
+                    <br/>Example:
+                    <br/>Web URL: http://instagram.com/instagram
+                    <br/>App URL: instagram://user?username=instagram
+                    <br/>
+                    <br/>We include the option to specify an app store URL. If set, the user will be sent to this address if the app is not installed.
+                </p>
+                <h3>
+                    What is a tracking parameter?
+                </h3>
+                <p>
+                    A tracking parameter is a label you attach to the end of a URL, and it allows you to track where you website traffic is coming from or exactly which link is being clicked on. These labels will not be visible in your shortened URL.
+                </p>
+                <h3>
+                    Why should I add tracking parameter to my link?
+                </h3>
+                <p>
+                    Adding tracking parameters allows you to compare different features of your content, in order to determine what drives audience engagement and results, and contributes to conversions on your website.
+                </p>
+                <h3>
+                    What is a UTM tracking parameter?
+                </h3>
+                <p>
+                    The parameters used by Google Analytics are called UTM codes. A UTM code is made up of two elements: a variable and a value. Google Analytics comes with five pre-set variables: 'source', 'medium', 'term', 'content', and 'campaign', preceded always by the prefix 'utm_'. They recommend uses for each of these, but you can use them however you want, as long as you do so consistently. For instance, you might always use the 'utm_source' parameter to identify the website where your link will appear.
+                </p>
+                <h3>
+                    What is a custom tracking parameter?
+                </h3>
+                <p>
+                    If you don't use Google Analytics, you can set up your own custom tracking parameters to work with other site analytics software.
+                </p>
+                <h3>
+                    What is the call-to-action feature?
+                </h3>
+                <p>
+                    Linkfire’s call-to-action feature drives conversions by allowing you to embed a message into any article you share through a Linkfire link in newsletters on social media etc. Simply enter the target URL of the page you want to link to, add your message and call-to-action on any piece of content that you share and track it all in Linkfire’s insights. This unique feature gives you effective brand or ad space on any website.
+                </p>
+                <h3>
+                    How can I preview my link?
+                </h3>
+                <p>
+                    When you are creating a new link, you can preview how it will look on different platforms, simply by moving the curser over the images of each platform on your right hand side in the section 'Preview your link'.
+                </p>
+                <h3>
+                    How do I copy/share a link?
+                </h3>
+                <p>
+                    When you click 'Create link' your link will appear in your Linkfeed. From there you can click 'Copy' to add the link to your clipboard. From here you can paste it into your favourite social platform and share it with your friends, followers and users.
+                </p>
+
+            </div>
+        </div>
+    </div>
+    <div ng-if="faqTab == 4">
+        <div class="col-md-10 col-md-offset-1 col-sm-6  col-xs-6" >
+            <h1>Linkfire Insights</h1>
+            <div class="row">
+                <h3>
+                    What is Linkfire Insights
+                </h3>
+                <p>
+                    Linkfire Insights provide you with statistical data on how your link is performing. Free users can view the total amount of clicks and shares. Pro, Business and Enterprise users have access to more comprehensive performance measures including: Traffic sources, devices, social sharing and more metrics that matter.
+                </p>
+                <h3>
+                    How do I access my Linkfeed?
+                </h3>
+                <p>
+                    Go to your Linkfeed and find the link you're interested in. In the top right corner, each link has a bar chart icon (an image of a bar chart). If you scroll over it you will see the text: View insights. Click it to enter the insights page for that link.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div ng-if="faqTab == 5">
+        <div class="col-md-10 col-md-offset-1 col-sm-6  col-xs-6" >
+            <h1>Working in teams</h1>
+            <div class="row">
+                <h3>
+                    How do I create a team?
+                </h3>
+                <p>
+                    Go to the profile menu in the top bar in the right corner and click on 'Teams'. Then click on 'Create team' on the left side of your screen. Enter the name you want to call your new team. Click 'Create team' to complete. Once your new team is created, you can add image, members, custom domain and IP filtering. Click 'Save team' when you're done.
+                </p>
+                <h3>
+                    How do I invite people to my team?
+                </h3>
+                <p>
+                    When you have created a team, you can invite team members by clicking 'Invite members' in the 'Members' section of your 'Teams' page. Add the email addresses of the people you want to invite and click 'Send invitations'. You may also include a message that will appear along with the email.
+                </p>
+                <h3>
+                    What is a member role?
+                </h3>
+                <p>
+                    The member roles determine what a specific team member has the authority to do with the links that you or your team members have created. There are three different roles: Reader, Editor and Admin.
+                </p>
+                <h3>
+                    How do I manage the roles of the members I invite to my teams?
+                </h3>
+                <p>
+                    Once your invite has been accepted, you can edit the role of that team member. As a default, a new member will have 'Reader' status.
+                </p>
+                <h3>
+                    What is the difference between Reader, Editor and Admin?
+                </h3>
+                <p>
+                    As a 'Reader' you can create and edit your own links, but you can only view and copy links created by other team members. An 'Editor' has the authority to view and edit all the links that have been created by all team members. An 'Admin' can view and edit all links and also change the role of other members. Only the 'Owner' of the team can delete the team.
+                </p>
+                <h3>
+                    What is a custom domain?
+                </h3>
+                <p>
+                    A custom shortening domain is the domain that takes the place of "lnk.to/" in a shortened URL. Unlike the default lnk.to/ shortening domain, a custom domain can include your brand name to preserve your brand identity. There are two ways to create a custom domain: a custom lnk.to domain (e.g. yourbrand.lnk.to/) or your own custom domain (e.g. yourbrand.to/). Please know that this domain can only be used for your shortened URLs. In order to enable your custom domain, it needs to be verified by Linkfire. There are two possible ways to do this, but we recommend that you configure your DNS settings and set the A record of the domain to Linkfire's IP address: 5.79.36.241. Alternatively you can insert JavaScript into the HTML headers. Just copy/paste this piece of code just before the </head> tag and replace the example domain with your own:
+                    <br/>
+                    <br/>< script type="text/javascript" >
+                    <br/>    var pathurl = 'http://yourdomain.com(example)'; // insert your destination url
+                    <br/>< /script >
+                    <br/>< script src="http://lnk.to/static/js/redirect.js" >
+                    <br/>< /script >
+                    <br/>
+                    <br/>It can take up to 48 hours for domain changes to propagate.
+                    <br/>We will send you an email when it's been verified.
+                </p>
+                <h3>
+                    What is IP filtering? (Coming soon)
+                </h3>
+                <p>
+                    IP filtering is a useful tool when you use Linkfire Insights to track your links. You can avoid tracking your own clicks as well as the clicks from your team members by adding your IP addresses in IP filtering. This way you will get a more accurate statistical measure of the performance of your links.
+                </p>
+                <h3>
+                    What happens to my existing links when I delete a team?
+                </h3>
+                <p>
+                    When you delete a team, Linkfire keeps the links you've created up and running, so you don't lose your hard work. For links in the format http://example.lnk.to/something that's all there is to it. However, for links in the format http://yourdomain.com/something you enabled use of your domain by either configuring the DNS or inserting JavaScript into the HTML headers. As long as you don't change anything there, your existing links will remain fully functional.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div ng-if="faqTab == 6">
+        <div class="col-md-10 col-md-offset-1 col-sm-6  col-xs-6" >
+            <h1>Working in teams</h1>
+            <div class="row">
+                <h3>
+                    What's the difference between a custom lnk.to domain and my own custom domain?
+                </h3>
+                <p>
+                    It makes no difference whether you use a custom lnk.to domain (e.g. example.lnk.to/) or your own custom domain (e.g. linkfi.re/) in terms of link creation and all other Linkfire functionalities. However, it is much easier to set up a custom lnk.to domain. All you need to do is to enter the name of your choice (provided that name is not already in use) and start using it. To set up your own custom domain, you must own the domain name and be able to change its DNS records or HTML headers. In addition, once you have set up a custom domain for use with Linkfire, a website associated with that domain will no longer be accessible since your domain name will point to Linkfire.
+                </p>
+                <h3>
+                    What happens to my existing links when I delete a domain?
+                </h3>
+                <p>
+                    When you delete a domain, Linkfire keeps the links you've created up and running, so you don't lose your hard work. For links in the format http://example.lnk.to/something that's all there is to it. However, for links in the format http://yourdomain.com/something you enabled use of your domain by either configuring the DNS or inserting JavaScript into the HTML headers. As long as you don't change anything there, your existing links will remain fully functional
+                </p>
+                <h3>
+                    What does pending validation mean?
+                </h3>
+                <p>
+                    This means that we are currently trying to get approval that you have either set up your DNS A Record or HTML headers.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div ng-if="faqTab == 7">
+        <div class="col-md-10 col-md-offset-1 col-sm-6  col-xs-6" >
+            <h1>Working in teams</h1>
+            <div class="row">
+                <h3>
+                    What is Business & Enterprise plans?
+                </h3>
+                <p>
+                    If you choose a Business or Enterprise Plan you can create a team (multiple teams for enterprise). The user who creates a team will be the 'Owner' of the team and can invite other users to join, and set their roles to 'Reader', 'Editor' or 'Admin' depending on the level authority other users of the team should have. When you are part of a Business or Enterprise team, you will have access to all the Linkfire features, as long as you create and manage your links through this team. However, you will not be able to access all Linkfire features for your personal account, if you personally are on a Free plan.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div ng-if="faqTab == 8">
+        <div class="col-md-10 col-md-offset-1 col-sm-6  col-xs-6" >
+            <h1>Working in teams</h1>
+            <div class="row fadeIn">
+                <h3>
+                    How do I deep link to Instagram?
+                </h3>
+                <p>
+                    You can choose the following parameters to direct mobile and tablet user to a specific location or piece of content inside the Instagram app (if the app is installed). All custom actions begins with “instagram://”:
+                    <br/>Open the Instagram app:
+                    <br/><strong>instagram://app</strong>
+                    <br/>Open the Instagram camera (or photo library on non-camera devices):
+                    <br/><strong>instagram://camera</strong>
+                    <br/>Open the Instagram profil for a specific user:
+                    <br/><strong>instagram://user?username=USERNAME</strong>
+                    <br/>Open the tag feed for a specific hash tag
+                    <br/><strong>instagram://tag?name=TAG</strong>
+                    <br/>Open the location feed for a specific location
+                    <br/><strong>instagram://location?id=LOCATION_ID</strong>
+                    <br/>Open a specific picture/media id
+                    <br/><strong>instagram://media?id=MEDIA_ID (see “how do I find my Instagram media id below)</strong>
+                </p>
+                <h3>
+                    How do I find my media id for a specific Instagram photo?
+                </h3>
+                <p>
+                    <br/>To find your media id for a specific image, insert the web URL for that image as shown in the link below:
+                    <br/><a href="http://api.instagram.com/oembed?url=INSTAGRAM.COM/YOUR.IMAGE"> http://api.instagram.com/oembed?url=INSTAGRAM.COM/YOUR.IMAGE</a>
+                    <br/>The link will then return the information associated with that image
+                    <br/>Your media id will look like this: 707245481134345347_323415210
+                </p>
+                <h3>
+                    How do I deep link to a Youtube Video?
+                </h3>
+                <p>
+                    <br>To link to a Youtube Video, add a App URL (URI) under "destinations" and insert the ID of the video you want to redirect to:
+                    <br><strong>youtube://</strong>VIDEO_ID
+                    <br>Your video id looks like this: mz9h0mogT04, and can be found in the mobile or desktop browser URLs:
+                    <br>Web URL: http://www.youtube.com/watch?v=VIDEO_ID
+                    <br>Moblie URL: http://youtu.be/VIDEO_ID
+                    <br>App deep link: <strong>youtube://</strong>VIDEO_ID
+                </p>
+                <h3>
+                    How do I deep link to a Twitter Profile?
+                </h3>
+                <p>
+                    <br/>To deep link to a Twitter Profile, you just need the screen name of the profile you want to link to:
+                    <br/><strong>twitter://</strong>user?screen_name=SCREEN-NAME
+                    <br/>Example: A deep link to Linkfire’s Twitter Profile would look like this:
+                    <br/><strong>twitter://</strong>user?screen_name=getlinkfire
+                </p>
+                <h3>
+                    How do I link to a Twitter Tweet?
+                </h3>
+                <p>
+                    <br/>To deep link to a Twitter Tweet (open a specific Tweet), you just need the status ID you want to link to:
+                    <br/>twitter://status?id=STATUS-ID
+                    <br/>Example:
+                    <br/>Web URL: https://twitter.com/GetLinkfire/status/461888514221957121
+                    <br/>Deep link: twitter://status?id=461888514221957121
+                </p>
+                <h3>
+                    What else can I deep link to on Twitter?
+                </h3>
+                <p>
+                    <br/>You can use the following deep links for Twitter:
+                    <br/>twitter://timeline
+                    <br/>twitter://messages
+                    <br/>twitter://mentions
+                </p>
+                <h3>
+                    How do I deep link to Spotify?
+                </h3>
+                <p>
+                    <br/>You can link to Artists, Albums, Tracks and playlists on Spotify. If you want the web URL or app deep link (Spotify URI), you just need to follow the instructions from the Spotify Blog below, or use one of the following Deep Links:
+                    <br/>spotify:track:example
+                    <br/>spotify::album:example
+                    <br/>spotify::artist:example
+                    <br/>If you want to link to a song, for instance, you need to get its address: Just right-click (or control-click) a song in Spotify and select "Copy HTTP Link" or "Copy Spotify URI" from the context menu. Which one you should use depends on what you want to do with the link.
+                    <br/><img src="images/spotify_copy_paste.png" alt="spotifycopypaste"/>
+                    <br/>
+                    <br/>HTTP links look like this: http://open.spotify.com/artist/5lsC3H1vh9YSRQckyGv0Up
+                    <br/>Spotify URIs look like this: spotify:artist:5lsC3H1vh9YSRQckyGv0Up
+                </p>
+                <h3>
+                    How can I deep link to Deezer?
+                </h3>
+                <p>
+                    <br/>To create deep link/app URL for Deezer, you just need to put “deezer://” instead of “http://” in front of the web URL.
+                    <br/>Examples:
+                    <br/>Web URL: http://www.deezer.com/artist/5128100
+                    <br/>Deep link: deezer://www.deezer.com/artist/5128100
+                    <br/>Web URL: http://www.deezer.com/track/70234406
+                    <br/>Deep link: deezer://www.deezer.com/track/70234406
+                </p>
+                <h3>
+                    How can I deep link to WiMP?
+                </h3>
+                <p>
+                    <br/>You can use the following deep links for WiMP:
+                    <br/>wimp://artist/example
+                    <br/>wimp://album/example
+                    <br/>wimp://search/example
+                    <br/>wimp://track/example
+                    <br/>wimp://playlist/example
+                    <br/>Example:
+                    <br/>Web URL: https://wimp.dk/album/29825255
+                    <br/>Deeplink: wimp://album/29825255
+                    <br/>Web URL: https://wimp.dk/wweb/track/1116734
+                    <br/>Deep link: wimp://track/1116734
+                </p>
+                <h3>
+                    How can I deep link to Rdio?
+                </h3>
+                <p>
+                    <br/>To create deep link/app URL for Rdio, you just need to put "rdio://" instead of "http://" in front of the web URL.
+                    <br/>Examples:
+                    <br/>Artist:
+                    <br/>Web URL: http://www.rdio.com/artist/Pharrell_Williams
+                    <br/>Deep link: rdio://www.rdio.com/artist/Pharrell_Williams
+                    <br/>Album:
+                    <br/>Web URL: http://www.rdio.com/artist/Pharrell_Williams/album/G_I_R_L/
+                    <br/>Deep link: rdio://www.rdio.com/artist/Pharrell_Williams/album/G_I_R_L/
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div ng-include="'html/footer.html'"></div>
