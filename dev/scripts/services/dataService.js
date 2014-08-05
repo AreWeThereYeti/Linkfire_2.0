@@ -3,16 +3,16 @@ angular.module('linkfireWebappApp.services', [])
 		var sdo = {
 
 			getLinks: function() {
-				var promise = $http({ method: 'GET', url: 'http://www.mocky.io/v2/53df3eea3a67abd30e4b5a16' }).success(function(data, status, headers, config) {
-					data = 'data';
-					return data;
+				var promise = $http({ method: 'GET', url: ' http://www.mocky.io/v2/53e0e6a252a026691912dfdb' }).success(function(data, status, headers, config) {
+					var test = 'DATA';
+					return test;
 				});
 				return promise;
 			},
 			getBoards: function() {
-				var promise = $http({ method: 'GET', url: 'http://www.mocky.io/v2/53df3eea3a67abd30e4b5a16' }).success(function(data, status, headers, config) {
-					data = 'data';
-					return data;
+				var promise = $http({ method: 'GET', url: ' http://www.mocky.io/v2/53e0e6a252a026691912dfdb' }).success(function(data, status, headers, config) {
+					var test = 'DATA';
+					return test;
 				});
 				return promise;
 			}
