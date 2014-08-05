@@ -49,18 +49,10 @@
 //		   $(this).parent(".boardmask").addClass("remove");
 //		});
 //	});
-	//  
+	//
 </script>
-
-<div id="bg">
-    <!--encapsulate this in a global service-->
-	<div ng-hide="pageLoaded" id="page_loader" class="loadscreen" >
-		<div class="loadlogo">
-			<a ng-click="pageLoaded = !pageLoaded"><img class="svg" src="/images/logo.svg"></a>
-		</div>
-	</div>
-
-	<div ng-show="pageLoaded" class="animate-show">
+<div id="bg" ng-class="{'animated fadeIn' : $root.loadingView == false}" ng-cloak>
+	<div ng-hide="$root.loadView" class="animate-show">
         <!-- Header-->
         <div ng-include="'html/private/header.html'"></div>
 
@@ -76,7 +68,10 @@
                 <span>{{linkfeed.clicks}} Clicks - {{linkfeed.links}} Links</span>
                 <div class="info">
                     <div class="member" ng-repeat="member in linkfeed.members | limitTo: 4" >
-                        <img class="img-responsive img-circle" ng-src={{member.url}}>
+                        <a popover-placement="bottom" popover="On the Bottom!" class="notifications">
+                            <div ng-hide="true" class="arrow"></div>
+                            <img class="img-responsive img-circle" ng-src={{member.url}}>
+                        </a>
                     </div>
                     <div class="member" ng-show="members.length >= 4">
                         <img class="img-responsive img-circle" src="images/more.svg">
@@ -89,9 +84,9 @@
         </div>
 
         <!-- Searchbar-->
-        <div ng-include="'html/private/searchbar_linkfeed.html'"></div>
+        <div ng-include="'html/private/searchbar_linkfeed.html'" ng-cloak></div>
 
 		<!-- Body content here-->
-        <div ng-include="'html/linkfeed/linkfeed.html'" class="bg-grey"></div>
+        <div ng-include="'html/linkfeed/linkfeed.html'" class="bg-grey" ng-cloak></div>
 	</div>
 </div>

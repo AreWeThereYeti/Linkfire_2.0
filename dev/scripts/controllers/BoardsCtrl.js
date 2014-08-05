@@ -2,13 +2,6 @@
 angular.module('linkfireWebappApp')
 	.controller('BoardsCtrl', ['$scope','$modal', function ($scope, $modal) {
 
-	//  Needs comments
-  $scope.pageLoaded = true;
-
-  $scope.loadScreen = function(){
-    $scope.pageLoaded = !$scope.pageLoaded;
-  };
-
 //  Needs comments
   $scope.items = [];
     $scope.save = function() {

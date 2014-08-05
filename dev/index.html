@@ -23,6 +23,12 @@
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
 
+<div ng-init="$root.loadingView" ng-hide="$root.loadingView == false " id="page_loader" class="loadscreen" >
+    <div class="loadlogo">
+        <a ng-click="$root.loadingView = !$root.loadingView"><img class="svg" src="/images/logo.svg"></a>
+    </div>
+</div>
+
 <div ng-view=""></div>
 
 <!--Facebook login-->

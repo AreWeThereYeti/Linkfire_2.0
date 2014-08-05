@@ -686,72 +686,150 @@ input.valid {
   border: 1px solid #2c947f;
 }
 
-/* line 1, ../sass/helpers/_animation.scss */
+/* line 2, ../sass/helpers/_animation.scss */
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+/* line 9, ../sass/helpers/_animation.scss */
 .ng-enter {
   opacity: 0;
 }
 
-/* line 5, ../sass/helpers/_animation.scss */
+/* line 13, ../sass/helpers/_animation.scss */
 .ng-enter-active {
   opacity: 1;
 }
 
-/* line 10, ../sass/helpers/_animation.scss */
+/* line 18, ../sass/helpers/_animation.scss */
 .ng-leave {
   opacity: 1;
 }
 
-/* line 14, ../sass/helpers/_animation.scss */
+/* line 22, ../sass/helpers/_animation.scss */
 .ng-leave-active {
   opacity: 0;
 }
 
 @keyframes shake {
-  /* line 19, ../sass/helpers/_animation.scss */
+  /* line 27, ../sass/helpers/_animation.scss */
   0% {
     transform: translateX(0);
   }
 
-  /* line 20, ../sass/helpers/_animation.scss */
+  /* line 28, ../sass/helpers/_animation.scss */
   12.5% {
     transform: translateX(-6px) rotateY(-5deg);
   }
 
-  /* line 21, ../sass/helpers/_animation.scss */
+  /* line 29, ../sass/helpers/_animation.scss */
   37.5% {
     transform: translateX(5px) rotateY(4deg);
   }
 
-  /* line 22, ../sass/helpers/_animation.scss */
+  /* line 30, ../sass/helpers/_animation.scss */
   62.5% {
     transform: translateX(-3px) rotateY(-2deg);
   }
 
-  /* line 23, ../sass/helpers/_animation.scss */
+  /* line 31, ../sass/helpers/_animation.scss */
   87.5% {
     transform: translateX(2px) rotateY(1deg);
   }
 
-  /* line 24, ../sass/helpers/_animation.scss */
+  /* line 32, ../sass/helpers/_animation.scss */
   100% {
     transform: translateX(0);
   }
 }
 
-/* line 27, ../sass/helpers/_animation.scss */
+/* line 35, ../sass/helpers/_animation.scss */
 .shake {
   animation: shake 400ms ease-in-out;
 }
 
+@-webkit-keyframes fadeIn {
+  /* line 42, ../sass/helpers/_animation.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 45, ../sass/helpers/_animation.scss */
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  /* line 50, ../sass/helpers/_animation.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 53, ../sass/helpers/_animation.scss */
+  100% {
+    opacity: 1;
+  }
+}
+
+/* line 57, ../sass/helpers/_animation.scss */
+.fadeIn {
+  -webkit-animation-name: fadeIn 10s;
+  animation-name: fadeIn 10s;
+}
+
+@-webkit-keyframes fadeInUp {
+  /* line 64, ../sass/helpers/_animation.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+
+  /* line 69, ../sass/helpers/_animation.scss */
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  /* line 75, ../sass/helpers/_animation.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+
+  /* line 81, ../sass/helpers/_animation.scss */
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+/* line 87, ../sass/helpers/_animation.scss */
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
 @-webkit-keyframes lfflipInX {
-  /* line 36, ../sass/helpers/_animation.scss */
+  /* line 96, ../sass/helpers/_animation.scss */
   0% {
     -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 20deg) scale3d(0.6, 0.6, 0.6);
     transform: perspective(400px) rotate3d(1, 0, 0, 20deg) scale3d(0.6, 0.6, 0.6);
     opacity: 0;
   }
 
-  /* line 41, ../sass/helpers/_animation.scss */
+  /* line 101, ../sass/helpers/_animation.scss */
   100% {
     -webkit-transform: perspective(400px);
     transform: perspective(400px);
@@ -759,7 +837,7 @@ input.valid {
 }
 
 @keyframes lfflipInX {
-  /* line 47, ../sass/helpers/_animation.scss */
+  /* line 107, ../sass/helpers/_animation.scss */
   0% {
     -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 20deg) scale3d(0.6, 0.6, 0.6);
     -ms-transform: perspective(400px) rotate3d(1, 0, 0, 20deg) scale3d(0.6, 0.6, 0.6);
@@ -767,7 +845,7 @@ input.valid {
     opacity: 0;
   }
 
-  /* line 53, ../sass/helpers/_animation.scss */
+  /* line 113, ../sass/helpers/_animation.scss */
   100% {
     -webkit-transform: perspective(400px);
     -ms-transform: perspective(400px);
@@ -775,7 +853,7 @@ input.valid {
   }
 }
 
-/* line 59, ../sass/helpers/_animation.scss */
+/* line 119, ../sass/helpers/_animation.scss */
 .lfflipInX {
   -webkit-backface-visibility: visible !important;
   -ms-backface-visibility: visible !important;
@@ -785,13 +863,13 @@ input.valid {
 }
 
 @-webkit-keyframes lfflipOutX {
-  /* line 69, ../sass/helpers/_animation.scss */
+  /* line 129, ../sass/helpers/_animation.scss */
   0% {
     -webkit-transform: perspective(400px);
     transform: perspective(400px);
   }
 
-  /* line 73, ../sass/helpers/_animation.scss */
+  /* line 133, ../sass/helpers/_animation.scss */
   100% {
     -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 20deg) scale3d(0.6, 0.6, 0.6);
     transform: perspective(400px) rotate3d(1, 0, 0, 20deg) scale3d(0.6, 0.6, 0.6);
@@ -800,14 +878,14 @@ input.valid {
 }
 
 @keyframes lfflipOutX {
-  /* line 80, ../sass/helpers/_animation.scss */
+  /* line 140, ../sass/helpers/_animation.scss */
   0% {
     -webkit-transform: perspective(400px);
     -ms-transform: perspective(400px);
     transform: perspective(400px);
   }
 
-  /* line 85, ../sass/helpers/_animation.scss */
+  /* line 145, ../sass/helpers/_animation.scss */
   100% {
     -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 20deg) scale3d(0.6, 0.6, 0.6);
     -ms-transform: perspective(400px) rotate3d(1, 0, 0, 20deg) scale3d(0.6, 0.6, 0.6);
@@ -816,7 +894,7 @@ input.valid {
   }
 }
 
-/* line 92, ../sass/helpers/_animation.scss */
+/* line 152, ../sass/helpers/_animation.scss */
 .lfflipOutX {
   -webkit-animation-name: flipOutX;
   animation-name: flipOutX;
@@ -828,20 +906,20 @@ input.valid {
 }
 
 @-webkit-keyframes lfbounceIn {
-  /* line 107, ../sass/helpers/_animation.scss */
+  /* line 167, ../sass/helpers/_animation.scss */
   0%, 20%, 40%, 60%, 80%, 100% {
     -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
     transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
   }
 
-  /* line 111, ../sass/helpers/_animation.scss */
+  /* line 171, ../sass/helpers/_animation.scss */
   0% {
     opacity: 0;
     -webkit-transform: scale3d(0.3, 0.3, 0.3);
     transform: scale3d(0.3, 0.3, 0.3);
   }
 
-  /* line 116, ../sass/helpers/_animation.scss */
+  /* line 176, ../sass/helpers/_animation.scss */
   100% {
     opacity: 1;
     -webkit-transform: scale3d(1, 1, 1);
@@ -850,13 +928,13 @@ input.valid {
 }
 
 @keyframes lfbounceIn {
-  /* line 123, ../sass/helpers/_animation.scss */
+  /* line 183, ../sass/helpers/_animation.scss */
   0%, 20%, 40%, 60%, 80%, 100% {
     -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
     transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
   }
 
-  /* line 128, ../sass/helpers/_animation.scss */
+  /* line 188, ../sass/helpers/_animation.scss */
   0% {
     opacity: 0;
     -webkit-transform: scale3d(0.3, 0.3, 0.3);
@@ -864,7 +942,7 @@ input.valid {
     transform: scale3d(0.3, 0.3, 0.3);
   }
 
-  /* line 134, ../sass/helpers/_animation.scss */
+  /* line 194, ../sass/helpers/_animation.scss */
   100% {
     opacity: 1;
     -webkit-transform: scale3d(1, 1, 1);
@@ -873,7 +951,7 @@ input.valid {
   }
 }
 
-/* line 141, ../sass/helpers/_animation.scss */
+/* line 201, ../sass/helpers/_animation.scss */
 .lfbounceIn {
   -webkit-animation-name: lfbounceIn;
   animation-name: lfbounceIn;
@@ -882,13 +960,13 @@ input.valid {
 }
 
 @-webkit-keyframes lfBounceOut {
-  /* line 148, ../sass/helpers/_animation.scss */
+  /* line 208, ../sass/helpers/_animation.scss */
   0% {
     -webkit-transform: scale(1);
     transform: scale(1);
   }
 
-  /* line 152, ../sass/helpers/_animation.scss */
+  /* line 212, ../sass/helpers/_animation.scss */
   100% {
     opacity: 0;
     -webkit-transform: scale(0.3);
@@ -897,14 +975,14 @@ input.valid {
 }
 
 @keyframes lfBounceOut {
-  /* line 159, ../sass/helpers/_animation.scss */
+  /* line 219, ../sass/helpers/_animation.scss */
   0% {
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1);
   }
 
-  /* line 164, ../sass/helpers/_animation.scss */
+  /* line 224, ../sass/helpers/_animation.scss */
   100% {
     opacity: 0;
     -webkit-transform: scale(0.3);
@@ -913,7 +991,7 @@ input.valid {
   }
 }
 
-/* line 174, ../sass/helpers/_animation.scss */
+/* line 234, ../sass/helpers/_animation.scss */
 .animate-repeat {
   -webkit-transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
@@ -923,7 +1001,7 @@ input.valid {
   box-sizing: border-box;
 }
 
-/* line 180, ../sass/helpers/_animation.scss */
+/* line 240, ../sass/helpers/_animation.scss */
 .animate-repeat.ng-move-active,
 .animate-repeat.ng-enter,
 .animate-repeat.ng-leave {
@@ -935,7 +1013,7 @@ input.valid {
   box-sizing: border-box;
 }
 
-/* line 186, ../sass/helpers/_animation.scss */
+/* line 246, ../sass/helpers/_animation.scss */
 .animate-repeat.ng-leave.ng-leave-active,
 .animate-repeat.ng-move,
 .animate-repeat.ng-enter {
@@ -944,7 +1022,7 @@ input.valid {
   animation: lfBounceOut 0.5s;
 }
 
-/* line 193, ../sass/helpers/_animation.scss */
+/* line 253, ../sass/helpers/_animation.scss */
 .animate-repeat.ng-leave,
 .animate-repeat.ng-move,
 .animate-repeat.ng-enter.ng-enter-active {
@@ -953,58 +1031,46 @@ input.valid {
   transform: translateX(0);
 }
 
-/* line 201, ../sass/helpers/_animation.scss */
+/* line 261, ../sass/helpers/_animation.scss */
 .animate-show {
   -webkit-animation-name: bounce;
   animation-name: bounce;
 }
 
-/* line 205, ../sass/helpers/_animation.scss */
+/* line 265, ../sass/helpers/_animation.scss */
 .animate-show.ng-hide-remove {
   -webkit-animation: lfbounceIn 0.5s;
   animation: lfbounceIn 0.5s;
 }
 
-/* line 209, ../sass/helpers/_animation.scss */
+/* line 269, ../sass/helpers/_animation.scss */
 .animate-show.ng-hide-add {
   -webkit-animation: lfBounceOut 0.5s;
   animation: lfBounceOut 0.5s;
   display: block !important;
 }
 
-/* line 216, ../sass/helpers/_animation.scss */
-.loadscreen {
-  -webkit-animation-name: bounce;
-  animation-name: bounce;
-}
-
-/* line 220, ../sass/helpers/_animation.scss */
-.loadscreen.ng-hide-remove {
-  -webkit-animation: lfflipInX 0.5s;
-  animation: lfflipInX 0.5s;
-}
-
-/* line 224, ../sass/helpers/_animation.scss */
+/* line 277, ../sass/helpers/_animation.scss */
 .loadscreen.ng-hide-add {
-  -webkit-animation: lfflipOutX 0.5s;
-  animation: lfflipOutX 0.5s;
+  -webkit-animation: lfflipOutX 0.75s;
+  animation: lfflipOutX 0.75s;
   display: block !important;
 }
 
 @-webkit-keyframes pulse {
-  /* line 231, ../sass/helpers/_animation.scss */
+  /* line 284, ../sass/helpers/_animation.scss */
   0% {
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
   }
 
-  /* line 236, ../sass/helpers/_animation.scss */
+  /* line 289, ../sass/helpers/_animation.scss */
   50% {
     -webkit-transform: scale3d(1.2, 1.2, 1.2);
     transform: scale3d(1.2, 1.2, 1.2);
   }
 
-  /* line 241, ../sass/helpers/_animation.scss */
+  /* line 294, ../sass/helpers/_animation.scss */
   75% {
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
@@ -1012,21 +1078,21 @@ input.valid {
 }
 
 @keyframes pulse {
-  /* line 248, ../sass/helpers/_animation.scss */
+  /* line 301, ../sass/helpers/_animation.scss */
   0% {
     -webkit-transform: scale3d(1, 1, 1);
     -ms-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
   }
 
-  /* line 254, ../sass/helpers/_animation.scss */
+  /* line 307, ../sass/helpers/_animation.scss */
   50% {
     -webkit-transform: scale3d(1.2, 1.2, 1.2);
     -ms-transform: scale3d(1.2, 1.2, 1.2);
     transform: scale3d(1.2, 1.2, 1.2);
   }
 
-  /* line 260, ../sass/helpers/_animation.scss */
+  /* line 313, ../sass/helpers/_animation.scss */
   75% {
     -webkit-transform: scale3d(1, 1, 1);
     -ms-transform: scale3d(1, 1, 1);
@@ -1034,7 +1100,7 @@ input.valid {
   }
 }
 
-/* line 267, ../sass/helpers/_animation.scss */
+/* line 320, ../sass/helpers/_animation.scss */
 .pulse {
   -webkit-animation-name: pulse;
   animation-name: pulse;

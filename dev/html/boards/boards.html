@@ -1,5 +1,5 @@
-<div id="boards" >
-    <div id="create" class="boardmask lf-grid-sm" ng-controller="MainCtrl">
+<div id="boards" ng-class="{'animated fadeIn' : $root.loadingView == false}" ng-cloak>
+    <div id="create" class="lf-grid-sm" ng-controller="MainCtrl">
         <div class="animate-show" ng-show="show">
             <div class="board-content">
                 <div class="close-btn">
@@ -14,15 +14,15 @@
             </div>
         </div>
     </div>
-    <div class="boardmask lf-grid-sm" ng-repeat="board in boards | filter:item" >
+    <div class="lf-grid-sm" ng-repeat="board in boards | filter:item" >
         <div class="animate-repeat">
             <div class="board-content">
                 <div class="mask">
                     <!--<img src="/images/overlay.jpg">-->
                     <img src="/images/test2.jpg" ng-src={{board.url}}>
-                    <a class="lnkBtn medium" href="#/linkfeed">
+                    <a class="lnkBtn medium" href="#/linkfeed/21">
                     </a>
-                    <span ng-href="#/linkfeed">Load links</span>
+                    <span ng-href="#/linkfeed/21">Load links</span>
                 </div>
                 <div class="info">
                     <p class="headline">{{board.name + " " + board.album}}</p>
