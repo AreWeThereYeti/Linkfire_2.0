@@ -14,7 +14,7 @@ linkfireWebappApp.controller('CreateBoardCtrl', function ($scope, $http, $q, $fi
     ];
 
     $scope.autocomplete_options = [
-        { "text": "nr@linkfire.com" },
+        { "text":   "nr@linkfire.com" },
         { "text": "le@linkfire.com" },
         { "text": "mm@linkfire.com" },
         { "text": "jj@linkfire.com" },
